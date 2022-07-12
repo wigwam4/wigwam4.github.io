@@ -2,7 +2,7 @@
 layout: single
 title:  "프레임워크(Framework), 라이브러리(Library), 플러그인(Plugin) 차이점"
 categories: IT
-tags: Markdown
+tags: knowledge
 #tags: [python, blog]
 #toc: true
 ---
