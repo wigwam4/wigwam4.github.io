@@ -1,0 +1,591 @@
+@charset "utf-8";
+
+/* 로그인 */
+.login-page, .register-page {
+	background-image: url(../../images/admin/img_login.png), url(../../images/admin/bg_login.jpg);
+	background-repeat: no-repeat; 
+	background-size: auto, cover;
+	background-position: left 6.369% bottom 7.6%, center;
+}
+.login-box, .register-box {
+	overflow: hidden;
+	margin: 0;
+	position: absolute; top: 50%; left: 50%;
+	background-color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.login-box {
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.login-logo, .register-logo {
+	margin-bottom: 0; padding: 30px 0 0px;
+}
+.login-logo a {
+	display: inline-block;
+	width: 170px;
+}
+.login-logo a img {
+	width: 100%;
+}
+.login-box-body, .register-box-body {
+	padding: 30px;
+}
+.login-box-body .glyphicon-user {
+	display: block;
+	width: 34px; height: 34px;
+	position: absolute; top: 0; right: 0;
+	line-height: 34px; text-align: center; color: #777;
+	z-index: 2;
+	pointer-events: none;
+}
+.login-box-body .form-control-feedback, .register-box-body .glyphicon-user {
+	color: #777;
+}
+.form-control:focus {
+	border-color: #ee2424;
+}
+
+.login-box-body .icheckbox_flat-red, .iradio_flat-red {
+	margin-right: 5px;
+}
+.ad_login_txt {
+	margin-top: 30px;
+	font-size: 12px; color: #999; word-break: keep-all;
+}
+.btn_login {
+	background-color: #77314c;
+	border-color: #77314c;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn_login:hover {
+	background-color: #5d2037;
+	border-color: #5d2037;
+}
+
+/* 에러페이지 */
+.error-page {
+	margin: 0 0;
+	position: absolute; top: 20%; left: 50%;
+	transform: translateX(-50%);
+}
+.error-page > .error-content {
+	margin-left: 0;
+}
+.error-page > .error-content > h3 {
+	margin-top: 0;
+}
+.error-page > .error-content p a {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 15px; font-family: NanumSquareB; color: #3c8dbc;
+}
+
+
+/* 대시보드 */
+.ad_dash_graph {
+	overflow: hidden;
+	width: 100%; min-height: 250px;
+	position: relative;
+}
+
+/* 박스 */
+.ad_section {
+	margin-bottom: 30px;
+}
+.ad_section_s {
+	margin-bottom: 20px;
+}
+.box {
+	border-color: #ddd;
+}
+.box-header.with-border {
+	border-color: #e1e1e1;
+}
+.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+	font-size: 16px;
+}
+.nav-tabs-custom > .header {
+	margin: 0; padding: 10px;
+	font-size: 16px; line-height: 1;
+	font-family: NanumSquareR, '나눔스퀘어'; font-weight: 600;
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+	border-top-color: #0d65d9;
+}
+.nav-tabs > li > a {
+	line-height: 1.25;
+}
+.tab-content {
+	position: relative;
+}
+.small-box h3 {
+	margin: 10px;
+	font-size: 28px;
+}
+.ad_dash_more {
+	position: absolute; right: 10px; top: 7px;
+	color: #999; font-size: 18px;
+	z-index: 5;
+}
+
+/* 권한설정 */
+.ad_manager_list {
+	overflow-y: auto;
+	height: 450px;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+.ad_manager_list_s {
+	min-height: 300px;
+}
+.ad_manager_list_s1 {
+	min-height: 340px;
+}
+.ad_btnlist_center {
+	padding-top: 120px;
+}
+.ad_btnlist_center a {
+	display: block;
+	width: 37px; height: 37px;
+	margin: 10px auto;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.ad_btnlist_center a.add_list {
+	background-image: url(../../images/admin/btn_addname.png);
+}
+.ad_btnlist_center a.add_list:hover {
+	background-image: url(../../images/admin/btn_addname_on.png);
+}
+.ad_btnlist_center a.remove_list {
+	background-image: url(../../images/admin/btn_minusname.png);
+}
+.ad_btnlist_center a.remove_list:hover {
+	background-image: url(../../images/admin/btn_minusname_on.png);
+}
+
+
+/* 서브페이지 상단 네비게이션 */
+.content-header>h2 {
+	margin: 0;
+}
+
+/* 메뉴체계도 */
+.ad_menutree_wrap {
+	overflow-y: auto;
+	height: 500px;
+	padding: 10px;
+	border: 1px solid #e1e1e1;
+}
+.ad_menuinfo_wrap {
+	overflow-y: auto;
+	height: 519px;
+}
+
+/* 지도교수 선택 */
+.ad_name_row {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* 통계 */
+.invoice {
+	margin: 0;
+}
+.ad_box {
+	background: #fff;
+}
+
+/* 진단 임시저장 */
+.ad_test_wrap {
+	position: relative;
+}
+.ad_test_bar {
+	overflow: hidden;
+	width: 100%; height: 15px;
+	margin-bottom: 10px;
+	position: relative;
+	background-color: #ececec;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.ad_test_bar p {
+	height: 15px;
+	background: #79cd00;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.ad_test_btnlist {
+	text-align: center;
+}
+.ad_test_btnlist .btn {
+	width: 35px; height: 35px;
+	margin: 0 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.ad_test_wrap .btn_tempo {
+	position: absolute; right: 90px; bottom: 0;
+}
+.ad_test_wrap .btn_testsave {
+	position: absolute; right: 0; bottom: 0;
+}
+
+/* fullcalendar */
+.bg {
+	height: 30px;
+	margin-bottom: 15px;
+}
+.bg ul {
+	display: table;
+	width: auto; height: 30px;
+	margin: 0 auto !important;
+	float: none !important;
+	text-align: center;
+}
+.bg ul li {
+	display: table-cell;
+	height: 30px;
+	font-size: 24px;
+}
+.bg ul li .pre_m, .next_m {
+	display: block;
+	width: 30px; height: 30px;
+	font-size: 24px; line-height: 30px; text-align: center;
+	border: 1px solid #d7d7d7;
+}
+.bg ul li .pre_m {
+	margin-right: 10px;
+}
+.bg ul li .next_m {
+	margin-left: 10px;
+}
+.fc-view-container table {
+	width: 100%;
+}
+.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+	border-bottom: 0;
+}
+.fc .fc-row .fc-content-skeleton table, .fc .fc-row .fc-content-skeleton td, .fc .fc-row .fc-helper-skeleton td {
+	padding: 5px;
+}
+.fc-title {
+	width: 100%;
+	display: block;
+	font-size: 13px;
+}
+.fc-event {
+	vertical-align: middle;
+}
+.pp_schedulelist {
+	display: block;
+	width: auto;
+	color: #01ac50; text-align: center; line-height: 1em;
+	cursor: pointer;
+}
+.pp_schedulelist_end {
+	display: block;
+	width: auto;
+	color: #f46c5c; text-align: center; line-height: 1em;
+}
+
+/* C.A.T 통계화면 */
+.ad_graph_wrap {
+	overflow: hidden;
+	min-height: 210px;
+	margin-top: 26px;
+	padding: 15px;
+	border: 1px solid #ddd;
+}
+.ad_graphbar_wrap {
+	width: 100%;
+	position: relative;
+}
+.ad_graphbar_wrap ul {
+	display: table;
+	width: 100%;
+}
+.ad_graphbar_wrap ul li {
+	display: table-cell;
+	width: 20%; height: 30PX;
+	text-indent: -9999px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	border-bottom: 0;
+}
+.ad_graphbar_wrap p {
+	height: 20px;
+	position: absolute; top: 5px; left: 0px;
+}
+.ad_graph_tit {
+	display: table;
+	width: 100%;
+}
+.ad_graph_tit li {
+	display: table-cell;
+	vertical-align: middle;
+}
+.ad_multigraph_wrap {
+	padding-right: 20px;
+}
+.ad_multigraph_tbl {
+	width: 100%;
+}
+.ad_multigraph_tbl table {
+	width: 100%;
+}
+.ad_multigraph_tbl th {
+	font-weight: 400; text-align: right; font-size: 13px;
+}
+.ad_multigraph_tit {
+	width: 100%;
+	margin-bottom: 15px;
+	font-size: 0; line-height: 0;
+}
+.ad_multigraph_tit li {
+	display: inline-block;
+	width: 20%; height: 10px;
+	position: relative;
+	text-align: right;
+	font-size: 11px; line-height: 1em;
+}
+.ad_multigraph_tit li p{
+	position: absolute; top: 0; right: -15px;
+}
+.ad_multigraph {
+	width: 100%; height: 30px;
+	position: absolute; top: 0; left:0;
+	font-size: 0; line-height: 0;
+}
+.ad_multigraph p {
+	display: inline-block;
+	position: relative;
+}
+.half_cell {
+	background-image: url(../../images/admin/backslash.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 텝 */
+.tab_list {
+	margin: 0 0 15px;
+	font-size: 0; line-height: 0;
+}
+.tab_list li {
+	display: inline-block;
+	margin-top: 4px; margin-right: 4px; 
+}
+.tab_list li a {
+	display: block;
+	padding: 0 16px;
+	min-width: 60px; height: 30px;
+	color: #005aab; font-size: 14px; line-height: 30px; text-align: center;
+	background: #f2f2f2;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	border-radius: 17px;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.tab_list li.on a {
+	color: #fff;
+	background: #005aab;
+}
+
+
+@media all and (max-width:991px) {
+	.ad_btnlist_center1 {
+		padding-top: 0; margin-bottom: 20px;
+		text-align: center;
+	}
+	.ad_btnlist_center1 a {
+		display: inline-block;
+		width: 37px; height: 37px;
+		margin: 0px 10px;
+		transform: rotate(90deg)
+	}
+}
+
+@media all and (max-width:767px) {
+
+	/* 에러페이지 */
+	.error-page {
+		margin: 20px auto 0 auto;
+	}
+	.error-page > .error-content > h3 {
+		font-size: 18px;
+	}
+	.error-page > .error-content p {
+		text-align: center;
+	}
+
+	/* 권한설정 */
+	.ad_manager_list {
+		height: auto;
+	}
+	.ad_btnlist_center {
+		padding-top: 10px;
+		text-align: center;
+	}
+	.ad_btnlist_center a {
+		display: inline-block;
+		width: 37px; height: 37px;
+		margin: 0px 10px;
+		transform: rotate(90deg)
+	}
+
+	/* 진단 임시저장 */
+	.ad_test_wrap {
+		text-align: center;
+	}
+	.ad_test_btnlist {
+		margin-bottom: 5px;
+	}
+	.ad_test_wrap .btn_tempo {
+		position: relative; right: auto;
+	}
+	.ad_test_wrap .btn_testsave {
+		position: relative; right: auto;
+	}
+
+	/* 로그인 767 */	
+	.login-page, .register-page {
+		background-size: 400px, cover;
+		background-position: center bottom 7.6%, center;
+	}
+	
+}
+
+
+@media all and (max-width:480px) {
+
+	/* 로그인 767 */	
+	.login-page, .register-page {
+		background-size: 80%, cover;
+		background-position: center bottom 5%, center;
+	}
+	
+	
+	.fixed .content-wrapper, .fixed .right-side {
+		padding-top: 80px;
+	}
+
+	.content-header>h2 {
+		font-size: 24px;
+	}
+
+	/* 박스 */
+	.box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+		font-size: 16px;
+	}
+	.nav-tabs-custom > .header {
+		font-size: 16px;
+	}
+	.nav-tabs > li > a {
+		padding : 10px 8px;
+	}
+	.small-box > .inner {
+		padding: 5px;
+	}
+	.small-box h3 {
+		margin: 5px;
+		font-size: 20px;
+	}
+
+}
+/* 지도교수 상담 */
+.state_link div {
+	float: left;
+	padding: 0 10px 10px;
+	width: 33%;
+}
+
+.state_div div{
+	float: left;
+	padding: 30px 10px 30px 10px;
+	width: 30%;
+	height : 105px;
+	background: #f4f4f4;
+	
+}
+
+.state_link div a {
+	display: block;
+	padding: 6px;
+	text-align: center;
+	background: #f4f4f4;
+	border: 4px solid #f4f4f4;
+}
+.state_link div a:hover, .state_link div a.on {
+	color: #333;
+	/*background: #ddd;*/
+	border: 4px solid #ddd; box-sizing: border-box;
+}
+.nav-tabs_sm > li > a {
+	padding: 10px 4px;
+}
+.student_list {
+	padding: 10px 0 10px 90px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.student_list:last-child {
+	border-bottom: 0;
+}
+.student_list:hover, .student_list.on {
+	background: #f4f4f4;
+}
+.student_profile {
+	float: left;
+	position: relative;
+	margin-right: 10px; margin-left: -90px;
+	width: 80px; height: 80px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.student_profile img {
+	position: absolute; top: 50%; left: 50%;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.student_docu {
+	padding-top: 4px;
+}
+.student_docu a {
+	margin-bottom: 4px;
+}
+
+/* 결과없음 */
+.ad_nolist_box {
+	position: relative;
+	text-align: center;
+	border: 2px dashed #d7d7d7;
+}
+.ad_nolist_box p {
+	display: inline-block;
+	padding: 40px 20px 40px 40px;
+	font-size: 1.4rem; color: #909090;
+	background: url('../../images/client/sub/icon_nopost.png') no-repeat left center;
+	background-size: auto 25px;
+}
+

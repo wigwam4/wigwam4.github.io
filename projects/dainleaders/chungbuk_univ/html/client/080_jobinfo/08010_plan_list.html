@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="충북대학교">
+		<meta name="description" content="충북대학교 CIEAT 시스템 (Chungbuk Integrated Extracurricular Administrative sysTem)">
+		<meta name="copyrigt" content="충북대학교">
+		<meta name="keywords" content="충북대학교, CIEAT, 씨앗시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>충북대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] quick menu -->
+		<nav class="quick_menu">
+			<h5>QUICK MENU</h5>
+			<button type="button" class="btn_quicknav">바로가기 메뉴</button>
+			<ul>
+				<li class="quick_menu1">
+					<a href="javascript:void(0);"><span>비교과 신청</span></a>
+				</li>
+				<li class="quick_menu2">
+					<a href="javascript:void(0);"><span>상담 신청</span></a>
+				</li>
+				<li class="quick_menu3">
+					<a href="javascript:void(0);"><span>채용공고</span></a>
+				</li>
+				<li class="quick_menu4">
+					<a href="javascript:void(0);"><span>공지사항</span></a>
+				</li>
+				<li class="quick_menu5">
+					<a href="https://cia.chungbuk.ac.kr/board/exchange_notice/lists/key/247">
+						<span>
+							국제교류
+							<small>&#40;파견 교환학생&#41;</small>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [pp] //quick menu -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+
+				<!-- [pp] link -->
+				<div class="header_link">
+					<div class="grid_content">
+						<ul>
+							<li><a href="javascript:void(0);" class="admin">관리자페이지로 이동</a></li>
+							<li><a href="javascript:void(0);">충북대학교</a></li>
+							<li><a href="javascript:void(0);">개신누리</a></li>
+							<li><a href="javascript:void(0);">도서관</a></li>
+							<li><a href="javascript:void(0);" class="downfile">시스템 사용법</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [pp] //link -->
+
+				<!-- [pp] logo, login, user info, mobile menu button -->
+				<div class="header_top grid_content">
+					<h1 class="header_logo"><a href="javascript:void(0);"><img src="../../../images/client/common/header_logo.svg" alt="충북대학교 로고"></a></h1>
+					<div class="header_top_inner">
+						<p class="user_info">
+							<span>사용자</span>님 환영합니다
+						</p>
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<!-- [pp] 로그인/로그아웃 :
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+						-->
+					</div>
+					<button type="button" title="모바일메뉴보기" class="mobile_menubtn">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<!-- [pp] //logo, login, user info, mobile menu button -->
+
+				<!-- [pp] gnb -->
+				<div class="header_bottom">
+					<div class="grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>소개</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">대학의 인재상 및 핵심역량</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 소개</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 마일리지</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>핵심역량인증</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">핵심역량 인증소개</a></li>
+										<li><a href="javascript:void(0);">전공 마일스톤 소개</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진단센터</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">핵심역량진단</a></li>
+												<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습유형진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습유형진단</a></li>
+												<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">대학생활적응진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">대학생활적응진단</a></li>
+												<li><a href="javascript:void(0);">대학생활적응진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습자가진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습자가진단</a></li>
+												<li><a href="javascript:void(0);">학습자가진단 결과</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">워크넷 진단</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>학습관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">교과정보조회</a></li>
+										<li><a href="javascript:void(0);">비교과 신청</a></li>
+										<li><a href="javascript:void(0);">비교과 내역</a></li>
+										<li><a href="javascript:void(0);">자기주도활동</a></li>
+										<li><a href="javascript:void(0);">토론광장</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>인증제</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">독서인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">독서인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">독서인증현황</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">봉사인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">봉사인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">봉사인증현황</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">영어인증제</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>전문상담관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">지도교수 상담</a></li>
+										<li><a href="javascript:void(0);">진로 및 취업 상담</a></li>
+										<li><a href="javascript:void(0);" class="break_all">학생생활상담소</a></li>
+										<li><a href="javascript:void(0);">글쓰기 상담</a></li>
+										<li><a href="javascript:void(0);">창업 상담</a></li>
+										<li><a href="javascript:void(0);">장애지원 상담</a></li>
+										<li><a href="javascript:void(0);">학사 및 기타 상담</a></li>
+										<li><a href="javascript:void(0);">나의 상담 이력</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>채용정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">일반 채용정보</a></li>
+										<li><a href="javascript:void(0);">인재 추천 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 공채속보</a></li>
+										<li><a href="javascript:void(0);">사람인 채용정보</a></li>
+										<li><a href="javascript:void(0);">잡코리아 채용정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진로&middot;취업 정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">진로탐색</a></li>
+										<li><a href="javascript:void(0);" class="break_all">국가직무능력표준 정보</a></li>
+										<li><a href="javascript:void(0);">자격증 정보</a></li>
+										<li><a href="javascript:void(0);">직업방송 동영상</a></li>
+										<li><a href="javascript:void(0);">기업정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>마이페이지</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">마이페이지</a></li>
+										<li><a href="javascript:void(0);">포트폴리오</a></li>
+										<li><a href="javascript:void(0);">인증현황</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>커뮤니티 관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">공지사항</a></li>
+										<li><a href="javascript:void(0);">자료실 관리</a></li>
+										<li><a href="javascript:void(0);">주요 프로그램 및 운영부서</a></li>
+										<li><a href="javascript:void(0);">FAQ</a></li>
+										<li><a href="javascript:void(0);">설문참여</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="sitemap_outer">
+							<a href="javascript:void(0);" class="btn_sitemap">
+								<span></span><span></span><span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //gnb -->
+
+				<!-- [pp] 모바일 화면 menu 클릭시 나오는 배경화면 -->
+				<div class="gnb_bg"></div>
+				<!-- [pp] //모바일 화면 menu 클릭시 나오는 배경화면 -->
+
+			</header>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 상단 비주얼 영역 -->
+			<figure class="subpage_visual visual8">
+				<div class="grid_content">
+					<h2><span>진로&middot;취업 정보</span></h2>
+				</div>
+			</figure>
+			<!-- [pp] //상단 비주얼 영역 -->
+
+			<!-- [pp] lnb 영역 -->
+			<nav class="lnb_wrap">
+				<ul class="lnb_list">
+					<li class="on">
+						<a href="javascript:void(0);">진로 탐색</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">국가직무능력표준정보</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">자격증 정보</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">직업방송 동영상</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">기업정보</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- [pp] //lnb 영역 -->
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<div class="infotop_box">
+					요즘 대학생은 미래에 대한 불안과 초조로 스트레스가 심각하다고 합니다. 행복한 인생, 괜찮은 일자리에 대한 욕심은 있지만 지금 내가 무엇을, 어떻게 해야할지 고민이 많으실텐데요. 대진여지도를 통해 자신의 꿈을 이루기 위한 계획을 세워보세요. 대진여지도를 통해 여러분의 꿈을 이루시기 바랍니다.
+				</div>
+				<section class="section_area">
+					<h3 class="section_tit_lg">비교대상 검색하기</h3>
+					<div class="tab_js">
+						<ul class="tab_list tab_list_js">
+							<li class="on"><a href="#company">기업검색</a></li>
+							<li><a href="#major">학과검색</a></li>
+						</ul>
+						<div class="tab_cnt_js">
+							<div id="company">
+								<div class="search_box">
+									<div class="search_text">
+										<div class="search_text_box cf">
+											<strong>기업명</strong>
+											<input type="text" class="form_style" placeholder="검색어를 입력하세요." title="기업 정보 검색">
+										</div>
+										<button type="button" class="btn btn_search">검색</button>
+									</div>
+								</div>
+								<div class="search_toggle_row">
+									<div class="searchtoggle_left">
+										<p class="total_count">Total: 20</p>
+									</div>
+								</div>
+								<div class="grid_row">
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box company_box">
+											<a href="javascript:void(0);">
+												<dl class="target_compony">
+													<dt>굿네이버스</dt>
+													<dd><strong>업종명</strong>전기통신업</dd>
+													<dd><strong>대표자명</strong>권영수</dd>
+													<dd><strong>주소지</strong>서울특별시 용산구</dd>
+												</dl>
+											</a>
+											<p class="plan_radio corp_radio">
+												<input type="radio" name="sel_company" id="sel_c1" checked>
+												<label for="sel_c1">목표기업 설정하기</label>
+											</p>
+										</div>
+									</div>
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box company_box">
+											<a href="javascript:void(0);">
+												<dl class="target_compony">
+													<dt>(주)네이버네트워크</dt>
+													<dd><strong>업종명</strong>여행사 및 기타 여행보조 서비스업 </dd>
+													<dd><strong>대표자명</strong>임정택</dd>
+													<dd><strong>주소지</strong>서울특별시 강남구</dd>
+												</dl>
+											</a>
+											<p class="plan_radio corp_radio">
+												<input type="radio" name="sel_company" id="sel_c2">
+												<label for="sel_c2">목표기업 설정하기</label>
+											</p>
+										</div>
+									</div>
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box company_box on">
+											<a href="javascript:void(0);">
+												<dl class="target_compony">
+													<dt>네이버(주)</dt>
+													<dd><strong>업종명</strong>포털 및 기타 인터넷 정보매개 서비스업</dd>
+													<dd><strong>대표자명</strong>한성숙</dd>
+													<dd><strong>주소지</strong>경기도 성남시</dd>
+												</dl>
+											</a>
+											<p class="plan_radio corp_radio">
+												<input type="radio" name="sel_company" id="sel_c3">
+												<label for="sel_c3">목표기업 설정하기</label>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- [pp] paging -->
+								<div class="paging_place">
+									<div class="paging_wrap">
+										<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+										<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+										<a href="javascript:void(0);" class="on"><span>1</span></a>
+										<a href="javascript:void(0);"><span>2</span></a>
+										<a href="javascript:void(0);"><span>3</span></a>
+										<a href="javascript:void(0);"><span>4</span></a>
+										<a href="javascript:void(0);"><span>5</span></a>
+										<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+										<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+									</div>
+								</div>
+								<!-- [pp] //paging -->
+								<section class="section_area">
+									<div class="view_result">상세보기</div>
+									<h5 class="testresult_tit mg_b10">굿네이버스</h5>
+									<p class="mg_b10 font_gray">
+										굿네이버스에 취업한 졸업생들의 평균과 나의 비교값은 아래와 같습니다.
+									</p>
+									<div class="grid_row_md section_sarea">
+										<div class="grid_col col_xl_6 col_sm_3">
+											<div class="border_box">
+												<!-- [pp] 그래프 영역 -->
+												<div class="graph_box">
+													<img src="../../../images/client/sub/img_graph32.jpg" alt="진로탐색 결과비교 그래프 예제 이미지">
+												</div>
+												<!-- [pp] //그래프 영역 -->
+											</div>
+										</div>
+										<div class="grid_col col_xl_6 col_sm_3">
+											<div class="tbl tbl_row tbl_fixed">
+												<table>
+													<caption>진로탐색 결과비교 상세</caption>
+													<colgroup>
+														<col style="width:40%">
+														<col style="width:60%">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th scope="row">학점</th>
+															<td class="ta_c">3.1</td>
+														</tr>
+														<tr>
+															<th scope="row">비교과 프로그램 이수 횟수</th>
+															<td class="ta_c">5</td>
+														</tr>
+														<tr>
+															<th scope="row">어학능력 개수</th>
+															<td class="ta_c">1.5</td>
+														</tr>
+														<tr>
+															<th scope="row">자격증 개수</th>
+															<td class="ta_c">2</td>
+														</tr>
+														<tr>
+															<th scope="row">봉사시간</th>
+															<td class="ta_c">44.5</td>
+														</tr>
+														<tr>
+															<th scope="row">수상경력</th>
+															<td class="ta_c">3.75</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="plangraph_wrap section_area">
+										<ul class="graph_label">
+											<li>나의 점수</li>
+											<li>비교군&#40;평균점수&#41;</li>
+										</ul>
+										<div class="grid_row_md">
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>학점</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>비교과 프로그램 이수 횟수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>어학능력 개수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>자격증 개수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>봉사시간</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>수상경력</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<section>
+										<h4 class="section_tit_md">상세 리스트</h4>
+										<div class="tbl tbl_col tbl_fixed scrollx_tbl_md">
+											<table>
+												<caption>교과정보 목록</caption>
+												<colgroup>
+													<col style="width: 10%">
+													<col style="width: auto">
+													<col style="width: auto">
+													<col style="width: auto">
+													<col style="width: 360px">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">졸업연도</th>
+														<th scope="col">학부/학과</th>
+														<th scope="col">이름</th>
+														<th scope="col">학점</th>
+														<th scope="col">내역</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="5">내역이 없습니다</td>
+													</tr>
+													<tr>
+														<th scope="row">2019.02</th>
+														<td>사회복지학과</td>
+														<td>박**</td>
+														<td>3.1</td>
+														<td>
+															<div class="subjectpoint_list">
+																<ul class="col_xl_6">
+																	<li class="capa1">
+																		<strong>C &#40;창의성&#41;</strong>333333
+																	</li>
+																	<li class="capa2">
+																		<strong>H &#40;휴머니즘&#41;</strong>3
+																	</li>
+																	<li class="capa3">
+																		<strong>A &#40;능동성&#41;</strong>2
+																	</li>
+																</ul>
+																<ul class="col_xl_6">
+																	<li class="capa4">
+																		<strong>N &#40;공동체&#41;</strong>333333
+																	</li>
+																	<li class="capa5">
+																		<strong>G &#40;글로벌&#41;</strong>3
+																	</li>
+																	<li class="capa6">
+																		<strong>E &#40;전문성&#41;</strong>2
+																	</li>
+																</ul>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--[pp] page -->
+										<div class="paging_place">
+											<div class="paging_wrap">
+												<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+												<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+												<a href="javascript:void(0);" class="active">1</a>
+												<a href="javascript:void(0);">2</a>
+												<a href="javascript:void(0);">3</a>
+												<a href="javascript:void(0);">4</a>
+												<a href="javascript:void(0);">5</a>
+												<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+												<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+											</div>
+										</div>
+										<!--[pp] //page -->
+									</section>
+								</section>
+							</div>
+							<div id="major">
+								<div class="search_box">
+									<div class="search_text">
+										<div class="sel_search_row wd_p100">
+											<select class="select_custom">
+												<option value="" selected>학과/학부 선택</option>
+												<option value="">IT / 전자공학과</option>
+											</select>
+										</div>
+										<button type="button" class="btn btn_search">검색</button>
+									</div>
+								</div>
+								<div class="search_toggle_row">
+									<div class="searchtoggle_left">
+										<p class="total_count">Total: 20</p>
+									</div>
+								</div>
+								<div class="grid_row">
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box role_box on">
+											<a href="javascript:void(0);">
+												<p class="target_role"><span>경영학과</span>김**</p>
+											</a>
+											<p class="plan_radio role_radio">
+												<input type="radio" name="sel_role" id="sel_r1" checked>
+												<label for="sel_r1">롤모델 설정하기</label>
+											</p>
+										</div>
+									</div>
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box role_box">
+											<a href="javascript:void(0);">
+												<p class="target_role"><span>멀티미디어학과</span>김**</p>
+											</a>
+											<p class="plan_radio role_radio">
+												<input type="radio" name="sel_role" id="sel_r2">
+												<label for="sel_r2">롤모델 설정하기</label>
+											</p>
+										</div>
+									</div>
+									<div class="grid_col col_xl_4 col_md_3 col_sm_3">
+										<div class="target_box role_box">
+											<a href="javascript:void(0);">
+												<p class="target_role"><span>컴퓨터공학과</span>김**</p>
+											</a>
+											<p class="plan_radio role_radio">
+												<input type="radio" name="sel_role" id="sel_r3">
+												<label for="sel_r3">롤모델 설정하기</label>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- [pp] paging -->
+								<div class="paging_place">
+									<div class="paging_wrap">
+										<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+										<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+										<a href="javascript:void(0);" class="on"><span>1</span></a>
+										<a href="javascript:void(0);"><span>2</span></a>
+										<a href="javascript:void(0);"><span>3</span></a>
+										<a href="javascript:void(0);"><span>4</span></a>
+										<a href="javascript:void(0);"><span>5</span></a>
+										<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+										<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+									</div>
+								</div>
+								<!-- [pp] //paging -->
+								<section class="section_area">
+									<div class="view_result">상세보기</div>
+									<h5 class="testresult_tit mg_b10">사회복지학과</h5>
+									<p class="mg_b10 font_gray">
+										사회복지학과의 1학년과 나의 비교값은 아래와 같습니다.
+									</p>
+									<div class="grid_row_md section_sarea">
+										<div class="grid_col col_xl_6 col_sm_3">
+											<div class="border_box">
+												<!-- [pp] 그래프 영역 -->
+												<div class="graph_box">
+													<img src="../../../images/client/sub/img_graph32.jpg" alt="진로탐색 결과비교 그래프 예제 이미지">
+												</div>
+												<!-- [pp] //그래프 영역 -->
+											</div>
+										</div>
+										<div class="grid_col col_xl_6 col_sm_3">
+											<div class="tbl tbl_row tbl_fixed">
+												<table>
+													<caption>진로탐색 결과비교 상세</caption>
+													<colgroup>
+														<col style="width:40%">
+														<col style="width:60%">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th scope="row">학점</th>
+															<td class="ta_c">3.1</td>
+														</tr>
+														<tr>
+															<th scope="row">비교과 프로그램 이수 횟수</th>
+															<td class="ta_c">5</td>
+														</tr>
+														<tr>
+															<th scope="row">어학능력 개수</th>
+															<td class="ta_c">1.5</td>
+														</tr>
+														<tr>
+															<th scope="row">자격증 개수</th>
+															<td class="ta_c">2</td>
+														</tr>
+														<tr>
+															<th scope="row">봉사시간</th>
+															<td class="ta_c">44.5</td>
+														</tr>
+														<tr>
+															<th scope="row">수상경력</th>
+															<td class="ta_c">3.75</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="plangraph_wrap section_area">
+										<ul class="graph_label">
+											<li>나의 점수</li>
+											<li>비교군&#40;평균점수&#41;</li>
+										</ul>
+										<div class="grid_row_md">
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>학점</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>비교과 프로그램 이수 횟수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>어학능력 개수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>자격증 개수</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>봉사시간</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+											<div class="grid_col col_xl_4 col_sm_1_1 col_xs_2">
+												<div class="border_box">
+													<h5>수상경력</h5>
+													<!-- [pp] 그래프 영역 -->
+													<div class="graph_box">
+														<img src="../../../images/client/sub/img_graph33.jpg" alt="그래프 예제 이미지">
+													</div>
+													<!-- [pp] //그래프 영역 -->
+												</div>
+											</div>
+										</div>
+									</div>
+									<section>
+										<h4 class="section_tit_md">상세 리스트</h4>
+										<div class="tbl tbl_col tbl_fixed scrollx_tbl_md">
+											<table>
+												<caption>교과정보 목록</caption>
+												<colgroup>
+													<col style="width: 10%">
+													<col style="width: auto">
+													<col style="width: auto">
+													<col style="width: auto">
+													<col style="width: 360px">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">졸업연도</th>
+														<th scope="col">학부/학과</th>
+														<th scope="col">이름</th>
+														<th scope="col">학점</th>
+														<th scope="col">내역</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="5">내역이 없습니다</td>
+													</tr>
+													<tr>
+														<th scope="row">2019.02</th>
+														<td>사회복지학과</td>
+														<td>박**</td>
+														<td>3.1</td>
+														<td>
+															<div class="subjectpoint_list">
+																<ul class="col_xl_6">
+																	<li class="capa1">
+																		<strong>C &#40;창의성&#41;</strong>333333
+																	</li>
+																	<li class="capa2">
+																		<strong>H &#40;휴머니즘&#41;</strong>3
+																	</li>
+																	<li class="capa3">
+																		<strong>A &#40;능동성&#41;</strong>2
+																	</li>
+																</ul>
+																<ul class="col_xl_6">
+																	<li class="capa4">
+																		<strong>N &#40;공동체&#41;</strong>333333
+																	</li>
+																	<li class="capa5">
+																		<strong>G &#40;글로벌&#41;</strong>3
+																	</li>
+																	<li class="capa6">
+																		<strong>E &#40;전문성&#41;</strong>2
+																	</li>
+																</ul>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<!--[pp] page -->
+										<div class="paging_place">
+											<div class="paging_wrap">
+												<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+												<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+												<a href="javascript:void(0);" class="active">1</a>
+												<a href="javascript:void(0);">2</a>
+												<a href="javascript:void(0);">3</a>
+												<a href="javascript:void(0);">4</a>
+												<a href="javascript:void(0);">5</a>
+												<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+												<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+											</div>
+										</div>
+										<!--[pp] //page -->
+									</section>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<ul class="footer_link">
+					<li><a href="javascript:void(0);" class="privacy">개인정보처리방침</a></li>
+					<li><a href="javascript:void(0);">이메일무단수집거부</a></li>
+				</ul>
+				<ul class="footer_info">
+					<li>
+						&#40;28644&#41; 충북 청주시 서원구 충대로1, 충북대학교 TEL 043)261-2114
+					</li>
+					<li>
+						Copyright 2020 Chungbuk National University &copy; Allrights Reserved
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+	</body>
+
+</html>

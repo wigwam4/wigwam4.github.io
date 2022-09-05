@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="서원대학교">
+		<meta name="description" content="서원대학교 학생지원통합시스템">
+		<meta name="copyrigt" content="서원대학교">
+		<meta name="keywords" content="서원대학교, 학생지원통합시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>서원대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+
+		<!--[if lt IE 9]>	
+<script type="text/javascript" src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/html5shiv.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/IE9.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/respond.min.js"></script>
+<![endif]-->
+
+		<script type="text/javascript" src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../src/apexchart/js/apexcharts.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+		<!-- [pp] 팝업창 전체 -->
+		<section class="pop_wrapper pop_lg_wrap">
+			<section class="pop_header">
+				<h2>기업 채용 공고 등록</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_content pop_lg_content">
+				<section class="search_box">
+					<h4 class="hidden">이력서 제목</h4>
+					<label class="title_label">채용공고 제목</label>
+					<input type="text" class="form_style wd_p100" value="채용공고 제목을 입력해주세요">
+				</section>
+				<section class="section_marea">
+					<h4 class="section_tit_md">기업정보</h4>
+					<div class="tbl tbl_row tbl_fixed">
+						<table>
+							<caption>업체정보 상세내용</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">기업명</span>
+									</th>
+									<td class="td_input">
+										<input type="text" class="form_style wd_p100">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">기업유형</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">일반기업</option>
+												<option value="">중소기업&#40;300명 미만&#41;</option>
+												<option value="">중견기업&#40;300명 이상&#41;</option>
+												<option value="">대기업&#40;1000명 이상&#41;</option>
+												<option value="">대기업계열자회사</option>
+												<option value="">공기업&middot;공공기관&middot;공사</option>
+												<option value="">국계투자기업</option>
+												<option value="">외국계법인기업</option>
+												<option value="">비영리단체&middot;협회&middot;재단</option>
+												<option value="">벤처기업</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">주소</span>
+									</th>
+									<td class="td_input">
+										<div class="sel_search_row wd_180">
+											<select class="select_custom">
+												<option value="" selected>시/도</option>
+												<option value="">서울특별시</option>
+												<option value="">경기도</option>
+											</select>
+										</div>
+										<div class="sel_search_row wd_180">
+											<select class="select_custom">
+												<option value="" selected>시/군/구</option>
+												<option value="">한남동</option>
+												<option value="">분당구</option>
+											</select>
+										</div>
+										<input type="text" class="form_style mg_t5 wd_p100" placeholder="상세 주소를 입력해주세요">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">대표 번호</span>
+									</th>
+									<td class="td_input">
+										<input type="tel" class="form_style wd_180" placeholder="'-'를 제외한 숫자만 입력"> 
+										<p class="error">
+											대표번호를 입력해주세요
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section class="section_marea">
+					<h4 class="section_tit_md">모집정보</h4>
+					<div class="tbl tbl_row tbl_fixed">
+						<table>
+							<caption>모집정보 상세내용</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:auto">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">고용형태</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">정규직</option>
+												<option value="">인턴직</option>
+												<option value="">계약직</option>
+												<option value="">병역특례</option>
+												<option value="">프리랜서</option>
+												<option value="">기타</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">성별</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">무관</option>
+												<option value="">남</option>
+												<option value="">여</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">모집인원</span>
+									</th>
+									<td class="td_input">
+										<input type="text" class="form_style wd_180">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">모집부문</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">신입</option>
+												<option value="">경력</option>
+												<option value="">아르바이트</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">직종</span>
+									</th>
+									<td class="td_input">
+										<div class="sel_search_row wd_180">
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">IT&middot;인터넷</option>
+												<option value="">건설</option>
+												<option value="">경영&middot;사무</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">직무</span>
+									</th>
+									<td class="td_input">
+										<div class="sel_search_row wd_180">
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">IT&middot;인터넷</option>
+												<option value="">건설</option>
+												<option value="">경영&middot;사무</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<span class="label_tit">관련전공</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">무관</option>
+												<option value="">직접 입력</option>
+											</select>
+										</div>
+										<input type="text" class="form_style mg_t5 wd_p100">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">연봉</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">2,000 ~ 2,500</option>
+												<option value="">2,500 ~ 3,000</option>
+												<option value="">3,500 ~ 4,000</option>
+												<option value="">4,000 ~</option>
+												<option value="">면접 후 협의</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="required">
+										<span class="label_tit">모집기간</span>
+									</th>
+									<td class="td_input">
+										<div class="select_form wd_180">
+											<label class="select_common">선택</label>
+											<select class="select_custom">
+												<option value="" selected>선택</option>
+												<option value="">채용시까지</option>
+												<option value="">직접 입력</option>
+											</select>
+										</div>
+										<div class="mg_t5">
+											<p class="search_day wd_180 pd_l0">
+												<input type="text" class="form_style" title="시작일" placeholder="시작일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+											~
+											<p class="search_day wd_180 pd_l0">
+												<input type="text" class="form_style" title="종료일" placeholder="종료일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<span class="label_tit">복리후생</span>
+									</th>
+									<td class="td_input">
+										<textarea class="form_style" rows="2"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<span class="label_tit required">모집요강</span>
+									</th>
+									<td class="td_input">
+										<textarea class="form_style" rows="5">에디터가 들어갑니다</textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<span class="label_tit">첨부파일</span>
+									</th>
+									<td class="td_input">
+										<div class="attach_file_box">
+											<input type="file" id="attach_file" class="hidden">
+											<label for="attach_file" class="attach_file">파일첨부</label>
+										</div>
+										<div class="file_thumbnail">
+											<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/sub/img_worknet_test4.jpg" alt="첨부파일 미리보기 이미지"/>
+												</div>
+												<span class="thumbnail_tit">업로드한 파일 제목 업로드한 파일 제목</span>
+											</a>
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+										<div class="file_thumbnail">
+											<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/sub/img_nopreview.jpg" alt="이미지가 존재하지 않는 파일"/>
+												</div>
+												<span class="thumbnail_tit">이미지 없는 파일</span>
+											</a>
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+										<div class="file_thumbnail">
+											<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+												<div class="thumbnail_img">
+													<img src="../../../images/client/sub/img_preview_file.jpg" alt="다른 유형의 파일"/>
+												</div>
+												<span class="thumbnail_tit">문서 / 비디오</span>
+											</a>
+											<button type="button" class="btn btn_del">삭제</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section class="section_marea">
+					<h4 class="section_tit_md">우대사항</h4>
+					<section class="section_sarea">
+						<h5 class="section_tit_sm">어학 능력</h5>
+						<div class="resumeedit_btnrow">
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col tbl_fixed scrollx_tbl_sm">
+							<table>
+								<caption>어학정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 130px">
+									<col style="width: auto">
+									<col style="width: 20%">
+									<col style="width: 15%">
+									<col style="width: 80px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">언어 선택</th>
+										<th scope="col">시험 명</th>
+										<th scope="col">시험 일시</th>
+										<th scope="col">점수/등급</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td_input">
+											<div class="select_form wd_p100">
+												<label class="select_common">선택</label>
+												<select class="select_custom">
+													<option value="" selected>선택</option>
+													<option value="">영어</option>
+													<option value="">일본어</option>
+													<option value="">중국어</option>
+													<option value="">기타</option>
+												</select>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100">
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" title="응시년월">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100">
+										</td>
+										<td class="td_input">
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">자격증</h5>
+						<div class="resumeedit_btnrow">
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col tbl_fixed scrollx_tbl_sm">
+							<table>
+								<caption>자격정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 30%">
+									<col style="width: auto">
+									<col style="width: 80px">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">자격증명</th>
+										<th scope="col">발급기관</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" title="자격증명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" title="발급기관 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</section>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_footer">
+				<button type="button" class="btn_round btn_lg btn_negative1 wd_115">취소</button>
+				<button type="button" class="btn_round btn_lg btn_positive1 wd_115">등록하기</button>
+			</section>
+			<!-- [pp] //팝업창하단 버튼영역 -->
+		</section>
+		<!-- [pp] // 팝업창 전체 -->
+	</body>
+
+</html>

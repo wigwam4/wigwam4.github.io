@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="충북대학교">
+		<meta name="description" content="충북대학교 CIEAT 시스템 (Chungbuk Integrated Extracurricular Administrative sysTem)">
+		<meta name="copyrigt" content="충북대학교">
+		<meta name="keywords" content="충북대학교, CIEAT, 씨앗시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>충북대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] quick menu -->
+		<nav class="quick_menu">
+			<h5>QUICK MENU</h5>
+			<button type="button" class="btn_quicknav">바로가기 메뉴</button>
+			<ul>
+				<li class="quick_menu1">
+					<a href="javascript:void(0);"><span>비교과 신청</span></a>
+				</li>
+				<li class="quick_menu2">
+					<a href="javascript:void(0);"><span>상담 신청</span></a>
+				</li>
+				<li class="quick_menu3">
+					<a href="javascript:void(0);"><span>채용공고</span></a>
+				</li>
+				<li class="quick_menu4">
+					<a href="javascript:void(0);"><span>공지사항</span></a>
+				</li>
+				<li class="quick_menu5">
+					<a href="https://cia.chungbuk.ac.kr/board/exchange_notice/lists/key/247">
+						<span>
+							국제교류
+							<small>&#40;파견 교환학생&#41;</small>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [pp] //quick menu -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+
+				<!-- [pp] link -->
+				<div class="header_link">
+					<div class="grid_content">
+						<ul>
+							<li><a href="javascript:void(0);" class="admin">관리자페이지로 이동</a></li>
+							<li><a href="javascript:void(0);">충북대학교</a></li>
+							<li><a href="javascript:void(0);">개신누리</a></li>
+							<li><a href="javascript:void(0);">도서관</a></li>
+							<li><a href="javascript:void(0);" class="downfile">시스템 사용법</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [pp] //link -->
+
+				<!-- [pp] logo, login, user info, mobile menu button -->
+				<div class="header_top grid_content">
+					<h1 class="header_logo"><a href="javascript:void(0);"><img src="../../../images/client/common/header_logo.svg" alt="충북대학교 로고"></a></h1>
+					<div class="header_top_inner">
+						<p class="user_info">
+							<span>사용자</span>님 환영합니다
+						</p>
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<!-- [pp] 로그인/로그아웃 :
+<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+-->
+					</div>
+					<button type="button" title="모바일메뉴보기" class="mobile_menubtn">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<!-- [pp] //logo, login, user info, mobile menu button -->
+
+				<!-- [pp] gnb -->
+				<div class="header_bottom">
+					<div class="grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>소개</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">대학의 인재상 및 핵심역량</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 소개</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 마일리지</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>핵심역량인증</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">핵심역량 인증소개</a></li>
+										<li><a href="javascript:void(0);">전공 마일스톤 소개</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진단센터</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">핵심역량진단</a></li>
+												<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습유형진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습유형진단</a></li>
+												<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">대학생활적응진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">대학생활적응진단</a></li>
+												<li><a href="javascript:void(0);">대학생활적응진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습자가진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습자가진단</a></li>
+												<li><a href="javascript:void(0);">학습자가진단 결과</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">워크넷 진단</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>학습관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">교과정보조회</a></li>
+										<li><a href="javascript:void(0);">비교과 신청</a></li>
+										<li><a href="javascript:void(0);">비교과 내역</a></li>
+										<li><a href="javascript:void(0);">자기주도활동</a></li>
+										<li><a href="javascript:void(0);">토론광장</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>인증제</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">독서인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">독서인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">독서인증현황</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">봉사인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">봉사인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">봉사인증현황</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">영어인증제</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>전문상담관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">지도교수 상담</a></li>
+										<li><a href="javascript:void(0);">진로 및 취업 상담</a></li>
+										<li><a href="javascript:void(0);" class="break_all">학생생활상담소</a></li>
+										<li><a href="javascript:void(0);">글쓰기 상담</a></li>
+										<li><a href="javascript:void(0);">창업 상담</a></li>
+										<li><a href="javascript:void(0);">장애지원 상담</a></li>
+										<li><a href="javascript:void(0);">학사 및 기타 상담</a></li>
+										<li><a href="javascript:void(0);">나의 상담 이력</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>채용정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">일반 채용정보</a></li>
+										<li><a href="javascript:void(0);">인재 추천 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 공채속보</a></li>
+										<li><a href="javascript:void(0);">사람인 채용정보</a></li>
+										<li><a href="javascript:void(0);">잡코리아 채용정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진로&middot;취업 정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">진로탐색</a></li>
+										<li><a href="javascript:void(0);" class="break_all">국가직무능력표준 정보</a></li>
+										<li><a href="javascript:void(0);">자격증 정보</a></li>
+										<li><a href="javascript:void(0);">직업방송 동영상</a></li>
+										<li><a href="javascript:void(0);">기업정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>마이페이지</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">마이페이지</a></li>
+										<li><a href="javascript:void(0);">포트폴리오</a></li>
+										<li><a href="javascript:void(0);">인증현황</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>커뮤니티 관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">공지사항</a></li>
+										<li><a href="javascript:void(0);">자료실 관리</a></li>
+										<li><a href="javascript:void(0);">주요 프로그램 및 운영부서</a></li>
+										<li><a href="javascript:void(0);">FAQ</a></li>
+										<li><a href="javascript:void(0);">설문참여</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="sitemap_outer">
+							<a href="javascript:void(0);" class="btn_sitemap">
+								<span></span><span></span><span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //gnb -->
+
+				<!-- [pp] 모바일 화면 menu 클릭시 나오는 배경화면 -->
+				<div class="gnb_bg"></div>
+				<!-- [pp] //모바일 화면 menu 클릭시 나오는 배경화면 -->
+
+			</header>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 상단 비주얼 영역 -->
+			<figure class="subpage_visual visual1">
+				<div class="grid_content">
+					<h2><span>소개</span></h2>
+				</div>
+			</figure>
+			<!-- [pp] //상단 비주얼 영역 -->
+
+			<!-- [pp] lnb 영역 -->
+			<nav class="lnb_wrap">
+				<ul class="lnb_list">
+					<li class="on">
+						<a href="javascript:void(0);">대학의 인재상 및 핵심역량</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 소개</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 마일리지</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- [pp] //lnb 영역 -->
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<section class="section_area">
+					<h3 class="section_tit_lg">건학이념 &#40;교시&#41;</h3>
+					<div class="philosophy_list">
+						<div class="philosophy_list1">
+							<strong>
+								진리
+								<span>眞理</span>
+							</strong>
+							<p>
+								학문의 궁극적 목표
+							</p>
+						</div>
+						<div class="philosophy_list2">
+							<strong>
+								정의
+								<span>正義</span>
+							</strong>
+							<p>
+								올바른 삶의 목표
+							</p>
+						</div>
+						<div class="philosophy_list3">
+							<strong>
+								개척
+								<span>開拓</span>
+							</strong>
+							<p>
+								새로운 시대를 준비하는 창조정신
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="section_area">
+					<h3 class="section_tit_lg">인재상</h3>
+					<div class="unirolemodel_box">
+						대학현장에서 제시한 교육목표와 기본정신을 충실히 이행하고 실철할 수 있는<br/>
+						높은 역량을 갖춘 인재&#40;人材&#41;인 ‘직지&#40;直指&#41;의 창의 정신을 품은 개신인&#40;開新人&#41;’ 으로서,<br/> 
+						건학이념에 따라 진리인, 정의인, 개척인을 지향함
+					</div>
+				</section>
+				<section class="newchange_wrap section_area">
+					<h3 class="section_tit_lg">핵심역량 &#40;New-CHANGE&#41;</h3>
+					<p>
+						직지의 창의 정신을 품은 개신인재가 갖춰야 할 6대 역량으로서 창의성‧휴머니즘, 능동성, 공동체, 글로벌, 전문성을 설정함
+					</p>
+					<div class="newchange_list">
+						<div class="newchange_list1">
+							<p class="newchage_tit">
+								<strong>창의성</strong>
+								<span><i>C</i>reativity</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									새로운 문제를 발견하고, 이에 적합한 다양한 해결방안을 탐색하고, 실행 가능한 최적의 해결방안을 고안해낼 수 있는 역량
+								</p>
+								<ul>
+									<li>문제발견 및 정의</li>
+									<li>정보탐색</li>
+									<li>아이디어 개발</li>
+									<li>아이디어 선정</li>
+									<li>최적의 해결안 제안</li>
+								</ul>
+							</div>
+						</div>
+						<div class="newchange_list2">
+							<p class="newchage_tit">
+								<strong>휴머니즘</strong>
+								<span><i>H</i>umanism</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									조직과 사회의 일원으로서 건강한 가치관과 윤리의식을 갖추고, 인간을 존중하며 법과 제도의 가치를 이해하여 깊이 있게 사고하고 표현하는 능력 
+								</p>
+								<ul>
+									<li>윤리의식</li>
+									<li>인문학적 소양</li>
+								</ul>
+							</div>
+						</div>
+						<div class="newchange_list3">
+							<p class="newchage_tit">
+								<strong>능동성</strong>
+								<span><i>A</i>ctiveness</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									자신의 미래 삶에 대한 비전과 소명에 비추어 목표를 설정하고, 행동 계획을 수립하며, 다양한 상황에서 목표 달성을 위한 행동을 조절하고 지속할 수 있는 역량
+								</p>
+								<ul>
+									<li>지기효능감</li>
+									<li>성장지향성</li>
+									<li>목표지향성</li>
+								</ul>
+							</div>
+						</div>
+						<div class="newchange_list4">
+							<p class="newchage_tit">
+								<strong>공동체</strong>
+								<span><i>N</i>eighbor Minded</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									다른 사람과 효과적으로 소통&middot;협력하고, 타인 및 사회의 필요에 반응하며 더불어 살아갈 수 있는 능력 
+								</p>
+								<ul>
+									<li>의사소통</li>
+									<li>조율&middot;협력</li>
+									<li>공감&middot;배려&middot;봉사</li>
+								</ul>
+							</div>
+						</div>
+						<div class="newchange_list5">
+							<p class="newchage_tit">
+								<strong>글로벌</strong>
+								<span><i>G</i>lobal</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									세계의 한 구성원으로 세계의 다양한 문화, 정치, 경제 등에 대한 관심과 정교한 이해를 바탕으로 문화적으로 다른 배경의 개인 및 집단과 적절하고 효과적인 소통과 교류를 할 수 있는 역량
+								</p>
+								<ul>
+									<li>세계 이해</li>
+									<li>문화 민감성</li>
+									<li>소통 능력</li>
+								</ul>
+							</div>
+						</div>
+						<div class="newchange_list6">
+							<p class="newchage_tit">
+								<strong>전문성</strong>
+								<span><i>E</i>xpertise</span>
+							</p>
+							<div class="newchange_cnt">
+								<p>
+									전공 영역의 고도화된 지식과 기술의 함양을 통해 새로운 전문지식을 창출하고, 지역사회와 국가의 발전을 선도할 수 있는 전문가로서의 역량
+								</p>
+								<ul>
+									<li>전공이론지식</li>
+									<li>전공실무능력</li>
+									<li>전공지식창출</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section_area">
+					<h3 class="section_tit_lg">교육체계도</h3>
+					<a class="openimg" href="../../../images/client/sub/img_edusystem.jpg">
+						<img src="../../../images/client/sub/img_edusystem.jpg" alt="충북대학교 교육체계도">
+						<dl class="hidden">
+							<dt>인재상 :</dt>
+							<dd>직지 直指의 창의 정신을 품은 개신인 開新人</dd>
+							<dt>교시 :</dt>
+							<dd>진리는 창의성과 전문성 역량을 말합니다.</dd>
+							<dd>정의는 휴머니즘과 공동체 역량을 말합니다.</dd>
+							<dd>개척은 능동성과 글로벌 역량을 말합니다.</dd>
+							<dt>CBNU 핵심역량 :</dt>
+							<dd>Creativity : 창의성, Humanism : 휴머니즘</dd>
+							<dd>Activeness : 능동성, Neighbor Minded : 공동체</dd>
+							<dd>Global : 글로벌, Expertise : 전문성</dd>
+							<dt>교육과정 :</dt>
+							<dd>교과과정(교양,전공 등)과 비교과 과정(프로그램, 활동 등)을 통한 핵심역량 함양</dd>
+							<dt>지원시스템 :</dt>
+							<dd>개신누리, LMS(e캠퍼스), CIEAT(씨앗)</dd>
+						</dl>
+					</a>
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<ul class="footer_link">
+					<li><a href="javascript:void(0);" class="privacy">개인정보처리방침</a></li>
+					<li><a href="javascript:void(0);">이메일무단수집거부</a></li>
+				</ul>
+				<ul class="footer_info">
+					<li>
+						&#40;28644&#41; 충북 청주시 서원구 충대로1, 충북대학교 TEL 043)261-2114
+					</li>
+					<li>
+						Copyright 2020 Chungbuk National University &copy; Allrights Reserved
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+	</body>
+
+</html>

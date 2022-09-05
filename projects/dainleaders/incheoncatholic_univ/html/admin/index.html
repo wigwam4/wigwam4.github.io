@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+		<meta name="title" content="인천가톨릭대학교">
+		<meta name="description" content="인천가톨릭대학교 관리자 화면">
+		<meta name="copyrigt" content="인천가톨릭대학교">
+		<meta name="keywords" content="인천가톨릭대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>인천가톨릭대학교 관리자</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../images/favicon.png">
+		<link rel="shortcut icon" href="../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] 아이콘글꼴/font-awesome -->
+		<link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css">
+		<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대응 -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+		<!-- [pp] css -->
+		<link type="text/css" rel="stylesheet" href="../../plugin/bootstrap/dist/css/bootstrap.css">
+		<link type="text/css" rel="stylesheet" href="../../plugin/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+		<link type="text/css" rel="stylesheet" href="../../plugin/Ionicons/css/ionicons.min.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/src/AdminLTE.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/src/skins/_all-skins.css">
+		<link type="text/css" rel="stylesheet" href="../../css/jquery.mCustomScrollbar.css">
+		<link type="text/css" rel="stylesheet" href="../../css/client/src/select2.css">
+		<link type="text/css" rel="stylesheet" href="../../css/dataTables/select.dataTables.min.css">
+		<link type="text/css" rel="stylesheet" href="../../css/dataTables/dataTables.bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../../css/dl_global.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/dl_common.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/dl_custom.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/dl_table.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/dl_popup.css">
+		<link type="text/css" rel="stylesheet" href="../../css/admin/dl_ui.css">
+		<!-- [pp] //css -->
+
+		<!-- js -->
+		<script src="../../plugin/jquery/dist/jquery.min.js"></script>
+		<script src="../../plugin/jquery-ui/jquery-ui.min.js"></script>
+		<script src="../../plugin/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../plugin/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+		<script src="../../plugin/fastclick/lib/fastclick.js"></script>
+		<script src="../../js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../js/admin/src/adminlte.js"></script>
+		<script src="../../js/admin/src/demo.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/buttons.flash.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/jszip.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/buttons.html5.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/dataTables.select.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/pdfmake.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables/buttons.print.min.js"></script>
+		<script src="../../js/client/src/select2.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../../js/html5shiv.js"></script>
+		<script src="../../js/IE9.js"></script>
+		<script src="../../js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../js/admin/pp_ui.js"></script>
+		<!-- //js -->
+	</head>
+
+	<body class="hold-transition login-page">
+
+		<!--[pp] IE10 이하 버전 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // IE10 이하 버전 알림 -->
+	
+		<div class="login-box">
+			<div class="login-logo">
+				<a href="main.html"><img src="../../images/admin/header_logo.svg" alt="인천가톨릭대학교 로고"></a>
+			</div>
+			<!-- /.login-logo -->
+			<div class="login-box-body">
+				<form>
+					<div class="form-group has-feedback">
+						<input type="email" class="form-control" placeholder="ID">
+						<span class="glyphicon glyphicon-envelope glyphicon-user"></span>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="password" class="form-control" placeholder="Password">
+						<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+					</div>
+					<div class="row">
+						<div class="col-xs-8">
+							<p class="ad_input_row">
+								<input type="checkbox" class="check" id="check1">
+								<label class="check_label" for="check1">아이디 저장</label>
+							</p>
+						</div>
+						<!-- /.col -->
+						<div class="col-xs-4">
+							<button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+						</div>
+						<!-- /.col -->
+					</div>
+				</form>
+			</div>
+			<!-- /.login-box-body -->
+		</div>
+		
+	</body>
+
+</html>

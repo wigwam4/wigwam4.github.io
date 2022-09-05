@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="인천가톨릭대학교">
+		<meta name="description" content="인천가톨릭대학교 LMS 시스템">
+		<meta name="copyrigt" content="인천가톨릭대학교">
+		<meta name="keywords" content="인천가톨릭대학교, LMS, 학과관리, 대학, 대학생, 교과관리시스템, 비교과관리시스템">
+		<title>인천가톨릭대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/client/src/swiper.css">
+		<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/client/src/flip.min.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/flip.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+	</head>
+	<body>
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="btn_browseralert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+				<div class="grid_content">
+					<!-- [pp] logo -->
+					<h1 class="header_logo">
+						<a href="javascript:void(0);">
+							<img src="../../../images/client/common/header_logo.svg" alt="인천가톨릭대학교 로고">
+						</a>
+					</h1>
+					<!-- [pp] logo -->
+					<!-- [pp] gnb -->
+					<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+						<ul class="gnb_list">
+							<li class="gnb_1depth">
+								<a href="javascript:void(0);">내 강의 현황</a>
+							</li>
+							<li class="gnb_1depth">
+								<a href="javascript:void(0);">교과 과정</a>
+							</li>
+							<li class="gnb_1depth">
+								<a href="javascript:void(0);">비교과 과정</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- [pp] //gnb -->
+
+					<p class="user_info">
+						<span>김인천</span> &#40;님&#41; 환영합니다.
+					</p>
+					<a href="javascript:void(0);" class="btn_log btn_login">LOGIN</a>
+					<!-- [pp] 로그아웃 버튼 : 
+<a href="javascript:void(0);" class="btn_log btn_logout">LOGOUT</a>
+-->
+					<div class="info_link">
+						<a href="javascript:void(0);" class="btn_infolink">링크 더보기</a>
+						<ul>
+							<li>
+								<a href="javascript:void(0);">관리자페이지로 이동</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">인천가톨릭대학교</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">팁스</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">셰르파</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!-- [pp] //header -->
+
+			<!-- [pp] lnb -->
+			<nav class="lnb_wrap" tabindex="0">
+				<ul class="grid_content">
+					<li class="on">
+						<a href="javascript:void(0);">내 강좌 현황</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">교과 이수 내역</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">비교과 이수 내역</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- [pp] //lnb -->
+
+			<!-- [pp] 메인컨텐츠 영역 -->
+			<div id="container_skip" class="contents_wrap grid_content" tabindex="0">
+				<section class="section_lg">
+					<div class="infotop_box">
+						<h4>
+							글로벌 경제의 이해 
+							<span>Global Economy</span>
+						</h4>
+						<div class="inner grid_row_sm">
+							<div class="grid_col col_xl_6 col_xs_2">
+								<p class="dp_inlinefix">
+									<span class="label_txt bg_lightseagreen">전공필수</span>
+									<span class="label_txt bg_lightseagreen">3학점</span>
+								</p>
+							</div>
+							<div class="grid_col col_xl_6 col_xs_2">
+								<p class="name">
+									<i class="i_profile i_profile_green mg_r5"></i>김다인 교수
+								</p>
+							</div>
+						</div>
+						<div class="inner grid_row_sm">
+							<div class="grid_col col_xl_3 col_md_3 col_sm_4 mg_b0">
+								<p class="txt_dot">
+									<strong class="tit">수강학과</strong>
+									경영학과
+								</p>
+								<p class="txt_dot">
+									<strong class="tit">강의실</strong>
+									가브리엘관 강의실 &#40;B126&#41;
+								</p>
+							</div>
+							<div class="grid_col col_xl_3 col_md_3 col_sm_4 mg_b0">
+								<p class="txt_dot">
+									<strong class="tit">강의시간</strong>
+									3시간 
+								</p>
+								<p class="txt_dot">
+									<strong class="tit">수강인원</strong>
+									33명 / 35명
+								</p>
+							</div>
+							<div class="grid_col col_xl_3 col_md_6 mg_b0">
+								<p class="txt_dot">
+									<strong class="tit">연락처</strong>
+									<a href="tel:010-1234-5678" class="hover">010-1234-5678</a>
+								</p>
+								<p class="txt_dot">
+									<strong class="tit">E-mail</strong>
+									<a href="mailto:thisisfake@gmail.com" class="hover break_all">thisisfake@gmail.com</a>
+								</p>
+							</div>
+						</div>
+						<p class="mg_t20 font_white">
+							※ 시간 차이가 있을 수 있으니, 시간 여유를 가지고 학습 진행/과제 제출해 주세요.
+						</p>
+					</div>
+					
+					<!-- [pp] 카운트다운 : pQuina 플러그인 사용 : https://pqina.nl/flip/ -->
+					<div class="tick" data-did-init="handleTickInit">
+						<div data-layout="horizontal center fit">
+							<span data-key="hours" data-transform="pad(00)" data-view="flip"></span>
+							<span data-key="minutes" data-transform="pad(00)" data-view="flip"></span>
+							<span data-key="seconds" data-transform="pad(00)" data-view="flip"></span>
+						</div>
+						<!-- [pp] 에러문구 : 
+						<div style="padding: 8px 10px; color: #3a3a3a; text-align: center; background: #f2f2f2;">제출 기간이 아닙니다</div>
+						-->
+					</div>
+					<!-- [pp] //카운트다운 -->
+					
+				</section>
+				<section class="section_lg">
+					<h3 class="section_tit_lg">출결 기준</h3>
+					<div class="infotop_list">
+						<p>
+							<span class="label_txt bg_lightblue wd_125">출결 인정 기준</span>
+							<span>
+								<span class="font_blue medium" style="vertical-align: 0;">출석인정기간&#40;출석&#41;</span> / <span class="font_yellow medium" style="vertical-align: 0;">지각인정기간&#40;지각&#41;</span> 에만 출결처리 및 시청 진도가 반영 됩니다.
+							</span>
+						</p>
+						<p>
+							<span class="label_txt bg_lightblue wd_125">중복 로그인 방지</span>
+							학습 중 다른 장치에서 중복 로그인 할 경우 진도율이 저장되지 않습니다. 
+						</p>
+					</div>
+					<div class="tbl tbl_row tbl_fixed">
+						<table>
+							<caption>ui 가이드 스타일 정의</caption>
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:80%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">
+										강의 기간
+									</th>
+									<td class="ta_l">
+										2021-03-03 00:00:00 ~ 2021-03-05 00:09:59
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										출석 인정 기간/진도
+									</th>
+									<td class="ta_l">
+										2021-03-03 00:00:00 ~ 2021-03-05 00:09:59
+										<p class="mg_t5 font_gray">
+											※ 동영상 100% 시청 시 출석 인정 됩니다.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										지각 인정 기간
+									</th>
+									<td class="ta_l">
+										2021-03-03 00:00:00 ~ 2021-03-05 00:09:59
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										다시보기
+									</th>
+									<td class="ta_l">
+										불가능
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section class="section_lg">
+					<h3 class="section_tit_lg">공통 활동</h3>
+					<ul class="link_box goto_box grid_row_sm">
+						<li class="lms08_ntf grid_col col_xl_2_1 col_md_2 col_sm_2 col_xs_2">
+							<a href="javascript:void(0);">
+								<p>공지사항</p>
+							</a>
+						</li>
+						<li class="lms08_rfr grid_col col_xl_2_1 col_md_2 col_sm_2 col_xs_2">
+							<a href="javascript:void(0);">
+								<p>강의자료</p>
+							</a>
+						</li>
+						<li class="lms08_svy grid_col col_xl_2_1 col_md_2 col_sm_2 col_xs_2">
+							<a href="javascript:void(0);">
+								<p>설문</p>
+							</a>
+						</li>
+						<li class="lms08_qna grid_col col_xl_2_1 col_md_2 col_sm_2 col_xs_2">
+							<a href="javascript:void(0);">
+								<p>Q&amp;A</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="section_lg">
+					<h3 class="section_tit_lg">출석 현황</h3>
+					<div class="tbl tbl_row tbl_fixed scrollx_tbl_sm">
+						<table>
+							<caption>출석현황 목록</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="col">1주차</th>
+									<th scope="col">2주차</th>
+									<th scope="col">3주차</th>
+									<th scope="col">4주차</th>
+									<th scope="col">5주차</th>
+									<th scope="col">6주차</th>
+									<th scope="col">7주차</th>
+									<th scope="col">8주차</th>
+									<th scope="col">9주차</th>
+									<th scope="col">10주차</th>
+								</tr>
+								<tr>
+									<td>지각</td>
+									<td>지각</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+								</tr>
+								<tr>
+									<th scope="col">11주차</th>
+									<th scope="col">12주차</th>
+									<th scope="col">13주차</th>
+									<th scope="col">14주차</th>
+									<th scope="col">15주차</th>
+									<th scope="col">16주차</th>
+								</tr>
+								<tr>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+									<td>출석</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section class="section_lg">
+					<h3 class="section_tit_lg">강의 목록</h3>
+					<ul id="lecture1" class="lecture_wrap">
+						<!-- [pp] 클래스 on 으로 아코디언 on/off 제어 -->
+						<li class="on">
+							<div class="lecture_tit">
+								<span class="label_txt bg_lightblue">1주차</span>
+								경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장 경제 흐름 및 글로벌 시장
+								<i class="label_rect mg_l5 bg_yellow">예정</i>
+								<!-- [pp] 상태값 : 
+								<i class="label_rect mg_l5 bg_yellow">예정</i>
+								<i class="label_rect mg_l5 bg_lightred">만료</i>
+								-->
+								<span class="date">2020.03.02 ~ 2020.03.06</span>
+								<span class="mark">열기</span>
+							</div>
+							<div class="lecture_cnt">
+								<section class="section_sm">
+									<h4 class="section_tit_md">소개</h4>
+									<div class="editor_area">관지자가 입력한 소개 내용이 보여집니다.
+									
+									에디터 영역입니다. 
+									스페이스, 엔터 모두 적용됩니다.</div>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">공지사항</h4>
+									<ul class="lecture_list">
+										<li class="lms08_ntf">
+											제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+											<!-- [pp] 비활성화 버튼 : 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+											-->
+										</li>
+										<li class="lms08_ntf">
+											제목입니다
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">강의 영상</h4>
+									<ul class="lecture_list">
+										<li class="lms08_mov">
+											제목입니다
+											<span class="font_gray va_t break_all">
+												&#40;file_example_MP4_1920_18MG(1).mp4&#41;
+											</span>
+											<span class="mg_l10 font_yellow va_t">
+												02월 01일 00:00 ~ 02월 05일 00:10
+											</span>
+											<p class="data_list">
+												<span>
+													출석인정기간 : 02월 01일 00:00 ~ 02월 07일 23:10
+												</span>
+												<span>
+													재생시간 : 30초
+												</span>
+											</p> 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">영상보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">과제 제출</h4>
+									<ul class="lecture_list">
+										<li class="lms08_tsk">
+											제목입니다 
+											<span class="mg_l10 font_yellow va_t">
+												02월 01일 00:00 ~ 02월 05일 00:10
+											</span>
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">과제보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">강의자료</h4>
+									<ul class="lecture_list">
+										<li class="lms08_rfr">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">다운로드</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">시험/퀴즈</h4>
+									<ul class="lecture_list">
+										<li class="lms08_exm">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">위키토론</h4>
+									<ul class="lecture_list">
+										<li class="lms08_dsc">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">게시판</h4>
+									<ul class="lecture_list">
+										<li class="lms08_brd">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">Q&amp;A</h4>
+									<ul class="lecture_list">
+										<li class="lms08_qna">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">URL</h4>
+									<ul class="lecture_list">
+										<li class="lms08_url">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">설문</h4>
+									<ul class="lecture_list">
+										<li class="lms08_svy">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">교과</h4>
+									<ul class="lecture_list">
+										<li class="lms09_scr">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">비교과</h4>
+									<ul class="lecture_list">
+										<li class="lms09_ncr">
+											제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</li>
+						<li>
+							<div class="lecture_tit">
+								<span class="label_txt bg_lightblue">2주차</span>
+								경제 흐름 및 글로벌 시장
+								<i class="label_rect mg_l5 bg_yellow">예정</i>
+								<span class="date">2020.03.02 ~ 2020.03.06</span>
+								<span class="mark">열기</span>
+							</div>
+							<div class="lecture_cnt">
+								<section class="section_sm">
+									<h4 class="section_tit_md">소개</h4>
+									<div class="editor_area">관지자가 입력한 소개 내용이 보여집니다.
+
+										에디터 영역입니다. 
+										스페이스, 엔터 모두 적용됩니다.</div>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">공지사항</h4>
+									<ul class="lecture_list">
+										<li class="lms08_ntf">
+											제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+											<!-- [pp] 비활성화 버튼 : 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+											-->
+										</li>
+										<li class="lms08_ntf">
+											제목입니다
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</li>
+						<li>
+							<div class="lecture_tit">
+								<span class="label_txt bg_lightblue">3주차</span>
+								경제 흐름 및 글로벌 시장
+								<i class="label_rect mg_l5 bg_lightred">만료</i>
+								<span class="date">2020.03.02 ~ 2020.03.06</span>
+								<span class="mark">열기</span>
+							</div>
+							<div class="lecture_cnt">
+								<section class="section_sm">
+									<h4 class="section_tit_md">소개</h4>
+									<div class="editor_area">관지자가 입력한 소개 내용이 보여집니다.
+
+										에디터 영역입니다. 
+										스페이스, 엔터 모두 적용됩니다.</div>
+								</section>
+								<section class="section_sm">
+									<h4 class="section_tit_md">강의 영상</h4>
+									<ul class="lecture_list">
+										<li class="lms08_ntf">
+											제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 제목입니다 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue">상세보기</a>
+											<!-- [pp] 비활성화 버튼 : 
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+											-->
+										</li>
+										<li class="lms08_ntf">
+											제목입니다
+											<a href="javascript:void(0);" class="btn_round btn_sm btn_bo_blue btn_disabled">상세보기</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<!-- [pp] //메인컨텐츠 영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+		<!-- [pp] 푸터 -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<p class="footer_top">
+					<a href="javascript:void(0);">개인정보처리방침</a>
+					<a href="javascript:void(0);">이메일무단수집거부</a>
+				</p>
+				<div class="footer_info">
+					<dl>
+						<dt>
+							송도국제캠퍼스
+						</dt>
+						<dd>
+							&#40;우&#41;21987 인천광역시 연수구 송도문화로120번길 20  인천가톨릭대학교 대학본부&middot;조형예술대학&middot;간호대학
+						</dd>
+						<dd>
+							T 032.830.7000
+						</dd>
+						<dd>
+							F 032.830.7038
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							강화캠퍼스
+						</dt>
+						<dd>
+							&#40;우&#41;23058 인천광역시 강화군 양도면 고려왕릉로 53-1 인천가톨릭대학교 신학대학
+						</dd>
+						<dd>
+							T 032.930.8000
+						</dd>
+						<dd>
+							F 032.937.8118
+						</dd>
+					</dl>
+				</div>
+				<p class="copyright">
+					COPYRIGHT &copy; 2020 INCHEON CATHOLIC UNIVERSITY. All Rights Reserved.
+				</p>
+			</div>
+			<a href="javascript:void(0);" class="btn_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //푸터 -->
+		<!-- [pp] 시간 카운트다운 -->
+		<script>
+			// Uncomment to set labels to different language ( in this case Dutch )
+			/*
+			var locale = {
+				YEAR_PLURAL: 'Jaren',
+				YEAR_SINGULAR: 'Jaar',
+				MONTH_PLURAL: 'Maanden',
+				MONTH_SINGULAR: 'Maand',
+				WEEK_PLURAL: 'Weken',
+				WEEK_SINGULAR: 'Week',
+				DAY_PLURAL: 'Dagen',
+				DAY_SINGULAR: 'Dag',
+				HOUR_PLURAL: 'Uren',
+				HOUR_SINGULAR: 'Uur',
+				MINUTE_PLURAL: 'Minuten',
+				MINUTE_SINGULAR: 'Minuut',
+				SECOND_PLURAL: 'Seconden',
+				SECOND_SINGULAR: 'Seconde',
+				MILLISECOND_PLURAL: 'Milliseconden',
+				MILLISECOND_SINGULAR: 'Milliseconde'
+			};
+
+			for (var key in locale) {
+				if (!locale.hasOwnProperty(key)) { continue; }
+				tick.setConstant(key, locale[key]);
+			}
+			*/
+			
+			function handleTickInit(tick) {
+				// start interval (default is 1 second) and update clock with current time
+				Tick.helper.interval(function(){
+					var d = Tick.helper.date();
+					tick.value = {
+						sep: '.',
+						hours: d.getHours(),
+						minutes: d.getMinutes(),
+						seconds: d.getSeconds()
+					};
+				});
+			}
+		</script>
+		<!-- [pp] //시간 카운트다운 -->
+	</body>
+
+</html>

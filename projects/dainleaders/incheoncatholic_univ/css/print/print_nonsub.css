@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'NanumMyeongjo';
+	font-weight: normal;
+	src: url('../../font/NanumMyeongjo.eot');
+	src: url('../../font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+		local(NanumMyeongjo), url('../../../font/NanumMyeongjo.woff') format('woff'),
+		url('../../../font/NanumMyeongjo.ttf') format('truetype');
+}
+
+
+
+@media print {
+	@page {
+		size: portrait;
+		margin: 0;
+	}
+	html, body {
+		height: 99%;
+		overflow: hidden;
+	}
+	div.print_banner {
+		display: none;
+	}
+	div.page { 
+		width: initial; min-height: initial;
+		margin: 0;
+		box-shadow: initial; background: initial; border: initial;
+		page-break-after: avoid;
+		border: none;
+	}
+}
+@media print and (color) {
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}
+
+* {
+	margin: 0; padding: 0;
+	line-height: 150%;
+	font-weight: normal;
+	/*color: #313131;*/
+	word-break: keep-all;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img, button {
+	outline: 0;
+	border: 0;
+}
+table{ border-collapse:collapse; border-spacing:0px; }
+table caption{ font-size:0; height:0; text-indent:-9999px; }
+ul li{list-style: none;}
+
+
+.print_banner {
+	position: relative;
+	margin-bottom: 60px;
+	width: 100%; height: 50px;
+	background: #ebf4f8;
+}
+.print_banner button {
+	position: absolute; top: 50%; right: 10px;
+	padding: 8px 20px 8px 44px;
+	color: #fff; font-size: 15px;
+	background: #289dd3 url(../../images/client/sub/btn_allprint.png) no-repeat 16px 10px; background-size: 20px; 
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.page {
+	width: 21cm;
+	height: 29.7cm;
+	padding: 0.4cm;
+	margin: 0cm auto;
+	background: #fff;
+	border: 1px solid #3a3a3a;
+}
+.page_wrapper {
+	height: 100%;
+    padding: 2.6cm 2cm 2cm;
+	position: relative; overflow: hidden;
+	font-size: 16px; font-family: 'NanumMyeongjo', serif;
+}
+
+
+
+/* 비교과 이수 증명서 */
+.prin_title {
+	margin-bottom: 80px;
+	text-align: center;
+}
+.prin_title h1{
+	font-size: 1.8rem; font-weight: bold;
+	line-height: 1.5em; letter-spacing: 4px; 
+}
+.prin_profile {
+	margin-left: 60%; margin-bottom: 100px;
+}
+.prin_profile table{
+	width: 100%; 
+}
+.prin_profile table th, .prin_profile table td {
+	padding: 2px 0;
+	text-align: left; 
+}
+.prin_profile .print_name span{
+	padding: 0 16px;
+}
+.prin_contents {
+	text-indent: 15px; text-align: justify; word-break: keep-all;
+}
+.prin_contents p {
+	margin-bottom: 30px;
+	line-height: 1.7em; 
+}
+.prin_contents table {
+	width: 100%;
+	text-align: left;
+}
+.prin_contents tr, .prin_contents th {
+	border: 1px solid #000;
+}
+.prin_contents th, .prin_contents td {
+	padding: 6px;
+}
+.prin_day_title {
+	width: 100%;
+	padding: 130px 0 130px;
+	text-align: center;
+}
+.prin_day_title p{
+	display: inline-block;
+}
+.prin_day_title p span {
+	padding: 0 16px;
+}
+.prin_stamp{
+	position: relative; 
+	text-align: center; 
+}
+.prin_stamp p {
+	font-size: 1.4rem; font-weight: bold; letter-spacing: 4px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

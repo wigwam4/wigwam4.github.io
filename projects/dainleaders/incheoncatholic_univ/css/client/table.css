@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/*  scrollbar */
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+	margin-bottom: 8px;
+}
+
+/* 모바일에서 세로방향 터치불가 fix */
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox {
+	-ms-touch-action: pan-x;
+	touch-action: pan-x;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+	-ms-touch-action: auto;
+	touch-action: auto;
+}
+.mCustomScrollBox.mCSB_horizontal {
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+/*.mCustomScrollBox.mCSB_horizontal { touch-action: pan-y pinch-zoom; }*/
+
+.tbl {
+	position: relative;
+}
+.tbl table{
+	width: 100%;
+	text-align: center; font-size: 1.5rem;
+	background-color: #fff;
+	border-bottom: 1px solid #dadde4;
+}
+.tbl table thead th {
+	padding: 8px;
+	color: #393636; text-align: center; font-weight: 500;
+	background-color: #f4f6f9;
+}
+.tbl table tbody th {
+	padding: 8px;
+	color: #393636; text-align: center;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
+}
+.tbl table tbody td {
+	padding: 8px;
+	color: #575555; text-align: center;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	-o-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+.tbl_col table {
+	border-top: 2px solid #294269;
+	border-bottom: 0;
+}
+.tbl_col table thead th {
+	padding: 12px 0;
+	background-color: #f4f6f9;
+	border: 1px solid #dadde4;
+}
+.tbl_col table th, .tbl_col table td {
+	border: 1px solid #dadde4;
+}
+
+.tbl_row table th, .tbl_row table td {
+	border: 1px solid #dadde4;
+}
+.tbl_row tbody th {
+	font-weight: 500;
+	background-color: #f4f6f9;
+}
+
+.tbl_calendar table {
+	border-bottom: 0;
+}
+.tbl_calendar table thead th {
+	padding: 4px;
+	background-color: #fbfbfb;
+	border: 1px solid #d6dadf;
+}
+.tbl_calendar table th, .tbl_calendar table td {
+	border: 1px solid #d6dadf;
+}
+
+/* 가로 스크롤 테이블 */
+.mCSB_container {
+	width: 100% !important;
+}
+.scrollx_tbl_sm {
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_sm .mCSB_container {
+	min-width: 500px !important;
+}
+.scrollx_tbl_sm table{
+	width: 100%;
+	min-width: 500px;
+}
+.scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_md .mCSB_container {
+	min-width: 800px !important;
+}
+.scrollx_tbl_md table{
+	min-width: 800px;
+}
+.scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_lg .mCSB_container {
+	min-width: 1000px !important;
+}
+.scrollx_tbl_lg table{
+	min-width: 1000px;
+}
+.scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xl .mCSB_container {
+	min-width: 1200px !important;
+}
+.scrollx_tbl_xl table{
+	min-width: 1200px;
+}
+.scrollx_tbl_xxl{
+	width: 100%;
+	overflow-x: auto;
+}
+.scrollx_tbl_xxl table{
+	min-width: 1600px;
+}
+
+.scrollx_tbl_row .mCustomScrollBox {
+	padding-right: 8px;
+}
+.scrollx_tbl_row .mCSB_scrollTools {
+	width: 4px;
+}
+
+.tbl_hover tbody tr:hover {
+	background-color: #dbecf6;
+	cursor: pointer;
+}
+
+.tbl_fixed table {
+	table-layout: fixed;
+}
+.td_input {
+	padding: 5px !important;
+}
+
+/* a.td_link 상위 tr에 클래스 on 추가  */
+.td_link {
+	display: block;
+}
+.tbl table tbody tr.on th, .tbl table tbody tr.on td {
+	color: #384ebc; font-weight: 600; 
+}
+.tbl table tbody tr.on th {
+	background: rgba(56,78,188,0.2);
+}
+
+@media screen and (max-width:767px) {
+	.tbl_time {
+		padding: 10px;
+	}
+}

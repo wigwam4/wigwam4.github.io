@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+body {
+	padding-right: 0 !important; /* 모달창 오픈시 padding-right 쌓이는 오류 제거 */
+}
+.modal-open, .modal {
+	padding-right: 0px !important;
+}
+.modal-header {
+	border-bottom-color: #ddd;
+}
+.modal-title {
+	padding-right: 20px;
+}
+.modal-header .close {
+	position: relative; z-index: 1;
+}
+.modal-footer {
+	border-top-color: #ddd;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ad_tit_small{
+	width: 100%;
+	margin: 5px 0 3px 0; padding: 10px 0 0 3px;
+	font-size: 14px; font-family: GyeonggiTitle, Apple SD Gothic Neo, Arial, Tahoma, sans-serif; letter-spacing: -0.05em;
+	border-top: 1px dotted rgba(0,0,0,0.1);
+	-webkit-transform: skew(-0.03deg);
+	-moz-transform: skew(-0.03deg);
+	-o-transform: skew(-0.03deg);
+	transform: skew(-0.03deg);
+
+}
+
+.modal-xl {
+	width: 1200px;
+}
+.col-sm-5_1 {
+	width:44%;
+}
+.col-sm-1_1 {
+	width:2%;
+}
+/* CAT 진단 결과 */
+.ad_catresult_wrap {
+	padding: 10px; border: 1px solid #ddd;
+	font-size: 14px; line-height: 1.5em;
+}
+
+.ad_result_txt {
+	padding: 10px; margin: 10px 0 30px;
+	word-break: keep-all;
+	border: 1px solid #ddd;
+}
+.ad_graphbar_wrap2 ul li {
+	height: 40px;
+	border: none;
+}
+.ad_graphbar_wrap2 ul li {
+	opacity: 0.3;
+}
+.ad_graphbar_wrap2 p {
+	top: 10px;
+}
+
+/* 핵심역량 안내 */
+.capaintro_list {
+	margin-bottom: 10px;
+	text-align: center;
+	border: 1px solid #d7d7d7;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.capaintro_list dt {
+	padding: 20px;
+	height: 210px;
+	font-weight: 400; line-height: 1.6em;
+}
+.capaintro_list dt strong {
+	display: block;
+	margin-bottom: 15px;
+	font-family: GyeonggiTitle, sans-serif; font-size: 17px; font-weight: 600; letter-spacing: -0.05em; line-height: 1em;
+	-webkit-transform: skew(-0.03deg);
+	-moz-transform: skew(-0.03deg);
+	-o-transform: skew(-0.03deg);
+	transform: skew(-0.03deg);
+}
+.capaintro_list.capa1 dt strong {
+	color: #ff8b43;
+}
+.capaintro_list.capa2 dt strong {
+	color: #fc6f58;
+}
+.capaintro_list.capa3 dt strong {
+	color: #3a4d90;
+}
+.capaintro_list.capa4 dt strong {
+	color: #23ae89;
+}
+.capaintro_list.capa5 dt strong {
+	color: #ffb820;
+}
+.capaintro_list.capa6 dt strong {
+	color: #a186be;
+}
+.capaintro_list dt strong::before {
+	content: "";
+	display: block;
+	margin: 0 auto 10px;
+	width: 50px; height: 50px;
+	background-color: #f2f2f2; background-repeat: no-repeat; background-position: center; background-size: contain;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.capaintro_list.capa1 dt strong::before {
+	background-image: url(../../images/admin/icon_capa1.png);
+}
+.capaintro_list.capa2 dt strong::before {
+	background-image: url(../../images/admin/icon_capa2.png);
+}
+.capaintro_list.capa3 dt strong::before {
+	background-image: url(../../images/admin/icon_capa3.png);
+}
+.capaintro_list.capa4 dt strong::before {
+	background-image: url(../../images/admin/icon_capa4.png);
+}
+.capaintro_list.capa5 dt strong::before {
+	background-image: url(../../images/admin/icon_capa5.png);
+}
+.capaintro_list.capa6 dt strong::before {
+	background-image: url(../../images/admin/icon_capa6.png);
+}
+.capaintro_list dd {
+	position: relative; left: -1px; bottom: -1px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0 5%;
+	width: calc( 100% + 2px ); height: 60px;
+	align-items: center; justify-content: center;
+	color: #3a3a3a; 
+	border: 1px solid #d7d7d7;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.capaintro_list.capa1 dd {
+	background: #faf6f3;
+}
+.capaintro_list.capa2 dd {
+	background: #f7efee;
+}
+.capaintro_list.capa3 dd {
+	background: #edf0f9;
+}
+.capaintro_list.capa4 dd {
+	background: #eff7f5;
+}
+.capaintro_list.capa5 dd {
+	background: #f7f5e7;
+}
+.capaintro_list.capa6 dd {
+	background: #f0ecf4;
+}
+
+
+
+
+
+@media all and (max-width:1024px) {
+	.modal-xl {
+		width: 96%;
+	}
+}
+
+@media all and (max-width:480px) {
+	
+	/* 핵심역량 안내 480 */
+	.capaintro_list dt {
+		padding: 15px 20px;
+		height: auto;
+	}
+	
+	
+	
+}

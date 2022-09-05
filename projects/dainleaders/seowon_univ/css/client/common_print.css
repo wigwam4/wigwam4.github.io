@@ -1,0 +1,168 @@
+@media print {
+	@page {
+		size: portrait;
+		width: 21cm; height: 29.7cm;
+	}
+	* {
+		/* 배경그래픽 표시 */
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	div.page { 
+		width: initial; min-height: initial; height: auto;
+		margin: 0; padding: 0;
+		box-shadow: initial; background: initial; border: none;
+	}
+	/* apexchart 테두리 제거 */
+	.apexcharts-canvas .apexcharts-grid line {
+		display: none;
+	}
+}
+
+.page {
+	position: relative;
+	margin: 50px auto; padding: 1cm;
+	width: 21cm; min-height: 29.7cm;
+	background: #fff;
+	border: 1px solid #3a3a3a;
+}
+.page table {
+	border-collapse: separate !important;
+	border-bottom: none;
+}
+.page th, .page td {
+	padding: 6px 0;
+	font-size: 14px;
+}
+.page th:nth-child(1) {
+	border-left: 1px solid #d0ccc9;
+}
+.page thead tr th {
+	border: none;
+	border-bottom: 1px solid #d0ccc9;
+	border-right: 1px solid #d0ccc9;
+}
+.page thead tr:first-child th {
+	border-top: 1px solid #d0ccc9;
+}
+.page tbody tr th, .page tfoot tr th {
+	border: none;
+	border-bottom: 1px solid #d0ccc9;
+	border-right: 1px solid #d0ccc9;
+}
+.page tbody tr td, .page tfoot tr td {
+	border: none;
+	border-bottom: 1px solid #d0ccc9;
+	border-right: 1px solid #d0ccc9;
+}
+.page_break {
+	page-break-inside: avoid;
+	page-break-before: auto;
+}
+
+/* 핵심역량진단 결과 */
+.testresult_cover {
+	position: relative; z-index: 1;
+	padding-top: 50px;
+}
+.testresult_cover::before {
+	content: "";
+	position: absolute; top: 0; right: 0;
+	display: block;
+	width: 166px; height: 48px;
+	background: url(../../images/client/print/img_logo.png) no-repeat right top; background-size: contain;
+}
+.testresult_cover h3 {
+	margin-bottom: 80px;
+	font-family: NetMarble, sans-serif; font-size: 4rem; letter-spacing: -0.05em; 
+	-webkit-transform: skew(-0.03deg);
+	-moz-transform: skew(-0.03deg);
+	-o-transform: skew(-0.03deg);
+	transform: skew(-0.03deg);
+}
+.testresult_cover h3 span {
+	display: block;
+	font-size: 1.7rem; letter-spacing: inherit; line-height: 1em;
+}
+.testresult_cover h3 span:nth-child(3) {
+	margin-bottom: 5px;
+}
+.testresult_cover strong {
+	display: block;
+	letter-spacing: inherit; 
+}
+.testresult_cover .txt {
+	position: relative;
+	margin-bottom: 80px;
+	font-size: 1.6rem; line-height: 1.8em;
+}
+.testresult_cover .txt::before {
+	position: absolute; top: 50%; left: 50%; z-index: -1;
+	content: "";
+	display: block;
+	margin-top: -150px; margin-left: -150px;
+	width: 300px; height: 300px;
+	background: url(../../images/client/print/bg_print.png) no-repeat center; background-size: contain;
+	opacity: 0.3;
+}
+.testresult_cover .tbl_tit {
+	display: block;
+	margin-bottom: 15px;
+	color: #a90055; font-family: NetMarble, sans-serif; font-size: 1.9rem; font-weight: 500; letter-spacing: -0.05em; text-align: center;
+	-webkit-transform: skew(-0.03deg);
+	-moz-transform: skew(-0.03deg);
+	-o-transform: skew(-0.03deg);
+	transform: skew(-0.03deg);
+}
+.testresult_cover .tbl {
+	margin: 0 auto;
+	width: 70%;
+}
+/* 학습역량진단 결과해석 */
+.col_xl_12 {
+	text-align: center;
+}
+.col_xl_12 .grid_col:last-child {
+	margin-bottom: 0px;
+}
+.graph_box.tscore {
+	height: 330px;
+}
+.learning_opinion {
+	margin-top: 10px;
+	padding: 10px 15px 15px;
+}
+.learn_capa_result {
+	margin-bottom: 10px;
+}
+.learn_capa_result .capa_name {
+	display: block;
+	padding: 10px 15px 10px;
+	line-height: inherit;
+}
+.learn_capa_result .capa_name strong {
+	margin: 0 0 5px;
+	width: 100%;
+	display: block;
+	font-size: 1.8rem;
+}
+.learn_capa_result .capa_name span {
+	font-size: 1.8rem;
+}
+.learn_capa_result ul {
+	padding: 10px 15px 15px;
+}
+.learn_capa_result ul li {
+	margin-bottom: 15px;
+}
+.learn_capa_result ul li span {
+	display: block;
+	margin-right: 0;
+	margin-bottom: 5px;
+}
+.learn_capa_result ul li p {
+	line-height: 32px;
+}
+.learn_capa_result ul li p strong {
+	font-size: 1.9rem;
+}

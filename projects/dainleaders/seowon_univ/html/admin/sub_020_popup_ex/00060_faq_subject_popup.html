@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+		<meta name="title" content="서원대학교">
+		<meta name="description" content="서원대학교 학생지원통합시스템">
+		<meta name="copyrigt" content="서원대학교">
+		<meta name="keywords" content="서원대학교, 학생지원통합시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>서원대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] 아이콘글꼴 : remixicon, font-awesome -->
+		<link rel="stylesheet" href="../../../src/remixicon/fonts/remixicon.css">
+		<link rel="stylesheet" href="../../../src/font-awesome/css/font-awesome.min.css">
+		<!-- [pp] font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+		<!-- [pp] //font-awesome -->
+		<!-- [pp] //아이콘글꼴 -->
+
+		<!-- css -->
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/dataTables/css/dataTables.bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/dataTables/css/select.dataTables.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/AdminLTE.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/_all-skins.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/select2/css/select2.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/apexchart/css/apexcharts.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/fullcalendar-5.7/css/main.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/dl_global.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_common.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_custom.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_table.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_ui.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_popup.css">
+		<!-- //css -->
+
+		<!-- js -->
+		<script type="text/javascript" src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/html5shiv.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/IE9.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/respond.min.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="../../../src/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-adminLTE/js/adminlte.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-adminLTE/js/demo.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.select.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/jszip.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/pdfmake.min.js"></script>
+		<script type="text/javascript" src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/apexchart/js/apexcharts.js"></script>
+		<script type="text/javascript" src="../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script type="text/javascript" src="../../../js/admin/pp_ui.js"></script>
+		<!-- //js -->
+	</head>
+
+	<body class="hold-transition skin-red sidebar-mini">
+
+		<!--[pp] 모달기본 -->
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">
+						교과목 CQI 작성 FAQ
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="faqlist_wrap">
+						<dl id="faq" class="faqlist accordion_js">
+							<dt class="acd_list_js">
+								<span>Q</span>겸임교수, 강사도 작성 대상자 입니까? 
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									네. 모든 교과목이 작성 대상이므로, 전임교원, 겸임교수, 객원교수, 강사 등 이번 학기 강의하신 모든 교수님이 작성자입니다. 또한 다음 학기 강의가 없으신 경우도 작성 대상자입니다.
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>[1학기]"SU진로코칭"Ⅰ,Ⅱ,Ⅲ,Ⅳ , [2학기]"SU인성코칭"Ⅰ,Ⅱ,Ⅲ,Ⅳ, 교과목도 작성하나요?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									네. 모든 교과목이 작성 대상입니다.<br/>
+									다만, 이 교과목은 강의평가 없는 교과목이므로 '3번 문항(강의평가결과분석)만' ‘해당사항 없음’으로 기술하고 나머지 문항은 모두 작성하여 주시기 바랍니다.
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>[저장] 했는데 왜 미제출인가요?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									네. 미제출입니다.<br/>
+									<span class="bold">[저장]만 한 경우 미제출 상태이므로 반드시 추가로 ‘[제출]’ 버튼을</span> 눌렀는지 확인하여 불이익 발생하지 않도록 주의해 주시기 바랍니다.
+									&#40;‘저장’ 기능은 편의성을 위해 수시로 작성할 수 있도록 제공되고 있으므로 최종 ‘제출’ 버튼을 꼭 눌러주셔야 제출이 됩니다.&#41;
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>첫 학기 운영이라서 개선실적이 없는데, 개선실적을 작성하나요?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									임용 후 첫 학기 또는 신규 교과목의 경우, <span class="bold">‘첫 학기 운영이지만’</span>이라고 기술하시고, 이번 학기의 교과목 운영 및 교수방법 등의 중점 사항을 기술해 주시기 바랍니다.
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>이미 제출한 교과목 CQI를 수정하여 재제출 할 수 있나요?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									네, 가능합니다.<br/>
+									제출 기간 내에 담당부서 담당자에게 연락하시면, 담당자가 제출 취소&#40;반려&#41; 처리 후 재작성하여 제출이 가능합니다. 
+									<span class="font_cobaltblue">&#40;담당자 연락처 : 043-299-8286&#41;</span>
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>작성시 주요 유의사항
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									특히 6번 항목(개선실적, 문제점, 개선방향)은 <span class="bold">구체적으로 반드시 작성</span>해 주시기 바라며, <span class="underline">‘해당사항 없음’, ‘없음’, ‘특이사항 없음’, ‘만족’</span> 등 의미없는 내용으로 기술하거나, <span class="underline">교과목명이 다른데도 불구하고 복사하여 똑같이 작성한 경우, 지난학기와 동일하게 작성한 경우</span> <span class="bold">제출취소 처리</span>될 수 있으니 유념해 주시기 바랍니다. &#40;최소 100자 이상 작성해주시기 바랍니다.&#41;
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>잘못 작성된 사례
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<ol class="list_txt mg_b10">
+										<li>
+											<span class="tit">①</span>
+											다른 교과목임에도 불구하고 작성내용이 동일한 경우(복사하여 사용 금지)→ 재작성 요청 가능
+										</li>
+										<li>
+											<span class="tit">②</span>
+											교과목 CQI와 전혀 관련없는 다른 내용을 작성한 경우(내용 부적합)→ 재작성 요청 가능
+										</li>
+									</ol>
+									<p class="font_red">
+										※  불이익이 발생할 수 있으니 주의하여 주시기 바랍니다.
+									</p>
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>로그인이 안되는 경우는 어떻게 하나요?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									아이디&#40;교직원번호&#41;와 패스워드는 학사행정서비스 시스템과 동일합니다.<br/>
+									학사행정서비스 로그인 테스트 후 다시 시도해 주시기 바랍니다.<br/>
+									그래도 안될 경우 043-299-8286으로 문의해 주시기 바랍니다. 
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>교과목 CQI 미제출시 불이익이 있습니까?
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<p class="mg_b10">
+										우리 대학은 2017학년도부터 역량기반 교육과정 3중 CQI가 운영되고 있습니다.
+									</p>
+									<p class="mg_b10">
+										교과목CQI 제출률은 약2,000개 교과목 기준으로 95%이상으로 매 학기 대부분의 교수님들께서 참여하고 있습니다. 작성 내용충실도 높아지고 있으며, 매 학기 우수사례도 공유되고 있습니다.
+									</p>
+									<p>
+										개별적으로는 담당 교과목 CQI 모두 제출시 교수업적평가에 가산되고 있으며, 학과차원으로는 역량기반 교육과정 인증제에 학과별 제출률이 반영되고 있습니다. 또한, 대외 평가시 교과목 운영 질관리 방법으로 교육 질관리 실적에 기여하고 있습니다.
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-sm btn-danger btn_icon fa fa-close" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!--[pp] 모달기본 -->
+
+	</body>
+
+</html>

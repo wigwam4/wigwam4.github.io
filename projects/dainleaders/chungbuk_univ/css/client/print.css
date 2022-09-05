@@ -1,0 +1,371 @@
+@charset "utf-8";
+
+/* fonts */
+@font-face {
+	font-family: 'NanumMyeongjo';
+	font-style: normal;
+	src: url('../../fonts/NanumMyeongjo-Regular.eot');
+	src: url('../../fonts/NanumMyeongjo-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/NanumMyeongjo-Regular.woff2') format('woff2'),
+		url('../../fonts/NanumMyeongjo-Regular.woff') format('woff'),
+		url('../../fonts/NanumMyeongjo-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'MJemokBatang';
+	font-style: normal;
+	src: url('../../fonts/MuncheJemokBatang.eot');
+	src: url('../../fonts/MuncheJemokBatang.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/MuncheJemokBatang.woff2') format('woff2'),
+		url('../../fonts/MuncheJemokBatang.woff') format('woff'),
+		url('../../fonts/MuncheJemokBatang.ttf') format('truetype');
+}
+
+@media print {
+	@page {
+		size: portrait;
+		/*margin: 1cm;*/
+		width: 21cm; height: 29.7cm;
+	}
+	* {
+		/* 배경그래픽 표시 */
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	body {
+		position: relative;
+	}
+	div.print_banner {
+		display: none;
+	}
+	div.page { 
+		width: initial; min-height: initial; height: auto;
+		margin: 0; padding: 0;
+		box-shadow: initial; background: initial; border: none;
+	}
+	img.bg_print {
+		position: fixed; top: 50%;
+	}
+	div.page_wrapper {
+		min-height: inherit;
+	}
+}
+
+/* reset */
+* {
+	margin: 0; padding: 0;
+	line-height: 150%;
+	font-weight: normal;
+	word-break: keep-all;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img, button {
+	outline: 0;
+	border: 0;
+}
+table {
+	word-break: break-all;
+	border-collapse: separate; border-spacing: 0px; 
+	table-layout: fixed; 
+	page-break-inside: auto;
+}
+table caption {
+	height:0; 
+	font-size:0; text-indent:-9999px;
+}
+tr {
+	page-break-inside: avoid; page-break-after: auto;
+}
+thead {
+	display: table-header-group;
+}
+tfoot {
+	display: table-footer-group;
+}
+ul li {
+	list-style: none;
+}
+
+/* border style */
+.bo_top { border-top: 1px solid #666 !important; }
+.bo_bottom { border-bottom: 1px solid #666 !important; }
+.bo_left { border-left: 1px solid #666 !important; }
+.bo_right { border-right: 1px solid #666 !important; }
+.bo_top_none { border-top: none !important; }
+.bo_bottom_none { border-bottom: none !important; }
+.bo_left_none { border-left: none !important; }
+.bo_right_none { border-right: none !important; }
+
+/* layout */
+.print_banner {
+	position: relative;
+	margin-bottom: 60px;
+	width: 100%; height: 50px;
+	background: #f2f2f2;
+}
+.print_banner .btn_print {
+	position: absolute; top: 50%; right: 10px;
+	display: inline-block;
+	padding: 0 16px;
+	color: #fff; font-size: 15px; line-height: 35px;
+	background-color: #77314c;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.page {
+	position: relative;
+	margin: 0cm auto 60px; padding: 1cm;
+	width: 21cm; min-height: 29.7cm;
+	background: #fff;
+	border: 1px solid #3a3a3a;
+}
+
+/* 비교과 이수 증명서 */
+.bg_print {
+	position: absolute; top: 14.85cm; left: 50%;
+	width: 500px; height: auto;
+	opacity: 0.5;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.page_wrapper {
+	position: relative;
+	padding: 1cm; 
+	min-height: 27.7cm; 
+	font-family: 'NanumMyeongjo', sans-serif; font-size: 17px; 
+}
+.print_title {
+	margin-bottom: 80px;
+	text-align: center;
+}
+.print_title h1{
+	padding-top: 0.5cm;
+	font-size: 1.8rem; font-weight: bold;
+	line-height: 1.5em; letter-spacing: 4px; 
+}
+.print_title p {
+	position: absolute; top: 0; left: 0;
+	font-size: 0.94rem;
+}
+.print_profile {
+	margin-left: 60%; margin-bottom: 60px;
+}
+.print_profile table {
+	width: 100%; 
+}
+.print_profile table th, .print_profile table td {
+	padding: 2px 0;
+	text-align: left; 
+}
+.print_profile .th_blank {
+	padding: 0 16px;
+}
+.print_contents {
+	margin-bottom: 20px;
+	min-height: 380px;
+	text-align: justify; word-break: keep-all;
+}
+.print_contents p {
+	margin-bottom: 30px;
+	text-indent: 20px; line-height: 1.7em; 
+}
+.print_contents table {
+	width: 100%;
+	text-align: center;
+}
+.print_contents th, .print_contents td {
+	padding: 6px 0;
+	font-size: 14px;
+}
+.print_contents th:nth-child(1) {
+	border-left: 1px solid #666;
+}
+.print_contents thead tr th {
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+.print_contents thead tr:first-child th {
+	border-top: 1px solid #888;
+}
+.print_contents tbody th, .print_contents tfoot th {
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+.print_contents tbody td, .print_contents tfoot td {
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+.print_footer {
+	margin-top: 40px;
+	width: 100%;
+}
+.print_day_title {
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.print_day_title > p:first-child {
+	display: block;
+	margin-bottom: 10px;
+}
+.print_day_title p {
+	display: inline-block;
+}
+.print_day_title p span {
+	padding: 0 16px;
+}
+.print_day_title div p:first-child span {
+	padding-left: 0;
+}
+.print_stamp {
+	padding: 20px 0;
+	text-align: center; 
+}
+.print_stamp p {
+	position: relative; 
+	display: inline-block;
+}
+.print_stamp strong {
+	position: relative; z-index: 10;
+	display: inline-block;
+	font-size: 1.8rem; font-weight: bold; letter-spacing: 4px;
+}
+.print_stamp img {
+	position: absolute; top: 50%; right: -60px;
+	display: inline-block;
+	width: 86px; height: auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* 비교과 이수 증명서 */
+.section_tit_lg {
+	margin-bottom: 0.6em; 
+	font-size: 1.2rem; font-weight: 600;
+}
+.section_tit_lg img {
+	display: inline-block;
+	margin-right: 2px; margin-bottom: 5px;
+	vertical-align: bottom;
+}
+.section_area {
+	margin-bottom: 30px;
+}
+.page_completion .print_contents {
+	min-height: 600px
+}
+.page_completion .print_title h1 {
+	padding-top: 1cm;
+}
+
+/* 봉사활동확인서 */
+.page_voluntaryrecord .print_contents {
+	min-height: 650px
+}
+
+/* 봉사활동인증서 - 국문 */
+.page_voluntarycerti .print_title h1 {
+	padding-top: 1cm;
+}
+.page_voluntarycerti .print_profile {
+	margin-left: 5%; margin-bottom: 130px;
+}
+.page_voluntarycerti .print_profile table th, .page_voluntarycerti .print_profile table td {
+	padding: 6px 0;
+}
+.page_voluntarycerti .print_contents {
+	min-height: 330px;
+}
+
+/* 봉사활동인증서 - 영문 */
+.page_voluntarycerti_eng .print_title h1 {
+	padding-top: 1cm;
+}
+.page_voluntarycerti_eng .print_profile {
+	margin-left: 5%; margin-bottom: 130px;
+}
+.page_voluntarycerti_eng .print_profile table th, .page_voluntarycerti_eng .print_profile table td {
+	padding: 6px 0;
+}
+.page_voluntarycerti_eng .print_profile table th {
+	position: relative;
+	padding-right: 20px;
+}
+.page_voluntarycerti_eng .print_profile table th::after {
+	position: absolute; right: 10px;
+	content: ":";
+}
+.page_voluntarycerti_eng .print_contents {
+	min-height: 330px;
+}
+.page_voluntarycerti_eng .print_stamp strong {
+	font-size: 1.6rem; letter-spacing: -0.001em;
+}
+
+/* 독서인증서 - 국문 */
+.page_readingcerti {
+	font-family: MJemokBatang, sans-serif; font-size: 1.3rem;
+}
+.page_readingcerti .print_contents {
+	min-height: 620px;
+}
+.page_readingcerti .print_title h1 {
+	font-size: 2rem;
+}
+.page_readingcerti .print_contents th, .page_readingcerti .print_contents td {
+	font-size: 17px;
+}
+
+/* 독서인증서 - 영문 */
+.page_readingcerti_eng .print_contents {
+	min-height: 650px;
+}
+.page_readingcerti_eng .print_stamp strong {
+	font-size: 1.6rem; letter-spacing: -0.001em;
+}
+
+/* 개신인인증서 */
+.page_newcomercerti .print_profile {
+	margin-bottom: 120px;
+}
+.page_newcomercerti .print_title h1 {
+	padding-top: 1cm;
+}
+
+
+/*==================== hover ====================*/
+@media screen and (min-width:1025px) {
+
+	/* layout hover */
+	.print_banner .btn_print:hover {
+		background-color: #5d2037;
+		cursor: pointer;
+	}
+
+}
+/*==================== hover ====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

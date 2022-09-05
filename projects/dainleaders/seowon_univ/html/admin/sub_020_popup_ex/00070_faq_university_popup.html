@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+		<meta name="title" content="서원대학교">
+		<meta name="description" content="서원대학교 학생지원통합시스템">
+		<meta name="copyrigt" content="서원대학교">
+		<meta name="keywords" content="서원대학교, 학생지원통합시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>서원대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] 아이콘글꼴 : remixicon, font-awesome -->
+		<link rel="stylesheet" href="../../../src/remixicon/fonts/remixicon.css">
+		<link rel="stylesheet" href="../../../src/font-awesome/css/font-awesome.min.css">
+		<!-- [pp] font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+		<!-- [pp] //font-awesome -->
+		<!-- [pp] //아이콘글꼴 -->
+
+		<!-- css -->
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/dataTables/css/dataTables.bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/dataTables/css/select.dataTables.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/AdminLTE.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/_all-skins.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/select2/css/select2.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/apexchart/css/apexcharts.css">
+		<link type="text/css" rel="stylesheet" href="../../../src/fullcalendar-5.7/css/main.min.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/dl_global.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_common.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_custom.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_table.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_ui.css">
+		<link type="text/css" rel="stylesheet" href="../../../css/admin/dl_popup.css">
+		<!-- //css -->
+
+		<!-- js -->
+		<script type="text/javascript" src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/html5shiv.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/IE9.js"></script>
+<script type="text/javascript" src="../../../src/jquery/js/respond.min.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="../../../src/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-adminLTE/js/adminlte.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-adminLTE/js/demo.js"></script>
+		<script type="text/javascript" src="../../../src/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/dataTables.select.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/jszip.min.js"></script>
+		<script type="text/javascript" src="../../../src/dataTables/js/pdfmake.min.js"></script>
+		<script type="text/javascript" src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/apexchart/js/apexcharts.js"></script>
+		<script type="text/javascript" src="../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script type="text/javascript" src="../../../js/admin/pp_ui.js"></script>
+		<!-- //js -->
+	</head>
+
+	<body class="hold-transition skin-red sidebar-mini">
+
+		<!--[pp] 모달기본 -->
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">
+						대학본부에 자주 요청하는 사항에 대한 안내 &#40;FAQ&#41;
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="faqlist_wrap">
+						<dl id="faq" class="faqlist accordion_js">
+							<dt class="acd_list_js">
+								<span>Q</span>상대평가 및 성적 관련
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<strong>
+										&lt; 상대평가 성적비율 변경 절차 &gt;
+									</strong>
+									<ol class="list_txt mg_t5">
+										<li class="mg_b15">
+											<span class="tit">1.</span>
+											<div>
+												관련규정 : 학사운영규정 제12조 &#40;성적평가&#41;
+												<table class="mg_t5 table tbl_col tbl_fixed table-bordered">
+													<caption>학사운영규정 제12조 &#40;성적평가&#41; 정보</caption>
+													<colgroup>
+														<col style="width:33.333%">
+														<col style="width:33.333%">
+														<col style="width:33.333%">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">A등급</th>
+															<th scope="col">B등급</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">전공</th>
+															<td>30%</td>
+															<td>40%</td>
+														</tr>
+														<tr>
+															<th scope="row">교양</th>
+															<td>30%</td>
+															<td>30%</td>
+														</tr>
+														<tr>
+															<th scope="row">교직</th>
+															<td>30%</td>
+															<td>50%</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</li>
+										<li class="mg_b10">
+											<span class="tit">2.</span>
+											<div>
+												신청시기 : 매학기 공문으로 기간알림
+											</div>
+										</li>
+										<li class="mg_b10">
+											<span class="tit">3.</span>
+											<div>
+												신청방법
+												<ul class="list_txt">
+													<li>
+														<span class="tit">가.</span>
+														교과목 특성에 따른 상대평가 비율 변경 사유가 있는 교과목에 대해 공문 제출
+													</li>
+													<li>
+														<span class="tit">나.</span>
+														조정 사유란에 교과목 특성 및 사유 상세히 기술 요망
+													</li>
+													<li>
+														<span class="tit">다.</span>
+														신청 교과목에 대한 강의계획서 첨부
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="tit">4.</span>
+											<div>
+												기타사항
+												<ul class="list_txt">
+													<li>
+														<span class="tit">가.</span>
+														교육과정위원회 최종 심의 후 승인 결과 통보
+													</li>
+													<li>
+														<span class="tit">나.</span>
+														교과목 특성에 따른 예외적 승인 예정
+													</li>
+													<li>
+														<span class="tit">다.</span>
+														상대평가 성적 등급 비율 조정은 해당 승인 학기에 한함 &#40;이전 학기 승인 교과목 재신청 필요&#41;
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>폐강관련
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<strong>
+										&#91; 폐강 관련 주요안내 &#93;
+									</strong>
+									<ol class="list_txt mg_t5">
+										<li class="mg_b10">
+											<span class="tit">1.</span>
+											<div>
+												관련규정
+												<ul class="list_txt">
+													<li>
+														<span class="tit">-</span>
+														학사운영규정 제6조 3항 &#40;강좌개설 최소인원&#41;
+													</li>
+													<li>
+														<span class="tit">-</span>
+														위 규정에 따라 강좌개설 최소인원 미충족 시 폐강 처리를 하고 있습니다.
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="mg_b10">
+											<span class="tit">2.</span>
+											<div>
+												강좌개설 최소인원&#40;폐강&#41; 기준을 2020.02.28. 자 규정 개정을 통해 완화하였습니다.
+												<ul class="list_txt">
+													<li>
+														<span class="tit">-</span>
+														전공 : 15명 → 10명
+													</li>
+													<li>
+														<span class="tit">-</span>
+														교양 : 30명 → 20명
+													</li>
+													<li>
+														<span class="tit">-</span>
+														교직 : 30명 → 15명
+													</li>
+													<li>
+														<span class="tit">-</span>
+														일반선택 : 15명 → 10명
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="tit">3.</span>
+											<div>
+												폐강에 관한 특별사항(학과별 사정에 의한 고려사항 등)은 아래와 같이 반영하고 있습니다.
+												<ul class="list_txt">
+													<li>
+														<span class="tit">-</span>
+														관련규정 : 학사운영규정 제6조&#40;강좌개설 최소인원&#41; 3항에 따라 부득이한 사정이 있는 강좌의 경우 검토 후 개설을 허가하고 있습니다.
+													</li>
+													<li>
+														<span class="tit">-</span>
+														위 사항에 따라 특별한 사유로 교과목을 개설하여야 하는 경우, '폐강대상교과목 개설허가신청서'를 통해 교과목 개설에 관한 적합성&#40;학과별 특성 반영&#41;을 검토하여 개설하고 있습니다.
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>분반관련
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<strong>
+										&#91; 분반 관련 주요안내 &#93;
+									</strong>
+									<ol class="list_txt mg_t5">
+										<li class="mg_b10">
+											<span class="tit">1.</span>
+											<div>
+												관련규정
+												<ul class="list_txt">
+													<li>
+														<span class="tit">-</span>
+														학사운영규정 제6조의 2 &#40;분반&#41;
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="tit">2.</span>
+											<div>
+												기존 지침에서 완화되어 신설된 조항에 따라, 수강인원이 아래 기준인원을 초과하는 경우 분반이 가능합니다.
+												<ul class="list_dot_sm mg_b5">
+													<li>
+														교양 60명
+													</li>
+													<li>
+														교양 60명
+													</li>
+													<li>
+														전공 40명 
+													</li>
+													<li>
+														일반선택 40명 
+													</li>
+												</ul>
+												※ 분반 편성 시 '분반허가원'을 강의시간표 편성 시 함께 제출하여 주시기 바랍니다.<br/>
+												<span class="font_gray">
+													&#40;강의시간표 제출 요청 공문에 서식 포함&#41;
+												</span>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</dd>
+							<dt class="acd_list_js">
+								<span>Q</span>기자재 구입 및 수리 관련
+							</dt>
+							<dd class="acd_cnt_js">
+								<span>A</span>
+								<div class="faq_content">
+									<strong class="dp_block">
+										&#91; 기계기구 및 기자재 등 구입절차/ 수리의뢰 절차 &#93;
+									</strong>
+									학과 실험&middot;실습 등에 필요한 물품&#40;기계기구,기자재 등&#41; 구입과 관련
+									<strong class="dp_block mg_t10">
+										&lt; 신청방법 &gt;
+									</strong>
+									<ol class="list_txt mg_t5 mg_b10">
+										<li>
+											<span class="tit">1.</span>
+											2020학년도 각 학과별 배정된 기계기구 예산을 U-캠퍼스에서 확인
+										</li>
+										<li>
+											<span class="tit">2.</span>
+											<p class="bold">
+												U-캠퍼스에서 구입하고자 하는 물품(기계기구, 기자재 등) 구매 의뢰 (사전에 재무팀과 협의 요청 / 제품 사양, 구입방법 등 협의 필요)
+											</p>
+										</li>
+										<li>
+											<span class="tit">3.</span>
+											물품 요구서 출력 후 재무팀 제출
+										</li>
+										<li>
+											<span class="tit">4.</span>
+											재무팀 물품 요구서 검토 및 결재 후 발주 
+										</li>
+										<li>
+											<span class="tit">5.</span>
+											물품 의뢰서 작성 등 기타 문의는 재무팀(8232)으로 연락 주시기 바랍니다.
+										</li>
+									</ol>
+									<p>
+										※ 수리 의뢰 절차 : U-캠퍼스 -&gt; 수리의외서 작성 -&gt; 재무팀제출
+										&#40;수리 의뢰전 담당부서 협의&#41;
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-sm btn-danger btn_icon fa fa-close" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!--[pp] 모달기본 -->
+
+	</body>
+
+</html>

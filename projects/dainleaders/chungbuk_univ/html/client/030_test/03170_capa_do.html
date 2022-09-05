@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="충북대학교">
+		<meta name="description" content="충북대학교 CIEAT 시스템 (Chungbuk Integrated Extracurricular Administrative sysTem)">
+		<meta name="copyrigt" content="충북대학교">
+		<meta name="keywords" content="충북대학교, CIEAT, 씨앗시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>충북대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] quick menu -->
+		<nav class="quick_menu">
+			<h5>QUICK MENU</h5>
+			<button type="button" class="btn_quicknav">바로가기 메뉴</button>
+			<ul>
+				<li class="quick_menu1">
+					<a href="javascript:void(0);"><span>비교과 신청</span></a>
+				</li>
+				<li class="quick_menu2">
+					<a href="javascript:void(0);"><span>상담 신청</span></a>
+				</li>
+				<li class="quick_menu3">
+					<a href="javascript:void(0);"><span>채용공고</span></a>
+				</li>
+				<li class="quick_menu4">
+					<a href="javascript:void(0);"><span>공지사항</span></a>
+				</li>
+				<li class="quick_menu5">
+					<a href="https://cia.chungbuk.ac.kr/board/exchange_notice/lists/key/247">
+						<span>
+							국제교류
+							<small>&#40;파견 교환학생&#41;</small>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [pp] //quick menu -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+
+				<!-- [pp] link -->
+				<div class="header_link">
+					<div class="grid_content">
+						<ul>
+							<li><a href="javascript:void(0);" class="admin">관리자페이지로 이동</a></li>
+							<li><a href="javascript:void(0);">충북대학교</a></li>
+							<li><a href="javascript:void(0);">개신누리</a></li>
+							<li><a href="javascript:void(0);">도서관</a></li>
+							<li><a href="javascript:void(0);" class="downfile">시스템 사용법</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [pp] //link -->
+
+				<!-- [pp] logo, login, user info, mobile menu button -->
+				<div class="header_top grid_content">
+					<h1 class="header_logo"><a href="javascript:void(0);"><img src="../../../images/client/common/header_logo.svg" alt="충북대학교 로고"></a></h1>
+					<div class="header_top_inner">
+						<p class="user_info">
+							<span>사용자</span>님 환영합니다
+						</p>
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<!-- [pp] 로그인/로그아웃 :
+<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+-->
+					</div>
+					<button type="button" title="모바일메뉴보기" class="mobile_menubtn">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<!-- [pp] //logo, login, user info, mobile menu button -->
+
+				<!-- [pp] gnb -->
+				<div class="header_bottom">
+					<div class="grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>소개</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">대학의 인재상 및 핵심역량</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 소개</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 마일리지</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>핵심역량인증</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">핵심역량 인증소개</a></li>
+										<li><a href="javascript:void(0);">전공 마일스톤 소개</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진단센터</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">핵심역량진단</a></li>
+												<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습유형진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습유형진단</a></li>
+												<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">대학생활적응진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">대학생활적응진단</a></li>
+												<li><a href="javascript:void(0);">대학생활적응진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습자가진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습자가진단</a></li>
+												<li><a href="javascript:void(0);">학습자가진단 결과</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">워크넷 진단</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>학습관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">교과정보조회</a></li>
+										<li><a href="javascript:void(0);">비교과 신청</a></li>
+										<li><a href="javascript:void(0);">비교과 내역</a></li>
+										<li><a href="javascript:void(0);">자기주도활동</a></li>
+										<li><a href="javascript:void(0);">토론광장</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>인증제</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">독서인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">독서인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">독서인증현황</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">봉사인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">봉사인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">봉사인증현황</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">영어인증제</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>전문상담관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">지도교수 상담</a></li>
+										<li><a href="javascript:void(0);">진로 및 취업 상담</a></li>
+										<li><a href="javascript:void(0);" class="break_all">학생생활상담소</a></li>
+										<li><a href="javascript:void(0);">글쓰기 상담</a></li>
+										<li><a href="javascript:void(0);">창업 상담</a></li>
+										<li><a href="javascript:void(0);">장애지원 상담</a></li>
+										<li><a href="javascript:void(0);">학사 및 기타 상담</a></li>
+										<li><a href="javascript:void(0);">나의 상담 이력</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>채용정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">일반 채용정보</a></li>
+										<li><a href="javascript:void(0);">인재 추천 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 공채속보</a></li>
+										<li><a href="javascript:void(0);">사람인 채용정보</a></li>
+										<li><a href="javascript:void(0);">잡코리아 채용정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진로&middot;취업 정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">진로탐색</a></li>
+										<li><a href="javascript:void(0);" class="break_all">국가직무능력표준 정보</a></li>
+										<li><a href="javascript:void(0);">자격증 정보</a></li>
+										<li><a href="javascript:void(0);">직업방송 동영상</a></li>
+										<li><a href="javascript:void(0);">기업정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>마이페이지</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">마이페이지</a></li>
+										<li><a href="javascript:void(0);">포트폴리오</a></li>
+										<li><a href="javascript:void(0);">인증현황</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>커뮤니티 관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">공지사항</a></li>
+										<li><a href="javascript:void(0);">자료실 관리</a></li>
+										<li><a href="javascript:void(0);">주요 프로그램 및 운영부서</a></li>
+										<li><a href="javascript:void(0);">FAQ</a></li>
+										<li><a href="javascript:void(0);">설문참여</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="sitemap_outer">
+							<a href="javascript:void(0);" class="btn_sitemap">
+								<span></span><span></span><span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //gnb -->
+
+				<!-- [pp] 모바일 화면 menu 클릭시 나오는 배경화면 -->
+				<div class="gnb_bg"></div>
+				<!-- [pp] //모바일 화면 menu 클릭시 나오는 배경화면 -->
+
+			</header>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 상단 비주얼 영역 -->
+			<figure class="subpage_visual visual3">
+				<div class="grid_content">
+					<h2><span>진단센터</span></h2>
+				</div>
+			</figure>
+			<!-- [pp] //상단 비주얼 영역 -->
+
+			<!-- [pp] lnb 영역 -->
+			<nav class="lnb_wrap">
+				<ul class="lnb_list">
+					<li>
+						<a href="javascript:void(0);">핵심역량진단</a>
+						<ul class="sub_lnb">
+							<li><a href="javascript:void(0);">핵심역량진단</a></li>
+							<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+						</ul>
+					</li>
+					<li class="on">
+						<a href="javascript:void(0);">핵심역량검사</a>
+						<ul class="sub_lnb">
+							<li><a href="javascript:void(0);">핵심역량검사</a></li>
+							<li><a href="javascript:void(0);">핵심역량검사 결과</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">학습유형진단</a>
+						<ul class="sub_lnb">
+							<li><a href="javascript:void(0);">학습유형진단</a></li>
+							<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">대학생활적응진단</a>
+						<ul class="sub_lnb">
+							<li><a href="javascript:void(0);">대학생활적응진단</a></li>
+							<li><a href="javascript:void(0);">대학생활적응진단 결과</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">학습자가진단</a>
+						<ul class="sub_lnb">
+							<li><a href="javascript:void(0);">학습자가진단</a></li>
+							<li><a href="javascript:void(0);">학습자가진단 결과</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">워크넷진단</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- [pp] //lnb 영역 -->
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap" tabindex="0">
+				<div class="grid_content section_toparea">
+					<div class="infotop_box">
+						본 검사는 개별 학생의 역량 함양에 대한 인식 파악 및 활용&#40;자가진단 결과 기반 비교과 프로그램 및 활동 추천&#41;을 목적으로 진행됩니다.<br/> 
+						개별 학생이 자신의 CHANGE 역량 결과 변화를 확인하고 자신의 강점과 약점을 파악하여 교과와 비교과 전 영역에 걸쳐 균형 잡힌 핵심역량 개발과 대학생활을 할 수 있도록 도움이 되고자 합니다.<br/>
+						네트워트 에러 등의 문제가 발생 시 불이익을 받지 않기 위해 각 진단의 ‘저장’버튼을 통해 중간저장 부탁드립니다.<br/>
+						검사시간이 지나면 제출되지 않습니다. 검사시간에 유의하여 진단 하단의 ‘제출’버튼을 통해 최종 제출 부탁드립니다.
+					</div>
+					<h3 class="section_tit_lg">핵심역량 검사하기</h3>
+					<article class="testlist_wrap capatest_wrap">
+						<h4 class="testlist_tit">2020년도 1학기 핵심역량검사</h4>
+						<p class="textlist_day">
+							검사시간 : 
+							<span>09:30 ~ 11:30</span>
+						</p>
+						<!-- [pp] 검사시간 카운트 -->
+						<div class="timelimit_wrap">
+							<span>남은 시간 : </span>
+							<span class="counter">00:40:26</span>
+						</div>
+						<!-- [pp] //검사시간 카운트 -->
+						<div class="capado_wrap tab_js">
+							<ul class="tab_list tab_list_js">
+								<li><a href="#capatest1"><span>문제해결형 수행과제</span></a></li>
+								<li><a href="#capatest2"><span>논술형 과제</span></a></li>
+								<li><a href="#capatest3"><span>자기보고식 검사</span></a></li>
+								<li><a href="#capatest4"><span>상황판단 검사</span></a></li>
+								<li class="on"><a href="#capatest5"><span>주요사건 보고</span></a></li>
+							</ul>
+							<div class="tab_cnt tab_cnt_js">
+								<div id="capatest1">
+									<div class="tip_box">
+										문제해결형 수행과제는 <span class="highlight hl_blue font_wine medium va_t">1가지만 답변</span> 가능합니다.
+										문항 내용 확인 후 제출하실 문항을 선택해주세요.
+										<div class="mg_t5 pd_l5">
+											<p class="radio_row dp_block">
+												<input type="radio" name="test_topic" id="test_topic1" class="hidden">
+												<label for="test_topic1">문제해결형 수행과제1 &#40;미세먼지&#41;</label>
+											</p>
+											<p class="radio_row dp_block">
+												<input type="radio" name="test_topic" id="test_topic2" class="hidden">
+												<label for="test_topic2">문제해결형 수행과제2 &#40;저작권&#41;</label>
+											</p>
+											<p class="radio_row dp_block">
+												<input type="radio" name="test_topic" id="test_topic3" class="hidden">
+												<label for="test_topic3">문제해결형 수행과제3 &#40;장애학생 지원&#41;</label>
+											</p>
+										</div>
+										<p class="mg_t10 font_wine medium">
+											※ 선택하신 문항 외 답변은 저장되지 않습니다.
+										</p>
+									</div>
+									<dl class="capatest_list accordion_js">
+										<!-- [pp] 클래스 on 으로 open/close 제어 -->
+										<dt class="acd_list_js">
+											<strong class="section_tit_md">문제해결형 수행과제1</strong>
+											<div class="measurearea_list">
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+											</div>
+											<div class="dp_inline">
+												<p class="list_txt">
+													<strong>문항 내용</strong>사회 문제해결 - 미세먼지
+												</p>
+											</div>
+										</dt>
+										<dd class="acd_cnt_js">
+											<div class="testex_box">
+												<strong class="testex_tit">과제 안내</strong>
+												<div class="testex_cnt tbl_editor">
+	
+													<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+													<p style="margin-bottom: 20px;">
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+													</p>
+													<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+													<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+														<tbody>
+															<tr>
+																<td>asdfas</td>
+																<td>sdfa</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- [pp] //에디터 사용 영역 -->
+	
+												</div>
+											</div>
+											<div class="testex_box">
+												<strong class="testex_tit">관련자료</strong>
+												<div class="testex_cnt">
+													<p>
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.
+													</p>
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<span class="test_label">활동지1</span>
+												<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+												
+												<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+												<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+												
+											</div>
+											<div class="testquestion_wrap">
+												<span class="test_label">활동지2</span>
+												<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+	
+												<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+												<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+	
+											</div>
+											<div class="btn_area ta_c">
+												<button type="button" class="btn btn_lg btn_orange">임시저장</button>
+											</div>
+										</dd>
+										<dt class="acd_list_js">
+											<strong class="section_tit_md">문제해결형 수행과제2</strong>
+											<div class="measurearea_list">
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+											</div>
+											<div class="dp_inline">
+												<p class="list_txt">
+													<strong>문항 내용</strong>사회 문제해결 - 미세먼지
+												</p>
+											</div>
+										</dt>
+										<dd class="acd_cnt_js">
+											<div class="testex_box">
+												<strong class="testex_tit">과제 안내</strong>
+												<div class="testex_cnt tbl_editor">
+	
+													<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+													<p style="margin-bottom: 20px;">
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+													</p>
+													<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+													<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+														<tbody>
+															<tr>
+																<td>asdfas</td>
+																<td>sdfa</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- [pp] //에디터 사용 영역 -->
+	
+												</div>
+											</div>
+											<div class="testex_box">
+												<strong class="testex_tit">관련자료</strong>
+												<div class="testex_cnt">
+													<p>
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.
+													</p>
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<span class="test_label">활동지1</span>
+												<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+	
+												<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+												<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+	
+											</div>
+											<div class="btn_area ta_c">
+												<button type="button" class="btn btn_lg btn_orange">임시저장</button>
+											</div>
+										</dd>
+										<dt class="acd_list_js">
+											<strong class="section_tit_md">문제해결형 수행과제2</strong>
+											<div class="measurearea_list">
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+												<p>
+													창의성
+													<span>&#40;창의적 문제해결력&#41;</span>
+												</p>
+											</div>
+											<div class="dp_inline">
+												<p class="list_txt">
+													<strong>문항 내용</strong>사회 문제해결 - 미세먼지
+												</p>
+											</div>
+										</dt>
+										<dd class="acd_cnt_js">
+											<div class="testex_box">
+												<strong class="testex_tit">과제 안내</strong>
+												<div class="testex_cnt tbl_editor">
+	
+													<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+													<p style="margin-bottom: 20px;">
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+													</p>
+													<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+													<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+														<tbody>
+															<tr>
+																<td>asdfas</td>
+																<td>sdfa</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- [pp] //에디터 사용 영역 -->
+	
+												</div>
+											</div>
+											<div class="testex_box">
+												<strong class="testex_tit">관련자료</strong>
+												<div class="testex_cnt">
+													<p>
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.
+													</p>
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<span class="test_label">활동지1</span>
+												<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+	
+												<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+												<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+	
+											</div>
+											<div class="btn_area ta_c">
+												<button type="button" class="btn btn_lg btn_orange">임시저장</button>
+											</div>
+										</dd>
+									</dl>
+									<!-- [pp] 2022.01.10 이전 버전 -->
+									<section class="section_capatest" style="display: none;">
+										<h3 class="section_tit_md">문제해결형 수행과제1</h3>
+										<div class="measurearea_list">
+											<p>
+												창의성
+												<span>&#40;창의적 문제해결력&#41;</span>
+											</p>
+											<p>
+												창의성
+												<span>&#40;창의적 문제해결력&#41;</span>
+											</p>
+										</div>
+										<div class="dp_inline">
+											<p class="list_txt">
+												<strong>문항 내용</strong>사회 문제해결 - 미세먼지
+											</p>
+										</div>
+										<div class="testex_box">
+											<strong class="testex_tit">과제 안내</strong>
+											<div class="testex_cnt tbl_editor">
+
+												<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+												<p style="margin-bottom: 20px;">
+													에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+												</p>
+												<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+												<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+													<tbody>
+														<tr>
+															<td>asdfas</td>
+															<td>sdfa</td>
+														</tr>
+														<tr>
+															<td>asdf</td>
+															<td>asdf</td>
+														</tr>
+														<tr>
+															<td>asdf</td>
+															<td>asdf</td>
+														</tr>
+													</tbody>
+												</table>
+												<!-- [pp] //에디터 사용 영역 -->
+
+											</div>
+										</div>
+										<div class="testex_box">
+											<strong class="testex_tit">관련자료</strong>
+											<div class="testex_cnt">
+												<p>
+													에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.
+												</p>
+											</div>
+										</div>
+										<div class="testquestion_wrap">
+											<span class="test_label">활동지1</span>
+											<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+											
+											<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+											<div class="test_lettercount">
+												<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+												<span class="letter_counter"></span>
+											</div>
+											<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+											
+										</div>
+										<div class="testquestion_wrap">
+											<span class="test_label">활동지2</span>
+											<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+
+											<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+											<div class="test_lettercount">
+												<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+												<span class="letter_counter"></span>
+											</div>
+											<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+
+										</div>
+									</section>
+									<!-- [pp] //2022.01.10 이전 버전 -->
+									<!-- [pp] SB에 있어서 넣어놨는데 자동저장으로 가고 싶어여....ㅠ -->
+									<!-- 
+									<div class="btn_area ta_c">
+										<button type="button" class="btn btn_md btn_default">저장하기</button>
+									</div>
+									-->
+									<!-- [pp] //SB에 있어서 넣어놨는데 자동저장으로 가고 싶어여....ㅠ -->
+								</div>
+								<div id="capatest2">
+									<div class="tip_box">
+										아래 논술형 과제의 <span class="font_wine medium va_t">주제1&#40;이민지와 난민&#41;, 주제2&#40;문화와 인권&#41;, 주제3&#40;난민인정&#41;, 주제4&#40;남극보존과 자원관리&#41;, 주제5&#40;지구온난화와 기후관리&#41;, 주제6&#40;유해쓰레기 분쟁&#41;</span> 중 <span class="hl_circle">1가지만</span> 선택하여 답변을 작성해주세요. 
+									</div>
+									<section class="section_capatest">
+										<h3 class="section_tit_md">논술형 과제1</h3>
+										<div class="measurearea_list">
+											<p>
+												휴머니즘
+												<span>&#40;인문학적 소양&#41;</span>
+											</p>
+											<p>
+												글로벌
+												<span>&#40;세계 이해&#41;</span>
+											</p>
+										</div>
+										<div class="dp_inline">
+											<p class="list_txt">
+												<strong>문항 내용</strong>이민자와 난민
+											</p>
+										</div>
+										<div class="testex_box">
+											<strong class="testex_tit">과제 안내</strong>
+											<div class="testex_cnt tbl_editor">
+
+												<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+												<p style="margin-bottom: 20px;">
+													에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+												</p>
+												<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+												<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+													<tbody>
+														<tr>
+															<td>asdfas</td>
+															<td>sdfa</td>
+														</tr>
+														<tr>
+															<td>asdf</td>
+															<td>asdf</td>
+														</tr>
+														<tr>
+															<td>asdf</td>
+															<td>asdf</td>
+														</tr>
+													</tbody>
+												</table>
+												<!-- [pp] //에디터 사용 영역 -->
+
+											</div>
+										</div>
+										<div class="testex_box">
+											<strong class="testex_tit">관련자료</strong>
+											<div class="testex_cnt">
+												<p>
+													에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.
+												</p>
+											</div>
+										</div>
+										<div class="testquestion_wrap">
+											<div class="test_question prewrap">관리자가 입력한 질문이 표시됩니다. 스페이스, 엔터 모두 입력됩니다.</div>
+
+											<!-- [pp] 'testLetterCount();'으로 pp_common.js에서 제어중. -->
+											<div class="test_lettercount">
+												<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+												<span class="letter_counter"></span>
+											</div>
+											<!-- [pp] //'testLetterCount();'으로 pp_common.js에서 제어중. -->
+
+										</div>
+									</section>
+								</div>
+								<div id="capatest3">
+									<section class="section_capatest">
+										<h3 class="section_tit_md">자기보고식 검사1</h3>
+										<div class="measurearea_list">
+											<p>
+												능동성
+												<span>&#40;자기효능감&#41;</span>
+											</p>
+										</div>
+										<p class="mg_t15 mg_b15">
+											아래 지문에 동의하는 정도를 표시해주세요.
+										</p>
+										<section class="section_xsarea">
+											<h4 class="section_tit_sm">가교이야기</h4>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">1</span>
+													하성이는 늘 자신이 없다. 학점은 괜찮은 편이지만, 전공 공부도 자신이 없고, 그렇다고 다른 일을 잘할 자신도 없다. 내세울 수 있는 재능과 스펙이 하나도 없다면서 자신의 미래가 불안하다고 자주 이야기한다. 하성이는 자신의 능력에 대한 믿음과 기대를 가지고 있다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_1" class="hidden">
+														<label for="test_answer1_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_2" class="hidden">
+														<label for="test_answer1_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_3" class="hidden">
+														<label for="test_answer1_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_4" class="hidden">
+														<label for="test_answer1_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+										</section>
+										<section class="section_xsarea">
+											<h4 class="section_tit_sm">학업</h4>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">1</span>
+													나는 내가 스스로 공부할 수 있는 능력을 갖고 있다고 믿는다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_1" class="hidden">
+														<label for="test_answer4_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_2" class="hidden">
+														<label for="test_answer4_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_3" class="hidden">
+														<label for="test_answer4_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_4" class="hidden">
+														<label for="test_answer4_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">2</span>
+													나는 수업에서 배우는 복잡한 개념들도 이해할 자신이 있다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_1" class="hidden">
+														<label for="test_answer6_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_2" class="hidden">
+														<label for="test_answer6_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_3" class="hidden">
+														<label for="test_answer6_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_4" class="hidden">
+														<label for="test_answer6_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+										</section>
+									</section>
+									<section class="section_capatest">
+										<h3 class="section_tit_md">자기보고식 검사2</h3>
+										<div class="measurearea_list">
+											<p>
+												능동성
+												<span>&#40;자기효능감&#41;</span>
+											</p>
+										</div>
+										<p class="mg_t15 mg_b15">
+											아래 지문에 동의하는 정도를 표시해주세요.
+										</p>
+										<section class="section_xsarea">
+											<h4 class="section_tit_sm">가교이야기</h4>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">1</span>
+													하성이는 늘 자신이 없다. 학점은 괜찮은 편이지만, 전공 공부도 자신이 없고, 그렇다고 다른 일을 잘할 자신도 없다. 내세울 수 있는 재능과 스펙이 하나도 없다면서 자신의 미래가 불안하다고 자주 이야기한다. 하성이는 자신의 능력에 대한 믿음과 기대를 가지고 있다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_1" class="hidden">
+														<label for="test_answer1_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_2" class="hidden">
+														<label for="test_answer1_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_3" class="hidden">
+														<label for="test_answer1_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer1" id="test_answer1_4" class="hidden">
+														<label for="test_answer1_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+										</section>
+										<section class="section_xsarea">
+											<h4 class="section_tit_sm">학업</h4>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">1</span>
+													나는 내가 스스로 공부할 수 있는 능력을 갖고 있다고 믿는다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_1" class="hidden">
+														<label for="test_answer4_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_2" class="hidden">
+														<label for="test_answer4_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_3" class="hidden">
+														<label for="test_answer4_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer4" id="test_answer4_4" class="hidden">
+														<label for="test_answer4_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+											<div class="section_xsarea">
+												<h4 class="test_tit">
+													<span class="no">2</span>
+													나는 수업에서 배우는 복잡한 개념들도 이해할 자신이 있다.
+												</h4>
+												<div class="test_cnt">
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_1" class="hidden">
+														<label for="test_answer6_1">전혀 그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_2" class="hidden">
+														<label for="test_answer6_2">그렇지 않다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_3" class="hidden">
+														<label for="test_answer6_3">그렇다</label>
+													</p>
+													<p class="radio_row">
+														<input type="radio" name="test_answer6" id="test_answer6_4" class="hidden">
+														<label for="test_answer6_4">매우 그렇다</label>
+													</p>
+												</div>
+											</div>
+										</section>
+									</section>
+								</div>
+								<div id="capatest4">
+									<section class="section_capatest">
+										<h3 class="section_tit_md">상황판단 검사1</h3>
+										<div class="section_sarea">
+											<span class="capatest_no">1</span>
+											<p class="capatesttit_label">학업 - 교우관계</p>
+											<div class="measurearea_list">
+												<p>
+													휴머니즘
+													<span>&#40;윤리의식&#41;</span>
+												</p>
+											</div>
+											<div class="testex_box">
+												<div class="testex_cnt tbl_editor">
+													중간고사를 준비하고 있는 A는 같은 수업을 듣는 친구 B로부터 3~4월 수업에서 필기한 내용을 복사해달라는 요청을 받았다. B가 가정 형편이 다소 좋지 않아 여러 가지 아르바이트를 병행하면서 수업에 자주 빠지게 되어, 수업에 모두 참여한 자신에게 도움을 부탁한 상황을 A는 알고 있다. 하지만 자신이 B를 도와줌으로써 수업에 열심히 참여한 다른 친구들이 피해를 볼 수 있다는 생각도 A는 하고 있다.  
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<p class="mg_b10 medium">
+													위의 상황에서 A가 취할 수 있는 행동으로 가장 적절한 것은?
+												</p>
+
+												<div>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_1" class="hidden">
+														<label for="test_answer6_1">
+															<span>1</span>이번 중간고사는 도와주지만, 기말고사는 공부해서 시험 치라고 타이른다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_2" class="hidden">
+														<label for="test_answer6_2">
+															<span>2</span>B가 평소에 열심히 공부하는 것을 알고 있으니, 복사만 해주지 않고 스터디도 같이한다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_3" class="hidden">
+														<label for="test_answer6_3">
+															<span>3</span>사정은 딱하지만 B를 무작정 도와주면 다른 사람들이 피해볼 수 있으니 거절한다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_4" class="hidden">
+														<label for="test_answer6_4">
+															<span>4</span>공평하게 도움을 주고자, 여러 장을 복사해서 필요한 사람 모두에게 전달한다.
+														</label>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="section_sarea">
+											<span class="capatest_no">2</span>
+											<p class="capatesttit_label">생활 - 교우관계</p>
+											<div class="measurearea_list">
+												<p>
+													휴머니즘
+													<span>&#40;윤리의식&#41;</span>
+												</p>
+											</div>
+											<div class="testex_box">
+												<div class="testex_cnt tbl_editor">
+													중간고사를 준비하고 있는 A는 같은 수업을 듣는 친구 B로부터 3~4월 수업에서 필기한 내용을 복사해달라는 요청을 받았다. B가 가정 형편이 다소 좋지 않아 여러 가지 아르바이트를 병행하면서 수업에 자주 빠지게 되어, 수업에 모두 참여한 자신에게 도움을 부탁한 상황을 A는 알고 있다. 하지만 자신이 B를 도와줌으로써 수업에 열심히 참여한 다른 친구들이 피해를 볼 수 있다는 생각도 A는 하고 있다. 
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<p class="mg_b10 medium">
+													위의 상황에서 A가 취할 수 있는 행동으로 가장 적절한 것은?
+												</p>
+
+												<div>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_1" class="hidden">
+														<label for="test_answer6_1">
+															<span>1</span>이번 중간고사는 도와주지만, 기말고사는 공부해서 시험 치라고 타이른다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_2" class="hidden">
+														<label for="test_answer6_2">
+															<span>2</span>B가 평소에 열심히 공부하는 것을 알고 있으니, 복사만 해주지 않고 스터디도 같이한다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_3" class="hidden">
+														<label for="test_answer6_3">
+															<span>3</span>사정은 딱하지만 B를 무작정 도와주면 다른 사람들이 피해볼 수 있으니 거절한다.
+														</label>
+													</p>
+													<p class="radio_no_row dp_block">
+														<input type="radio" name="test_answer6" id="test_answer6_4" class="hidden">
+														<label for="test_answer6_4">
+															<span>4</span>공평하게 도움을 주고자, 여러 장을 복사해서 필요한 사람 모두에게 전달한다.
+														</label>
+													</p>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div id="capatest5">
+									<div class="tip_box">
+										아래 3가지 상황&#40;A,B,C&#41; 중 <span class="hl_circle">1가지를</span> 택하여, 답변에 기재해주세요.<br/><br/>
+										ex. B 상황에서 나는 ~ 
+									</div>
+									<section class="section_capatest">
+										<h3 class="section_tit_md">주요사건보고1</h3>
+										<div class="section_sarea">
+											<span class="capatest_no">1</span>
+											<p class="capatesttit_label">일반적 타문화 접촉경험</p>
+											<div class="testex_box">
+												<strong class="testex_tit">과제 안내</strong>
+												<div class="testex_cnt tbl_editor">
+
+													<!-- [pp] 에디터 사용 영역 : 임의로 넣어놓은 텍스트와 이미지 입니다. -->
+													<p style="margin-bottom: 20px;">
+														에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다. 에디터 사용 영역입니다. 관리자가 표시한 내용입니다.  
+													</p>
+													<img src="../../../images/client/sub/img_capatest1.png" alt="수행과제 참고 이미지" style="display: block; margin: 0 auto 20px;">
+													<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px; height: 150px;">
+														<tbody>
+															<tr>
+																<td>asdfas</td>
+																<td>sdfa</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+															<tr>
+																<td>asdf</td>
+																<td>asdf</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- [pp] //에디터 사용 영역 -->
+
+												</div>
+											</div>
+											<div class="testquestion_wrap">
+												<div class="test_answer">
+													답변을 작성해주세요.
+												</div>
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+											</div>
+										</div>
+									</section>
+									<section class="section_capatest">
+										<h3 class="section_tit_md">주요사건보고1</h3>
+										<div class="section_sarea">
+											<span class="capatest_no">1</span>
+											<p class="capatesttit_label">일반적 타문화 접촉경험</p>
+											
+											<div class="tbl tbl_row tbl_fixed mg_t10">
+												<table>
+													<caption>주요사건 보고 예제 상황</caption>
+													<colgroup>
+														<col style="width:10%">
+														<col style="width:90%">
+													</colgroup>
+													<tbody>
+														<tr>
+															<th scope="row">A</th>
+															<td>
+																수업시간에 교수님이 출석을 부르시는데, 중국에서 온 유학생이 매번 ‘응’이라고만 대답을 한다. 한국어가 꽤 유창한 학생으로 알려져 있어서, 교수님도 기분이 언짢으신 것 같다.
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">B</th>
+															<td>
+																미국에서 온 유학생과 같이 수업을 듣는데, 그 학생은 매 수업시간에 먹을거리를 가져와 수업 중에 먹고 있다. 씹는 소리와 음식 냄새로 같이 수업을 듣는 다른 학생들과 교수님도 언짢아하는 것 같다.
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">C</th>
+															<td>
+																인도에서 온 유학생과 조별 과제를 함께 하게 되었다. 인도인 학생에게서 독특한 향신료냄새가 나는 듯해서, 같이 과제를 하는 친구들은 그 인도인 친구와 가까이 앉아서 함께 과제를 수행하는 것을 불편하게 생각하는 것 같다.
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="testquestion_wrap">
+												<p class="mg_b10 medium">
+													위 상황에서 나는 어떻게 말하거나 행동할지를 구체적으로 기술하세요.
+												</p>
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+											</div>
+										</div>
+									</section>
+									<div class="tip_box">
+										아래 3가지 상황&#40;A,B,C&#41; 중 <span class="hl_circle">1가지를</span> 택하여, 답변에 기재해주세요.<br/><br/>
+										ex. A 상황에서 나는 ~ 
+									</div>
+									<section class="section_capatest">
+										<h3 class="section_tit_md">주요사건보고2</h3>
+										<div class="section_sarea">
+											<span class="capatest_no">1</span>
+											<p class="capatesttit_label">실제 경험한 타문화 접촉경험</p>
+											<p class="mg_t10 mg_b20 prewrap">대학은 나와는 다른 배경(인종, 출신 지역/국가, 종교, 젠더, 장애 정도 등)을 지닌 다양한 사람을 만날 수 있는 공간입니다. 다양한 사람을 만나 새로운 경험과 지식을 습득하는 것은 대학교육의 주요 가치이기도 합니다.</p>
+											<!--
+											<div class="testex_box mg_b20">
+												<div class="testex_cnt tbl_editor">
+													대학은 나와는 다른 배경(인종, 출신 지역/국가, 종교, 젠더, 장애 정도 등)을 지닌 다양한 사람을 만날 수 있는 공간입니다. 다양한 사람을 만나 새로운 경험과 지식을 습득하는 것은 대학교육의 주요 가치이기도 합니다.
+												</div>
+											</div>
+											-->
+											<section class="section_xsarea">
+												<h4 class="test_tit mg_b10">
+													<span class="no">1</span>
+													지난 1년간 대학 생활 중 만난 사람들을 떠올려보고, 각 사람의 배경이 나와 어떤 점에서 얼마나 달랐는지, 그 사람과 얼마나 자주 만났는지를 기술하세요.
+												</h4>
+												<div class="tbl tbl_col tbl_fixed scrollx_tbl_sm">
+													<table>
+														<caption>주요사건 보고 예제 상황</caption>
+														<colgroup>
+															<col style="width:16%">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:auto">
+															<col style="width:16%">
+															<col style="width:80px">
+														</colgroup>
+														<thead>
+															<tr>
+																<th scope="col" rowspan="2"></th>
+																<th scope="col" colspan="7">배경차이</th>
+																<th scope="col" rowspan="2">만남빈도</th>
+																<th scope="col" rowspan="2">
+																	<button type="button" class="btn_resumeedit resumerow_add mg_r0"><span>+</span>추가</button>
+																</th>
+															</tr>
+															<tr>
+																<th scope="col">인종</th>
+																<th scope="col">국적/출신지역</th>
+																<th scope="col">종교</th>
+																<th scope="col">성별</th>
+																<th scope="col">장애수준</th>
+																<th scope="col">경제수준</th>
+																<th scope="col">기타</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td colspan="10">
+																	목록을 추가해주세요
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">사람1</th>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_1" class="hidden">
+																		<label for="check_only1_1">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_2" class="hidden">
+																		<label for="check_only1_2">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_3" class="hidden">
+																		<label for="check_only1_3">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_4" class="hidden">
+																		<label for="check_only1_4">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_5" class="hidden">
+																		<label for="check_only1_5">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_6" class="hidden">
+																		<label for="check_only1_6">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<p class="check_row_only">
+																		<input type="checkbox" id="check_only1_7" class="hidden">
+																		<label for="check_only1_7">선택</label>
+																	</p>
+																</td>
+																<td class="td_input">
+																	<div class="select_form wd_p100">
+																		<label class="select_common">선택</label>
+																		<select class="select_custom">
+																			<option value="" selected>선택</option>
+																			<option value="">거의 매일</option>
+																			<option value="">일주일에 2~3회</option>
+																			<option value="">일주일에 1회</option>
+																			<option value="">한 달에 2~3회</option>
+																		</select>
+																	</div>
+																</td>
+																<td class="td_input">
+																	<button type="button" class="btn_resumeedit resumerow_del mg_r0"><span>-</span>삭제</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</section>
+											<section class="section_xsarea">
+												<div class="test_tit mg_b10">
+													<span class="no">2</span>
+													<div class="prewrap">위에서 응답한 사람들 중 한 명을 선택하여, 그&#40;녀&#41;에 대하여 아래 사항을 자세하게 기술하세요.
+-  그 사람과 주로 어떤 일을 같이 했나요?
+-  그 사람은 나와 어떤 점에서 비슷했고, 어떤 점에서 달랐다고 생각하나요?
+-  그 사람과의 공통점과 차이점을 생각해볼 때, 나의 느낌, 생각, 행동, 태도는 어떠했나요?
+-  그 사람을 만나며 새롭게 알게 되었거나 변화한 점&#40;느낌, 생각, 행동, 태도&#41;이 있었다면, 무엇입니까?</div>
+												</div>
+												<!--
+												<h4 class="test_tit mg_b10">
+													<span class="no">2</span>
+													위에서 응답한 사람들 중 한 명을 선택하여, 그&#40;녀&#41;에 대하여 아래 사항을 자세하게 기술하세요.
+												</h4>
+												<div class="test_cnt mg_b15">
+													<ul class="list_dot list_dot_gray">
+														<li>
+															그 사람과 주로 어떤 일을 같이 했나요?
+														</li>
+														<li>
+															그 사람은 나와 어떤 점에서 비슷했고, 어떤 점에서 달랐다고 생각하나요?
+														</li>
+														<li>
+															그 사람과의 공통점과 차이점을 생각해볼 때, 나의 느낌, 생각, 행동, 태도는 어떠했나요?
+														</li>
+														<li>
+															그 사람을 만나며 새롭게 알게 되었거나 변화한 점&#40;느낌, 생각, 행동, 태도&#41;이 있었다면, 무엇입니까?
+														</li>
+													</ul>
+												</div>
+												-->
+												<div class="test_lettercount">
+													<textarea rows="8" class="form_style" placeholder="최소 100자 이상 최대 2000자 이내로 작성해주세요"></textarea>
+													<span class="letter_counter"></span>
+												</div>
+											</section>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn btn_lg btn_orange">임시저장</button>
+							<button type="button" class="btn btn_lg btn_default">제출하기</button>
+						</div>
+                        <p class="infotxt_area">
+                            모든 영역에 전부 응답하였는지 <strong>확인 후 제출</strong>버튼을 누르시기 바랍니다.
+                        </p>
+					</article>
+				</div>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<ul class="footer_link">
+					<li><a href="javascript:void(0);" class="privacy">개인정보처리방침</a></li>
+					<li><a href="javascript:void(0);">이메일무단수집거부</a></li>
+				</ul>
+				<ul class="footer_info">
+					<li>
+						&#40;28644&#41; 충북 청주시 서원구 충대로1, 충북대학교 TEL 043)261-2114
+					</li>
+					<li>
+						Copyright 2020 Chungbuk National University &copy; Allrights Reserved
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+	</body>
+
+</html>

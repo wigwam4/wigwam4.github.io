@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+/* 테이블 관련 설정 */
+.tbl_fixed{ table-layout: fixed; }
+.bg_tr{ background: #f4f4f4 !important; }
+.td_input { padding: 3px !important; }
+.td_input .input-sm {
+	height: 28px;
+	padding: 4px 8px;
+}
+.td_input .input-group-sm input {
+	height: 28px;
+}
+.td_input .input-group-sm > .input-group-addon {
+	padding: 0 10px;
+	height: 28px;
+	font-size: 14px;
+}
+.bg_th {
+	background-color: #f4f4f4;
+}
+.data_required::after {
+	content: "*";
+	color: #e53c48;
+}
+
+/* 테이블 상단 버튼영역 */
+.ad_tbl_top {
+	height: 30px;
+	margin-bottom: 5px;
+	position: relative;
+	text-align: right;
+}
+.ad_tbl_count {
+	display: table;
+	width: auto; height: 30px;
+	position: absolute; left: 0;
+}
+.ad_tbl_count li {
+	display: table-cell;
+	padding-left: 10px;
+	text-align: left; vertical-align: bottom;
+}
+.ad_tbl_count li:first-child {
+	padding-left: 0;
+}
+.ad_tbl_count li span {
+	margin-right: 3px;
+	font-weight: 600; color: #289dd3;
+}
+
+.ad_tbl_toplist * {
+	margin: 2px 0;
+}
+.ad_tbl_toplist .btn i {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+
+
+/* 테이블 */
+table {
+	border-color: #ddd !important;
+}
+table th{
+	font-size: 13px; vertical-align: middle; text-align: center;
+	border-color: #ddd !important;
+	word-wrap: break-word;
+}
+table td{
+	font-size: 13px; vertical-align: middle;
+	word-wrap: break-word;
+	border-color: #ddd !important;
+}
+caption {
+	display: none;
+}
+table tr th label {
+	font-weight: inherit;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 5px;
+}
+
+.table {
+	margin-bottom: 0;
+	background-color: #fff;
+}
+.tbl_col td{
+	text-align: center;
+}
+.tbl_col thead th {
+	background-color: #f4f4f4;
+}
+.tbl_row tbody tr th {
+	background-color: #f4f4f4;
+}
+.tbl_wide>tbody>tr>td, .tbl_wide>tbody>tr>th, .tbl_wide>tfoot>tr>td, .tbl_wide>tfoot>tr>th, .tbl_wide>thead>tr>td, .tbl_wide>thead>tr>th {
+	padding: 8px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	vertical-align: middle;
+}
+
+.tbl_line {
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+}
+table.dataTable.tbl_line {
+	border-collapse: collapse !important;
+}
+.tbl_line > thead > tr > th, .tbl_line > tbody > tr > th, .tbl_line > tfoot > tr > th, .tbl_line > thead > tr > td, .tbl_line > tbody > tr > td, .tbl_line > tfoot > tr > td {
+	border: 1px solid #f4f4f4;
+}
+.tbl_line > thead > tr > th:first-child, .tbl_line > tbody > tr > th:first-child, .tbl_line > tbody > tr > td:first-child {
+	border-left: none !important;
+}
+.tbl_line > thead > tr > th:last-child, .tbl_line > tbody > tr > th:last-child, .tbl_line > tbody > tr > td:last-child {
+	border-right: none !important;
+}
+
+/* 테이블 hover */
+.table-hover>tbody>tr:hover {
+		background: #f1f7fb;
+}
+/* table style - 기본 세로형 리스트 스타일 thead row 2줄이상 */
+.ad_multirow_list_tbl {
+	width: 100%;
+	position: relative;
+}
+.ad_multirow_list_tbl thead th {
+	text-align: center;
+	border-left: 1px solid #ddd;
+}
+.ad_multirow_list_tbl tbody th{
+	text-align: center;
+}
+.ad_multirow_list_tbl tbody td {
+	text-align: center;
+	border-left: 1px solid #ddd;
+}
+.table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
+	white-space: normal;
+}
+/* 데이터 테이블*/
+.dataTables_scrollBody thead th { 
+	/* 데이터 테이블 thead 아래 빈영역 제거 */
+	padding-top : 0px !important; 
+	padding-bottom : 0px !important; 
+}
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before {
+	margin: 0;
+	top:50%;
+	transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+}
+table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after {
+	margin: 0;
+	top:50%;
+	transform:translate(-40%, -70%);
+	-webkit-transform:translate(-40%, -70%);
+	-moz-transform:translate(-40%, -70%);
+	-o-transform:translate(-40%, -70%);
+}
+div.dataTables_scrollBody table tbody.pd_input tr td {
+	padding: 3px !important;
+}
+.tbl_scroll_x .dataTables_wrapper .dataTables_scrollHeadInner {
+	width: 100% !important;
+}
+.tbl_scroll_y .dataTables_scrollBody{
+	border-bottom: 1px solid #ddd;
+}
+/* 스크롤 테이블 */
+.tbl_scroll {
+	width: 100%;
+}
+.tbl_scroll .table {
+	min-width: 1000px;
+}
+.tbl_scroll_xl .table {
+	min-width: 1400px;
+}
+.tbl_scroll_lg .table {
+	min-width: 1200px;
+}
+.tbl_scroll_md .table {
+	min-width: 800px;
+}
+.tbl_scroll_sm .table {
+	min-width: 600px;
+}
+.tbl_scroll_xs .table {
+	min-width: 400px;
+}
+@media all and (max-width:767px){
+	
+	.ad_tbl_top {
+		height: auto;
+		text-align: left;
+	}
+	.ad_tbl_count {
+		display: block;
+		width: 100%; height: auto;
+		margin-bottom: 3px;
+		position: relative;
+	}
+	.ad_tbl_count li {
+		display: inline-block;
+	}
+	.ad_tbl_toplist {
+		padding: 5px;
+		text-align: right;
+		border: 1px solid #ddd;
+	}
+	
+	/* data table */
+	.dataTables_wrapper  > .row > div{
+		text-align: right !important;
+	}
+	div.dataTables_length {
+		display: inline-block;
+	}
+	.dataTables_info {
+		display: inline-block;
+	}
+	.dt-buttons {
+		margin-top: 10px;
+	}
+	
+}
+

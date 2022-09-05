@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+@media print {
+	@page {
+		size: portrait;
+		margin: 2.54cm 1.91cm;
+		width: 21cm; height: 29.7cm;
+	}
+	* {
+		/* 배경그래픽 표시 */
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+	body {
+		position: relative;
+	}
+	div.print_banner {
+		display: none;
+	}
+	div.page_wrapper {
+		width: initial;
+		padding: 0;
+	}
+	div.page { 
+		width: initial; min-height: initial; height: auto;
+		margin: 0; padding: 0;
+		font-size: 1.2rem;
+		box-shadow: initial; background: initial; border: none;
+	}
+	div.page_inner {
+		min-height: inherit;
+	}
+	.page_inner > section {
+		padding: 20px 0 !important;
+	}
+	.personal_data h1 {
+		font-size: 1.8rem !important;
+	}
+	.section_divided h3 {
+		font-size: 1.5rem !important;
+	}
+	.circle_box > div, .skill_talented {
+		font-size: 1.2rem !important;
+	}
+	.section_divided h4, .section_divided h4 .date {
+		font-size: 1.5rem !important;
+	}
+	.section_divided h4 .date small, .section_divided h4 span {
+		font-size: 1.2rem !important;
+	}
+	.label {
+		font-size: 1.2rem !important;
+	}
+	.list_data strong {
+		font-size: 1.5rem !important;
+	}
+	th, td {
+		padding: 8px 12px !important;
+	}
+
+
+}
+/* reset */
+* {
+	margin: 0; padding: 0;
+	line-height: 150%;
+	font-weight: normal;
+	word-break: keep-all;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img, button {
+	outline: 0;
+	border: 0;
+}
+table {
+    width: 100%;
+	word-break: break-all;
+	border-collapse: collapse; border-spacing: 0; 
+	table-layout: fixed; 
+	page-break-inside: auto;
+}
+table caption {
+	height:0; 
+	font-size:0; text-indent:-9999px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+th {
+    text-align: center;
+}
+thead {
+	display: table-header-group;
+}
+thead th {
+	background: #f2f2f2;
+}
+tbody::after {
+    content: "";
+    display: block;
+}
+tfoot {
+	display: table-footer-group;
+}
+.bg_th {
+    background: #f2f2f2;
+}
+.tbl_col {
+	margin-top: 12px;
+}
+table.tbl_col tbody::before {
+    display: none;
+}
+table.tbl_col th, table.tbl_col td {
+	text-align: center;
+}
+table.tbl_narrow tbody th, table.tbl_narrow tbody td {
+	padding: 8px;
+}
+ul li {
+	list-style: none;
+}
+.ta_l {
+	text-align: left !important;
+}
+.ta_r {
+	text-align: right !important;
+}
+.ta_c {
+	text-align: center !important;
+}
+.btn {
+	display: inline-block;
+	margin-right: 8px; padding: 0 8px;
+	font-family: Pretendard, sans-serif; font-size: 1.7rem; font-weight: 200;
+	background: rgba(0,0,0,0);
+	transition: 0.2s;
+}
+.btn_text {
+	position: relative;
+	padding: 0 2px;
+}
+.btn_text::before {
+	content: "";
+	position: absolute; bottom: 0; left: 0;
+	display: block;
+	width: 0; height: 1px;
+	background: #5ad925;
+	transition: 0.3s;
+}
+.label {
+	display: inline-block;
+	margin-right: 4px; padding: 0 6px;
+	font-size: 1.3rem; line-height: inherit; 
+	background: #f2f2f2;
+	border-radius: 4px;
+}
+.mark::before {
+	content: "";
+	display: inline-block;
+	margin-top: 6px; margin-right: 5px;
+	width: 8px; height: 8px;
+	vertical-align: top;
+	background: #5ad925;
+	border-radius: 50%;
+}
+.break {
+	page-break-after: auto; page-break-inside: avoid;
+}
+.hidden {
+    display: none;
+}
+
+/* layout */
+.print_banner {
+	position: relative;
+	width: 100%; height: 60px;
+	background: #1a1a1a;
+}
+.print_banner {
+	display: flex;
+	padding: 0 30px;
+	justify-content: right; align-items: center;
+}
+.print_banner .btn {
+	margin-right: 0; margin-left: 30px;
+	color: #5ad925;
+}
+.page_wrapper {
+	padding: 60px;
+	width: 100%;
+	overflow: auto;
+}
+.page {
+	position: relative;
+	margin: 0 auto; padding: 3.6cm 1.91cm;
+	width: 21cm; min-height: 29.7cm;
+    font-family: Pretendard, sans-serif; font-size: 1.4rem; font-weight: 200;
+	background-color: #fff; background-repeat: no-repeat;
+	background-image: url(../img/bg_print_top.png), url(../img/bg_print_bottom.png);
+	background-position: top center, bottom center;
+	border: 1px solid #3a3a3a;
+    overflow: hidden;
+}
+.page_inner {
+	position: relative;
+	min-height: 27.7cm; 
+}
+
+/* 자소서 */
+.page_inner > section {
+    padding: 24px 0;
+    border-bottom: 1px solid #ccc;
+}
+.page_inner > section:first-child {
+    border-top: 1px solid #ccc;
+}
+.personal_data h1 {
+    font-size: 2.4rem; font-weight: 800; line-height: 1.2;
+}
+.personal_data ul {
+    margin-top: 12px;
+}
+.section_divided {
+    display: flex;
+}
+.section_divided h3 {
+    width: 25%;
+    flex-shrink: 0;
+    font-size: 1.8rem; font-weight: 800;
+}
+.section_divided > div {
+    flex: 1;
+}
+.section_divided h4 {
+    position: relative;
+    padding-top: 1px;
+    font-size: 1.7rem; font-weight: 600;
+}
+.section_divided h4 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem; font-weight: 400;
+}
+.section_divided h4 .date {
+    position: absolute; top: 0; right: 0;
+    margin-top: 0;
+    font-size: inherit; font-weight: 600;
+}
+.section_divided h4 .date small {
+	margin-right: 8px;
+	font-size: 1.4rem; font-weight: 400; line-height: inherit; vertical-align: top;
+}
+.list_line > li {
+    position: relative;
+    padding-left: 12px;
+}
+.list_line > li::before {
+    content: "-";
+    position: absolute; top: 0; left: 0;
+}
+.list_rect > li {
+    position: relative;
+    padding-left: 22px;
+}
+.list_rect > li::before {
+    content: "▣";
+    position: absolute; top: 0; left: 0;
+}
+.section_divided.experience .list_line {
+    margin-top: 12px;
+}
+.section_divided.experience .list_rect {
+    margin-top: 12px;
+}
+.section_divided.experience .list_rect > li {
+    margin-bottom: 10px;
+}
+.section_divided.experience .list_rect > li:last-child {
+    margin-bottom: 0;
+}
+.section_divided.experience .list_rect table {
+    margin-top: 4px;
+}
+.section_divided.experience table .list_line {
+    margin-top: 0;
+}
+.circle_box {
+	display: flex;
+	align-items: stretch;
+}
+.circle_box > div {
+	margin-right: -20px; padding: 20px 30px;
+	width: calc(30% + 20px); 
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+.circle_box > div:last-child {
+	margin-right: 0;
+}
+.circle_box dt {
+	display: block;
+	margin-bottom: 14px;
+	color: #333; font-weight: 600; letter-spacing: 1px;
+}
+.skill_talented {
+	width: calc(40% + 20px) !important; 
+    font-size: 1.3rem;
+	background: rgba(0,0,0,0.04);
+}
+.circle_box li {
+	margin-bottom: 4px;
+}
+.circle_box li:last-child {
+	margin-bottom: 0;
+}
+.list_data li {
+    margin-bottom: 12px;
+}
+.list_data li:last-child {
+    margin-bottom: 0;
+}
+.list_data strong {
+    display: block;
+    margin-bottom: 4px; padding-top: 1px;
+    font-size: 1.7rem; font-weight: 600;
+}
+.experience tbody::before {
+    content: "";
+    display: block;
+    height: 12px; 
+}
+
+/* 경력기술서 */
+.page_cd .section_divided {
+	display: block;
+}
+.page_cd .section_divided h3 {
+	margin-bottom: 40px;
+	width: 100%;
+}
+.page_cd .section_divided h4 .date {
+	margin-top: 0;
+}
+.page_cd table + .mark {
+	margin-top: 10px;
+}
+
+
+
+/*=================== hover ===================*/
+@media screen and (min-width:1025px){
+	.btn_text:hover::before {
+		width: 100%;
+		opacity: 1;
+	}
+}
+/*=================== //hover ===================*/

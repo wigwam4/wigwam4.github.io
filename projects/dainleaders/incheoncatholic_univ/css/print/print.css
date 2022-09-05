@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'NanumMyeongjo';
+	font-weight: normal;
+	src: url('../../font/NanumMyeongjo.eot');
+	src: url('../../font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+		local(NanumMyeongjo), url('../../../font/NanumMyeongjo.woff') format('woff'),
+		url('../../../font/NanumMyeongjo.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'NanumGothic';
+	font-weight: normal;
+	src: url('../../font/NanumGothic.eot');
+	src: url('../../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+		local(NanumGothic), url('../../../font/NanumGothic.woff') format('woff'),
+		url('../../../font/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'sandollB';
+	font-weight: normal;
+	src: url("./fonts/SandolGothicB.eot"); 
+	src: url("./fonts/SandolGothicB.eot?#iefix") format("embedded-opentype"), url("./fonts/SandolGothicB.otf") format("opentype"), url("./fonts/SandolGothicB.woff") format("woff"),
+		local(sandollB), url('../../font/SandolGothicB.woff') format('woff'),
+		url('../../font/SandolGothicB.ttf') format('truetype'); 
+}
+@font-face {
+	font-family: 'sandollM';
+	font-weight: normal;
+	src: url("./fonts/SandolGothicM.eot"); 
+	src: url("./fonts/SandolGothicM.eot?#iefix") format("embedded-opentype"), url("./fonts/SandolGothicM.otf") format("opentype"), url("./fonts/SandolGothicM.woff") format("woff"),
+		local(sandollM), url('../../font/SandolGothicM.woff') format('woff'),
+		url('../../font/SandolGothicM.ttf') format('truetype'); 
+}
+
+
+
+@media print {
+	@page {
+		size: portrait;
+		margin: 0;
+	}
+	html, body {
+		height: 99%;
+		overflow: hidden;
+	}
+	div.print_banner {
+		display: none;
+	}
+	div.page { 
+		width: initial; min-height: initial;
+		margin: 0;
+		box-shadow: initial; background: initial; border: initial;
+		page-break-after: avoid;
+		border: none;
+	}
+}
+@media print and (color) {
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}
+
+* {
+	margin: 0; padding: 0;
+	line-height: 150%;
+	font-weight: normal;
+	/*color: #313131;*/
+	word-break: keep-all;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img, button {
+	outline: 0;
+	border: 0;
+}
+table{ border-collapse:collapse; border-spacing:0px; }
+table caption{ font-size:0; height:0; text-indent:-9999px; }
+ul li{list-style: none;}
+
+
+.print_banner {
+	position: relative;
+	margin-bottom: 60px;
+	width: 100%; height: 50px;
+	background: #ebf4f8;
+}
+.print_banner button {
+	position: absolute; top: 50%; right: 10px;
+	padding: 8px 20px 8px 44px;
+	color: #fff; font-size: 15px;
+	background: #289dd3 url(../../images/client/sub/btn_allprint.png) no-repeat 16px 10px; background-size: 20px; 
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.page {
+	width: 21cm;
+	height: 29.7cm;
+	padding: 0.4cm;
+	margin: 0cm auto;
+	background: #fff;
+	border: 1px solid #3a3a3a;
+}
+.page_wrapper {
+	height: 100%;
+    padding: 2cm;
+	position: relative; overflow: hidden;
+	background: #fff url('../../images/client/print/bg_print.jpg') no-repeat top left; background-size: 100% 100%;
+}
+
+
+
+/* 핵심 역량 인증서 */
+.cw {
+	padding: 0.6cm;
+}
+.cw .page_wrapper {
+	position: relative;
+	padding: 0.1cm;
+	border: 0.2cm solid #A7A9AC;
+}
+.cw .page_wrap {
+	height: 100%;
+	border: 0.08cm solid #0072BC;
+}
+.cw .page_inner {
+	padding: 1cm 1.4cm 1.4cm;
+}
+.prin_no{
+	margin-bottom: 90px;
+	font-family: 'NanumMyeongjo', serif; color: #000;
+}
+.prin_no span {
+	color: #666;
+}
+.prin_title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+.prin_title h1{
+	font-size: 56px; font-family: 'sandollB', serif;
+	line-height: 1.5em; letter-spacing: 20px;
+}
+.prin_title p {
+	font-family: 'sandollM', serif; 
+	font-size: 32px; color: #666; letter-spacing: 3px;
+}
+.prin_profile {
+	margin-left: 60%; margin-bottom: 60px;
+	font-family: 'NanumGothic', serif;
+}
+.prin_profile table{
+	width: 100%; 
+}
+.prin_profile table th, .prin_profile table td {
+	text-align: left; font-size: 16px; font-weight: bold;
+}
+.prin_profile .print_name span{
+	padding: 0 16px;
+}
+.prin_contents {
+	text-indent: 15px; text-align: justify; word-break: keep-all;
+}
+.prin_contents p {
+	font-size: 22px; line-height: 1.7em; font-family: 'NanumGothic', serif; font-weight: bold;
+}
+.prin_day_title {
+	width: 100%;
+	padding: 40px 0 90px;
+	text-align: center;
+}
+.prin_day_title p{
+	display: inline-block;
+	font-size: 20px; font-family: 'NanumGothic', serif;
+}
+.prin_day_title p span {
+	padding: 0 16px;
+}
+.prin_stamp{
+	position: relative; 
+	text-align: center; 
+}
+.prin_stamp {
+	margin-bottom: 80px;
+}
+.prin_stamp img {
+	width: 100px;
+	position: absolute; right: 104px; top: -25px
+}
+.prin_stamp p {
+	font-family: 'NanumGothic', serif; font-size: 30px; font-weight: bold; letter-spacing: 10px; 
+}
+.cw div .footer_info {
+	padding: 0;
+}
+.footer_info {
+	position: absolute; bottom: 20px; left: 15px;
+	width: 96%;
+	color: #666; font-size: 11px; text-align: left; 
+}
+.footer_info .box {
+	display: inline-block;
+	margin: 6px 4px 0 6px; padding: 3px 8px;
+	line-height: 180%; font-weight: bold; color: #fff; 
+	background: #666
+}
+.footer_info p {
+	display: inline;
+	width: 86%;
+	color: #666; line-height: 1.7em;
+}
+.footer_info div{
+	position: relative;
+	padding: 4px 10px 0 18px;
+	font-size: 10px;
+}
+.footer_info ul {
+	width: 50%;
+}
+.footer_info li {
+	line-height: 1.2em;
+}
+.footer_info .right {
+	position: absolute; top: 3px; left: 50%;
+	padding-right: 10px; 
+}
+.footer_info .right li {
+	line-height: 1.6em;
+}
+.footer_info li span {
+	font-weight: bold;
+}
+
+/* 핵심 역량 인증서 - 인성 역량 */
+.civil .prin_day_title {
+	padding: 30px 0 120px;
+}
+
+/* CEP 인증서 */
+.cep .prin_title {
+	margin-bottom: 90px;
+}
+.cep .prin_day_title {
+	padding: 40px 0 120px;
+}
+.cep .footer_info:after {
+	content: ""; display: block; clear: both;
+}
+.cep .footer_info .box, .cep .footer_info p {
+	vertical-align: middle;
+}
+.cep .footer_info .box {
+	display: block; 
+	float: left;
+	width: 68px; 
+	padding: 6px;
+	text-align: center;
+}
+.cep .footer_info p {
+	float: left;
+	margin: 8px 0 0 10px; 
+	line-height: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

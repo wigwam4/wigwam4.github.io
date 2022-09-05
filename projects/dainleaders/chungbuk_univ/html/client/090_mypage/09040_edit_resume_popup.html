@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="충북대학교">
+		<meta name="description" content="충북대학교 CIEAT 시스템 (Chungbuk Integrated Extracurricular Administrative sysTem)">
+		<meta name="copyrigt" content="충북대학교">
+		<meta name="keywords" content="충북대학교, CIEAT, 씨앗시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>충북대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+		<!-- [pp] 팝업창 전체 -->
+		<section class="pop_wrapper pop_lg_wrap">
+			<section class="pop_header">
+				<h2>이력서 등록</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_content pop_lg_content">
+				<section class="search_box section_sarea">
+					<h4 class="hidden">이력서 제목</h4>
+					<label class="title_label">이력서 제목</label>
+					<input type="text" class="form_style wd_p100" value="이력서 제목을 입력하세요.">
+				</section>
+				<section class="resume_container">
+					<div class="studentinfo_editbox_wrap">
+						<h5 class="section_tit_sm">기본정보</h5>
+						<div class="studentinfo_box studentinfo_editbox section_sarea">
+							<p class="resumeimg">
+								<img src="../../../images/client/sub/img_model_wide.png" alt="학생 증명사진">
+								<button type="button" class="btn btn_del">사진 삭제</button>
+								<input type="file" id="attach_img" class="hidden">
+								<label for="attach_img" class="btn_round btn_sm btn_default attach_file">찾아보기</label>
+							</p>
+							<dl>
+								<dt>
+									이사라
+								</dt>
+								<dd>
+									<strong>영어 이름</strong>
+									<input type="text" class="form_style">
+								</dd>
+								<dd>
+									<strong>소개 문구</strong>
+									<input type="text" class="form_style wd_p95">
+								</dd>
+								<dd>
+									<strong>연락처</strong>
+									<input type="text" class="form_style wd_55"> —
+									<input type="text" class="form_style wd_65"> —
+									<input type="text" class="form_style wd_65">
+								</dd>
+								<dd>
+									<strong>이메일</strong>
+									<input type="text" class="form_style wd_100"> @
+									<input type="text" class="form_style wd_130">
+								</dd>
+								<dd>
+									<strong>주소</strong>
+									<input type="text" class="form_style wd_p95">
+								</dd>
+							</dl>
+						</div>	
+					</div>
+					<section>
+						<h5 class="section_tit_sm">학력정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly1" class="hidden">
+								<label for="publicly1">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>학력정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 80px">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">입학일</th>
+										<th scope="col">졸업일</th>
+										<th scope="col">학적</th>
+										<th scope="col">학교명</th>
+										<th scope="col">전공명</th>
+										<th scope="col">학점</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>졸업</td>
+										<td>서울고등학교</td>
+										<td>인문</td>
+										<td>3.4</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="입학일" title="입학일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="졸업일" title="졸업일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<div class="select_form wd_p100 ta_l">
+												<label class="select_common">선택</label>
+												<select class="select_custom">
+													<option value="" selected>선택</option>
+													<option value="">졸업</option>
+												</select>
+											</div>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학교명" title="학교명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="전공명" title="전공명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학점" title="학점 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">희망근무조건</h5>
+						<div class="tbl tbl_row scrollx_tbl_md">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col style="width:20%">
+									<col style="width:80%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">고용형태</th>
+										<td class="td_input">
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment1" class="hidden">
+												<label for="employment1">정규직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment2" class="hidden">
+												<label for="employment2">계약직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment3" class="hidden">
+												<label for="employment3">인턴직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment4" class="hidden">
+												<label for="employment4">파견직</label>
+											</p>
+											<p class="radio_row">
+												<input type="radio" name="employment" id="employment5" class="hidden">
+												<label for="employment5">기타</label>
+												&#40; 
+												<input type="text" class="form_style wd_120">
+												&#41; 
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 근무지</th>
+										<td class="td_input">
+											<input type="text" class="form_style">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 연봉</th>
+										<td class="td_input">
+											<input type="text" class="form_style"> 만 원
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">희망 직무</th>
+										<td class="td_input">
+											<input type="text" class="form_style">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">경력사항</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly3" class="hidden">
+								<label for="publicly3">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>경력사항 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">직장명</th>
+										<th scope="col">직위</th>
+										<th scope="col">담당업무</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>문화재단</td>
+										<td>사원</td>
+										<td>민원처리</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="시작일" title="시작일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="종료일" title="종료일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="직장명" title="직장명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="직위" title="직위 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="담당업무" title="담당업무 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">대외활동</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly4" class="hidden">
+								<label for="publicly4">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>대외활동 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">기관명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>전국대학생기자연합회</td>
+										<td>전대기련 수습기자</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="시작일" title="시작일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="종료일" title="종료일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="기관명" title="기관명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">봉사활동</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly5" class="hidden">
+								<label for="publicly5">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>봉사활동 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">기관명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>초록우산어린이재단</td>
+										<td>행복한 어린이 만들기</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="시작일" title="시작일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="종료일" title="종료일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="기관명" title="기관명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">자격정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly6" class="hidden">
+								<label for="publicly6">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>자격정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 30%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">취득일</th>
+										<th scope="col">자격증명</th>
+										<th scope="col">발급기관</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>GTQ</td>
+										<td>학국생산성본부</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="취득일" title="취득일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="자격증명" title="자격증명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="발급기관" title="발급기관 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">어학정보</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly7" class="hidden">
+								<label for="publicly7">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>어학정보 작성하기</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">취득일</th>
+										<th scope="col">어학 명</th>
+										<th scope="col">점수/등급</th>
+										<th scope="col">발급기관</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>토익</td>
+										<td>805</td>
+										<td>cam</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="취득일" title="취득일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="어학시험명" title="어학시험명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="점수/등급" title="점수/등급 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="발급기관" title="발급기관 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">병역사항</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly8" class="hidden">
+								<label for="publicly8">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>병역사항 목록</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">입대일</th>
+										<th scope="col">전역일</th>
+										<th scope="col">병역구분</th>
+										<th scope="col">역종</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>-</td>
+										<td>-</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="입대일" title="입대일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="전역일" title="전역일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="병역구분" title="병역구분 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="역종" title="역종 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">해외경험</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly9" class="hidden">
+								<label for="publicly9">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>해외경험 목록</caption>
+								<colgroup>
+									<col style="width: 120px">
+									<col style="width: 120px">
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">시작일</th>
+										<th scope="col">종료일</th>
+										<th scope="col">국가명</th>
+										<th scope="col">활동내용</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2019.07.01</td>
+										<td>2019.11.11</td>
+										<td>캐국</td>
+										<td>메이플 스토리</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="시작일" title="시작일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<p class="search_day pd_l0">
+												<input type="text" class="form_style" placeholder="종료일" title="종료일">
+												<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+											</p>
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="국가명" title="국가명 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="활동내용" title="활동내용 입력">
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">대학생활설계</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly10" class="hidden">
+								<label for="publicly10">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="tbl tbl_col scrollx_tbl_md">
+							<table>
+								<caption>대학생활설계 상세</caption>
+								<colgroup>
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 25%">
+									<col style="width: 15%">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">학년</th>
+										<th scope="col">학기</th>
+										<th scope="col">목표</th>
+										<th scope="col">달성여부</th>
+										<th scope="col">삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1학년</td>
+										<td>1학기</td>
+										<td>토일 500점 달성</td>
+										<td class="td_input">
+											<span class="unilife_label on">달성</span>
+											<!-- [pp] 달성여부 : 
+											<span class="unilife_label on">달성</span>
+											<span class="unilife_label">미달성</span>
+											-->
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학년" title="학년 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="학기" title="학기 입력">
+										</td>
+										<td class="td_input">
+											<input type="text" class="form_style wd_p100" placeholder="목표" title="목표 입력">
+										</td>
+										<td class="td_input">
+											<span class="unilife_label on_js">미달성</span>
+										</td>
+										<td>
+											<button type="button" class="btn_resumeedit resumerow_del"><span>-</span>삭제</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h5 class="section_tit_sm">취미활동</h5>
+						<div class="resumeedit_btnrow">
+							<p class="check_row">
+								<input type="checkbox" name="publicly " id="publicly11" class="hidden">
+								<label for="publicly11">비공개</label>
+							</p>
+							<button type="button" class="btn_resumeedit resumerow_add"><span>+</span>추가</button>
+						</div>
+						<div class="resume_hobby_wrap">
+							<div class="resume_hobby grid_row">
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_photo">사진찍기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_photo" class="hidden">
+										<label for="hobby_photo">사진찍기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_cook">요리하기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_cook" class="hidden">
+										<label for="hobby_cook">요리하기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_soccor">운동하기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_soccor" class="hidden">
+										<label for="hobby_soccor">운동하기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_movie">영화보기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_movie" class="hidden">
+										<label for="hobby_movie">영화보기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_writing">글쓰기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_writing" class="hidden">
+										<label for="hobby_writing">글쓰기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_hiking">하이킹</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_hiking" class="hidden">
+										<label for="hobby_hiking">하이킹</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_shopping">쇼핑</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_shopping" class="hidden">
+										<label for="hobby_shopping">쇼핑</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_camping">캠핑</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_camping" class="hidden">
+										<label for="hobby_camping">캠핑</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_drive">드라이브</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_drive" class="hidden">
+										<label for="hobby_drive">드라이브</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_music">음악감상</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_music" class="hidden">
+										<label for="hobby_music">음악감상</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_sing">노래하기</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_sing" class="hidden">
+										<label for="hobby_sing">노래하기</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_instrument">악기연주</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_instrument" class="hidden">
+										<label for="hobby_instrument">악기연주</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_art">미술관</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_art" class="hidden">
+										<label for="hobby_">미술관</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_reading">독서</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_reading" class="hidden">
+										<label for="hobby_reading">독서</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_game">게임</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_game" class="hidden">
+										<label for="hobby_game">게임</label>
+									</p>
+								</div>
+								<div class="grid_col col_xl_2_1 col_sm_1 col_xs_1">
+									<span class="hb_hobby">이미지 없음</span>
+									<p class="check_row">
+										<input type="checkbox" id="hobby_hobby" class="hidden">
+										<label for="hobby_hobby">
+											<input type="text" class="form_style wd_100">
+										</label>
+									</p>
+								</div>
+							</div>
+						</div>
+						<p class="mg_t5 font_orange">
+							※ 최대 5개까지 선택 가능
+						</p>
+					</section>
+				</section>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_footer">
+				<button type="button" class="btn btn_lg btn_default">등록하기</button>
+			</section>
+			<!-- [pp] //팝업창하단 버튼영역 -->
+		</section>
+		<!-- [pp] // 팝업창 전체 -->
+	</body>
+
+</html>

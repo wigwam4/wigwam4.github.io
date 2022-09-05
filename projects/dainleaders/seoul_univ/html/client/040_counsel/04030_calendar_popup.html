@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no, address=no">
+        <meta name="title" content="서울대학교">
+        <meta name="description" content="서울대학교 학생경력관리시스템">
+        <meta name="copyrigt" content="서울대학교">
+        <meta name="keywords" content="서울대학교, 역량관리, 상담, 대학, 대학생, 경력관리시스템, 경력관리">
+        <title>서울대학교</title>
+
+        <!-- [pp] favicon -->
+        <link rel="apple-touch-icon" href="../../../images/favicon.png">
+        <link rel="shortcut icon" href="../../../images/favicon.ico">
+        <!-- [pp] //favicon -->
+
+        <!-- [pp] css -->
+        <link rel="stylesheet" href="../../../src/magnetic-popup/css/magnific-popup.css">
+        <link rel="stylesheet" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="../../../src/select2/css/select2.css">
+        <link rel="stylesheet" href="../../../src/apexchart/css/apexcharts.css">
+        <link rel="stylesheet" href="../../../src/fullcalendar/css/fullcalendar.min.css">
+        <link rel="stylesheet" href="../../../css/dl_global.css">
+        <link rel="stylesheet" href="../../../css/client/normalize.css">
+        <link rel="stylesheet" href="../../../css/client/grid.css">
+        <link rel="stylesheet" href="../../../css/client/formstyle.css">
+        <link rel="stylesheet" href="../../../css/client/table.css">
+        <link rel="stylesheet" href="../../../css/client/common_ui.css">
+        <link rel="stylesheet" href="../../../css/client/ui.css">
+        <link rel="stylesheet" href="../../../css/client/popup.css">
+        <!-- [pp] //css -->
+
+        <!--[pp] js -->
+        <script src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+        <!-- [if lt IE 9]>
+        <script src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+        <script src="../../../src/jquery/js/html5shiv.js"></script>
+        <script src="../../../src/jquery/js/IE9.js"></script>
+        <script src="../../../src/jquery/js/respond.min.js"></script>
+        <![endif]-->
+        <script src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+        <script src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+        <script src="../../../src/select2/js/select2.min.js"></script>
+        <script src="../../../src/apexchart/js/apexcharts.js"></script>
+        <script src="../../../src/fullcalendar/js/fullcalendar.min.js"></script>
+        <script src="../../../js/client/pp_common.js"></script>
+        <!--[pp] //js -->
+	</head>
+	<body>
+		<!-- [pp] 팝업창 전체 -->
+		<section class="pop_wrapper pop_lg_wrap">
+			<section class="pop_header">
+				<h2>
+					날짜 선택
+				</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_content pop_lg_content">
+				<div class="calendar">
+					<ul class="calender_topbox">
+						<li><span></span>예약완료/대기</li>
+						<li><span></span>예약가능</li>
+					</ul>
+					<div class="bg">
+						<ul>
+							<li>
+								<a title="이전달 달력보기" class="prev_m" onclick="javascript:changeYearMon('prev');" href="javascript:void(0);">이전달</a>
+							</li>
+							<li>
+								<span class="dib" id="thisMonth">2021-10</span>
+							</li>
+							<li>
+								<a title="다음달 달력 보기" class="next_m" onclick="javascript:changeYearMon('next');" href="javascript:void(0);">다음달</a>
+							</li>
+						</ul>
+					</div>
+					<div class="fc fc-ltr fc-unthemed" id="calendar" style="width: 100%;">
+						<div class="fc-view-container">
+							<div class="fc-view fc-month-view fc-basic-view">
+								<table>
+									<thead class="fc-head">
+										<tr>
+											<td class="fc-head-container fc-widget-header">
+												<div class="fc-row fc-widget-header">
+													<table>
+														<thead>
+															<tr>
+																<th class="fc-day-header fc-widget-header fc-sun">Sun</th>
+																<th class="fc-day-header fc-widget-header fc-mon">Mon</th>
+																<th class="fc-day-header fc-widget-header fc-tue">Tue</th>
+																<th class="fc-day-header fc-widget-header fc-wed">Wed</th>
+																<th class="fc-day-header fc-widget-header fc-thu">Thu</th>
+																<th class="fc-day-header fc-widget-header fc-fri">Fri</th>
+																<th class="fc-day-header fc-widget-header fc-sat">Sat</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</thead>
+									<tbody class="fc-body">
+										<tr>
+											<td class="fc-widget-content">
+												<div class="fc-day-grid-container">
+													<div class="fc-day-grid">
+														<div class="fc-row fc-week fc-widget-content">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past fc-other-month" data-date="2021-09-26"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past fc-other-month" data-date="2021-09-27"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past fc-other-month" data-date="2021-09-28"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past fc-other-month" data-date="2021-09-29"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past fc-other-month" data-date="2021-09-30"></td>
+																			<td class="fc-day fc-widget-content fc-past fc-fri" data-date="2021-10-01"></td>
+																			<td class="fc-day fc-widget-content fc-past fc-sat" data-date="2021-10-02"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past fc-other-month" data-date="2021-09-26">26</td>
+																			<td class="fc-day-number fc-mon fc-past fc-other-month" data-date="2021-09-27">27</td>
+																			<td class="fc-day-number fc-tue fc-past fc-other-month" data-date="2021-09-28">28</td>
+																			<td class="fc-day-number fc-wed fc-past fc-other-month" data-date="2021-09-29">29</td>
+																			<td class="fc-day-number fc-thu fc-past fc-other-month" data-date="2021-09-30">30</td>
+																			<td class="fc-day-number fc-fri fc-past" data-date="2021-10-01">1</td>
+																			<td class="fc-day-number fc-sat fc-past" data-date="2021-10-02">2</td>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+														<div class="fc-row fc-week fc-widget-content" style="height: 110px;">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past" data-date="2021-10-03"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past" data-date="2021-10-04"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past" data-date="2021-10-05"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past" data-date="2021-10-06"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past" data-date="2021-10-07"></td>
+																			<td class="fc-day fc-widget-content fc-fri fc-past" data-date="2021-10-08"></td>
+																			<td class="fc-day fc-widget-content fc-sat fc-past" data-date="2021-10-09"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past" data-date="2021-10-03">3</td>
+																			<td class="fc-day-number fc-mon fc-past" data-date="2021-10-04">4</td>
+																			<td class="fc-day-number fc-tue fc-past" data-date="2021-10-05">5</td>
+																			<td class="fc-day-number fc-wed fc-past" data-date="2021-10-06">6</td>
+																			<td class="fc-day-number fc-thu fc-past" data-date="2021-10-07">7</td>
+																			<td class="fc-day-number fc-fri fc-past" data-date="2021-10-08">8</td>
+																			<td class="fc-day-number fc-sat fc-past" data-date="2021-10-09">9</td>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td></td>
+																			<td></td>
+																			<td></td>
+																			<td></td>
+																			<td class="fc-event-container">
+																				<a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-resizable">
+																					<div class="fc-content"><span class="fc-title"><span class="fst font_possible" style="cursor: pointer;">01:00 ~ 02:00 &#40;0/1&#41;</span></span>
+																					</div>
+																					<div class="fc-resizer fc-end-resizer"></div>
+																				</a>
+																			</td>
+																			<td class="fc-event-container">
+																				<div class="fc-content"><span class="fc-title"><span class="fst font_impossible" style="cursor: pointer;">01:00 ~ 02:00 &#40;1/1&#41;</span></span>
+																				</div>
+																				<div class="fc-resizer fc-end-resizer"></div>
+																			</td>
+																			<td></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="fc-row fc-week fc-widget-content" style="height: 110px;">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past" data-date="2021-10-10"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past" data-date="2021-10-11"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past" data-date="2021-10-12"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past" data-date="2021-10-13"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past" data-date="2021-10-14"></td>
+																			<td class="fc-day fc-widget-content fc-fri fc-past" data-date="2021-10-15"></td>
+																			<td class="fc-day fc-widget-content fc-sat fc-past" data-date="2021-10-16"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past" data-date="2021-10-10">10</td>
+																			<td class="fc-day-number fc-mon fc-past" data-date="2021-10-11">11</td>
+																			<td class="fc-day-number fc-tue fc-past" data-date="2021-10-12">12</td>
+																			<td class="fc-day-number fc-wed fc-past" data-date="2021-10-13">13</td>
+																			<td class="fc-day-number fc-thu fc-past" data-date="2021-10-14">14</td>
+																			<td class="fc-day-number fc-fri fc-past" data-date="2021-10-15">15</td>
+																			<td class="fc-day-number fc-sat fc-past" data-date="2021-10-16">16</td>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+														<div class="fc-row fc-week fc-widget-content" style="height: 110px;">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past" data-date="2021-10-17"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past" data-date="2021-10-18"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past" data-date="2021-10-19"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past" data-date="2021-10-20"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past" data-date="2021-10-21"></td>
+																			<td class="fc-day fc-widget-content fc-fri fc-past" data-date="2021-10-22"></td>
+																			<td class="fc-day fc-widget-content fc-sat fc-past fc-state-highlight" data-date="2021-10-23"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past" data-date="2021-10-17">17</td>
+																			<td class="fc-day-number fc-mon fc-past" data-date="2021-10-18">18</td>
+																			<td class="fc-day-number fc-tue fc-past" data-date="2021-10-19">19</td>
+																			<td class="fc-day-number fc-wed fc-past" data-date="2021-10-20">20</td>
+																			<td class="fc-day-number fc-thu fc-past" data-date="2021-10-21">21</td>
+																			<td class="fc-day-number fc-fri fc-past" data-date="2021-10-22">22</td>
+																			<td class="fc-day-number fc-sat fc-past fc-state-highlight" data-date="2021-10-23">23</td>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+														<div class="fc-row fc-week fc-widget-content" style="height: 110px;">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past" data-date="2021-10-24"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past fc-today" data-date="2021-10-25"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past" data-date="2021-10-26"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past" data-date="2021-10-27"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past" data-date="2021-10-28"></td>
+																			<td class="fc-day fc-widget-content fc-fri fc-past" data-date="2021-10-29"></td>
+																			<td class="fc-day fc-widget-content fc-sat fc-past" data-date="2021-10-30"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past" data-date="2021-10-24">24</td>
+																			<td class="fc-day-number fc-mon fc-past fc-today" data-date="2021-10-25">25</td>
+																			<td class="fc-day-number fc-tue fc-past" data-date="2021-10-26">26</td>
+																			<td class="fc-day-number fc-wed fc-past" data-date="2021-10-27">27</td>
+																			<td class="fc-day-number fc-thu fc-past" data-date="2021-10-28">28</td>
+																			<td class="fc-day-number fc-fri fc-past" data-date="2021-10-29">29</td>
+																			<td class="fc-day-number fc-sat" data-date="2021-10-30">30</td>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+														<div class="fc-row fc-week fc-widget-content" style="height: 110px;">
+															<div class="fc-bg">
+																<table>
+																	<tbody>
+																		<tr>
+																			<td class="fc-day fc-widget-content fc-sun fc-past" data-date="2021-10-31"></td>
+																			<td class="fc-day fc-widget-content fc-mon fc-past fc-other-month" data-date="2021-11-01"></td>
+																			<td class="fc-day fc-widget-content fc-tue fc-past fc-other-month" data-date="2021-11-02"></td>
+																			<td class="fc-day fc-widget-content fc-wed fc-past fc-other-month" data-date="2021-11-03"></td>
+																			<td class="fc-day fc-widget-content fc-thu fc-past fc-other-month" data-date="2021-11-04"></td>
+																			<td class="fc-day fc-widget-content fc-fri fc-past fc-other-month" data-date="2021-11-05"></td>
+																			<td class="fc-day fc-widget-content fc-sat fc-past fc-other-month" data-date="2021-11-06"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<div class="fc-content-skeleton">
+																<table>
+																	<thead>
+																		<tr>
+																			<td class="fc-day-number fc-sun fc-past" data-date="2021-10-31">31</td>
+																			<td class="fc-day-number fc-mon fc-past fc-other-month" data-date="2021-11-01">1</td>
+																			<td class="fc-day-number fc-tue fc-past fc-other-month" data-date="2021-11-02">2</td>
+																			<td class="fc-day-number fc-wed fc-past fc-other-month" data-date="2021-11-03">3</td>
+																			<td class="fc-day-number fc-thu fc-past fc-other-month" data-date="2021-11-04">4</td>
+																			<td class="fc-day-number fc-fri fc-past fc-other-month" data-date="2020-11-05">5</td>
+																			<td class="fc-day-number fc-sat fc-past fc-other-month" data-date="2020-11-06">6</td>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- [pp] //팝업 컨텐츠 영역 -->
+			<!-- [pp] 팝업창하단 버튼영역 -->
+			<div class="pop_footer">
+				<button type="button" class="btn_round btn_md btn_gold wd_90">닫기</button>
+            </div>
+			<!-- [pp] //팝업창하단 버튼영역 -->
+		</section>
+		<!-- [pp] // 팝업창 전체 -->
+	</body>
+
+</html>

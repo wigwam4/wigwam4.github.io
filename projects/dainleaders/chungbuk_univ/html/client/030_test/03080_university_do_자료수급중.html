@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="호남대학교">
+		<meta name="description" content="호남대학교 인재양성 통합관리시스템">
+		<meta name="copyrigt" content="호남대학교">
+		<meta name="keywords" content="호남대학교, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>호남대학교</title>
+
+		<!-- [pp] 파비콘 -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //파비콘 -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" href="../../../css/client/grid.css">
+		<link rel="stylesheet" href="../../../css/client/src/magnific-popup.css">
+		<link rel="stylesheet" href="../../../css/client/src/swiper.css">
+		<link rel="stylesheet" href="../../../css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="../../../css/client/src/select2.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" href="../../../css/client/table.css">
+		<link rel="stylesheet" href="../../../css/client/popup.css">
+		<link rel="stylesheet" href="../../../css/client/ui.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../js/client/src/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 10]>
+		<script type="text/javascript" src="../../../js/client/src/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/IE9.js"></script>
+		<script type="text/javascript" src="../../../js/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../../js/client/src/jquery-accessibleMegaMenu.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/src/select2.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<!--[if lt IE 10]>
+		<div id="browser">
+			본 사이트는 익스플로러 버전 10 이상, 크롬, 파이어폭스, 사파리, 오페라 최신 버전에 최적화 되어있습니다. <a href="https://browsehappy.com/?locale=en" target="_blank">여기를 눌러 최신 브라우저로 업데이트 하세요.</a>
+			<button type="button" class="upgradeinfo_close">close</button>
+		</div>
+		<![endif]-->
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+
+				<!-- [pp] user info -->
+				<div class="userinfo_outer pc">
+					<div class="grid_content">
+						<p class="user_info">
+							<span>사용자</span>님 환영합니다
+						</p>
+					</div>
+				</div>
+				<!-- [pp] //user info -->
+
+				<!-- [pp] logo, login, mobile menu button -->
+				<div class="header_top grid_content">
+					<h1 class="header_logo"><a href="javascript:void(0);"><img src="../../../images/client/common/header_logo.svg" alt="호남대학교 로고"></a></h1>
+					<div class="header_top_inner">
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<!-- [pp] 로그인/로그아웃 :
+<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+-->
+						<a href="javascript:void(0);" class="btn_admin">관리자페이지로 이동</a>
+						<a href="javascript:void(0);" class="btn_circle btn_md">서비스 안내</a>
+						<a href="javascript:void(0);" class="btn_circle btn_md">호남대</a>
+						<a href="javascript:void(0);" class="btn_circle btn_md">호남대 포털</a>
+						<a href="javascript:void(0);" class="btn_circle btn_md">교수학습개발원</a>
+					</div>
+					<button type="button" title="모바일메뉴보기" class="mobile_menubtn">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<!-- [pp] //logo, login, mobile menu button -->
+
+				<!-- [pp] gnb -->
+				<div class="header_bottom">
+					<div class="grid_content">
+						<div class="sitemap_outer">
+							<a href="javascript:void(0);" class="btn_sitemap">
+								<span></span><span></span><span></span>
+							</a>
+						</div>
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<!-- [pp] gnb_1depth 8개일때 '.col_xl_1_1' 사용 / 7개일때 '.col_xl_1_2' 사용 -->
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">소개</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">시스템 소개</a></li>
+											<li><a href="javascript:void(0);">핵심역량 소개</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">나의 역량</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">마이페이지</a></li>
+											<li><a href="javascript:void(0);">포트폴리오</a></li>
+										</ul>								
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">진단 기능</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li>
+												<a href="javascript:void(0);">핵심역량 진단</a>
+												<ul class="gnb_3depth">
+													<li><a href="javascript:void(0);">핵심역량 진단</a></li>
+													<li><a href="javascript:void(0);">핵심역량 진단 결과</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:void(0);">전공능력 진단</a>
+												<ul class="gnb_3depth">
+													<li><a href="javascript:void(0);">전공능력 진단</a></li>
+													<li><a href="javascript:void(0);">전공능력 진단 결과</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:void(0);">대학적응능력 진단</a>
+												<ul class="gnb_3depth">
+													<li><a href="javascript:void(0);">대학적응능력 진단</a></li>
+													<li><a href="javascript:void(0);">대학적응능력 진단 결과</a></li>
+												</ul>
+											</li>
+											<li><a href="javascript:void(0);">워크넷 진단</a></li>
+											<li><a href="javascript:void(0);">학습전략검사 &#40;MLST&#41;</a></li>
+											<li><a href="javascript:void(0);">설문 조사</a></li>
+										</ul>								
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">역량 강화</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">교과별 역량정보</a></li>
+											<li><a href="javascript:void(0);">학과운영 비교과 신청</a></li>
+											<li><a href="javascript:void(0);">비교과 신청 내역</a></li>
+											<li><a href="javascript:void(0);">학생주도 프로그램</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">전문 상담</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">지도교수 상담</a></li>
+											<li><a href="javascript:void(0);">심리 상담</a></li>
+											<li><a href="javascript:void(0);">취업 상담</a></li>
+											<li><a href="javascript:void(0);">나의 상담 이력</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">실전 취업</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">진로 설계</a></li>
+											<li><a href="javascript:void(0);">진로 탐색</a></li>
+											<li><a href="javascript:void(0);">내 로드맵</a></li>
+											<li>
+												<a href="javascript:void(0);">취업정보</a>
+												<ul class="gnb_3depth">
+													<li><a href="javascript:void(0);">국가직무능력 표준 정보</a></li>
+													<li><a href="javascript:void(0);">자격증 정보</a></li>
+													<li><a href="javascript:void(0);">직업방송 동영상</a></li>
+													<li><a href="javascript:void(0);">기업정보</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="javascript:void(0);">채용공고</a>
+												<ul class="gnb_3depth">
+													<li><a href="javascript:void(0);">추천 채용 정보</a></li>
+													<li><a href="javascript:void(0);">워크넷 채용 정보</a></li>
+													<li><a href="javascript:void(0);">워크넷 공채 속보</a></li>
+													<li><a href="javascript:void(0);">사람인 채용 정보</a></li>
+													<li><a href="javascript:void(0);">잡코리아 채용 정보</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">핵심역량 인증</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">역량 현황</a></li>
+											<li><a href="javascript:void(0);">인증 현황</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);">열린 공간</a>
+									<div class="sub-nav">
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">공지사항</a></li>
+											<li><a href="javascript:void(0);">자료실</a></li>
+											<li><a href="javascript:void(0);">Q&amp;A</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- [pp] //gnb -->
+
+				<!-- [pp] 모바일 화면 menu 클릭시 나오는 배경화면 -->
+				<div class="gnb_bg"></div>
+				<!-- [pp] //모바일 화면 menu 클릭시 나오는 배경화면 -->
+
+			</header>
+		<!-- [pp] //header -->
+
+		<!-- [pp] 상단 비주얼 영역 -->
+		<figure class="subpage_visual visual3">
+			<div class="grid_content">
+				<h2>진단기능</h2>
+			</div>
+		</figure>
+		<!-- [pp] //상단 비주얼 영역 -->
+
+		<!-- [pp] lnb 영역 -->
+		<nav class="lnb_wrap">
+			<ul class="lnb_list">
+				<li>
+					<a href="javascript:void(0);">핵심역량 진단</a>
+					<ul class="sub_lnb">
+						<li><a href="javascript:void(0);">핵심역량 진단</a></li>
+						<li><a href="javascript:void(0);">핵심역량 진단 결과</a></li>
+					</ul>	
+				</li>
+				<li>
+					<a href="javascript:void(0);">전공능력 진단</a>
+					<ul class="sub_lnb">
+						<li><a href="javascript:void(0);">전공능력 진단</a></li>
+						<li><a href="javascript:void(0);">전공능력 진단 결과</a></li>
+					</ul>	
+				</li>
+				<li class="on">
+					<a href="javascript:void(0);">대학적응능력 진단</a>
+					<ul class="sub_lnb">
+						<li><a href="javascript:void(0);">대학적응능력 진단</a></li>
+						<li><a href="javascript:void(0);">대학적응능력 진단 결과</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">워크넷 진단</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">학습전략검사 &#40;MLST&#41;</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">설문 조사</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [pp] //lnb 영역 -->
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap" tabindex="0">
+				<div class="grid_content section_toparea">
+					<div class="infotop_box">
+						진단 문항을 읽고 본인과 가장 가까운 항목에 체크해주세요. 시험이나 평가가 아닌 자기 자신의 모습에 대한 솔직한 대답에 가까울수록 정확한 결과가 나오니 부담 갖지 말고 체크해주세요.
+					</div>
+					<h3 class="section_tit_lg">대학적응능력 진단하기</h3>
+					<article class="testlist_wrap">
+						<h4 class="testlist_tit">대학적응능력 진단<span></span></h4>
+						<div class="textlist_day">
+							<p>
+								<strong>진단기간</strong>2019.04.01 ~ 2019.05.01
+							</p>
+						</div>
+						<div class="testlist_box">
+							<dl class="survey_list">
+								<dt><span>1</span>학습내용을 좀 더 체계적으로 파악하기 위해 표, 그래프, 그림 등을 만든다.</dt>
+								<dd>
+									<p class="radio_row">
+										<input type="radio" name="survey1" id="q1_1" class="hidden">
+										<label for="q1_1">매우 부정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey1" id="q1_2" class="hidden">
+										<label for="q1_2">부정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey1" id="q1_3" class="hidden">
+										<label for="q1_3">보통</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey1" id="q1_4" class="hidden">
+										<label for="q1_4">긍정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey1" id="q1_5" class="hidden">
+										<label for="q1_5">매우 긍정</label>
+									</p>
+								</dd>
+								<dt><span>2</span>학습내용을 좀 더 체계적으로 파악하기 위해 표, 그래프, 그림 등을 만든다.</dt>
+								<dd>
+									<p class="radio_row">
+										<input type="radio" name="survey2" id="q2_1" class="hidden">
+										<label for="q2_1">매우 부정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey2" id="q2_2" class="hidden">
+										<label for="q2_2">부정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey2" id="q2_3" class="hidden">
+										<label for="q2_3">보통</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey2" id="q2_4" class="hidden">
+										<label for="q2_4">긍정</label>
+									</p>
+									<p class="radio_row">
+										<input type="radio" name="survey2" id="q2_5" class="hidden">
+										<label for="q2_5">매우 긍정</label>
+									</p>
+								</dd>
+							</dl>
+						</div>
+						<div class="testlist_bar">
+							<p class="wd_p10"></p>
+							<strong>문항수<span>25/150</span></strong>
+						</div>
+						<div class="testlist_paging">
+							<div>
+								<div class="testlist_move">
+									<a href="javascript:void(0);" class="testlist_pre disabled" disabled>이전</a>
+									<a href="javascript:void(0);" class="testlist_next">다음</a>
+								</div>
+								<p class="testlist_number">1 / 15</p>
+							</div>
+							<button type="button" class="btn btn_md btn_skyblue">임시저장</button>
+							<!-- [pp] 저장 버튼 : 
+							<button type="button" class="btn btn_md btn_default">저장</button>
+							-->
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+	<!-- [pp] footer -->
+	<footer class="footer_wrap">
+		<div class="footer_top">
+			<ul class="grid_content">
+				<li><a href="javascript:void(0);">호남대학교 챗봇</a></li>
+				<li><a href="javascript:void(0);">호남대학교 WEB 전자출결시스템</a></li>
+				<li><a href="javascript:void(0);">호남대학교 산학협력단</a></li>
+				<li><a href="javascript:void(0);">호남대학교 입학 홈페이지</a></li>
+			</ul>
+		</div>
+		<div class="footer_bottom">
+			<ul class="grid_content">
+				<li>
+					62399 광주광역시 광산구 호남대길 120 호남대학교 대학본부
+				</li>
+				<li>
+					TEL : <a href="tel:062-940-5114" class="link_hover">062-940-5114</a> /
+				</li>
+				<li>
+					FAX : 062-940-5005
+				</li>
+				<li>
+					Copyright © 2020 Honam University. All rights Reserved.
+				</li>
+			</ul>
+		</div>
+		<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+	</footer>
+	<!-- [pp] //footer -->
+
+	</body>
+
+</html>

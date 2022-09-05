@@ -1,0 +1,1569 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="충북대학교">
+		<meta name="description" content="충북대학교 CIEAT 시스템 (Chungbuk Integrated Extracurricular Administrative sysTem)">
+		<meta name="copyrigt" content="충북대학교">
+		<meta name="keywords" content="충북대학교, CIEAT, 씨앗시스템, 역량관리, 상담, 대학, 대학생, 역량관리시스템, 경력관리">
+		<title>충북대학교</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/jquery-3.3.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+
+	<body>
+
+		<!--[pp] ie 하위버젼 접속시 알림 -->
+		<div id="browser_alert">
+			본 사이트는 익스플로러11 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br/>지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로
+			<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank">크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" style="color:#f9c461;">오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank">파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			<button type="button" class="browser_alert_close">닫기</button>
+		</div>
+		<!--[pp] // ie 하위버젼 접속시 알림 -->
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] quick menu -->
+		<nav class="quick_menu">
+			<h5>QUICK MENU</h5>
+			<button type="button" class="btn_quicknav">바로가기 메뉴</button>
+			<ul>
+				<li class="quick_menu1">
+					<a href="javascript:void(0);"><span>비교과 신청</span></a>
+				</li>
+				<li class="quick_menu2">
+					<a href="javascript:void(0);"><span>상담 신청</span></a>
+				</li>
+				<li class="quick_menu3">
+					<a href="javascript:void(0);"><span>채용공고</span></a>
+				</li>
+				<li class="quick_menu4">
+					<a href="javascript:void(0);"><span>공지사항</span></a>
+				</li>
+				<li class="quick_menu5">
+					<a href="https://cia.chungbuk.ac.kr/board/exchange_notice/lists/key/247">
+						<span>
+							국제교류
+							<small>&#40;파견 교환학생&#41;</small>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [pp] //quick menu -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap">
+
+			<!-- [pp] header -->
+			<header class="header_wrap">
+
+				<!-- [pp] link -->
+				<div class="header_link">
+					<div class="grid_content">
+						<ul>
+							<li><a href="javascript:void(0);" class="admin">관리자페이지로 이동</a></li>
+							<li><a href="javascript:void(0);">충북대학교</a></li>
+							<li><a href="javascript:void(0);">개신누리</a></li>
+							<li><a href="javascript:void(0);">도서관</a></li>
+							<li><a href="javascript:void(0);" class="downfile">시스템 사용법</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [pp] //link -->
+
+				<!-- [pp] logo, login, user info, mobile menu button -->
+				<div class="header_top grid_content">
+					<h1 class="header_logo"><a href="javascript:void(0);"><img src="../../../images/client/common/header_logo.svg" alt="충북대학교 로고"></a></h1>
+					<div class="header_top_inner">
+						<p class="user_info">
+							<span>사용자</span>님 환영합니다
+						</p>
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<!-- [pp] 로그인/로그아웃 :
+						<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+						<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+						-->
+					</div>
+					<button type="button" title="모바일메뉴보기" class="mobile_menubtn">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
+				<!-- [pp] //logo, login, user info, mobile menu button -->
+
+				<!-- [pp] gnb -->
+				<div class="header_bottom">
+					<div class="grid_content">
+						<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+							<ul class="gnb_list">
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>소개</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">대학의 인재상 및 핵심역량</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 소개</a></li>
+										<li><a href="javascript:void(0);">CIEAT&#40;씨앗&#41; 마일리지</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>핵심역량인증</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">핵심역량 인증소개</a></li>
+										<li><a href="javascript:void(0);">전공 마일스톤 소개</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진단센터</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">핵심역량진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">핵심역량진단</a></li>
+												<li><a href="javascript:void(0);">핵심역량진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습유형진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습유형진단</a></li>
+												<li><a href="javascript:void(0);">학습유형진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">대학생활적응진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">대학생활적응진단</a></li>
+												<li><a href="javascript:void(0);">대학생활적응진단 결과</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">학습자가진단</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">학습자가진단</a></li>
+												<li><a href="javascript:void(0);">학습자가진단 결과</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">워크넷 진단</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>학습관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">교과정보조회</a></li>
+										<li><a href="javascript:void(0);">비교과 신청</a></li>
+										<li><a href="javascript:void(0);">비교과 내역</a></li>
+										<li><a href="javascript:void(0);">자기주도활동</a></li>
+										<li><a href="javascript:void(0);">토론광장</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>인증제</span></a>
+									<ul class="gnb_2depth">
+										<li>
+											<a href="javascript:void(0);">독서인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">독서인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">독서인증현황</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0);">봉사인증제</a>
+											<ul class="gnb_3depth">
+												<li><a href="javascript:void(0);">봉사인증보고서 제출</a></li>
+												<li><a href="javascript:void(0);">봉사인증현황</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">영어인증제</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>전문상담관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">지도교수 상담</a></li>
+										<li><a href="javascript:void(0);">진로 및 취업 상담</a></li>
+										<li><a href="javascript:void(0);" class="break_all">학생생활상담소</a></li>
+										<li><a href="javascript:void(0);">글쓰기 상담</a></li>
+										<li><a href="javascript:void(0);">창업 상담</a></li>
+										<li><a href="javascript:void(0);">장애지원 상담</a></li>
+										<li><a href="javascript:void(0);">학사 및 기타 상담</a></li>
+										<li><a href="javascript:void(0);">나의 상담 이력</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>채용정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">일반 채용정보</a></li>
+										<li><a href="javascript:void(0);">인재 추천 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 채용정보</a></li>
+										<li><a href="javascript:void(0);">워크넷 공채속보</a></li>
+										<li><a href="javascript:void(0);">사람인 채용정보</a></li>
+										<li><a href="javascript:void(0);">잡코리아 채용정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>진로&middot;취업 정보</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">진로탐색</a></li>
+										<li><a href="javascript:void(0);" class="break_all">국가직무능력표준 정보</a></li>
+										<li><a href="javascript:void(0);">자격증 정보</a></li>
+										<li><a href="javascript:void(0);">직업방송 동영상</a></li>
+										<li><a href="javascript:void(0);">기업정보</a></li>
+									</ul>
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>마이페이지</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">마이페이지</a></li>
+										<li><a href="javascript:void(0);">포트폴리오</a></li>
+										<li><a href="javascript:void(0);">인증현황</a></li>
+									</ul>	
+								</li>
+								<li class="gnb_1depth col_xl_1_1">
+									<a href="javascript:void(0);"><span>커뮤니티 관리</span></a>
+									<ul class="gnb_2depth">
+										<li><a href="javascript:void(0);">공지사항</a></li>
+										<li><a href="javascript:void(0);">자료실 관리</a></li>
+										<li><a href="javascript:void(0);">주요 프로그램 및 운영부서</a></li>
+										<li><a href="javascript:void(0);">FAQ</a></li>
+										<li><a href="javascript:void(0);">설문참여</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="sitemap_outer">
+							<a href="javascript:void(0);" class="btn_sitemap">
+								<span></span><span></span><span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- [pp] //gnb -->
+
+				<!-- [pp] 모바일 화면 menu 클릭시 나오는 배경화면 -->
+				<div class="gnb_bg"></div>
+				<!-- [pp] //모바일 화면 menu 클릭시 나오는 배경화면 -->
+
+			</header>
+			<!-- [pp] //header -->
+
+			<!-- [pp] 상단 비주얼 영역 -->
+			<figure class="subpage_visual visual10">
+				<div class="grid_content">
+					<h2><span>커뮤니티 관리</span></h2>
+				</div>
+			</figure>
+			<!-- [pp] //상단 비주얼 영역 -->
+
+			<!-- [pp] lnb 영역 -->
+			<nav class="lnb_wrap">
+				<ul class="lnb_list">
+					<li>
+						<a href="javascript:void(0);">공지사항</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">자료실 관리</a>
+					</li>
+					<li class="on">
+						<a href="javascript:void(0);">주요 프로그램 및 운영부서</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">FAQ</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">설문참여</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- [pp] //lnb 영역 -->
+
+			<!-- [pp] subpage 컨텐츠영역 -->
+			<section id="container_skip" class="subcontent_wrap grid_content" tabindex="0">
+				<section class="section_area">
+					<h3 class="section_tit_lg">역량별 주요 비교과 프로그램</h3>
+					<p>
+						부서별 운영 프로그램 및 세부사항은 학기별로 변동될 수 있습니다. 자세한 내용은 해당 부서로 문의 바랍니다.
+					</p>
+					<ul class="tab_capa tab_switch_js grid_row">
+						<li class="capa1 grid_col col_xl_2 col_md_2 on">
+							<a href="javascritp:void(0);">C &#40;창의성&#41;</a>
+						</li>
+						<li class="capa2 grid_col col_xl_2 col_md_2">
+							<a href="javascritp:void(0);">H &#40;휴머니즘&#41;</a>
+						</li>
+						<li class="capa3 grid_col col_xl_2 col_md_2">
+							<a href="javascritp:void(0);">A &#40;능동성&#41;</a>
+						</li>
+						<li class="capa4 grid_col col_xl_2 col_md_2">
+							<a href="javascritp:void(0);">N &#40;공동체&#41;</a>
+						</li>
+						<li class="capa5 grid_col col_xl_2 col_md_2">
+							<a href="javascritp:void(0);">G &#40;글로벌&#41;</a>
+						</li>
+						<li class="capa6 grid_col col_xl_2 col_md_2">
+							<a href="javascritp:void(0);">E &#40;전문성&#41;</a>
+						</li>
+					</ul>
+					<div class="tbl tbl_col tbl_fixed scrollx_tbl_md">
+					
+						<!-- [pp] C(창의성) 역량 -->
+						<table>
+							<caption>C(창의성) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="14">학습역량지원</th>
+									<td>RC 캘리그라피</td>
+									<td>강의형</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 RC교육센터</td>
+									<td>261-3932</td>
+								</tr>
+								<tr>
+									<td>독서감상문대회</td>
+									<td>경진대회</td>
+									<td>학부 재학생</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3935</td>
+								</tr>
+								<tr>
+									<td>독서인증제</td>
+									<td>인증제</td>
+									<td>학부 재학생</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3935</td>
+								</tr>
+								<tr>
+									<td>글쓰기 상담</td>
+									<td>상담</td>
+									<td>학부 재학생</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3933</td>
+								</tr>
+								<tr>
+									<td>토론 광장</td>
+									<td>경진대회</td>
+									<td>학부 재학생</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3933</td>
+								</tr>
+								<tr>
+									<td>독서모임 '책으로 통하다'</td>
+									<td>기타</td>
+									<td>학부 재학생</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3935</td>
+								</tr>
+								<tr>
+									<td>RC 독서토론 책통</td>
+									<td>강의형 프로그램</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 의사소통센터</td>
+									<td>261-3935</td>
+								</tr>
+								<tr>
+									<td>LEVEL-Up 튜터링</td>
+									<td>멘토링</td>
+									<td>
+										튜티: 1, 2학년<br/>
+										튜터: 3, 4학년
+									</td>
+									<td>
+										창의융합교육본부 스마트교수학습개발원
+									</td>
+									<td>261-3754</td>
+								</tr>
+								<tr>
+									<td>학습법 특강</td>
+									<td>강의형 프로그램</td>
+									<td>학부생</td>
+									<td>창의융합교육본부 스마트교수학습개발원</td>
+									<td>261-3754</td>
+								</tr>
+								<tr>
+									<td>Learning Mate 학습동아리</td>
+									<td>동아리</td>
+									<td>학부생</td>
+									<td>창의융합교육본부 스마트교수학습개발원</td>
+									<td>261-3754</td>
+								</tr>
+								<tr>
+									<td>오픈소스SW 커뮤니티</td>
+									<td>1회성</td>
+									<td>SW사업 참여 학부 재학생&#40;3, 4학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1346</td>
+								</tr>
+								<tr>
+									<td>물리교육과 세미나</td>
+									<td>동아리</td>
+									<td>학부 재학생</td>
+									<td>물리교육과</td>
+									<td>261-2777</td>
+								</tr>
+								<tr>
+									<td>사회교육과 동아리 간담회</td>
+									<td>동아리</td>
+									<td>사회교육과 학부 재학생</td>
+									<td>사회교육과</td>
+									<td>261-2700</td>
+								</tr>
+								<tr>
+									<td>시민교육 독서감상</td>
+									<td>공모전</td>
+									<td>사범대학 재학생</td>
+									<td>시민교육 역량강화사업단</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="6">취&middot;창업 지원</th>
+									<td>창업동아리</td>
+									<td>동아리</td>
+									<td>재학생</td>
+									<td>창업지원단</td>
+									<td>261-3719</td>
+								</tr>
+								<tr>
+									<td>창업 액셀러레이션</td>
+									<td>멘토링</td>
+									<td>SW사업 참여 학부 재학생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1832</td>
+								</tr>
+								<tr>
+									<td>공모전캠프</td>
+									<td>공모전</td>
+									<td>학부 재학생, 충북 타 대학 재학생</td>
+									<td>취업지원본부</td>
+									<td>249-1776</td>
+								</tr>
+								<tr>
+									<td>창업동아리</td>
+									<td>동아리</td>
+									<td>학부 재학생</td>
+									<td>LINC+창업교육센터</td>
+									<td>261-3529</td>
+								</tr>
+								<tr>
+									<td>창업강좌</td>
+									<td>강의형 프로그램</td>
+									<td>학부 재학생</td>
+									<td>LINC+창업교육센터</td>
+									<td>261-3529</td>
+								</tr>
+								<tr>
+									<td>기업가정신특강</td>
+									<td>1회성</td>
+									<td>학부 재학생</td>
+									<td>LINC+창업교육센터</td>
+									<td>261-3529</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- [pp] //C(창의성) 역량 -->
+						
+						<!-- [pp] H(휴머니즘) 역량 :
+						<table>
+							<caption>H(휴머니즘) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">운영기간</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="4">학습역량 지원</th>
+									<td>CBNU-RC 봉사활동</td>
+									<td>1회성</td>
+									<td>2020.03 ~ 2020.06</td>
+									<td>RC학생(신입생)</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>통일교육 동아리</td>
+									<td>동아리</td>
+									<td>2020.06 ~ 2020.11</td>
+									<td>학부 재학생</td>
+									<td>통일교육 선도대학사업단</td>
+									<td>261-2221</td>
+								</tr>
+								<tr>
+									<td>시민교육 성격강점검사</td>
+									<td>검사</td>
+									<td>2020년도 1학기</td>
+									<td>사범대학 학부 재학생</td>
+									<td>시민교육 역량강화사업단</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>시민교육 성격강점검사 결과 교육실습 활용</td>
+									<td>실습</td>
+									<td>2020년도 1학기</td>
+									<td>사범대학 교육실습생</td>
+									<td>시민교육 역량강화사업단</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+						-->
+						
+						<!-- [pp] A(능동성) 역량 :
+						<table>
+							<caption>A(능동성) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="4">학습역량 지원</th>
+									<td>RC 세미나</td>
+									<td>1회성</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 RC교육센터</td>
+									<td>261-3932</td>
+								</tr>
+								<tr>
+									<td>학습부진자코칭 프로그램&#40;Exploring Myself)</td>
+									<td>상담/검사</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 스마트교수학습개발원</td>
+									<td>261-3754</td>
+								</tr>
+								<tr>
+									<td>학습진단 설문</td>
+									<td>상담/검사</td>
+									<td>학부생</td>
+									<td>창의융합교육본부 스마트교수학습개발원</td>
+									<td>261-3754</td>
+								</tr>
+								<tr>
+									<td>OSS 운영 보조원</td>
+									<td>기타</td>
+									<td>SW사업 참여 학부 재학생&#40;3, 4학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1346</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="6">진로&middot;심리 상담 지원</th>
+									<td>상담 및 심리검사</td>
+									<td>상담/검사</td>
+									<td>학부, 대학원 재학생</td>
+									<td>건강센터 학생생활상담소</td>
+									<td>261-3559</td>
+								</tr>
+								<tr>
+									<td>신입생&#40;장애대학생&#41; 기초 종합 상담</td>
+									<td>상담</td>
+									<td>학부 신입생</td>
+									<td>장애지원센터</td>
+									<td>261-3566</td>
+								</tr>
+								<tr>
+									<td>장애대학생을 위한 온라인/오프라인 진로 취업 멘토링 지원</td>
+									<td>멘토링</td>
+									<td>학부 재학생&#40;3, 4학년&#41;</td>
+									<td>장애지원센터</td>
+									<td>261-3566</td>
+								</tr>
+								<tr>
+									<td>학과별/단계별 진로 설계</td>
+									<td>강의형</td>
+									<td>학부 재&#40;휴&#41;학생 1, 2, 3학년</td>
+									<td>취업지원본부</td>
+									<td>261-3657</td>
+								</tr>
+								<tr>
+									<td>진로상담</td>
+									<td>상담</td>
+									<td>학부 재학생, 졸업생</td>
+									<td>대학일자리센터</td>
+									<td>261-3555</td>
+								</tr>
+								<tr>
+									<td>중고등학생 대상 자유학기제 및 진로 체험</td>
+									<td>멘토링/현장견학</td>
+									<td>사범대학 학부 재학생</td>
+									<td>사범대학</td>
+									<td>261-2644</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="12">취&middot;창업 지원</th>
+									<td>채용설명회 및 채용상담</td>
+									<td>1회성</td>
+									<td>학부 재학생, 졸업생, 지역 청년 등&#40;3, 4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3554</td>
+								</tr>
+								<tr>
+									<td>지역인재 추천 준비반&#40;지역인재 7급&#41;</td>
+									<td>강의형/멘토링</td>
+									<td>학부 재학생, 졸업생, 지역 청년 등&#40;4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3554</td>
+								</tr>
+								<tr>
+									<td>직무역량강화 마스터챌린지</td>
+									<td>강의형</td>
+									<td>학부 재학생&#40;3, 4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3657</td>
+								</tr>
+								<tr>
+									<td>실무역량강화 입사지원서캠프</td>
+									<td>강의형</td>
+									<td>학부 재학생&#40;4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3657</td>
+								</tr>
+								<tr>
+									<td>실무역량강화 면접캠프</td>
+									<td>강의형</td>
+									<td>학부 재학생&#40;4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3657</td>
+								</tr>
+								<tr>
+									<td>직무트랙동아리</td>
+									<td>동아리</td>
+									<td>학부 재학생&#40;3, 4학년&#41;</td>
+									<td>취업지원본부</td>
+									<td>261-3657</td>
+								</tr>
+								<tr>
+									<td>취업상담</td>
+									<td>상담</td>
+									<td>학부 재학생, 졸업생</td>
+									<td>대학일자리센터</td>
+									<td>261-3555</td>
+								</tr>
+								<tr>
+									<td>공기업 동아리</td>
+									<td>동아리</td>
+									<td>학부 재학생&#40;2, 3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>잡아드림&#40;Job-아-Dream&#41;</td>
+									<td>상담</td>
+									<td>졸업생</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>면접 이미지메이킹</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>입사지원서캠프</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생&#40;4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>249-1776</td>
+								</tr>
+								<tr>
+									<td>면접캠프</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생&#40;4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>249-1776</td>
+								</tr>
+							</tbody>
+						</table>
+						-->
+						
+						<!-- [pp] N(공동체) 역량 :
+						<table>
+							<caption>N(공동체) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">운영기간</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="11">학습역량 지원</th>
+									<td>장애대학생 교육활동 지원사업</td>
+									<td>학습지원</td>
+									<td>2020년도 1, 2학기</td>
+									<td>학부 재학생</td>
+									<td>장애지원센터</td>
+									<td>261-3566</td>
+								</tr>
+								<tr>
+									<td>SW봉사단</td>
+									<td>서포터즈/홍보대사</td>
+									<td>2020.04.01 ~ 2020.12.31</td>
+									<td>SW사업 참여 학부 재학생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1348</td>
+								</tr>
+								<tr>
+									<td>오픈소스 SW동아리</td>
+									<td>동아리</td>
+									<td>2020.04.01 ~ 2020.11.30</td>
+									<td>SW사업 참여 학부 재학생&#40;3학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1346</td>
+								</tr>
+								<tr>
+									<td>RC 문화기행</td>
+									<td>현장견학</td>
+									<td>2020년도 1, 2학기</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>박물관</td>
+									<td>261-3190</td>
+								</tr>
+								<tr>
+									<td>박물관 서포터즈</td>
+									<td>서포터즈</td>
+									<td>2020년도 1학기</td>
+									<td>학부 재학생</td>
+									<td>박물관</td>
+									<td>261-3190</td>
+								</tr>
+								<tr>
+									<td>농어촌 봉사</td>
+									<td>1회성</td>
+									<td>2020년도 5월 ~ 8월 중</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2110</td>
+								</tr>
+								<tr>
+									<td>CBNU 교육봉사</td>
+									<td>멘토링</td>
+									<td>미정</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>학생 재능기부 봉사</td>
+									<td>멘토링</td>
+									<td>2020.06 ~ 2021.01</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>대학생 청소년교육지원 멘토링</td>
+									<td>멘토링</td>
+									<td>2020.06 ~ 2021.02</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>대학생 재능봉사 캠프</td>
+									<td>1회성</td>
+									<td>2020. 7 ~ 8월&#40;하계 방학 중&#41;</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>사회조사 대비 사전 설명회</td>
+									<td>실습</td>
+									<td>2020.06.05</td>
+									<td>사회교육과 학부 재학생</td>
+									<td>사회교육과</td>
+									<td>261-2700</td>
+								</tr>
+							</tbody>
+						</table>
+						-->
+						
+						<!-- [pp] G(글로벌) 역량 :
+						<table>
+							<caption>G(글로벌) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="7">학습역량 지원</th>
+									<td>TOPIK 대비 외국인 유학생&#40;TOPIK 집중반&#41;</td>
+									<td>강의형</td>
+									<td>학부 재학생&#40;3, 4학년&#41;</td>
+									<td>국제교류본부</td>
+									<td>261-3890</td>
+								</tr>
+								<tr>
+									<td>LEVEL-UP 영어캠프</td>
+									<td>강의형</td>
+									<td>학부 재학생</td>
+									<td>국제교류본부</td>
+									<td>261-3292</td>
+								</tr>
+								<tr>
+									<td>RC 어학</td>
+									<td>강의형</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>국제교류본부</td>
+									<td>261-3292</td>
+								</tr>
+								<tr>
+									<td>교과기반 글로벌 프로젝트 지원 프로그램</td>
+									<td>프로젝트</td>
+									<td>SW관련 교과목 수강생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1348</td>
+								</tr>
+								<tr>
+									<td>다문화 새터민 학생 캠프</td>
+									<td>1회성</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>CBNU 해외봉사</td>
+									<td>멘토링</td>
+									<td>학부 재학생&#40;2, 3, 4학년&#41;</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>다문화탈북학생 멘토링</td>
+									<td>멘토링</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="3">취&middot;창업 지원</th>
+									<td>일본 취업</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생, 지역청년 등</td>
+									<td>취업지원본부</td>
+									<td>249-1778</td>
+								</tr>
+								<tr>
+									<td>미국 취업, 캐나다 취업</td>
+									<td>강의형</td>
+									<td>학부 재학생</td>
+									<td>취업지원본부</td>
+									<td>249-1778</td>
+								</tr>
+								<tr>
+									<td>프랑스 취업&#40;K-Move스쿨 물류·서비스과정&#41;</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생 등</td>
+									<td>취업지원본부</td>
+									<td>261-3787</td>
+								</tr>
+							</tbody>
+						</table>	
+						-->
+						
+						<!-- [pp] E(전문성) 역량 :
+						<table>
+							<caption>E(전문성) 역량 주요 비교과 프로그램</caption>
+							<colgroup>
+								<col style="width:10%">
+								<col style="width:auto">
+								<col style="width:10%">
+								<col style="width:15%">
+								<col style="width:15%">
+								<col style="width:10%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">프로그램</th>
+									<th scope="col">유형</th>
+									<th scope="col">모집대상<br/>&#40;주 대상 학년&#41;</th>
+									<th scope="col">담당부서</th>
+									<th scope="col">연락처</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" rowspan="12">학습역량 지원</th>
+									<td>RC 컴퓨터 활용 능력 2급</td>
+									<td>강의형</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 RC교육센터</td>
+									<td>261-3932</td>
+								</tr>
+								<tr>
+									<td>RC GTQ</td>
+									<td>강의형</td>
+									<td>RC학생&#40;신입생&#41;</td>
+									<td>창의융합교육본부 RC교육센터</td>
+									<td>261-3932</td>
+								</tr>
+								<tr>
+									<td>학부생 튜터</td>
+									<td>멘토링</td>
+									<td>소프트웨어학과, 컴퓨터공학과, 정보통신공학부</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1348</td>
+								</tr>
+								<tr>
+									<td>Salve-Up 프로그래밍 경진대회</td>
+									<td>경진대회</td>
+									<td>학부 재학생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1348</td>
+								</tr>
+								<tr>
+									<td>학생활동 지원 프로그램</td>
+									<td>현장견학/실습</td>
+									<td>SW사업 참여 학부 재학생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1348</td>
+								</tr>
+								<tr>
+									<td>SW중심대학-KISTI HPC 스쿨</td>
+									<td>1회성 </td>
+									<td>대학&#40;원&#41;생 및 교직원&#40;3, 4학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1346</td>
+								</tr>
+								<tr>
+									<td>SW중심대학-공개SW개발자센터 공개 SW특강 프로그램</td>
+									<td>1회성</td>
+									<td>SW사업 참여 학부 재학생&#40;3, 4학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1346</td>
+								</tr>
+								<tr>
+									<td>하계 컴퓨터 특강</td>
+									<td>1회성</td>
+									<td>학부 재학생</td>
+									<td>전산정보원</td>
+									<td>261-2915</td>
+								</tr>
+								<tr>
+									<td>희망하우스</td>
+									<td>동아리</td>
+									<td>학부 재학생</td>
+									<td>학생과</td>
+									<td>261-2109</td>
+								</tr>
+								<tr>
+									<td>물리교육과 문제풀이를 통한 수업시연</td>
+									<td>문제풀이</td>
+									<td>학부 재학생</td>
+									<td>물리교육과</td>
+									<td>261-2777</td>
+								</tr>
+								<tr>
+									<td>물리교육과 하계 임용캠프</td>
+									<td>강의형/멘토링</td>
+									<td>사범대학 학부 재학생</td>
+									<td>물리교육과</td>
+									<td>261-2777</td>
+								</tr>
+								<tr>
+									<td>시민교육 아카데미</td>
+									<td>강의형/1회성</td>
+									<td>사범대학 학부 재학생</td>
+									<td>시민교육역량 강화사업단</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="13">취&middot;창업 지원</th>
+									<td>가디언 프로그램</td>
+									<td>상담</td>
+									<td>SW사업 참여 학부 재학생&#40;2학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1832</td>
+								</tr>
+								<tr>
+									<td>창업특강</td>
+									<td>1회성</td>
+									<td>SW사업 참여 학부 재학생</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1832</td>
+								</tr>
+								<tr>
+									<td>산학협력공동 프로젝트</td>
+									<td>인턴쉽/실습</td>
+									<td>SW사업 참여 학부 재학생&#40;3, 4학년&#41;</td>
+									<td>SW중심대학사업단</td>
+									<td>249-1833</td>
+								</tr>
+								<tr>
+									<td>엑셀데이터분석 자격과정</td>
+									<td>강의형/실습</td>
+									<td>학부 재학생, 졸업생&#40;3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>비즈니스엑셀 자격과정</td>
+									<td>강의형/실습</td>
+									<td>학부 재학생, 졸업</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>마케팅조사분석사 자격과정</td>
+									<td>강의형/실습</td>
+									<td>학부 재학생, 졸업생&#40;2, 3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>서비스매니저 자격과정</td>
+									<td>강의형/실습</td>
+									<td>학부 재학생, 졸업생&#40;2, 3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>261-3545</td>
+								</tr>
+								<tr>
+									<td>6시그마 자격취득과정</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생&#40;3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>249-1776</td>
+								</tr>
+								<tr>
+									<td>GMP 자격취득과정</td>
+									<td>강의형/실습</td>
+									<td>학부 재학생, 졸업생&#40;3, 4학년&#41;</td>
+									<td>대학일자리센터</td>
+									<td>249-1776</td>
+								</tr>
+								<tr>
+									<td>통계적공정관리 자격취득과정</td>
+									<td>강의형</td>
+									<td>학부 재학생, 졸업생&#40;3, 4학년)</td>
+									<td>대학일자리센터</td>
+									<td>249-1776</td>
+								</tr>
+								<tr>
+									<td>사회교육과 졸업생 특강</td>
+									<td>1회성</td>
+									<td>사회교육과 학부 재학생</td>
+									<td>사회교육과</td>
+									<td>261-2700</td>
+								</tr>
+								<tr>
+									<td>현장역량강화를 위한 선후배 특강</td>
+									<td>1회성</td>
+									<td>지리교육과 학부 재학생&#40;3학년&#41;</td>
+									<td>지리교육과</td>
+									<td>261-2693</td>
+								</tr>
+								<tr>
+									<td>산학특강</td>
+									<td>1회성</td>
+									<td>학부 재학생</td>
+									<td>LINC+창업교육센터</td>
+									<td>261-3529</td>
+								</tr>
+							</tbody>
+						</table>
+						-->
+					</div>
+				</section>
+				<section class="section_area">
+					<h3 class="section_tit_lg">주요 비교과 운영부서</h3>
+					<p class="mg_b10">
+						아래 부서에서 비교과를 운영합니다.
+					</p>
+					<div class="tbl tbl_col tbl_md_responsive">
+						<table>
+							<caption>주요 비교과 운영부서</caption>
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:auto">
+								<col style="width:15%">
+								<col style="width:15%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">운영부서</th>
+									<th scope="col">주요 내용 &#40;프로그램&#41;</th>
+									<th scope="col">연락처</th>
+									<th scope="col">위치</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://startup.cbnu.ac.kr/" class="link_hover">창업지원단</a>
+									</th>
+									<td data-th="주요 내용">창업 동아리 및 창업 관련 프로그램</td>
+									<td data-th="연락처">043-261-3719</td>
+									<td data-th="위치">학연산 2층 204호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://fole.chungbuk.ac.kr/M030000/M030100.jsp" class="link_hover">창의융합교육본부 RC교육센터</a>
+									</th>
+									<td data-th="주요 내용">신입생 대상 CBNU-RC교육</td>
+									<td data-th="연락처">043-261-3932</td>
+									<td data-th="위치">N2동 810호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://fole.chungbuk.ac.kr/M060000/M060100.jsp" class="link_hover">창의융합교육본부 의사소통센터</a>
+									</th>
+									<td data-th="주요 내용">독서감상문대회, 글쓰기 상담, 토론 광장, 독서모임 등</td>
+									<td data-th="연락처">043-261-3931</td>
+									<td data-th="위치">N2동 810호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://fole.chungbuk.ac.kr/M080000/M080100.jsp" class="link_hover">창의융합교육본부 스마트교수학습개발원</a>
+									</th>
+									<td data-th="주요 내용">학습부진자코칭 프로그램, Level-Up 튜터링, 학습법 특강, Learning Mate 학습동아리 등</td>
+									<td data-th="연락처">043-261-3754</td>
+									<td data-th="위치">N2동 808호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://counseling.chungbuk.ac.kr:431/" class="link_hover">건강센터 학습생활상담소</a>
+									</th>
+									<td data-th="주요 내용">개인 상담, 심리검사 등</td>
+									<td data-th="연락처">043-261-3559</td>
+									<td data-th="위치">신학생회관 3층</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://cia.chungbuk.ac.kr/index/" class="link_hover">국제교류본부</a>
+									</th>
+									<td data-th="주요 내용">어학 프로그램, 교환/파견 학생, 외국인 유학생 토픽 대비 등</td>
+									<td data-th="연락처">043-261-3292</td>
+									<td data-th="위치">N10동 1층 국제교류본부</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://supporter.chungbuk.ac.kr/site/support/main.do" class="link_hover">장애지원센터</a>
+									</th>
+									<td data-th="주요 내용">장애대학생 교육활동 지원 사업, 장애대학생 기초 종합 상담, 진로 취업 멘토링 등</td>
+									<td data-th="연락처">043-251-3566</td>
+									<td data-th="위치">N2동 1층 장애지원센터</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://sw7up.cbnu.ac.kr/home" class="link_hover">소프트웨어중심대학 사업단</a>
+									</th>
+									<td data-th="주요 내용">학부생 튜터 프로그램, SW 특강 Salve-Up 프로그래밍 경진대회, SW봉사단, 오픈소스 동아리, 커뮤니티 등</td>
+									<td data-th="연락처">
+										043-249-1348<br/>
+										043-249-1832<br/>
+										043-249-1346
+									</td>
+									<td data-th="위치">학연산 2층 274호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://museum.chungbuk.ac.kr/" class="link_hover">박물관</a>
+									</th>
+									<td data-th="주요 내용">RC 문화기행 박물관 서포터즈 등</td>
+									<td data-th="연락처">043-261-3190</td>
+									<td data-th="위치">S9동</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://icc.chungbuk.ac.kr/site/icc/main.do" class="link_hover">전산정보원</a>
+									</th>
+									<td data-th="주요 내용">하계, 동계 컴퓨터 특강&#40;Adobe, 엑셀, SAS, Python 등&#41;</td>
+									<td data-th="연락처">043-261-2915</td>
+									<td data-th="위치">S2동</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://www.chungbuk.ac.kr/site/f03/main.do" class="link_hover">학생과</a>
+									</th>
+									<td data-th="주요 내용">봉사활동, 재능기부, 캠프, 멘토링&#40;다문화/탈북/청소년&#41; 등</td>
+									<td data-th="연락처">043-261-2109</td>
+									<td data-th="위치">N10동 1층 학생과</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="https://hrd.cbnu.ac.kr/" class="link_hover">취업지원본부 / 대학일자리센터</a>
+									</th>
+									<td data-th="주요 내용">진로/취업 상담 및 해외 취업 과정, 면접/입사지원서, 직무트랙 및 공기업 동아리</td>
+									<td data-th="연락처">
+										043-261-3554<br/>
+										043-261-3555<br/>
+										043-261-3545
+									</td>
+									<td data-th="위치">제1학생회관 1층, 제1학생회관 2층</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="javascript:void(0);" class="link_hover">통일교육선도대학</a>
+									</th>
+									<td data-th="주요 내용">통일교육 동아리 활동, 통일 관련 비교과 프로그램 등</td>
+									<td data-th="연락처">043-261-2221</td>
+									<td data-th="위치">N15동</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="javascript:void(0);" class="link_hover">LINC+ 창업교육센터</a>
+									</th>
+									<td data-th="주요 내용">창업동아리, 산학특강, 창업강좌 등</td>
+									<td data-th="연락처">043-261-3529</td>
+									<td data-th="위치">E9동 906호</td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="javascript:void(0);" class="link_hover">시민교육역량개발센터</a>
+									</th>
+									<td data-th="주요 내용">시민교육 아카데미, 성격강점검사 등</td>
+									<td data-th="연락처">043-261-2778</td>
+									<td data-th="위치"></td>
+								</tr>
+								<tr>
+									<th scope="row" data-th="운영부서">
+										<a href="http://eeic.chungbuk.ac.kr/" class="link_hover">공학교육혁신센터</a>
+									</th>
+									<td data-th="주요 내용">공학인증, 캡스톤, 포트폴리오 등</td>
+									<td data-th="연락처">043-261-3620</td>
+									<td data-th="위치">E8-1동 251호</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section class="section_area">
+					<h3 class="section_tit_lg">종합 안내도</h3>
+					<div class="guidemap_wrap">
+						<a class="openimg" href="../../../images/client/sub/img_map.png">
+							<img src="../../../images/client/sub/img_map.png" alt="충북대학교 종합 안내도 이미지">
+						</a>
+					</div>
+					<div class="tbl tbl_col tbl_fixed">
+						<table>
+							<caption>충북대학교 종합 안내도 상세</caption>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:35%">
+								<col style="width:15%">
+								<col style="width:35%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">동번호</th>
+									<th scope="col">건물명</th>
+									<th scope="col">동변호</th>
+									<th scope="col">건물명</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">N2</th>
+									<td>법학전문대학원</td>
+									<th scope="row">E7-2</th>
+									<td>의과대학</td>
+								</tr>
+								<tr>
+									<th scope="row">N2</th>
+									<td>창의융합교육본부</td>
+									<th scope="row">E7-3</th>
+									<td>의과대학</td>
+								</tr>
+								<tr>
+									<th scope="row">N7</th>
+									<td>형설관</td>
+									<th scope="row">E8-1</th>
+									<td>공학과</td>
+								</tr>
+								<tr>
+									<th scope="row">N10</th>
+									<td>대학본부, 국제교류본부</td>
+									<th scope="row">E8-2</th>
+									<td>공대 합동강의동</td>
+								</tr>
+								<tr>
+									<th scope="row">N11</th>
+									<td>공동실헙실습관</td>
+									<th scope="row">E8-3</th>
+									<td>건설공학관</td>
+								</tr>
+								<tr>
+									<th scope="row">N12</th>
+									<td>중앙도서관</td>
+									<th scope="row">E8-6</th>
+									<td>토목공학관</td>
+								</tr>
+								<tr>
+									<th scope="row">N13</th>
+									<td>경영학관</td>
+									<th scope="row">E8-7</th>
+									<td>공대공학관</td>
+								</tr>
+								<tr>
+									<th scope="row">N14</th>
+									<td>인문사회관&#40;강의동&#41;</td>
+									<th scope="row">E8-11</th>
+									<td>양진재&#40;BTL&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">N15</th>
+									<td>사회과학대학</td>
+									<th scope="row">E12-1</th>
+									<td>수의과대학</td>
+								</tr>
+								<tr>
+									<th scope="row">N16-1</th>
+									<td>인문대학</td>
+									<th scope="row">E12-2</th>
+									<td>수의과대학</td>
+								</tr>
+								<tr>
+									<th scope="row">N16-2</th>
+									<td>융합학과군</td>
+									<th scope="row">S1-1~6</th>
+									<td>자연과학대학1~6호관</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-1</th>
+									<td>학생생활관&#40;개성재&#41;</td>
+									<th scope="row">S1-7</th>
+									<td>과학기술도서관</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-2</th>
+									<td>개성재수위실</td>
+									<th scope="row">S2</th>
+									<td>전산정보원</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-3</th>
+									<td>개성재&#40;진리관&#41;</td>
+									<th scope="row">S4-1</th>
+									<td>전자정보3관</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-4</th>
+									<td>개성재&#40;정의관&#41;</td>
+									<th scope="row">S9</th>
+									<td>박물관</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-5</th>
+									<td>개성재&#40;개척관&#41;</td>
+									<th scope="row">S14</th>
+									<td>제2학생회관</td>
+								</tr>
+								<tr>
+									<th scope="row">N17-6</th>
+									<td>계영원</td>
+									<th scope="row">S17-1</th>
+									<td>양성재&#40;지선관&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">N18</th>
+									<td>법학관</td>
+									<th scope="row">S17-2</th>
+									<td>양성재&#40;명덕관&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">N20-1</th>
+									<td>생활과학관</td>
+									<th scope="row">S17-3</th>
+									<td>양성재&#40;신민관&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">E1-1</th>
+									<td>사범대학</td>
+									<th scope="row">S17-4</th>
+									<td>양현재&#40;수위실&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">E1-2</th>
+									<td>사범대학</td>
+									<th scope="row">S17-5</th>
+									<td>양현재&#40;청운관&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">E2</th>
+									<td>개신문화관</td>
+									<th scope="row">S17-6</th>
+									<td>양현재&#40;등용관&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">E3</th>
+									<td>제1학생회관, 취업지원본부</td>
+									<th scope="row">S17-7</th>
+									<td>양현재&#40;관리동&#41;</td>
+								</tr>
+								<tr>
+									<th scope="row">E3-1</th>
+									<td>NH관</td>
+									<th scope="row">S21-3</th>
+									<td>농업과학기술센터</td>
+								</tr>
+								<tr>
+									<th scope="row">E4-1</th>
+									<td>글로컬스포츠센터</td>
+									<th scope="row">S21-4</th>
+									<td>농업생명환경대학</td>
+								</tr>
+								<tr>
+									<th scope="row">E7-1</th>
+									<td>의과대학</td>
+									<th scope="row">S21-5</th>
+									<td>농생대연구동</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			</section>
+			<!-- [pp] //subpage 컨텐츠영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+				<ul class="footer_link">
+					<li><a href="javascript:void(0);" class="privacy">개인정보처리방침</a></li>
+					<li><a href="javascript:void(0);">이메일무단수집거부</a></li>
+				</ul>
+				<ul class="footer_info">
+					<li>
+						&#40;28644&#41; 충북 청주시 서원구 충대로1, 충북대학교 TEL 043)261-2114
+					</li>
+					<li>
+						Copyright 2020 Chungbuk National University &copy; Allrights Reserved
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+	</body></html>
