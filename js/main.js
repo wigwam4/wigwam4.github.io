@@ -159,10 +159,10 @@
 
 // 하단 띠 배너
 (function(){
-    const banner = document.querySelector('.zodiac_banner');
-    const btn = banner.querySelector('.btn_close');
+    const btn = document.querySelector('.zodiac_banner .btn_close');
 
     btn.addEventListener('click', function(){
-        banner.style.bottom = '-80px';
+        const banner = this.parentElement.parentElement;
+        banner.style.bottom = `-${banner.clientHeight}px`;
     });
 })();
