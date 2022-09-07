@@ -1,6 +1,6 @@
 'use strict';
 
-// water circle animation
+// canvas animation
 (function(){
     const canvasOuter = document.querySelector('.canvas_area .shape_outer');
     const canvasInner = document.querySelector('.canvas_area .shape_inner');
@@ -52,7 +52,7 @@
         let scrollRatio, canvasOuterSize, canvasInnerSize, canvasOpacity, textFadeUp;
         
         if (scrTop >= 0 && scrTop <= canvasData.inner.y2){
-            scrollRatio = scrTop / (canvasData.inner.y2 - canvasData.inner.y1); //0~1
+            scrollRatio = scrTop / (canvasData.inner.y2 - canvasData.inner.y1); 
             canvasInnerSize = canvasData.inner.start - canvasData.inner.start * scrollRatio;
         } else if (scrTop < 0){
             canvasInnerSize = canvasData.inner.start;
@@ -61,7 +61,7 @@
         }
 
         if (scrTop >= 0 && scrTop <= canvasData.outer.y2){
-            scrollRatio = scrTop / (canvasData.outer.y2 - canvasData.outer.y1); //0~1
+            scrollRatio = scrTop / (canvasData.outer.y2 - canvasData.outer.y1); 
             canvasOuterSize = canvasData.outer.start + (canvasData.outer.end - canvasData.outer.start) * scrollRatio;
         } else if (scrTop < 0){
             canvasOuterSize = canvasData.outer.start;
@@ -70,7 +70,7 @@
         }
         
         if (scrTop >= canvasData.text.y1 && scrTop <= canvasData.text.y2){
-            scrollRatio = (scrTop - canvasData.text.y1) / (canvasData.text.y2 - canvasData.text.y1); //0~1
+            scrollRatio = (scrTop - canvasData.text.y1) / (canvasData.text.y2 - canvasData.text.y1); 
             canvasOpacity = 1 - scrollRatio;
             textFadeUp = (50 - ( 100 * scrollRatio)) + '%';
         } else if (scrTop < canvasData.text.y1){
@@ -94,7 +94,6 @@
     const tabLists = document.querySelectorAll('.tablist_js > li');
     const tabContents = document.querySelectorAll('.tabcnt_js > div');
     const tabContentOn = document.querySelector(document.querySelector('.tablist_js > li.on').querySelector('a').getAttribute('href'));
-    //const indexOfTabSelected = Array.from(tabList).indexOf(document.querySelector('.on'));
 
     tabContentOn.style.display = 'block';
     tabLists.forEach(function(tabList){
