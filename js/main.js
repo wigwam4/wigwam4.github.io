@@ -49,21 +49,21 @@
 
     function playAnimation(){
         let scrTop = window.scrollY;
-        let scrollRatio, canvasOuterSize, canvasInnerSize, canvasOpacity, textFadeUp;
+        let scrollRatio, canvasOuterSize, canvasInnerSize, canvasOpacity, textPosition;
         
-        if (scrTop >= 0 && scrTop <= canvasData.inner.y2){
+        if (scrTop >= canvasData.inner.y1 && scrTop <= canvasData.inner.y2){
             scrollRatio = scrTop / (canvasData.inner.y2 - canvasData.inner.y1); 
             canvasInnerSize = canvasData.inner.start - canvasData.inner.start * scrollRatio;
-        } else if (scrTop < 0){
+        } else if (scrTop < canvasData.inner.y1){
             canvasInnerSize = canvasData.inner.start;
         } else if (scrTop > canvasData.inner.y2){
             canvasInnerSize = canvasData.inner.end;
         }
 
-        if (scrTop >= 0 && scrTop <= canvasData.outer.y2){
+        if (scrTop >= canvasData.outer.y1 && scrTop <= canvasData.outer.y2){
             scrollRatio = scrTop / (canvasData.outer.y2 - canvasData.outer.y1); 
             canvasOuterSize = canvasData.outer.start + (canvasData.outer.end - canvasData.outer.start) * scrollRatio;
-        } else if (scrTop < 0){
+        } else if (scrTop < canvasData.outer.y1){
             canvasOuterSize = canvasData.outer.start;
         } else if (scrTop > canvasData.outer.y2){
             canvasOuterSize = canvasData.outer.end;
@@ -72,19 +72,19 @@
         if (scrTop >= canvasData.text.y1 && scrTop <= canvasData.text.y2){
             scrollRatio = (scrTop - canvasData.text.y1) / (canvasData.text.y2 - canvasData.text.y1); 
             canvasOpacity = 1 - scrollRatio;
-            textFadeUp = (50 - ( 100 * scrollRatio)) + '%';
+            textPosition = (50 - ( 100 * scrollRatio)) + '%';
         } else if (scrTop < canvasData.text.y1){
             canvasOpacity = canvasData.opacity.start;
-            textFadeUp = canvasData.text.start;
+            textPosition = canvasData.text.start;
         } else if (scrTop > canvasData.text.y2){
             canvasOpacity = canvasData.opacity.end;
-            textFadeUp = canvasData.text.end;
+            textPosition = canvasData.text.end;
         }
 
         canvasInner.style.width = canvasInner.style.height = `${canvasInnerSize}px`;
         canvasOuter.style.width = canvasOuter.style.height = `${canvasOuterSize}px`;
         canvasOuter.style.opacity = canvasOpacity;
-        canvasText.style.top = textFadeUp;
+        canvasText.style.top = textPosition;
     }
 })();
 
