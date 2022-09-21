@@ -29,11 +29,6 @@
         const windowWidth = document.documentElement.clientWidth;
         const windowHeight = document.documentElement.clientHeight;
 
-        canvasData.inner.y2 = scrollHeight * 0.2;
-        canvasData.outer.y2 = scrollHeight * 0.4;
-        canvasData.text.y1 = canvasData.opacity.y1 = scrollHeight * 0.4;
-        canvasData.text.y2 = canvasData.opacity.y2 = scrollHeight * 0.9;
-
         if(windowWidth > windowHeight) {
             canvasData.inner.start = windowHeight / 2.4;
             canvasData.outer.start = windowHeight;
@@ -45,6 +40,11 @@
         }
         canvasInner.style.width = canvasInner.style.height = `${canvasData.inner.start}px`;
         canvasOuter.style.width = canvasOuter.style.height = `${canvasData.outer.start}px`;
+
+        canvasData.inner.y2 = scrollHeight * 0.2;
+        canvasData.outer.y2 = scrollHeight * 0.4;
+        canvasData.text.y1 = canvasData.opacity.y1 = scrollHeight * 0.4;
+        canvasData.text.y2 = canvasData.opacity.y2 = scrollHeight * 0.9;
     }
 
     function playAnimation(){
