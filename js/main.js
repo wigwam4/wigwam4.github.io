@@ -19,13 +19,13 @@
         resolution: 480,
     });
 
-    canvasSizing();
+    setCanvasData();
     playAnimation();
 
-    window.addEventListener('resize', canvasSizing);
+    window.addEventListener('resize', setCanvasData);
     window.addEventListener('scroll', playAnimation);
 
-    function canvasSizing(){
+    function setCanvasData(){
         const windowWidth = document.documentElement.clientWidth;
         const windowHeight = document.documentElement.clientHeight;
 
