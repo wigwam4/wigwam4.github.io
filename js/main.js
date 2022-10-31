@@ -89,6 +89,32 @@
 })();
 
 
+// 스크롤 패럴럭스
+(function(){
+	setScrollEffect('.fadeup', 1);
+    
+    function setScrollEffect(selector, extra){
+        checkVisibility(selector, extra);
+        window.addEventListener('scroll', function(){
+            checkVisibility(selector, extra);
+        });
+    }
+    function checkVisibility(selector, extra){
+        const selectors = document.querySelectorAll(selector);
+        const windowHeight = document.documentElement.clientHeight;
+
+        selectors.forEach(function(e, i){
+            let scrTop = window.scrollY;
+            let eTop = window.pageYOffset + e.getBoundingClientRect().top;
+            let minShow = eTop - windowHeight * extra;
+            if (scrTop >= minShow){
+                e.classList.add('on');
+            }
+        });
+    }
+})();
+
+
 // Projects : Tab
 (function(){
     const tabLists = document.querySelectorAll('.tablist_js > li');
