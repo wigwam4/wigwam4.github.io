@@ -123,7 +123,7 @@
 
 // Projects : 반응형 미리보기 
 (function(){
-    const projects = document.querySelectorAll('.project_list > li');
+    const projects = document.querySelectorAll('.project_list > li:not(.tab_except)');
 
     projects.forEach((project) => {
         const previewBox = project.querySelector('.preview_box');
@@ -164,4 +164,163 @@
         const banner = this.parentElement.parentElement;
         banner.style.bottom = `-${banner.clientHeight}px`;
     });
+})();
+
+
+// 얼굴 그리기
+(function(){
+    const canvas = document.getElementById('canvas_smile');
+    const ctx = canvas.getContext('2d');
+    const myImg = new Image();
+    const gra = ctx.createLinearGradient(0,canvas.height/2,canvas.width,canvas.height/2);
+
+    // 그라디언트
+    gra.addColorStop(0,'#5BA675');
+    gra.addColorStop(1,'#0A46BF');
+
+    // 스타일
+    ctx.lineCap = 'round'; 
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#000'; 
+
+    // 실행
+    myImg.src = '../img/bgSmile.png'; 
+    myImg.onload = function(){
+        const myPat = ctx.createPattern(myImg,'repeat');
+        
+        // 얼굴
+        ctx.arc(300,200,100,0,Math.PI*2);
+        ctx.fillStyle = myPat;
+        ctx.fill();
+
+        // 눈 - 왼쪽
+        ctx.beginPath(); ctx.moveTo(275,190); ctx.bezierCurveTo(275,165,300,165,300,190); ctx.bezierCurveTo(300,215,275,215,275,190); ctx.closePath();
+        ctx.fillStyle = '#fff'; ctx.fill();
+        ctx.stroke();
+
+        // 눈 - 오른쪽
+        ctx.beginPath(); ctx.moveTo(300,190); ctx.bezierCurveTo(300,165,325,165,325,190); ctx.bezierCurveTo(325,215,300,215,300,190); ctx.closePath();
+        ctx.fillStyle = '#fff'; ctx.fill();
+        ctx.stroke();
+
+        // 눈동자 - 왼쪽
+        ctx.beginPath(); ctx.moveTo(287,192); ctx.bezierCurveTo(287,180,300,180,300,192); ctx.bezierCurveTo(300,204,287,204,287,192); ctx.closePath();
+        ctx.fillStyle = '#000'; ctx.fill();
+
+        // 눈동자 - 오른쪽
+        ctx.beginPath(); ctx.moveTo(306 ,192); ctx.bezierCurveTo(306,180,319,180,319,192); ctx.bezierCurveTo(319,204,306,204,306,192); ctx.closePath();
+        ctx.fillStyle = '#000'; ctx.fill();
+
+        // 눈커플 - 왼쪽
+        ctx.beginPath(); ctx.moveTo(275,194); ctx.bezierCurveTo(273,164,302,164
+        ,300,188); ctx.closePath();
+        ctx.fillStyle = '#fff'; ctx.fill();
+        ctx.stroke();
+
+        // 눈커플 - 오른쪽
+        ctx.beginPath(); ctx.moveTo(300,190); ctx.bezierCurveTo(300,165,325,165,325,190); ctx.closePath();
+        ctx.fillStyle = '#fff'; ctx.fill();
+        ctx.stroke();
+
+        // 속눈썹
+        ctx.beginPath(); ctx.arc(269,188,5,0,Math.PI*1); ctx.stroke();
+        ctx.beginPath(); ctx.arc(331,188,5,0,Math.PI*1); ctx.stroke();
+
+        // 주근깨
+        ctx.fillStyle = '#000';
+        ctx.fillRect(247,200,3,3); ctx.fillRect(240,215,3,3); ctx.fillRect(255,215,3,3);
+        ctx.fillRect(347,200,3,3); ctx.fillRect(340,215,3,3); ctx.fillRect(355,215,3,3);
+
+        // 입
+        ctx.beginPath(); ctx.arc(300,220,20,0,Math.PI*1);
+        ctx.stroke();
+
+        // 머리
+        ctx.beginPath(); ctx.moveTo(220,130); ctx.bezierCurveTo(174,200,260,180,260,130); ctx.bezierCurveTo(260,90,230,100,245,145); ctx.bezierCurveTo(260,180,280,160,295,130); ctx.bezierCurveTo(320,80,280,70,280,110); ctx.bezierCurveTo(280,160,300,160,330,110); ctx.bezierCurveTo(345,85,330,80,310,110); ctx.bezierCurveTo(270,180,330,160,350,130); ctx.bezierCurveTo(370,100,350,80,335,120); ctx.bezierCurveTo(320,160,330,180,365,160); ctx.bezierCurveTo(400,140,400,80,358,135); ctx.bezierCurveTo(335,170,360,200,405,170);
+        ctx.stroke();
+
+        // 반짝
+        ctx.strokeStyle = gra;
+
+        ctx.shadowColor = '#0A46BF'; ctx.shadowBlur = 25;
+        ctx.beginPath();
+        ctx.moveTo(450,100); ctx.arcTo(500,100,500,130,25); ctx.lineTo(500,150); 
+        ctx.moveTo(550,100); ctx.arcTo(500,100,500,130,25); ctx.lineTo(500,150);  
+        ctx.moveTo(550,100); ctx.arcTo(500,100,500,30,25); ctx.lineTo(500,50); 
+        ctx.moveTo(450,100); ctx.arcTo(500,100,500,30,25); ctx.lineTo(500,50);
+        ctx.stroke();
+
+        ctx.shadowColor = '#5BA675'; ctx.shadowBlur = 25;
+        ctx.beginPath();
+        ctx.moveTo(50,300); ctx.arcTo(100,300,100,330,25); ctx.lineTo(100,350); 
+        ctx.moveTo(150,300); ctx.arcTo(100,300,100,330,25); ctx.lineTo(100,350);  
+        ctx.moveTo(150,300); ctx.arcTo(100,300,100,230,25); ctx.lineTo(100,250); 
+        ctx.moveTo(50,300); ctx.arcTo(100,300,100,230,25); ctx.lineTo(100,250);
+        ctx.stroke();
+    }
+})();
+
+
+// 세포 그리기
+(function(){
+    const canvas = document.getElementById('canvas_dots');
+    const ctx = canvas.getContext('2d');
+    const color = [
+        {fillstyle: 'rgba(48,161,147,0.6)', strokestyle: 'rgba(48,161,147,0.2)'},
+        {fillstyle: 'rgba(9,140,158,0.6)', strokestyle: 'rgba(9,140,158,0.2)'},
+        {fillstyle: 'rgba(48,99,144,0.6)', strokestyle: 'rgba(48,99,144,0.2)'}
+    ]
+    let particleArray = [];
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.onresize = function(){
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+    }
+
+    function Particle(x,y,i){
+        this.x = x;
+        this.y = y;
+        this.vol = {
+            x: Math.random()*1.5,
+            y: Math.random()*1.5
+        }
+        this.radius = Math.random()*35+15; // 15~36 중 랜덤 숫자
+        this.draw = () => {  
+            ctx.beginPath();
+            ctx.lineWidth = 28;
+            ctx.fillStyle = color[i].fillstyle;
+            ctx.strokeStyle = color[i].strokestyle;
+            ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+            ctx.fill(); ctx.stroke();
+        }
+        this.update = () => {
+            this.x += this.vol.x;
+            this.y += this.vol.y;
+            if (this.x - this.radius < 10 || this.x + this.radius > canvas.width){
+                this.vol.x = -this.vol.x;
+            }
+            if (this.y - this.radius < 10 || this.y + this.radius > canvas.height){
+                this.vol.y = -this.vol.y;
+            }
+            this.draw();
+        }
+        this.update();
+    }
+    function animate(){
+        requestAnimationFrame(animate);
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        for (let i=0; i<particleArray.length; i++){
+            particleArray[i].update(); // = new Particle(x,y,colorIndex).update()
+        }
+    }
+
+    for (let i=0; i<40; i++){
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const colorIndex = Math.floor(Math.random()*color.length);
+        particleArray.push(new Particle(x,y,colorIndex));
+    }
+    animate();
 })();

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="title" content="포항공과대학교 포스테키안 관리자">
+	<meta name="description" content="포항공과대학교 포스테키안 관리자화면입니다.">
+	<meta name="copyrigt" content="Pohang University of Science and Technology">
+	<meta name="keywords" content="포항공과대학교, 포스테키안, 포스테키안 활동">
+	<!--[if lt IE 10]>
+		<div id="pp_iever_upgradeinfo">
+			<div>
+				본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br />지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" >익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" >크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" >오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" >파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			</div>
+			<p><a href="javascript:void(0);" class="pp_upgradeinfo_close">X 닫기</a></p>
+		</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../js/js/IE9.js"></script>
+	<![endif]-->
+	<title>포항공과대학교 포스테키안 관리자</title>
+	<!-- [pp]파비콘 -->
+	<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/icon_64.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/icon_64.ico"/>
+	<!-- [pp] //파비콘 -->
+	<link rel="stylesheet" type="text/css" href="../../../css/dl_reset.css">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../font/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대비용 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/dl_layout.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_custom.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_ui.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_popup.css">
+	<script type="text/javascript" src="../../../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../../../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../../js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="../../../js/dp_common.js"></script>
+	<script type="text/javascript" src="../../../js/admin/pp_ad_common.js"></script>
+</head>
+<body>
+	<!-- [pp] footer를 제외한 전체 페이지 영역 -->
+	<div class="ad_page_wrap">
+		<!-- [pp] skip nav -->
+		<nav class="pp_skip_nav">
+			<a href="#pp_gnb_skip">메뉴 바로가기</a>
+			<a href="#pp_contents">본문영역 바로가기</a>
+		</nav>
+		<!-- [pp] // skip nav -->
+		<!-- [pp] header -->
+		<header class="ad_header_wrap">
+			<h1><a href="javascript:void(0);"><img src="../../../images/admin/admin_loginlogo.png" alt="포항공과대학교 로고"></a>
+			</h1>
+			<!-- [pp] 접속자 정보 -->
+			<ul class="ad_tnb_wrap">
+				<li class="ad_userinfo"><strong>시스템관리자 &#40;admin&#41;</strong>님 접속을 환영합니다.<br/> <span>최종 로그인: 2018-10-10 14:15:16</span></li>
+				<li><a href="javascript:void(0);" class="ad_btnlogout"><i class="fa fa-power-off"></i>로그아웃</a></li>
+			</ul>
+			<!-- //[pp] 접속자 정보 -->
+		</header>
+		<!-- [pp] // header -->
+
+		<!-- [pp] gnb -->
+		<nav id="pp_gnb_skip" class="ad_gnb_wrap" tabindex="0">
+			<div class="ad_aside_gnb">
+				<ul class="ad_aside_onedepth">
+					<li class="ad_gnbmenu0">
+						<a href="javascript:void(0);" class="ad_gnb0 ad_dropdown">포탈 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">관리자 설정</a></li>
+							<li><a href="javascript:void(0);">메뉴관리</a></li>
+							<li><a href="javascript:void(0);">학생조회</a></li>
+							<li><a href="javascript:void(0);">접속IP 관리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu1">
+						<a href="javascript:void(0);" class="ad_gnb1 ad_dropdown">포스테키니안 활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="./010_basic_management/01010_User_Management.html">포스테키안 활동 등록</a></li>
+							<li><a href="./010_basic_management/02010_Menu_Management.html">포스테키안 활동 승인</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 내역</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 신청자</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동별 만족도</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu2">
+						<a href="javascript:void(0);" class="ad_gnb2 ad_dropdown">학생활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);" class="ad_subdropdown">동아리 관리<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">동아리 코드관리</a></li>
+									<li><a href="javascript:void(0);">동아리 현황</a></li>
+									<li><a href="javascript:void(0);">동아리 참여학생 관리</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">학생단체 관리<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">학생단체 코드관리</a></li>
+									<li><a href="javascript:void(0);">학생단체 현황</a></li>
+									<li><a href="javascript:void(0);">학생단체 참여학생 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu3">
+						<a href="javascript:void(0);" class="ad_gnb3 ad_dropdown">봉사 및 대외활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">봉사 및 대외활동 관리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu4">
+						<a href="javascript:void(0);" class="ad_gnb4 ad_dropdown">PAM 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">PAM 내역</a></li>
+							<li><a href="javascript:void(0);">U-PAM 내역</a></li>
+							<li><a href="javascript:void(0);">UNIT 신청내역</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu5">
+						<a href="javascript:void(0);" class="ad_gnb5 ad_dropdown">공유 및 확산</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">EXPO</a></li>
+							<li><a href="javascript:void(0);">북 과제물</a></li>
+							<li><a href="javascript:void(0);">특강/워크숍</a></li>
+							<li><a href="javascript:void(0);">연구 성과</a></li>
+							<li><a href="javascript:void(0);">영상 갤러리</a></li>
+							<li><a href="javascript:void(0);">포토 갤러리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu6">
+						<a href="javascript:void(0);" class="ad_gnb6 ad_dropdown">커뮤니티 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">개인정보처리방침</a></li>
+							<li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+							<li><a href="javascript:void(0);">묻고 답하기</a></li>
+							<li><a href="javascript:void(0);">뉴스레터</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- // [pp] gnb -->
+		
+		<!-- [pp] container -->
+		<div class="ad_container_wrap">
+			<!-- [pp] content 영역 -->
+			<section id="pp_contents" class="ad_contents_wrap">
+				<h3 class="ad_content_tit">썸네일 리스트<span>관리자 권한 생성 및 수정,삭제 할 수 있습니다.</span></h3>
+				<section>
+					<h4 class="ad_section_tit">대학기관평가인증 정량지표 현황
+					</h4>
+					<div class="ad_btn_area">
+						<button type="button" class="btn btn_sm btn_deepblue"><i class="fa fa-plus"></i>다음년도 추가</button>
+						<select class="ad_formstyle_s">
+							<option>2018</option>
+						</select>
+					</div>
+					<div class="ad_list_table_wrap ad_scroll_table">
+						<table class="ad_multirow_list_tbl ad_hover_tbl" style="min-width:1600px;">
+							<caption>대학기관평가인증 정량지표 현황 목록</caption>
+							<colgroup>
+								<col style="width:45px">
+								<col style="width:*">
+								<col style="width:6%">
+								<col style="width:5%">
+								<col style="width:5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+								<col style="width:5.5%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="colgroup" colspan="3">기준년도</th>
+									<th scope="colgroup" colspan="2">2018</th>
+									<th scope="colgroup" colspan="6">1학기</th>
+									<th scope="colgroup" colspan="6">2학기</th>
+								</tr>
+								<tr>
+									<th scope="col">연번</th>
+									<th scope="col">지표명</th>
+									<th scope="col">기준값</th>
+									<th scope="col">달성도</th>
+									<th scope="col">평균</th>
+									<th scope="col">3월</th>
+									<th scope="col">4월</th>
+									<th scope="col">5월</th>
+									<th scope="col">6월</th>
+									<th scope="col">7월</th>
+									<th scope="col">8월</th>
+									<th scope="col">9월</th>
+									<th scope="col">10월</th>
+									<th scope="col">11월</th>
+									<th scope="col">12월</th>
+									<th scope="col">1월</th>
+									<th scope="col">2월</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td class="ta_l">전임교원 확부율</td>
+									<td class="ta_r">61%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td class="ta_l">교사 확보율</td>
+									<td class="ta_r">100%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td class="ta_l">정원내 신입생 충원율</td>
+									<td class="ta_r">95%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td class="ta_l">정원내 재학생 충원율</td>
+									<td class="ta_r">80%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td class="ta_l">교육비 환원율</td>
+									<td class="ta_r">100%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td class="ta_l">장학금 비율</td>
+									<td class="ta_r">10%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td class="ta_l">&#91;1.2.1&#93;세입 중 등록금 비율</td>
+									<td class="ta_r">72% 이하</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td class="ta_l">&#91;1.2.1&#93;세입 중 기부금 비율</td>
+									<td class="ta_r">0.5%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">9</th>
+									<td class="ta_l">&#91;1.2.1&#93;세입 중 법인전입금 비율&#40;사립대&#41;</td>
+									<td class="ta_r">0.4%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">10</th>
+									<td class="ta_l">&#91;3.1.2&#93;시간강사 강의료</td>
+									<td class="ta_r">45,000원</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+								</tr>
+								<tr>
+									<th scope="row">11</th>
+									<td class="ta_l">&#91;3.1.3&#93;전임교원 1인당 교내연구비</td>
+									<td class="ta_r">1,000천원</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+								</tr>
+								<tr>
+									<th scope="row">12</th>
+									<td class="ta_l">&#91;3.2.1&#93;직원 1인당 학생수</td>
+									<td class="ta_r">70명 이하</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+								</tr>
+								<tr>
+									<th scope="row">13</th>
+									<td class="ta_l">&#91;4.1.1-1&#93;재학생 1인당 강의실 면적 및 강의실 배정률</td>
+									<td class="ta_r">1.2m<sup>2</sup></td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+								</tr>
+								<tr>
+									<th scope="row">14</th>
+									<td class="ta_l">&#91;4.1.1-2&#93;재학생 1인당 실험 및 실습실 면적 및 실험 및 실습실 배정률
+									</td>
+									<td class="ta_r">2.5m<sup>2</sup></td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">m<sup>2</sup></td>
+								</tr>
+								<tr>
+									<th scope="row">15</th>
+									<td class="ta_l">&#91;4.1.1-3&#93;재학생 1인당 실험 및 실습 기자재 구입비</td>
+									<td class="ta_r">136,605천원</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+								</tr>
+								<tr>
+									<th scope="row">16</th>
+									<td class="ta_l">&#91;4.1.2&#93;기숙사 수용률</td>
+									<td class="ta_r">11%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+								<tr>
+									<th scope="row">17</th>
+									<td class="ta_l">&#91;4.1.3&#93;재학생 1인당 연간 자료구입비&#40;결산&#41;</td>
+									<td class="ta_r">54,000원</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">원</td>
+								</tr>
+								<tr>
+									<th scope="row">18</th>
+									<td class="ta_l">&#91;4.1.3&#93;재학생 1000명당 도서관 직원수</td>
+									<td class="ta_r">1.0명</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">명</td>
+								</tr>
+								<tr>
+									<th scope="row">19</th>
+									<td class="ta_l">&#91;5.1.1&#93;전임교원 1인당 등재&#40;후보&#41;지 논문 실적</td>
+									<td class="ta_r">0.35건</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+								</tr>
+								<tr>
+									<th scope="row">20</th>
+									<td class="ta_l">&#91;5.1.1&#93;전임교원 1인당 SCI급 논문 실적</td>
+									<td class="ta_r">0.05건</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+								</tr>
+								<tr>
+									<th scope="row">21</th>
+									<td class="ta_l">&#91;5.1.1&#93;전임교원 1인당 저역서 실적</td>
+									<td class="ta_r">0.07건</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">건</td>
+								</tr>
+								<tr>
+									<th scope="row">22</th>
+									<td class="ta_l">&#91;5.1.1&#93;전임교원 1인당 교외연구비</td>
+									<td class="ta_r">10,000천원</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_50">천원</td>
+								</tr>
+								<tr>
+									<th scope="row">23</th>
+									<td class="ta_l">&#91;5.1.2&#93;졸업생의 취업률</td>
+									<td class="ta_r">55%</td>
+									<td></td>
+									<td></td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+									<td class="td_input"><input type="text" class="ad_formstyle_s wd_60">%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="ad_btn_area mg_t5">
+						<button type="button" class="btn btn_md btn_orange fl">항목변경</button>
+						<button type="button" class="btn_border btn_md bo_default"><i class="fa fa-check"></i>저장</button>
+					</div>
+				</section>
+			</section>
+			<!-- [pp] // content 영역 -->
+		</div>
+		<!-- [pp] // container -->
+	</div>
+	<!-- [pp] footer를 제외한 전체 페이지 영역 -->
+	<!-- [pp] footer -->
+	<footer class="ad_footer_wrap">
+		<div class="ad_footer">
+			<address>
+				37673 경상북도 포항시 남구 청암로 77&#40;효자동 산31&#41; TEL.054-279-0114 / E-Mail.webmaster@postech.ac.kr<br/>
+				COPYRIGHT 2018 Pohang University of Science and Technology.ALL RIGHTS RESERVED.	
+			</address>
+		</div>
+		<button type="button" class="ad_gotop" title="페이지 상단으로 이동"><i class="fa fa-caret-up"></i>TOP</button>
+	</footer>
+	<!-- [pp] // footer -->
+</body>
+</html>

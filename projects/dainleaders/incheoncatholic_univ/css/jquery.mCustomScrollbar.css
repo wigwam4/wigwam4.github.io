@@ -448,7 +448,7 @@ yx-axis
 	.mCS-light-2.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-2.mCSB_scrollTools .mCSB_draggerRail{
 		width: 4px;
-		background-color: #fff; background-color: rgba(255,255,255,0.1);
+		background-color: #fff; background-color: rgba(0,123,255,0.1);
 		-webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px;
 	}
 
@@ -516,7 +516,7 @@ yx-axis
 	.mCS-light-thick.mCSB_scrollTools .mCSB_draggerRail, 
 	.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail{
 		width: 4px;
-		background-color: #fff; background-color: rgba(255,255,255,0.1);
+		background-color: #fff; background-color: rgba(0,123,255,0.1);
 		-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
 	}
 
@@ -586,7 +586,7 @@ yx-axis
 
 	/* theme: "light-thin", "dark-thin" */
 	
-	.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail{ background-color: #fff; background-color: rgba(255,255,255,0.1); }
+	.mCS-light-thin.mCSB_scrollTools .mCSB_draggerRail{ background-color: #fff; background-color: rgba(0,123,255,0.1); }
 
 	.mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
 	.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ width: 2px; }

@@ -1,0 +1,625 @@
+@charset "utf-8";
+
+/* === 기본 폰트 === */
+/* 노토산스 Light */
+@font-face {
+	font-family: 'NotokrL';
+	font-weight: normal;
+	src: url('../font/notokr-demilight.eot');
+	src: url('../font/notokr-demilight.eot?#iefix') format('embedded-opentype'),
+		local(NotokrL), url('../font/notokr-demilight.woff') format('woff'),
+		url('../font/notokr-demilight.ttf') format('truetype');
+}
+/* 노토산스 Regular */
+@font-face {
+	font-family: 'Notokr';
+	font-weight: normal;
+	src: url('../font/NotoSanskr-Regular.eot');
+	src: url('../font/NotoSanskr-Regular.eot?#iefix') format('embedded-opentype'),
+		local(Notokr), url('../font/NotoSanskr-Regular.woff') format('woff'),
+		url('../font/NotoSanskr-Regular.ttf') format('truetype');
+}
+/* 노토산스 Medium */
+@font-face {
+	font-family: 'NotokrM';
+	font-weight: normal;
+	src: url('../font/NotoSanskr-Medium.eot');
+	src: url('../font/NotoSanskr-Medium.eot?#iefix') format('embedded-opentype'),
+		local(NotokrM), url('../font/NotoSanskr-Medium.woff') format('woff'),
+		url('../font/NotoSanskr-Medium.ttf') format('truetype');
+}
+/* 노토산스 Bold */
+@font-face {
+	font-family: 'NotokrB';
+	font-weight: normal;
+	src: url('../font/NotoSanskr-Bold.eot');
+	src: url('../font/NotoSanskr-Bold.eot?#iefix') format('embedded-opentype'),
+		local(NotokrB), url('../font/NotoSanskr-Bold.woff') format('woff'),
+		url('../font/NotoSanskr-Bold.ttf') format('truetype');
+}
+
+/* === 커뮤니티 설문조사 : 관리자 지정 폰트 === */
+/* 나눔고딕 Light */
+@font-face {
+	font-family: 'NanumGothicL';
+	font-weight: normal;
+	src: url('../font/NanumGothicLight.eot');
+	src: url('../font/NanumGothicLight.eot?#iefix') format('embedded-opentype'),
+		local(NanumGothicL), url('../font/NanumGothicLight.woff') format('woff'),
+		url('../font/NanumGothicLight.ttf') format('truetype');
+}
+/* 나눔고딕 Regular */
+@font-face {
+	font-family: 'NanumGothicR';
+	font-weight: normal;
+	src: url('../font/NanumGothic.eot');
+	src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+		local(NanumGothic), url('../font/NanumGothic.woff') format('woff'),
+		url('../font/NanumGothic.ttf') format('truetype');
+}
+/* 나눔고딕 Bold */
+@font-face {
+	font-family: 'NanumGothicB';
+	font-weight: normal;
+	src: url('../font/NanumGothicBold.eot');
+	src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+		local(NanumGothicB), url('../font/NanumGothicBold.woff') format('woff'),
+		url('../font/NanumGothicBold.ttf') format('truetype');
+}
+
+/* 나눔바른고딕 Light */
+@font-face {
+	font-family: 'NanumBarunGothicL';
+	font-weight: normal;
+	src: url('../font/NanumBarunGothicLight.eot');
+	src: url('../font/NanumBarunGothicLight.eot?#iefix') format('embedded-opentype'),
+		local(NanumBarunGothicL), url('../font/NanumBarunGothicLight.woff') format('woff'),
+		url('../font/NanumBarunGothicLight.ttf') format('truetype');
+}
+/* 나눔바른고딕 Regular */
+@font-face {
+	font-family: 'NanumBarunGothicR';
+	font-weight: normal;
+	src: url('../font/NanumBarunGothic.eot');
+	src: url('../font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+		local(NanumBarunGothic), url('../font/NanumBarunGothic.woff') format('woff'),
+		url('../font/NanumBarunGothic.ttf') format('truetype');
+}
+/* 나눔바른고딕 Bold */
+@font-face {
+	font-family: 'NanumBarunGothicB';
+	font-weight: normal;
+	src: url('../font/NanumBarunGothicBold.eot');
+	src: url('../font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+		local(NanumBarunGothicB), url('../font/NanumBarunGothicBold.woff') format('woff'),
+		url('../font/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+/* 나눔명조 Regular */
+@font-face {
+	font-family: 'NanumMyeongjoR';
+	font-weight: normal;
+	src: url('../font/NanumMyeongjo.eot');
+	src: url('../font/NanumMyeongjo.eot?#iefix') format('embedded-opentype'),
+		local(NanumMyeongjoR), url('../font/NanumMyeongjo.woff') format('woff'),
+		url('../font/NanumMyeongjo.ttf') format('truetype');
+}
+/* 나눔명조 Bold */
+@font-face {
+	font-family: 'NanumMyeongjoB';
+	font-weight: normal;
+	src: url('../font/NanumMyeongjoBold.eot');
+	src: url('../font/NanumMyeongjoBold.eot?#iefix') format('embedded-opentype'),
+		local(NanumMyeongjoB), url('../font/NanumMyeongjoBold.woff') format('woff'),
+		url('../font/NanumMyeongjoBold.ttf') format('truetype');
+}
+
+/* 나눔손글씨 펜 */
+@font-face {
+	font-family: 'NanumPen';
+	font-weight: normal;
+	src: url('../font/NanumPen.eot');
+	src: url('../font/NanumPen.eot?#iefix') format('embedded-opentype'),
+		local(NanumPen), url('../font/NanumPen.woff') format('woff'),
+		url('../font/NanumPen.ttf') format('truetype');
+}
+
+/* 나눔손글씨 붓 */
+@font-face {
+	font-family: 'NanumBrush';
+	font-weight: normal;
+	src: url('../font/NanumBrush.eot');
+	src: url('../font/NanumBrush.eot?#iefix') format('embedded-opentype'),
+		local(NanumBrush), url('../font/NanumBrush.woff') format('woff'),
+		url('../font/NanumBrush.ttf') format('truetype');
+}
+
+/* 나눔스퀘어 Light */
+@font-face {
+	font-family: 'NanumSquareL';
+	font-weight: normal;
+	src: url('../font/NanumSquareL.eot');
+	src: url('../font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareL), url('../font/NanumSquareL.woff') format('woff'),
+		url('../font/NanumSquareL.ttf') format('truetype');
+}
+/* 나눔스퀘어 Regular */
+@font-face {
+	font-family: 'NanumSquareR';
+	font-weight: normal;
+	src: url('../font/NanumSquareR.eot');
+	src: url('../font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareR), url('../font/NanumSquareR.woff') format('woff'),
+		url('../font/NanumSquareR.ttf') format('truetype');
+}
+/* 나눔스퀘어 Bold */
+@font-face {
+	font-family: 'NanumSquareB';
+	font-weight: normal;
+	src: url('../font/NanumSquareB.eot');
+	src: url('../font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareB), url('../font/NanumSquareB.woff') format('woff'),
+		url('../font/NanumSquareB.ttf') format('truetype');
+}
+
+/* 나눔스퀘어라운드 Light */
+@font-face {
+	font-family: 'NanumSquareRoundL';
+	font-weight: normal;
+	src: url('../font/NanumSquareRoundL.eot');
+	src: url('../font/NanumSquareRoundL.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareRoundL), url('../font/NanumSquareRoundL.woff') format('woff'),
+		url('../font/NanumSquareRoundL.ttf') format('truetype');
+}
+/* 나눔스퀘어라운드 Regular */
+@font-face {
+	font-family: 'NanumSquareRoundR';
+	font-weight: normal;
+	src: url('../font/NanumSquareRoundR.eot');
+	src: url('../font/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareRoundR), url('../font/NanumSquareRoundR.woff') format('woff'),
+		url('../font/NanumSquareRoundR.ttf') format('truetype');
+}
+/* 나눔스퀘어라운드 Bold */
+@font-face {
+	font-family: 'NanumSquareRoundB';
+	font-weight: normal;
+	src: url('../font/NanumSquareRoundB.eot');
+	src: url('../font/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'),
+		local(NanumSquareRoundB), url('../font/NanumSquareRoundB.woff') format('woff'),
+		url('../font/NanumSquareRoundB.ttf') format('truetype');
+}
+
+/* reset css */
+* {
+    margin: 0; padding: 0;
+}
+
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* nav { overflow: visible !important; } */
+/* body */
+html,body {
+    width: 100%; min-width: 320px; height: 100%; 
+	background: transparent;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0; padding: 0;
+	font-style: normal; line-height: 1.5em;
+    border: 0; border-radius: 0;
+	/* for iOS */
+	outline: 0;
+}
+html{
+	font-family: Notokr, Noto Sans CJK KR, '맑은고딕','돋움','Apple SD Gothic Neo',sans-serif; 
+	font-size: 14px; line-height: 1em; color: #393636; /*color: #3a3a3a;*/
+}
+body:focus{
+	outline: none !important;
+}
+body {	
+	width: 100%;
+	background: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	/* Fix for webkit rendering */
+	-webkit-text-size-adjust: none;
+	word-break: break-all;
+
+	/* 이미지 렌더링 - 사이즈 수정시 뚜렷하게 표시 */ 
+	image-rendering: -moz-crisp-edges;          /* Firefox */ 
+	image-rendering: -o-crisp-edges;            /* Opera */ 
+	image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */ 
+	image-rendering: crisp-edges; 
+	-ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */ 
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,main { 
+	display:block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+	font-weight: 400;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+address,caption,strong,em,cite {
+    font-weight: normal; 
+	font-style: normal;
+}
+
+ins {
+	background-color:#ff9;
+	color: inherit; text-decoration:none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+img,fieldset,iframe,abbr,acronym {
+    border: 0;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:''; content:none;
+}
+
+mark {
+	background-color:#ff9;
+	color: inherit; 
+	font-style:italic; font-weight:bold;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+hr {
+	display:block;
+	height:1px;
+	border:0;   
+	border-top:1px solid #dddddd;
+	margin:1em 0; padding:0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 0;
+}
+
+th,td {
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+legend,caption {
+    display: none;
+}
+
+img,input,select {
+	vertical-align: middle;
+}
+
+input {
+	outline: none;
+	vertical-align: middle;
+	font-family: Notokr,'맑은고딕','돋움','Apple SD Gothic Neo',sans-serif;
+	color: #323538;
+}
+input[type="text"]::-ms-clear{
+	display: none;
+}
+
+input[type="image"] {
+    border: none;
+}
+
+input[type="button"] {
+    border: none;
+}
+
+input[type="image"]:focus {
+    border: none;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"] {
+    cursor: pointer;
+	filter: chroma(color=#3a3a3a);
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+    outline: 0 hlsa(0, 0%, 0%, 0);
+}
+
+select {
+	color: #3a3a3a;
+    outline: none; vertical-align:middle;
+	font-family: Notokr,'맑은고딕','돋움','Apple SD Gothic Neo',sans-serif;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+	resize: none;
+	font-family: Notokr,'맑은고딕','돋움','Apple SD Gothic Neo',sans-serif;
+	font-size:inherit;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;	
+	outline: none;
+	font-family: Notokr,'맑은고딕','돋움','Apple SD Gothic Neo',sans-serif;
+}
+
+input:focus,select:focus{
+	outline: dotted 1px #797979;
+}
+
+a {
+    text-decoration: none;
+	color: inherit;
+	font-size: inherit; font-weight: inherit; font-family: inherit;
+    border: 0;
+	outline: none;
+    padding: 0; margin: 0;
+}
+
+img {
+    border: 0;
+    outline: none;
+    padding: 0; margin: 0;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover,a:focus {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+	outline: none !important;
+}
+
+span{
+	font-size: inherit;
+	color: inherit;
+}
+
+/* clear fix */
+* html .clear {
+	height: 0;
+}
+.clear{
+	clear: both;
+}
+.clearfix:before,.clearfix:after {
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	clear: both !important;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+
+button,input {
+	overflow: visible;
+}
+button,select {
+	text-transform: none;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+[type="checkbox"],[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+/* ie 하위버전 알림 */
+#pp_iever_upgradeinfo {
+	width: 100%; height: 85px;
+	padding: 10px;
+	position: relative; top: 0px;
+	background: #f75050;
+	border-bottom: 1px solid #fff;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index: 99999;
+}
+#pp_iever_upgradeinfo > div {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center; color: #fff; line-height: 1.4em;
+}
+#pp_iever_upgradeinfo > div a {
+	text-decoration: underline;
+	color: #fff;
+}
+#pp_iever_upgradeinfo > p {
+	width: 1100px;
+	margin: 0 auto;
+}
+#pp_iever_upgradeinfo > p a {
+	display: block;
+	width: 45px; height: 20px;
+	float: right;
+	text-align: center; line-height: 18px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.pp_upgradeinfo_close {
+	position: relative;
+}
+
+/* skip nav */
+.pp_skip_nav a{
+	display: block; left:0;
+	overflow: hidden;
+	position: absolute;
+	top:-9999px;
+	transition:none;
+	z-index: 99999;
+}
+.pp_skip_nav a:hover, .pp_skip_nav a:focus, .pp_skip_nav a:active {
+	width:100%; padding:15px 0;
+	background-color:rgba(0,0,0,0.6);
+	color:#fff; font-size:15px; font-size: 15px;
+	text-align:center; top:0px;
+	z-index:99999;
+}
+
+/* 에러페이지 */
+.error_round_box {
+	width: 600px; height: 400px; 
+	margin: 0 auto; margin-top: -200px;
+	position: relative; top: 50%;
+	border: 4px solid #ddd;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.error_round_box>img{
+	display: block;
+	margin: 0 auto; margin-top: 20px;
+}
+.error_title {
+	padding-top: 35px;
+	text-align: center; font-size: 42px; color: #1075c9; line-height: 1em;
+}
+.error_title span {
+	display: block;
+	font-size: 25px; color: #767676;
+}
+.error_explanation {
+	width:90%;
+	margin: 0 auto; padding: 10px 20px;
+	line-height:20px;
+	font-size: 15px; color: #7a7a7a;
+	word-wrap: break-word; word-break: keep-all;
+	background-color: #f3f3f3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.error_button {
+	display: block;
+	width: 171px; height: 44px;
+	margin: 0 auto;
+	margin-top: 22px;
+	font-size: 18px; color: #fff !important;
+	text-align: center; line-height: 44px;
+	background-color: #88b653;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.error_button:hover {
+	background-color: #1075c9;
+}
+
+@media only screen and (max-width:767px) {
+	
+	/* 에러페이지 */
+	.error_round_box {
+		width: 90%; height: 360px; 
+		margin-top: -180px;
+	}
+	.error_round_box>img{
+		display: block;
+		margin: 0 auto; margin-top: 20px;
+	}
+	.error_title {
+		padding-top: 20px;
+		font-size: 28px; line-height: 1.2em;
+	}
+	.error_title span {
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.error_explanation {
+		padding: 10px 10px;
+		line-height:1.3em;
+		font-size: 14px;
+	}
+	.error_button {
+		width: 90%; height: 35px;
+		margin: 0 auto;
+		margin-top: 15px;
+		font-size: 16px; line-height: 35px;
+	}
+	
+}

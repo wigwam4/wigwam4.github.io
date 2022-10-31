@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta name="format-detection" content="telephone=no, address=no">
+	<meta name="title" content="포항공과대학교 포스테키안">
+	<meta name="description" content="포항공과대학교 포스테키안 학생화면입니다.">
+	<meta name="copyrigt" content="Pohang University of Science and Technology">
+	<meta name="keywords" content="포항공과대학교, 포스테키안, 포스테키안 활동">
+	<!--[if lt IE 10]>
+	<script type="text/javascript" src="../../../js/html5shiv.js"></script>
+	<div id="pp_iever_upgradeinfo">
+		<div>
+			본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br />지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" >익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" >크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" >오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" >파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+		</div>
+		<p><a href="javascript:void(0);" class="pp_upgradeinfo_close">X 닫기</a></p>
+	</div>	
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="../../../js/IE9.js"></script>
+		<script src="../../../js/respond.min.js"></script>
+	<![endif]-->
+	<title>포항공과대학교 포스테키안</title>
+	<!-- [pp]파비콘 -->
+	<link rel="apple-touch-icon" sizes="64x64" href="../../../images/common/icon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../../../images/common/icon.ico"/>
+	<!-- [pp] //파비콘 -->
+	<style>
+		/* font */
+		@font-face {
+			font-family: 'Notokr';
+			font-weight: normal;
+			src: url('../../../font/NotoSanskr-Regular.eot');
+			src: url('../../../font/NotoSanskr-Regular.eot?#iefix') format('embedded-opentype'),
+				local(Notokr), url('../../../font/NotoSanskr-Regular.woff') format('woff'),
+				url('../../../font/NotoSanskr-Regular.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: 'NotokrM';
+			font-weight: normal;
+			src: url('../../../font/NotoSanskr-Medium.eot');
+			src: url('../../../font/NotoSanskr-Medium.eot?#iefix') format('embedded-opentype'),
+				local(NotokrM), url('../font/NotoSanskr-Medium.woff') format('woff'),
+				url('../../../font/NotoSanskr-Medium.ttf') format('truetype');
+		}
+		@font-face {
+			font-family: 'NotokrB';
+			font-weight: normal;
+			src: url('../../../font/NotoSanskr-Bold.eot');
+			src: url('../../../font/NotoSanskr-Bold.eot?#iefix') format('embedded-opentype'),
+				local(NotokrB), url('../font/NotoSanskr-Bold.woff') format('woff'),
+				url('../../../font/NotoSanskr-Bold.ttf') format('truetype');
+		}
+		
+		/* reset */
+		* {
+			margin: 0; padding: 0;
+		}
+		html,body {
+			width: 100%; min-width: 320px; height: 100%; 
+			background: transparent;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+		small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section, summary,
+		time, mark, audio, video {
+			margin: 0; padding: 0;
+			font-style: normal; line-height: 1.5em;
+			border: 0; border-radius: 0;
+			/* for iOS */
+			outline: 0;
+		}
+		html{
+			font-family: Notokr, Noto Sans CJK KR, '맑은고딕','돋움','Apple SD Gothic Neo',sans-serif; 
+			font-size: 14px; line-height: 1em; color: #393636; /*color: #3a3a3a;*/
+		}
+		body:focus{
+			outline: none !important;
+		}
+		body {	
+			width: 100%;
+			background: #ffffff;
+			-webkit-font-smoothing: antialiased;
+			/* Fix for webkit rendering */
+			-webkit-text-size-adjust: none;
+			word-break: break-all;
+		}
+
+		article,aside,details,figcaption,figure,
+		footer,header,hgroup,menu,nav,section,main { 
+			display:block;
+		}
+		*,*:before,*:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			margin: 0;
+			font-weight: 400;
+		}
+		
+		/* grid */
+		.grid_content {
+			overflow: hidden;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		
+		/* common */
+		.font_yellow{color:#edc937 !important;}
+		.font_pink{ color: #c61065 !important; }
+		.font_cyan{ color: #42939a !important; }
+		
+		/* style */
+		.pp_subtit_box h3{
+			margin-top: 50px; margin-bottom: 0.5em;
+			padding: 5px 0 5px 35px;
+			font-size: 1.4rem;
+			background: url(../../../images/edu/sub/icon_liststyle1.png) 0 8px no-repeat;
+			background-size: 24px;
+		}
+		.pp_subtit_box h3 span{
+			display: none;
+			width: 100px; height: 3px;
+			margin-top: 15px;
+			background: #ad8e62;
+		}
+		.pp_mileage_wrap{
+			padding: 15px;
+			background: #f4efe6;
+		}
+		.pp_mileage_wrap>div{
+			padding: 20px;
+			position: relative;
+			background:#fff;
+			border: 5px solid #cdc9c6;
+		}
+		.pp_mileage_wrap .pp_mileage_inner div{
+			display: table;
+			width: auto;
+			margin: 0 auto; padding: 50px 0 0 230px;
+			background-repeat: no-repeat;
+			background-position: 0 30px;
+		}
+		.pp_mileage_wrap .pam_level1 div{
+			background-image: url(../../../images/edu/sub/img_mileage_lv1.jpg);
+			background-position: 70px 60px;
+		}
+		.pp_mileage_wrap .pam_level2 div{
+			background-image: url(../../../images/edu/sub/img_mileage_lv2.jpg);
+			background-position: 60px 60px;
+		}
+		.pp_mileage_wrap .pam_level3 div{
+			background-image: url(../../../images/edu/sub/img_mileage_lv3.jpg);
+			background-position: 80px 50px;
+		}
+		.pp_mileage_wrap .pam_level4 div{
+			background-position: 50px 30px;
+			background-image: url(../../../images/edu/sub/img_mileage_lv4.jpg);
+		}
+		.pp_mileage_wrap .pam_level5 div{
+			background-position: 60px 40px;
+			background-image: url(../../../images/edu/sub/img_mileage_lv5.jpg);
+		}
+		.pp_mileage_wrap .pam_level6 div{
+			background-position: 40px 20px;
+			background-image: url(../../../images/edu/sub/img_mileage_lv6.jpg);
+		}
+		.pp_mileage_wrap .pam_level7 div{
+			background-image: url(../../../images/edu/sub/img_mileage_lv7.jpg);
+		}
+		.pp_mileage_wrap .pp_mileage_inner h4{
+			line-height: 1.5em;
+			margin-bottom: 26px;
+			font-size: 27px;
+			font-weight: bold;
+		}
+		.pp_mileage_wrap .pp_mileage_inner strong{
+			display: inline-block;
+			font-size: 28px; font-family: notokrB; line-height: 1em;
+		}
+		.pp_mileage_wrap .pp_mileage_inner .pam_point{
+			display: inline-block;
+			margin: 0 8px; padding-bottom: 25px;
+			position: relative;
+			line-height: 1em;
+			font-size: 45px; font-family: notokrB; color: #ca0465;
+		}
+		.pp_mileage_wrap .pp_mileage_inner .pam_point span{
+			display: block;
+			width: 100%; height: 5px;
+			position: absolute; bottom: 15px;
+			background: #ca0465;
+		}
+		.pp_mileage_wrap .pp_mileage_inner .font_gray {
+			font-size: 18px;
+		}
+
+		.pp_pam_levelstep{
+			display: table;
+			width: 100%;
+		}
+		.pp_pam_levelstep li{
+			display: table-cell;
+			width: 14.28%;
+			padding-right: 28px;
+			text-align: center; font-size: 15px; line-height: 1.2em;
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-image: url(../../../images/edu/sub/arrow_level_off.jpg);
+		}
+		.pp_pam_levelstep li.on {
+			background-image: url(../../../images/edu/sub/arrow_level_on.jpg);
+		}
+		.pp_pam_levelstep li:last-child {
+			padding-right: 0;
+			background: none;
+		}
+		.pp_pam_levelstep li p {
+			padding-top: 120px;
+			color: #959595;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.pp_pam_levelstep li.pam_slevel1 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv1_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel2 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv2_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel3 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv3_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel4 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv4_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel5 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv5_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel6 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv6_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel7 p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv7_off.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel1.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv1.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel2.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv2.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel3.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv3.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel4.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv4.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel5.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv5.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel6.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv6.jpg);
+		}
+		.pp_pam_levelstep li.pam_slevel7.on p {
+			background-image: url(../../../images/edu/sub/img_mileage_slv7.jpg);
+		}
+
+		.pp_pam_levelstep li span {
+			display: block;
+			color: inherit;
+		}
+		.pp_pam_levelstep li.on p {
+			color: #3a3a3a;
+		}
+		.pp_pam_levelstep li.on span {
+			color: #ca0465;
+		}
+
+		.pp_certificate_wrap {
+			width: 100%;
+			padding: 20px;
+			text-align: center;
+			background-color: #f9f7f5;
+			border: 2px solid #cdc9c6;
+		}
+		.pp_certificate_wrap strong {
+			display: block;
+			margin-bottom: 15px;
+			font-size: 20px; font-family: NotokrM;
+		}
+		.pp_certificate_wrap strong span{
+			display: block;
+			width: 400px; height: 2px;
+			margin: 10px auto;
+			background-color: #a98147;
+		}
+		.pp_certificate_wrap p{
+			line-height: 1.5em;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+		.pp_certificate_wrap p span.pp_certi_icon {
+			display:block;
+			width: 60px; height: 60px;
+			margin: 0 auto; margin-bottom: 5px;
+			vertical-align: middle;
+			background: #a98147 url(../../../images/edu/sub/icon_certi.png) center 15px no-repeat;
+			background-size: 35px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+		.pp_certificate_wrap p span.pp_certi_grade {
+			margin-left: 5px;
+			font-family: NotokrM;
+		}
+		.pp_certificate_wrap .btn{
+			padding: 15px 15px 15px 55px;
+			color: #fff; font-size: 18px;
+			background-color: #555555;
+			background-image: url(../../../images/edu/sub/img_print.png);
+			background-repeat: no-repeat;
+			background-size: 30px;
+			background-position: 15px center;
+		}
+		.pp_certificate_wrap .btn:hover {
+			background-color: #a98147;
+		}
+		.pp_certificate_wrap .disable {
+			background-color: #999;
+		}
+		.pp_certificate_wrap .disable:hover {
+			background-color: #999;
+			cursor: default;
+		}
+		.pp_btn_td .btn:first-child {
+			margin-bottom: 3px;
+		}
+		
+		
+		
+		
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="grid_content">
+		<!-- [pp] page title -->
+		<section class="pp_subtit_box" id="pp_container" tabindex="0">
+			<h3>PAM 내역<span></span></h3>
+		</section>
+		<!-- [pp] //page title -->
+		<!-- [pp] 총 마일리지 -->
+		<section class="pp_mileage_wrap pp_section">
+			<div>
+				<!-- [pp] pam_level1 클래스명 숫자가 1~7까지 있음 -->
+				<div class="pp_mileage_inner pam_level1">
+					<div class="ta_c">
+						<h4><span class="font_yellow">PROUD</span> <span class="font_pink">POSTECHIAN</span> <span class="font_cyan">MEMBER</span></h4>
+						<strong>총 PAM</strong>
+						<p class="pam_point">3300 <span></span></p>
+					</div>
+					<ol class="pp_pam_levelstep">
+						<li class="pam_slevel1 on">
+							<p><span>0</span>PAM</p>
+						</li>
+						<li class="pam_slevel2 on">
+							<p><span>300</span>PAM</p>
+						</li>
+						<li class="pam_slevel3 on">
+							<p><span>900</span>PAM</p>
+						</li>
+						<li class="pam_slevel4 on">
+							<p><span>1500</span>PAM</p>
+						</li>
+						<li class="pam_slevel5">
+							<p><span>2100</span>PAM</p>
+						</li>
+						<li class="pam_slevel6">
+							<p><span>2700</span>PAM</p>
+						</li>
+						<li class="pam_slevel7">
+							<p><span>3300</span>PAM</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<!-- [pp] //총 마일리지 -->
+	</div>
+</body>
+
+</html>

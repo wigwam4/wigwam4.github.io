@@ -31,7 +31,7 @@
 	position: fixed; bottom: 0; left: 0; z-index: 60;
 	display: flex;	
 	padding: 12px 0;
-	width: 100%; min-height: 50px;
+	width: 100%; min-height: 70px;
 	justify-content: center; align-items: center;
 	color: #f5f5f5; font-size: 1.8rem; word-break: keep-all;
 	background: #1a1a1a;

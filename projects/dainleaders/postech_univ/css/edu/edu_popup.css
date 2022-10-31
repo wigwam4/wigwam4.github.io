@@ -1,0 +1,646 @@
+@charset "utf-8";
+
+/* 팝업 일반 */
+.pp_pop_wrapper{
+	overflow: hidden;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+.pp_pop_wrap{
+	width: 940px;
+	margin: 0 auto;
+}
+.pp_pop_md_wrap{
+	width: 750px;
+	margin: 0 auto;
+}
+.pp_pop_sm_wrap{
+	width: 600px;
+	margin: 0 auto;
+}
+.pp_pop_xs_wrap{
+	width: 520px;
+	margin: 0 auto;
+}
+.pp_pop_xxs_wrap{
+	width: 440px;
+	margin: 0 auto;
+}
+.pp_pop_content{
+	padding: 15px 21px;
+}
+.pp_pop_lg_content{
+	max-height: 650px;
+	overflow-y: auto;
+}
+.pp_pop_md_content{
+	max-height: 500px;
+	overflow-y: auto;
+}
+.pp_pop_sm_content{
+	max-height: 400px;
+	overflow-y: auto;
+}
+.pp_pop_header{
+	height: 60px;
+	padding: 0 15px;
+	position: relative;
+}
+.pp_pop_header h1{
+	padding: 0 6px;
+	height: 100%;
+	font-size: 20px; line-height: 60px; color: #ca0464;
+	border-bottom: 1px solid #d7d7d7;
+}
+.pp_pop_header .pp_pop_close{
+	width: 36px; height: 36px;
+	margin-top: -18px;
+	position: absolute; top: 50%; right: 21px;
+	text-indent: -9999px;
+	background: #fff url(../../images/edu/popup/btn_close_rec.png) center center no-repeat; background-size: 36px;
+	border: 1px solid #a98146;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.pp_pop_header .pp_pop_close:hover {
+	background-color: #a98146;
+	background-image: url(../../images/edu/popup/btn_close_rec_on.png);
+}
+.pp_pop_footer{
+	padding: 0 15px 20px 15px;
+	text-align: center;
+}
+.pp_pop_footer>div{
+	width: 100%;
+	padding-top: 20px;
+	border-top: 1px solid #cdc9c6;
+}
+
+.pp_pop_footer .btn{
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+/* 팝업창 텝 */
+.pp_pop_content .pp_tab_list {
+	margin-bottom: 15px;
+}
+
+/* 강의계획서 */
+table.pp_professor_data tr th, table.pp_professor_data tr td {
+	width: 130px !important;
+}
+.tbl table .pp_profile_pic {
+	padding: 0;
+	text-align: center;
+}
+.pp_pop_txtbox {
+	padding: 15px;
+	border: 1px solid #d7d7d7;
+	border-top: 1px solid #a98146;
+}
+.pp_pop_notxt {
+	color: #a7a7a7; text-align: center;
+}
+
+
+/* 내 자료실 */
+.pp_showtab_dd {
+	display: none;
+}
+.tbl .pp_showtab_dd td {
+	text-align: left;
+}
+.pp_showtab_dd p {
+	margin-bottom: 10px;
+}
+.pp_btn_wrap {
+	margin-top: 10px;
+	text-align: center;
+}
+.pp_thumbnail_wrap + .pp_btn_wrap {
+	margin-top: 20px;
+}
+.pp_showtab_dd .btn_search {
+	padding: 6px 14px 6px 34px;
+	font-size: 1rem;
+	background-position: 10px center;
+}
+
+/* 수업후기 */
+.pp_starlevel_wrap li {
+	display: inline-block;
+	margin-right: 8%;
+}
+.pp_starlevel_wrap li:last-child {
+	margin-right: 0;
+}
+.pp_starlevel_wrap strong {
+	padding-right: 10px;
+	font-weight: 600; vertical-align: top;
+}
+
+
+/* 만족도 조사 */
+.pp_satisfaction_list dl dt{
+	padding: 15px;
+	font-size: 15px; font-family: notokrM; line-height: 1.5em;
+	background-color: #f9f7f5;
+	border-top: 1px solid #cdc9c6;
+	border-bottom: 1px solid #cdc9c6;
+}
+.pp_satisfaction_list dl dd{
+	padding: 10px;
+}
+.pp_pop_footertxt{
+	padding: 0 5%;
+	margin-bottom: 15px;
+	word-break: keep-all; line-height: 1.3em;
+}
+
+/* 상담 설명 팝업 */
+.pp_pop_counselinfo{
+	width: 100%;
+}
+.pp_pop_counselinfo dt{
+	padding-left: 30px; margin: 10px 0;
+	font-size: 18px; line-height: 1.3em;
+}
+.pp_pop_counselinfo dt span{
+	margin-left: -30px; margin-right: 5px;
+	font-size: 24px; color: #538cd3; vertical-align: bottom;
+}
+.pp_pop_counselinfo dd{
+	padding: 3px 0 3px 60px;
+	font-size: 15px; line-height: 1.5em;
+}
+.pp_pop_counselinfo dd span{
+	margin-left: -25px; margin-right: 5px;
+}
+.pp_pop_counselinfo dd .pp_ex{
+	display: block;
+	margin: 0;
+	font-size: 14px; color: #6a6a6a;
+}
+.pp_pop_counselinfo .pp_bullet_arrow{
+	padding-left: 38px;
+}
+.pp_pop_counselinfo .pp_bullet_arrow span{
+	display: block; float: left;
+	width: 15px; height: 23px;
+	margin-left: 0;
+	background: url(../../images/edu/popup/bullet_counselpop.gif)0 center no-repeat;
+}
+.pp_bullet_arrow img{
+	max-width: 100%;
+}
+
+/* 이력서 등록 */
+.pp_pop_resume {
+	width: 100%;
+	margin:20px 0 30px 0;
+}
+.pp_pop_resumephoto {
+	width: 20%; float: left;
+	position: relative;
+	text-align: center;
+}
+.pp_pop_resumephoto p {
+	width: 100%;
+	margin-bottom: 5px;
+	border: 1px solid #cdc9c6;
+}
+.pp_pop_resumephoto p img{
+	width: 100%;
+}
+.pp_pop_resumephoto .btn_search{
+	display: inline-block;
+}
+
+.pp_pop_resumeinfo {
+	width: 78%;
+	float: left;
+	margin-left: 2%;
+}
+.pp_pop_resume:after {
+	content: "";
+	display: block;
+	width: 0; height: 0; line-height: 0;
+	clear: left;
+}
+
+.pp_set_list {
+	width: 100%;
+	height: 30px;
+	margin-top: -33px;
+	text-align: right; float: right;
+}
+.pp_set_list li {
+	display: inline-block;
+	margin-left: 10px;
+}
+.pp_set_list .del_list {
+	margin-left: 3px;
+}
+.resume_list {
+	margin-top: 40px;
+}
+
+/* 팝업창 페이징 */
+.pp_pop_content .paging_wrap{
+	padding: 20px 0;
+}
+.pp_pop_content .paging_wrap a{
+	width: 25px; height: 25px;
+	line-height: 25px;
+}
+
+/* 역량 비교과 추천 */
+.pp_recommend_wrap{
+	width: 100%;
+	background: #83d7d8 url(../../images/edu/popup/bar_recommend.png)left top no-repeat;
+}
+.pp_recommend_wrap h1{
+	padding-top: 30px;
+	text-align: center;
+	font-size: 30px; line-height: 1.5em;
+}
+.pp_recommend_contentbox{
+	height: 350px;
+	padding: 20px;
+}
+.pp_recommend_contentbox div{
+	overflow-y: auto;
+	height: 100%;
+	padding: 15px;
+	font-size: 16px; line-height: 1.5em;
+	background: rgba(255,255,255,0.3);
+	border: 2px dashed #fff;
+}
+.pp_recommend_closebox{
+	width: 100%;
+	padding: 10px 20px;
+	position: relative;
+	background-color: #3a3a3a;
+}
+.pp_recommend_closebox p{
+	display: inline-block;
+	padding: 3px 5px;
+	color: #fff;
+}
+.pp_recommend_closebox p input{
+	width: 15px; height: 15px;
+}
+.pp_recommend_closebox .btn{
+	padding: 3px 5px;
+	position: absolute;
+	right: 20px;
+	color: #fff;
+	border: 1px solid #cdc9c6;
+}
+.pp_recommend_closebox .btn:hover{
+	color: #3a3a3a;
+	background: #fff;
+}
+/* magnific popup - 인재상 및 핵심역량 */
+button.mfp-close {
+	width: 24px; height: 24px;
+	text-indent: -9999px;
+	position: absolute; right: 20px; top: 20px;
+	background:url(../../images/edu/popup/btn_close_popup.png);
+}
+
+/* 컨설팅 신청하기 */
+.pp_date_time p {
+	float: left;
+	display: block;
+	width: 33%;
+}
+.pp_date_time .pp_calendar_sel {
+	margin-right: 1%;
+}
+
+/* 컨설팅 신청 보기 */
+.pp_pop_consulting .tbl table td {
+	border-left: none; border-right: none;
+}
+
+/* 교과목 이수 체계도 */
+.pp_pop_content .pp_tbl_chart th {
+	padding: 6px;
+}
+.pp_pop_content .pp_tbl_chart td p {
+	padding: 2px 0;
+	height: 59px;
+	font-size: 0.8rem;
+}
+/* 설문조사 안내 팝업*/
+.pop_surveygo {
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid #d2d2d2;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.pop_surveygo:hover {
+	background-color: #f9f7f5;
+}
+.pop_surveygo ul {
+	padding: 15px;
+}
+.pop_surveygo li {
+	margin-bottom: 5px;
+	padding-left: 80px;
+}
+.pop_surveygo li:last-child {
+	margin-bottom: 0;
+}
+.pop_surveygo li strong {
+	margin-right: 10px;
+	margin-left: -80px;
+	display: inline-block;
+	width: 70px;
+	background-color: #e7f3f7;
+	text-align: center;
+}
+/* 팝업 height 클래스 */
+.pop_height_sm {
+	height: 400px;
+}
+.pop_height_md {
+	height: 500px;
+}
+.pop_height_lg {
+	height: 650px;
+}
+
+/* 알림 상세 팝업 */
+.alertcnt_tit {
+	position: relative;
+	display: block;
+	margin-bottom: 6px;
+}
+.alertcnt_tit .alerttype_label, .alertcnt_tit .alertdate_label {
+	display: inline-block;
+	max-width: 50%;
+	white-space: nowrap; text-overflow: ellipsis;
+	overflow: hidden;
+}
+.alertcnt_tit .alerttype_label {
+	display: inline-block;
+	padding: 3px 14px;
+	color: #ca0464; line-height: 1.2em;
+	background: #f7f0f2;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.alertcnt_tit .alertdate_label {
+	position: absolute; top: 0; right: 0;
+	color: #909090; 
+} 
+.alretcnt_inner {
+	padding: 14px 16px;
+	height: 200px;
+	border: 1px solid #d7d7d7;
+	overflow-y: auto;
+}
+
+/* 알림 모두 읽음 팝업 */
+.alertconfirm_txtbox {
+	display: flex;
+	min-height: 180px;
+	align-items: center; justify-content: center;
+}
+.alertconfirm_txtbox > p {
+	padding: 44px 14px 18px;
+	color: #b2b6bc; font-family: NanumBarunGothicR, sans-serif; text-align: center;
+	background: url(../../images/edu/bg_noalert_txt.png) no-repeat center 18px; background-size: auto 20px;
+	-webkit-transform: rotate(-0.03deg);
+	-moz-transform: rotate(-0.03deg);
+	-o-transform: rotate(-0.03deg);
+	transform: rotate(-0.03deg);
+}
+
+
+
+/* PC-중간사이즈 */
+@media only screen and (max-width:1279px){
+
+}
+
+
+/* 태블릿, 모바일 공통 */
+@media only screen and (max-width:1024px){
+
+	/* 팝업 일반 */
+	.pp_pop_wrap{
+		width: 720px;
+	}
+	.pp_pop_md_wrap{
+		width: 720px;
+	}
+
+}
+
+/* 모바일 */
+@media only screen and (max-width:767px) {
+
+	.pp_pop_wrap{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.pp_pop_md_wrap{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.pp_pop_sm_wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.pp_pop_xs_wrap{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.pp_pop_xxs_wrap{
+		width: 360px;
+		margin: 0 auto;
+	}
+	.pp_pop_content{
+		padding: 10px;
+	}
+	.pp_pop_content{
+		max-height: 400px;
+		overflow-y: auto;
+	}
+	.pp_pop_lg_content{
+		max-height: 400px;
+	}
+	.pp_pop_md_content{
+		max-height: 400px;
+	}
+	.pp_pop_sm_content{
+		max-height: 400px;
+	}
+	.pp_pop_header{
+		height: 50px;
+		padding: 0px 10px;
+	}
+	.pp_pop_header h1{
+		display: flex;
+		padding-right: 20px;
+		align-items: center;
+		font-size: 16px; text-align: left; line-height: 36px;
+	}
+	.pp_pop_header .pp_pop_close{
+		right: 16px;
+		width: 30px; height: 30px;
+		margin-top: -15px;
+		background-size: contain;
+	}
+	.pp_pop_footer{
+		padding:0 0 20px 0;
+		text-align: center;
+	}
+
+	.pp_satisfaction_list dl dt{
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	/* 강의계획서 */
+	.pp_pop_header {
+		padding-top: 7px;
+	}
+	.pp_2line_header h1 {
+		line-height: 1;
+	}
+	.pp_2line_header h1 small {
+		display: block;
+	}
+	.pp_pop_txtbox p {
+		font-size: 0.95rem;
+	}
+	.pp_pop_content h3 {
+		font-size: 1.1rem;
+	}
+
+	/* 상담 설명 팝업 */
+	.pp_pop_counselinfo dt{
+		padding-left: 28px; margin: 6px 0;
+		font-size: 15px;
+	}
+	.pp_pop_counselinfo dt span{
+		margin-left: -28px; margin-right: 3px;
+		font-size: 20px;
+	}
+	.pp_pop_counselinfo dd{
+		padding: 3px 0 3px 46px;
+		font-size: 14px;
+	}
+	.pp_pop_counselinfo dd span{
+		margin-left: -20px; margin-right: 2px;
+	}
+	.pp_pop_counselinfo dd .pp_ex{
+		font-size: 13px;
+	}
+
+	/* 이력서 등록 */
+	.pp_pop_resumephoto {
+		width: 25%; float: none;
+		margin: 0 auto; margin-bottom: 15px;
+	}
+	.pp_pop_resumeinfo {
+		width: 100%;
+		float: none;
+		margin-left: 0%;
+	}
+
+	/* 역량 비교과 추천 */
+	.pp_recommend_wrap h1{
+		padding-top: 35px;
+		font-size: 24px;
+	}
+	.pp_recommend_contentbox{
+		height: auto;
+		padding: 30px 20px;
+	}
+	.pp_recommend_contentbox div{
+		overflow-y: visible;
+		height: auto;
+		font-size: 15px;
+	}
+
+	/* 내자료실 */
+	.pp_thumbnail_wrap + .pp_btn_wrap {
+		margin-top: 10px;
+	}
+
+	/* 컨설팅 신청하기 */
+	.pp_date_time p {
+		float: left;
+		display: block;
+		width: 26%;
+	}
+	.pp_date_time .pp_calendar_sel {
+		width: 47%;
+	}
+	.pp_date_time .pp_calendar_sel .btn_reset {
+		right: 28px;
+	}
+	/* 설문조사 안내 팝업 767 */
+	.pop_surveygo ul {
+		padding: 10px;
+	}
+}
+/* 모바일-작은사이즈 */
+@media only screen and (max-width:479px) {
+	
+	.pp_pop_xxs_wrap{
+		width: 80%;
+	}
+
+	/* 찾아보기 버튼 */
+	.pp_pop_wrap .pp_form_wrapper .btn_fileupload {
+		padding: 0;
+		width: 34px; height: 30px;
+		text-indent: -9999px;
+		background-position: center 6px;
+	}
+	.pp_pop_wrap .pp_form_wrapper .btn_reset {
+		right: 42px;
+	}
+
+	/*팝업창용 텝 - 사이즈조절*/
+	.pp_pop_content .pp_tab_list li a {
+		font-size: 1rem;
+	}
+
+	/* 알림 상세 팝업 479 */
+	.alertcnt_tit .alerttype_label, .alertcnt_tit .alertdate_label {
+		max-width: none;
+		white-space: normal;
+	}
+	.alertcnt_tit .alertdate_label {
+		position: static;
+		display: block;
+		margin-left: 6px; margin-bottom: 6px;
+	}
+
+
+}
+

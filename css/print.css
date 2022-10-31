@@ -3,7 +3,8 @@
 @media print {
 	@page {
 		size: portrait;
-		margin: 2.54cm 1.91cm;
+		/* margin: 2.54cm 1.91cm; */
+		margin: 1.91cm;
 		width: 21cm; height: 29.7cm;
 	}
 	* {
@@ -58,7 +59,6 @@
 		padding: 8px 12px !important;
 	}
 
-
 }
 /* reset */
 * {
@@ -74,6 +74,7 @@ img, button {
 	border: 0;
 }
 table {
+	padding-right: 2px;
     width: 100%;
 	word-break: break-all;
 	border-collapse: collapse; border-spacing: 0; 
@@ -107,16 +108,19 @@ tfoot {
 .bg_th {
     background: #f2f2f2;
 }
+.tbl {
+	padding-right: 1px;
+}
 .tbl_col {
 	margin-top: 12px;
 }
-table.tbl_col tbody::before {
+.tbl_col tbody::before {
     display: none;
 }
-table.tbl_col th, table.tbl_col td {
+.tbl_col th, .tbl_col td {
 	text-align: center;
 }
-table.tbl_narrow tbody th, table.tbl_narrow tbody td {
+.tbl_narrow tbody th, .tbl_narrow tbody td {
 	padding: 8px;
 }
 ul li {
@@ -134,7 +138,7 @@ ul li {
 .btn {
 	display: inline-block;
 	margin-right: 8px; padding: 0 8px;
-	font-family: Pretendard, sans-serif; font-size: 1.7rem; font-weight: 200;
+	font-family: Pretendard, sans-serif; font-size: 1.7rem;
 	background: rgba(0,0,0,0);
 	transition: 0.2s;
 }
@@ -147,7 +151,7 @@ ul li {
 	position: absolute; bottom: 0; left: 0;
 	display: block;
 	width: 0; height: 1px;
-	background: #5ad925;
+	background: #007bff;
 	transition: 0.3s;
 }
 .label {
@@ -163,7 +167,7 @@ ul li {
 	margin-top: 6px; margin-right: 5px;
 	width: 8px; height: 8px;
 	vertical-align: top;
-	background: #5ad925;
+	background: #007bff;
 	border-radius: 50%;
 }
 .break {
@@ -186,7 +190,7 @@ ul li {
 }
 .print_banner .btn {
 	margin-right: 0; margin-left: 30px;
-	color: #5ad925;
+	color: #007bff;
 }
 .page_wrapper {
 	padding: 60px;
@@ -292,6 +296,7 @@ ul li {
 	align-items: stretch;
 }
 .circle_box > div {
+	position: relative; z-index: 2;
 	margin-right: -20px; padding: 20px 30px;
 	width: calc(30% + 20px); 
 	text-align: center;
@@ -307,9 +312,9 @@ ul li {
 	color: #333; font-weight: 600; letter-spacing: 1px;
 }
 .skill_talented {
+	z-index: 1 !important;
 	width: calc(40% + 20px) !important; 
-    font-size: 1.3rem;
-	background: rgba(0,0,0,0.04);
+	background: #f2f2f2;
 }
 .circle_box li {
 	margin-bottom: 4px;
@@ -318,7 +323,8 @@ ul li {
 	margin-bottom: 0;
 }
 .list_data li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+	line-height: 1.6em;
 }
 .list_data li:last-child {
     margin-bottom: 0;
@@ -333,6 +339,9 @@ ul li {
     display: block;
     height: 12px; 
 }
+.experience .tbl_col tbody::before {
+    display: none;
+}
 
 /* 경력기술서 */
 .page_cd .section_divided {
@@ -345,7 +354,7 @@ ul li {
 .page_cd .section_divided h4 .date {
 	margin-top: 0;
 }
-.page_cd table + .mark {
+.page_cd .tbl + .mark {
 	margin-top: 10px;
 }
 

@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="title" content="포항공과대학교 포스테키안 관리자">
+	<meta name="description" content="포항공과대학교 포스테키안 관리자화면입니다.">
+	<meta name="copyrigt" content="Pohang University of Science and Technology">
+	<meta name="keywords" content="포항공과대학교, 포스테키안, 포스테키안 활동">
+	<!--[if lt IE 10]>
+		<div id="pp_iever_upgradeinfo">
+			<div>
+				본 사이트는 익스플로러10 이상, 크롬, 오페라, 파이어폭스 브라우저등의 최신버전에 최적화 되어 있습니다.<br />지금 사용하고 계시는 브라우저는 곧 지원이 중단되므로 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank" >익스플로러 최신버젼</a>으로 업그레이드하시거나 <a href="https://www.google.com/intl/ko/chrome/browser/" target="_blank" >크롬</a>, <a href="http://www.opera.com/ko/computer" target="_blank" >오페라</a>, <a href="https://www.mozilla.org/en-US/firefox/new/?scene=2" target="_blank" >파이어폭스</a>등의 최신 브라우저를 이용해 주세요.
+			</div>
+			<p><a href="javascript:void(0);" class="pp_upgradeinfo_close">X 닫기</a></p>
+		</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../js/js/IE9.js"></script>
+	<![endif]-->
+	<title>포항공과대학교 포스테키안 관리자</title>
+	<!-- [pp]파비콘 -->
+	<link rel="apple-touch-icon" sizes="64x64" href="../../images/common/icon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/common/icon.ico"/>
+	<!-- [pp] //파비콘 -->
+	<link rel="stylesheet" type="text/css" href="../../css/dl_reset.css">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../font/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대비용 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/dl_layout.css">
+	<link rel="stylesheet" type="text/css" href="../../css/dl_grid.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/ad_custom.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/ad_common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/ad_ui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/ad_popup.css">
+	<script type="text/javascript" src="../../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="../../js/dp_common.js"></script>
+	<script type="text/javascript" src="../../js/admin/pp_ad_common.js"></script>
+</head>
+
+<body>
+	<!-- [pp] footer를 제외한 전체 페이지 영역 -->
+	<div class="ad_page_wrap">
+	
+		<!-- [pp] skip nav -->
+		<nav class="pp_skip_nav">
+			<a href="#pp_gnb_skip">메뉴 바로가기</a>
+			<a href="#pp_contents">본문영역 바로가기</a>
+		</nav>
+		<!-- [pp] // skip nav -->
+		
+		<!-- [pp] 로딩중 화면 : 스타일 제거 후 사용 -->
+		<div id="loading_admin" style="display: none;"> 
+			<img id="loading-image" src="../../images/common/loading.gif" alt="loading" > 
+		</div>
+		<!-- [pp] //로딩중 화면 -->	
+		
+		<!-- [pp] header -->
+		<header class="ad_header_wrap">
+			<h1><a href="javascript:void(0);"><img src="../../images/admin/admin_loginlogo.png" alt="포항공과대학교 로고"></a>
+			</h1>
+			<!-- [pp] 접속자 정보 -->
+			<ul class="ad_tnb_wrap">
+				<li class="ad_userinfo"><strong>시스템관리자 &#40;admin&#41;</strong>님 접속을 환영합니다.<br/> <span>최종 로그인: 2018-10-10 14:15:16</span></li>
+				<li><a href="javascript:void(0);" class="btn btn_deepblue"><i class="fa fa-clone"></i>학생화면 바로가기</a></li>
+				<li><a href="javascript:void(0);" class="ad_btnlogout"><i class="fa fa-power-off"></i>로그아웃</a></li>
+			</ul>
+			<!-- //[pp] 접속자 정보 -->
+		</header>
+		<!-- [pp] // header -->
+		
+		<!-- [pp] gnb -->
+		<nav id="pp_gnb_skip" class="ad_gnb_wrap" tabindex="0">
+			<div class="ad_aside_gnb">
+				<ul class="ad_aside_onedepth">
+					<li class="ad_gnbmenu0">
+						<a href="javascript:void(0);" class="ad_gnb0 ad_dropdown">포탈 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">관리자 설정</a></li>
+							<li><a href="javascript:void(0);">메뉴관리</a></li>
+							<li><a href="javascript:void(0);">학생조회</a></li>
+							<li><a href="javascript:void(0);">접속IP 관리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu1">
+						<a href="javascript:void(0);" class="ad_gnb1 ad_dropdown">학업활동관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">학업정보 관리</a></li>
+							<li><a href="javascript:void(0);">학업성과 이수조회</a></li>
+							<li><a href="javascript:void(0);">학업성과 이수과목 현황</a></li>
+							<li><a href="javascript:void(0);">학업성과 졸업기준 관리</a></li>
+							<li><a href="javascript:void(0);">학습진단 관리</a></li>
+							<li><a href="javascript:void(0);">진단결과지 관리</a></li>
+							<li><a href="javascript:void(0);">학습전략 TIP</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu2">
+						<a href="javascript:void(0);" class="ad_gnb2 ad_dropdown">핵심역량진단 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">진단 등록</a></li>
+							<li><a href="javascript:void(0);">진단 관리</a></li>
+							<li><a href="javascript:void(0);">진단문항 등록</a></li>
+							<li><a href="javascript:void(0);">진단문항 관리</a></li>
+							<li><a href="javascript:void(0);">진단 결과</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu3">
+						<a href="javascript:void(0);" class="ad_gnb3 ad_dropdown">포스테키안 활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">포스테키안 활동 등록</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 승인</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 내역</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 신청자</a></li>
+							<li><a href="javascript:void(0);">포스테키안 활동 결과</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu4">
+						<a href="javascript:void(0);" class="ad_gnb4 ad_dropdown">학생활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);" class="ad_subdropdown">동아리 관리<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">동아리 코드관리</a></li>
+									<li><a href="javascript:void(0);">동아리 현황</a></li>
+									<li><a href="javascript:void(0);">동아리 참여학생 관리</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">학생단체 관리<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">학생단체 코드관리</a></li>
+									<li><a href="javascript:void(0);">학생단체 현황</a></li>
+									<li><a href="javascript:void(0);">학생단체 참여학생 관리</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);">학생활동 정보 등록</a></li>
+							<li><a href="javascript:void(0);">학생활동 실적 조회</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu5">
+						<a href="javascript:void(0);" class="ad_gnb5 ad_dropdown">봉사 및 대외활동 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">봉사활동 관리</a></li>
+							<li><a href="javascript:void(0);">대외활동 관리</a></li>
+							<li><a href="javascript:void(0);">봉사활동 정보 등록</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu6">
+						<a href="javascript:void(0);" class="ad_gnb6 ad_dropdown">PAM 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">PAM 이력</a></li>
+							<li><a href="javascript:void(0);">U-PAM 내역</a></li>
+							<li><a href="javascript:void(0);">UNIT 신청내역</a></li>
+							<li><a href="javascript:void(0);">증명서 발급 현황</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu7">
+						<a href="javascript:void(0);" class="ad_gnb7 ad_dropdown">지식공유 및 확산</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">EXPO</a></li>
+							<li><a href="javascript:void(0);">북에세이</a></li>
+							<li><a href="javascript:void(0);">특강/워크숍</a></li>
+							<li><a href="javascript:void(0);">연구 성과</a></li>
+							<li><a href="javascript:void(0);">갤러리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu8">
+						<a href="javascript:void(0);" class="ad_gnb8 ad_dropdown">커뮤니티 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">공지사항</a></li>
+							<li><a href="javascript:void(0);">대외홍보</a></li>
+							<li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+							<li><a href="javascript:void(0);">묻고 답하기</a></li>
+							<li><a href="javascript:void(0);">뉴스레터</a></li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">관련사이트<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">관련사이트 관리</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu9">
+						<a href="javascript:void(0);" class="ad_gnb9 ad_dropdown">통계</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);" class="ad_subdropdown">포스테키안 활동 통계<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">포스테키안 활동 유형별 통계</a></li>
+									<li><a href="javascript:void(0);">포스테키안 운영 부서별 통계</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">학생활동 통계<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">동아리 통계</a></li>
+									<li><a href="javascript:void(0);">학생단체 참여학생 통계</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">봉사 및 대외활동 통계<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">봉사활동 참여학생 통계</a></li>
+									<li><a href="javascript:void(0);">대외활동 참여학생 통계</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0);">PAM 통계</a></li>
+							<li><a href="javascript:void(0);" class="ad_subdropdown">시스템 접속 통계<span></span></a>
+								<ul class="ad_aside_threedepth">
+									<li><a href="javascript:void(0);">시스템 사용자 접속 통계</a></li>
+									<li><a href="javascript:void(0);">시스템 메뉴 접속 통계</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu10">
+						<a href="javascript:void(0);" class="ad_gnb10 ad_dropdown">지도학생 관리</a>
+						<ul class="ad_aside_twodepth">
+							<li><a href="javascript:void(0);">지도학생 관리</a></li>
+							<li><a href="javascript:void(0);">학생이력 관리</a></li>
+						</ul>
+					</li>
+					<li class="ad_gnbmenu11">
+						<a href="javascript:void(0);" class="ad_gnb11 ad_dropdown">진로관리</a>
+					</li>
+					<li class="ad_gnbmenu12">
+						<a href="javascript:void(0);" class="ad_gnb12 ad_dropdown">Early Warning</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- // [pp] gnb -->
+		
+		<!-- [pp] container -->
+		<div class="ad_container_wrap">
+			<!-- [pp] content 영역 -->
+			<section id="pp_contents" tabindex="0" class="ad_contents_wrap">
+				<h3 class="ad_content_tit">사회맞춤형학과 관리<span>페이지에 대한 설명문구가 들어가는 영역입니다.</span></h3>
+				<!-- [pp] icon 영역 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Icon</h4>
+					<p class="ad_txt">아이콘은 <a href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank" class="ad_directlink">Font Awesome</a>에서 저작권 free인것중에 필요에 따라 사용할 수 있습니다. Font Awesome 을 통해 사용하는 아이콘은 이미지가 아니라 Font처럼 사용할 수 있음 &#40; font-size, color 등의 CSS 태그로 스타일 수정 가능&#41;</p>
+				</section>
+				<!-- [pp] //icon 영역 -->
+				<!-- [pp] Layout 영역 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Layout</h4>
+					<dl class="ad_txt_list">
+						<dt><span></span>Margin - 4방향으로 동시에 주고싶을때</dt>
+						<dd>
+							mg_0 &#40;margin: 0px; &#41;, mg_5 &#40;margin: 5px; &#41;, mg_10 &#40;margin: 10px; &#41;, mg_15 &#40;margin: 15px; &#41;, mg_20 &#40;margin: 20px; &#41;
+						</dd>
+						<dt><span></span>Margin Top, Margin Bottom, Margin Right, Margin Left</dt>
+						<dd>
+							mg_t0 &#40;margin-top: 0px; &#41;, mg_t5 &#40;margin-top: 5px; &#41;, mg_t10 &#40;margin-top: 10px; &#41;.......5단위로 mg_t100까지 Class사용 가능
+						</dd>
+						<dd>
+							mg_r &#40;margin-right&#41;, mg_l&#40;margin-left&#41;, mg_b &#40;margin-bottom&#41;도 위와같이 사용
+						</dd>
+					</dl>
+					<dl class="ad_txt_list">
+						<dt><span></span>Padding - 4방향으로 동시에 주고싶을때</dt>
+						<dd>
+							pd_0 &#40;padding: 0px; &#41;, pd_5 &#40;padding: 5px; &#41;, pd_10 &#40;padding: 10px; &#41;, pd_15 &#40;padding: 15px; &#41;, pd_20 &#40;padding: 20px; &#41;
+						</dd>
+						<dt><span></span>padding Top, padding Bottom, padding Right, padding Left</dt>
+						<dd>
+							pd_t0 &#40;padding-top: 0px; &#41;, pd_t5 &#40;padding-top: 5px; &#41;, pd_t10 &#40;padding-top: 10px; &#41;.......5단위로 pd_t100까지 Class사용 가능
+						</dd>
+						<dd>
+							pd_r &#40;padding-right&#41;, pd_l&#40;padding-left&#41;, pd_b &#40;padding-bottom&#41;도 위와같이 사용
+						</dd>
+					</dl>
+					<dl class="ad_txt_list">
+						<dt><span></span>Width &#40;px&#41;</dt>
+						<dd>
+							wd_10, wd_15, wd_20....5단위로 100까지 사용 + wd_150, wd_200
+						</dd>
+						<dt><span></span>Width &#40;%&#41;</dt>
+						<dd>
+							wd_p10, wd_p11, wd_p12....1단위로 100까지 사용
+						</dd>
+					</dl>
+				</section>
+				<!-- [pp] //Layout 영역 -->
+				<!-- [pp] display 영역 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Display</h4>
+					<dl class="ad_txt_list">
+						<dt><span></span>dp_block</dt>
+						<dd>
+							- display: block;
+						</dd>
+						<dt><span></span>dp_inline</dt>
+						<dd>
+							- display: inline-block;
+						</dd>
+						<dt><span></span>dp_none</dt>
+						<dd>
+							- display: none;
+						</dd>
+					</dl>
+				</section>
+				<!-- [pp] //display 영역 -->
+				<!-- [pp] text 영역 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">TEXT</h4>
+					<strong class="ad_tip"><span>TIP</span>최고관리자 정보를 조회 및 관리하실 수 있습니다.
+					</strong>
+					<p class="ad_txt">기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일 기본 텍스트 스타일</p>
+					<p class="ad_txt_borderbox ta_c">
+						border TEXT BOX <br/>
+					</p>
+					<p class="ad_txt_bgbox ta_c">
+						border + background-color TEXT BOX
+					</p>
+				</section>
+				<!-- [pp] //text 영역 -->
+				<!-- [pp] 정렬 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">정렬</h4>
+					<h5 class="ad_section_stit"><span class="stit_bullet"></span>상하정렬</h5>
+					<div class="ad_list_table_wrap">
+						<table class="ad_list_tbl mg_b10">
+							<caption>상하정렬</caption>
+							<colgroup>
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="tbl_bgno">va_t</th>
+									<th scope="col">va_m</th>
+									<th scope="col">va_b</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="height:50px;" class="va_t">vertical-align:top;</td>
+									<td style="height:50px;" class="va_m">vertical-align:middle;</td>
+									<td style="height:50px;" class="va_b">vertical-align:bottom;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5 class="ad_section_stit"><span class="stit_bullet"></span>좌우정렬</h5>
+					<div class="ad_list_table_wrap">
+						<table class="ad_list_tbl mg_b10">
+							<caption>좌우정렬</caption>
+							<colgroup>
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="tbl_bgno">ta_l</th>
+									<th scope="col">ta_c</th>
+									<th scope="col">ta_r</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ta_l">text-align: left;</td>
+									<td class="ta_c">text-align: center;</td>
+									<td class="ta_r">text-align: right;</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h5 class="ad_section_stit"><span class="stit_bullet"></span>Float</h5>
+					<strong class="ad_tip"><span>TIP</span>float 속성 사용시 부모요소에게 영역 전달이 불가하여 이전 또는 이후 요소에 영향을 주어 각 요소의 배치가 복잡해질 수 있음
+					</strong>
+					<div class="ad_list_table_wrap">
+						<table class="ad_list_tbl mg_b10">
+							<caption>float</caption>
+							<colgroup>
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+								<col style="width:33.33%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="tbl_bgno">fr</th>
+									<th scope="col">fl</th>
+									<th scope="col">fn</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<span class="fr">float:right;</span>
+									</td>
+									<td>
+										<span class="fl">float:left;</span>
+									</td>
+									<td>
+										<span class="fn">float:none;</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<dl class="ad_txt_list">
+						<dt><span></span>Float 해제</dt>
+						<dd>
+							clear &#40;clear:both;&#41;
+						</dd>
+					</dl>
+				</section>
+				<!-- [pp] //정렬 -->
+				<!-- [pp] tab 영역 (일반) -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Tab &#40;일반&#41;</h4>
+					<div class="tab_wrap_js">
+						<ul class="pp_tab_list tab_js">
+							<li><a href="#panel1" class="on">Tab1</a></li>
+							<li><a href="#panel2">Tab2</a></li>
+							<li><a href="#panel3">Tab3</a></li>
+						</ul>
+						<div class="panel_js">
+							<div id="panel1">Tab Text 01 Tab Text 01 Tab Text 01</div>
+							<div id="panel2">Tab Text 02 Tab Text 02 Tab Text 02</div>
+							<div id="panel3">Tab Text 03 Tab Text 03 Tab Text 03</div>
+						</div>
+					</div>
+				</section>
+				<!-- //[pp] tab 영역 (일반) -->
+				<!-- [pp] tab 영역 (테이블) -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Tab &#40;테이블&#41; : 별점, 첨부파일 포함</h4>
+					<div class="ad_list_table_wrap ad_hover_tbl">
+						<table class="ad_list_tbl tbl_fixed">
+							<caption>최고관리자 리스트</caption>
+							<colgroup>
+								<col style="width:5%">
+								<col style="width:20%">
+								<col style="width:35%">
+								<col style="width:20%">
+								<col style="width:20%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" class="tbl_bgno">번호</th>
+									<th scope="col">구분
+										<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+										<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+									</th>
+									<th scope="col">제목
+										<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+										<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+									</th>
+									<th scope="col">블라블라</th>
+									<th scope="col">블라블라
+										<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+										<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+									</th>
+								</tr>
+							</thead>
+							<tbody class="showtab_js">
+								<tr class="row showtab_dt_js">
+									<td>1</td>
+									<td>줄바꿈 비허용, 말줄임표시</td>
+									<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+									<td>클릭시 별점이 나와요</td>
+									<td>테스트</td>
+									<td>2014-02-07</td>
+								</tr>
+								<tr class="row showtab_dd_js">
+									<td colspan="5">
+										<p>테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용</p>
+										<hr/>
+										<ul class="pp_starlevel_wrap ta_l">
+											<li>
+												<strong>별점 난이도</strong>
+												<span class="pp_starlevel on"></span>
+												<span class="pp_starlevel on"></span>
+												<span class="pp_starlevel on"></span>
+												<span class="pp_starlevel"></span>
+												<span class="pp_starlevel"></span>
+											</li>
+											<li>
+												<strong>별점 난이도</strong>
+												<span class="pp_starlevel on"></span>
+												<span class="pp_starlevel on"></span>
+												<span class="pp_starlevel"></span>
+												<span class="pp_starlevel"></span>
+												<span class="pp_starlevel"></span>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr class="row showtab_dt_js">
+									<td>2</td>
+									<td>줄바꿈 비허용, 말줄임표시</td>
+									<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+									<td>클릭시 첨부파일이 나와요</td>
+									<td>테스트</td>
+									<td>2014-02-07</td>
+								</tr>
+								<tr class="row showtab_dd_js">
+									<td colspan="5">
+										<p class="mg_b10">테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용 테이블 내용</p>
+										<div class="pp_thumbnail_wrap">
+											<h4>첨부파일</h4>
+											<p class="pp_file_linkbox">
+												<a href="javascript:void(0);" class="pp_file_link">비교과 신청서.hwp</a>
+											</p>
+											<p class="pp_file_linkbox">
+												<a href="javascript:void(0);" class="pp_file_link">비교과 신청서.hwp</a>
+											</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- //[pp] tab 영역 (테이블) -->
+				<!-- [pp] button 영역 -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Button Size</h4>
+					<strong class="ad_tip"><span>TIP</span>border btn style과 bg btn style 유형에 맞게 사이즈 관련 클래스명 구분해서 사용해주세요! 안하면 2px씩 차이납니다.
+					</strong>
+					<div class="mg_b30">
+						<button type="button" class="btn btn_xs btn_blue">btn_xs</button>
+						<button type="button" class="btn btn_sm btn_blue">btn_sm</button>
+						<button type="button" class="btn btn_md btn_blue">btn_md</button>
+						<button type="button" class="btn btn_lg btn_blue">btn_lg</button>
+						<button type="button" class="btn btn_xl btn_blue">btn_xl</button>
+						<br/><br/><br/>
+						<button type="button" class="btn_border bo_deepblue btn_bo_xs">btn_bo_xs</button>
+						<button type="button" class="btn_border bo_deepblue btn_bo_sm">btn_bo_sm</button>
+						<button type="button" class="btn_border bo_deepblue btn_bo_md">btn_bo_md</button>
+						<button type="button" class="btn_border bo_deepblue btn_bo_lg">btn_bo_lg</button>
+						<button type="button" class="btn_border bo_deepblue btn_bo_xl">btn_bo_xl</button>
+					</div>
+					<h4 class="ad_section_tit">Button Background Style</h4>
+					<div class="mg_b30">
+						<button type="button" class="btn btn_sm btn_default">btn_default</button>
+						<button type="button" class="btn btn_sm btn_blue">btn_blue</button>
+						<button type="button" class="btn btn_sm btn_deepblue">btn_deepblue</button>
+						<button type="button" class="btn btn_sm btn_red">btn_red</button>
+						<button type="button" class="btn btn_sm btn_pink">btn_pink</button>
+						<button type="button" class="btn btn_sm btn_green">btn_green</button>
+						<button type="button" class="btn btn_sm btn_deepgreen">btn_deepgreen</button>
+						<button type="button" class="btn btn_sm btn_yellow">btn_yellow</button>
+						<button type="button" class="btn btn_sm btn_orange">btn_orange</button>
+						<button type="button" class="btn btn_sm btn_gray">btn_gray</button>
+						<button type="button" class="btn btn_sm btn_deepgray">btn_deepgray</button>
+					</div>
+					<h4 class="ad_section_tit">Button Border Style</h4>
+					<div class="mg_b30">
+						<button type="button" class="btn_border btn_bo_sm bo_default">bo_default</button>
+						<button type="button" class="btn_border btn_bo_sm bo_gray">bo_gray</button>
+						<button type="button" class="btn_border btn_bo_sm bo_deepgray">bo_deepgray</button>
+						<button type="button" class="btn_border btn_bo_sm bo_blue">bo_blue</button>
+						<button type="button" class="btn_border btn_bo_sm bo_deepblue">bo_deepblue</button>
+						<button type="button" class="btn_border btn_bo_sm bo_red">bo_red</button>
+						<button type="button" class="btn_border btn_bo_sm bo_orange">bo_orange</button>
+						<button type="button" class="btn_border btn_bo_sm bo_green">bo_green</button>
+						<button type="button" class="btn_border btn_bo_sm bo_deepgreen">bo_deepgreen</button>
+						<button type="button" class="btn_border btn_bo_sm bo_yellow">bo_yellow</button>
+					</div>
+					<h4 class="ad_section_tit">Button Icon Style 예시</h4>
+					<div class="mg_b30">
+						<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-file-excel-o"></i>btn_excel</button>
+						<button type="button" class="btn btn_refresh" title="초기화"><i class="fa fa-undo"></i></button>
+						<input type="text" class="hidden">
+						<label class="btn_border btn_bo_sm bo_deepblue wd_30" title="업로드"><i class="fa fa-upload mg_r0"></i><input type="file" class="hidden"/></label>
+						<button type="button" class="btn_border btn_bo_sm bo_orange wd_30" title="다운로드"><i class="fa fa-download mg_r0"></i></button>
+						<button type="button" class="btn btn_sm btn_deepgreen wd_30" title="수정"><i class="fa fa-pencil mg_r0"></i></button>
+						<button type="button" class="btn btn_sm btn_blue wd_30" title="추가"><i class="fa fa-plus mg_r0"></i></button>
+						<button type="button" class="btn btn_sm btn_red wd_30" title="행삭제"><i class="fa fa-minus mg_r0"></i></button>
+						<button type="button" class="btn_border btn_bo_sm bo_red wd_30" title="삭제"><i class="fa fa-trash-o mg_r0"></i></button>
+					</div>
+					<h4 class="ad_section_tit">용도별 Btn Color 정의<span class="font_red"> &#40;버튼 색상에 대한 명세일뿐 사이즈에 대한 정의는 아님&#41;</span></h4>
+					<div class="ad_list_table_wrap mg_b30">
+						<table class="ad_vlist_tbl">
+							<caption>용도벌 버튼컬러 정의</caption>
+							<colgroup>
+								<col style="width:15%">
+								<col style="width:35%">
+								<col style="width:15%">
+								<col style="width:35%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">추가/등록</th>
+									<td>
+										<button type="button" class="btn btn_md btn_deepblue"><i class="fa fa-plus"></i>추가</button>
+										<button type="button" class="btn btn_md btn_deepblue"><i class="fa fa-check"></i>저장</button>
+										<button type="button" class="btn btn_md btn_deepblue">승인</button>
+										<button type="button" class="btn_border btn_bo_md bo_deepblue">일괄승인</button>
+										<button type="button" class="btn_border btn_bo_md bo_default"><i class="fa fa-check"></i>등록</button>
+									</td>
+									<th scope="row">삭제/취소</th>
+									<td>
+										<button type="button" class="btn btn_md btn_red"><i class="fa fa-trash-o"></i>삭제</button>
+										<button type="button" class="btn_border btn_bo_md bo_red"><i class="fa fa-undo"></i>취소</button>
+										<button type="button" class="btn btn_md btn_red">반려</button>
+										<button type="button" class="btn_border btn_bo_md bo_red">일괄반려</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">확인</th>
+									<td>
+										<button type="button" class="btn btn_md btn_green"><i class="fa fa-check"></i>확인</button>
+									</td>
+									<th scope="row">닫기</th>
+									<td>
+										<button type="button" class="btn btn_md btn_deepgray"><i class="fa fa-times"></i>닫기</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">검색</th>
+									<td>
+										<button type="button" class="btn btn_md btn_deepgreen"><i class="fa fa-search"></i>검색</button>
+									</td>
+									<th scope="row">보기</th>
+									<td>
+										<button type="button" class="btn btn_md btn_green"><i class="fa fa-file-o"></i>보기</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">선택</th>
+									<td>
+										<button type="button" class="btn btn_md btn_default"><i class="fa fa-mouse-pointer"></i>선택</button>
+									</td>
+									<th scope="row">수정</th>
+									<td>
+										<button type="button" class="btn btn_sm btn_orange"><i class="fa fa-pencil"></i>수정</button>
+										<button type="button" class="btn_border btn_bo_md bo_default"><i class="fa fa-print"></i>출력</button>
+										<button type="button" class="btn_pink btn_border btn_bo_md"><i class="fa fa-folder"></i>임시저장</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">다운로드</th>
+									<td>
+										<button type="button" class="btn_border btn_bo_md btn_excel" title="다운로드"><i class="fa fa-download"></i>다운로드</button>
+									</td>
+									<th scope="row">업로드</th>
+									<td>
+										<input type="text" class="hidden">
+										<label class="btn_border btn_bo_md bo_deepblue"><i class="fa fa-upload"></i>업로드<input type="file" class="hidden"/></label>
+										
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">파일첨부</th>
+									<td>
+										<input type="text" class="hidden">
+										<label class="btn btn_md btn_deepgreen"><i class="fa fa-folder-open"></i>파일첨부<input type="file" class="hidden"/></label>
+										<a href="javascript:void(0);" class="ad_filelink mg_l5"><i class="fa fa-file-o"></i>파일명ㅈㅈㅈ.hwp</a>
+									</td>
+									<th scope="row">복사</th>
+									<td>
+										<button type="button" class="btn_border btn_bo_md bo_default"><i class="fa fa-copy"></i>복사</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">일괄적용</th>
+									<td>
+										<button type="button" class="btn btn_md btn_blue">일괄적용</button>
+									</td>
+									<th scope="row">토글버튼</th>
+									<td>
+										<label class="btn_toggle">
+											<input type="checkbox" class="btn_toggle_input"/>
+											<span class="btn_toggle_text btn_md">픽미</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">파일다운링크</th>
+									<td>
+										<a href="javascript:void(0);" class="ad_filelink"><i class="fa fa-file-o"></i>연차신청.hwp</a>
+									</td>
+									<th scope="row">
+										위아래위위아래
+									</th>
+									<td>
+										<a href="javascript:void(0);" class="btn btn_sort" title="위로"><i class="fa fa-caret-up"></i></a>
+										<a href="javascript:void(0);" class="btn btn_sort" title="아래로"><i class="fa fa-caret-down"></i></a>
+										<p class="pp_btn_updown_box">	
+											<a href="javascript:void(0);" class="btn btn_sort" title="위로"><i class="fa fa-caret-up"></i></a>
+											<a href="javascript:void(0);" class="btn btn_sort" title="아래로"><i class="fa fa-caret-down"></i></a>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- [pp] button 영역 -->
+				<!-- [pp] font -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Font</h4>
+					<strong class="ad_tip"><span>TIP</span>기본 폰트: 나눔고딕, 나눔스퀘어 / table, input, button 폰트: NanumGothic, 기본 폰트 사이즈 14px
+					</strong>
+					<div class="ad_list_table_wrap">
+						<table class="ad_vlist_tbl">
+							<caption>폰트 관련 속성</caption>
+							<tbody>
+								<tr>
+									<th scope="row">font-color</th>
+									<td>
+										<span class="font_default">font_default</span>
+										<span class="font_gray">font_gray</span>
+										<span class="font_red">font_red</span>
+										<span class="font_orange">font_orange</span>
+										<span class="font_deepblue">font_deepblue</span>
+										<span class="font_lightblue">font_lightblue</span>
+										<span class="font_blue">font_blue</span>
+										<span class="font_white">font_white</span>
+										<span class="font_green">font_green</span>
+										<span class="font_yellow">font_yellow</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">font-size</th>
+									<td>
+										<span class="font_12">font_12</span>
+										<span class="font_13">font_13</span>
+										<span class="font_14">font_14</span>
+										<span class="font_15">font_15</span>
+										<span class="font_16">font_16</span>
+										<span class="font_17">font_17</span>
+										<span class="font_18">font_18</span>
+										<span class="font_19">font_19</span>
+										<span class="font_20">font_20</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">font-weight</th>
+									<td>
+										<span class="bold">bold</span>
+										<span class="normal">normal</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- [pp] //font -->
+				<!-- [pp] bg-color -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Background-color</h4>
+					<p class="ad_txt_bgbox bg_default ta_c">bg_default</p>
+					<p class="ad_txt_bgbox bg_gray ta_c">bg_gray</p>
+					<p class="ad_txt_bgbox bg_blue ta_c">bg_blue</p>
+					<p class="ad_txt_bgbox bg_deepblue ta_c">bg_deepblue</p>
+					<p class="ad_txt_bgbox bg_yellow ta_c">bg_yellow</p>
+					<p class="ad_txt_bgbox bg_green ta_c">bg_green</p>
+					<p class="ad_txt_bgbox bg_white ta_c">bg_white</p>
+					<p class="ad_txt_bgbox bg_red ta_c">bg_red</p>
+				</section>
+				<!-- [pp] //bg-color -->
+				<!-- [pp] Form -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Form</h4>
+					<h5 class="ad_section_stit"><span class="stit_bullet"></span>checkbox / radio</h5>
+					<div class="ad_txt_borderbox">
+						<p class="ad_survey_list">
+							<input name="check" class="check" id="check_black" type="checkbox" checked>
+							<label class="check_label check_black" for="check_black">check_black</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="check" class="check" id="check_green" type="checkbox" checked>
+							<label class="check_label check_green" for="check_green">check_green</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="check" class="check" id="check_orange" type="checkbox" checked>
+							<label class="check_label check_orange" for="check_orange">check_orange</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="check" class="check" id="check_blue" type="checkbox" checked>
+							<label class="check_label check_blue" for="check_blue">check_blue</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="check" class="check" id="check_gray" type="checkbox" checked>
+							<label class="check_label check_gray" for="check_gray">check_gray</label>
+						</p>
+						<p class="ad_survey_list va_t">
+							<input name="check" class="check" id="check_notxt" type="checkbox" checked>
+							<label class="check_label check_gray ta_i" for="check_notxt">텍스트 안보이게</label>
+						</p>
+					</div>
+					<div class="ad_txt_borderbox mg_b10">
+						<p class="ad_survey_list">
+							<input name="radio" class="radio" id="radio_black1" type="radio" checked>
+							<label class="radio_label radio_black" for="radio_black1">radio_black</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="radio1" class="radio" id="radio_green" type="radio" checked>
+							<label class="radio_label radio_green" for="radio_green">radio_green</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="radio2" class="radio" id="radio_orange" type="radio" checked>
+							<label class="radio_label radio_orange" for="radio_orange">radio_orange</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="radio3" class="radio" id="radio_blue" type="radio" checked>
+							<label class="radio_label radio_blue" for="radio_blue">radio_blue</label>
+						</p>
+						<p class="ad_survey_list">
+							<input name="radio4" class="radio" id="radio_gray" type="radio" checked>
+							<label class="radio_label radio_gray" for="radio_gray">radio_gray</label>
+						</p>
+						<p class="ad_survey_list va_t">
+							<input name="radio5" class="radio" id="radio_notext" type="radio" checked>
+							<label class="radio_label radio_gray ta_i" for="radio_notext">텍스트 안보이게</label>
+						</p>
+					</div>
+					<h5 class="ad_section_stit"><span class="stit_bullet"></span>textbox / selcetbox / textarea / etc...</h5>
+					<strong class="ad_tip"><span>TIP</span>title, placeholder 등의 내용은 유동적이므로 반드시 용도에 맞게 바꿔줍시다! img art="", table caption도 마찬가지!!!
+					</strong>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<select name="select" class="ad_formstyle wd_p100">
+							<option>선택하세요 - 기본 사이즈:  버튼과 함께 사용해야할 경우 버튼 size는 btn_md, btn_bo_md 사용 바랍니다.</option>
+						</select>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<select name="select" class="ad_formstyle_s wd_p100">
+							<option>선택하세요 - 작은 사이즈: 버튼과 함께 사용해야할 경우 버튼 size는 btn_sm, btn_bo_sm 사용 바랍니다.</option>
+						</select>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<input type="text" class="ad_formstyle" placeholder="기본 텍스트 박스: 버튼과 함께 사용해야할 경우 버튼 size는 btn_md, btn_bo_md 사용 바랍니다.">
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<input type="text" class="ad_formstyle_s" placeholder="작은 텍스트 박스: 버튼과 함께 사용해야할 경우 버튼 size는 btn_sm, btn_bo_sm 사용 바랍니다.">
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<input type="text" class="ad_formstyle ad_disable wd_p100" value="disable" readonly>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<p class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<input type="text" class="ad_formstyle_s ad_disable wd_p100" value="disable" readonly>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</p>
+					<div class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<p class="ad_inputtxt_reset">
+							<input type="text" class="ad_formstyle" placeholder="초기화 버튼이 있는 텍스트 박스">
+							<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+						</p>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<p class="ad_inputtxt_reset">
+							<input type="text" class="ad_formstyle_s" placeholder="초기화 버튼이 있는 텍스트 박스">
+							<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+						</p>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<p class="ad_calendar_sel wd_p20">
+							<input type="text" class="ad_formstyle wd_p100" placeholder="시작일">
+							<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+							<a href="javascript:void(0);" class="ad_calendar_img">달력열기</a>
+						</p>&nbsp;~&nbsp;<p class="ad_calendar_sel wd_p20">
+						<input type="text" class="ad_formstyle wd_p100" placeholder="종료일">
+						<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+						<a href="javascript:void(0);" class="ad_calendar_img">달력열기</a>
+						</p>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<p class="ad_search_box">
+							<input type="text" class="ad_formstyle" value="img.jpg" readonly>
+							<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+							<label class="btn_search">파일첨부<input type="file" class="hidden"/></label>
+						</p>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div class="mg_b5">
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<p class="ad_search_box">
+							<input type="text" class="ad_formstyle" placeholder="검색어를 입력하세요">
+							<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+							<button type="button" class="btn_search"><i class="fa fa-search"></i>검색</button>
+						</p>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div>
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<div class="ad_search_area">
+							<select name="select" class="ad_formstyle">
+								<option>2018</option>
+							</select>
+							<p class="ad_search_box">
+								<input type="text" class="ad_formstyle" placeholder="검색어를 입력하세요">
+								<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+								<button type="button" class="btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div>
+						<!-- [pp] 여기서부터 복사해서 쓰세요 -->
+						<div class="ad_search_area select_2depth">
+							<select name="select" class="ad_formstyle">
+								<option>2018</option>
+							</select>
+							<select name="select" class="ad_formstyle">
+								<option>학번</option>
+							</select>
+							<p class="ad_search_box">
+								<input type="text" class="ad_formstyle" placeholder="검색어를 입력하세요">
+								<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+								<button type="button" class="btn_search"><i class="fa fa-search"></i>검색</button>
+							</p>
+						</div>
+						<!-- [pp] //여기서부터 복사해서 쓰세요 -->
+					</div>
+					<div>
+						<textarea rows="5" class="ad_formstyle wd_p100" placeholder="텍스트를 입력하세요."></textarea>
+					</div>
+				</section>
+				<!-- [pp] // Form -->
+				<!-- [pp] loading on graph box -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Loading on Graph Box</h4>
+					<div class="graph_wrap">
+						<div class="graph_box">
+							<img src="../../images/admin/img_graph.jpg" alt="백분위 점수 그래프 샘플">
+						</div>
+						<p class="loading_box">
+							<img src="../../images/common/loadingbox.gif" alt="로딩중입니다.">
+						</p>
+					</div>
+				</section>
+				<!-- [pp] // loading on graph box -->
+				<!-- [pp] table -->
+				<section>
+					<section class="ad_section_wrap">
+						<h4 class="ad_section_tit">Table</h4>
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>세로 리스트형 테이블 - 리스트 건수만 표시할때</h5>
+						<div class="ad_btn_area_left">
+							<p class="ad_listcount"><span>Total :</span> 515건</p>
+						</div>
+						<div class="ad_list_table_wrap">
+							<table class="ad_list_tbl tbl_fixed">
+								<caption>최고관리자 리스트</caption>
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:20%">
+									<col style="width:35%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tbl_bgno">번호</th>
+										<th scope="col">구분
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">제목
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">블라블라</th>
+										<th scope="col">블라블라
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="row">
+										<td>1</td>
+										<td>줄바꿈 비허용, 말줄임표시</td>
+										<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+										<td><a href="javascript:void(0);" class="ad_link ellipsis">testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>테스트</td>
+										<td>2014-02-07</td>
+									</tr>
+									<tr class="row">
+										<td>2</td>
+										<td>줄바꿈 허용</td>
+										<td><a href="javascript:void(0);" class="ad_link">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>하위부서2</td>
+										<td>2016-05-12</td>
+									</tr>
+									<tr class="row">
+										<td>3</td>
+										<td>추가/삭제</td>
+										<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+										<td><a href="javascript:void(0);" class="ad_link ellipsis">testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td class="td_input">
+											<button type="button" class="btn btn_sm btn_orange wd_30" title="수정"><i class="fa fa-pencil mg_r0"></i></button>
+											<button type="button" class="btn btn_sm btn_deepblue wd_30" title="추가"><i class="fa fa-plus mg_r0"></i></button>
+											<button type="button" class="btn btn_sm btn_red wd_30" title="행삭제"><i class="fa fa-minus mg_r0"></i></button>
+											<button type="button" class="btn_border btn_bo_sm bo_red wd_30" title="삭제"><i class="fa fa-trash-o mg_r0"></i></button>
+										</td>
+										<td>2014-02-07</td>
+									</tr>
+									<tr class="row">
+										<td>4</td>
+										<td>
+											<div class="pp_img_wrapper">
+												<img src="../../images/admin/admin_loginlogo.png" alt="로고">
+											</div>
+										</td>
+										<td>ddddddddddddddddddddddddddddddddddd</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="ad_section_wrap">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>세로 리스트형 테이블 - 리스트 건수 표시 + 테이블 우상단 버튼 Row + tr hover시 컬러변경</h5>
+						<div class="ad_btn_area">
+							<p class="ad_listcount_row"> 
+								<span>Total :</span> 0건 
+								<span class="mg_l10 font_orange">신청중:</span> 0건 
+								<span class="mg_l10 font_blue">협정중:</span> 0건 
+								<span class="mg_l10 font_default">협정종료:</span> 0건 
+							</p> 
+							<select class="ad_formstyle_s">
+								<option>선택하세요</option>
+							</select>
+							<input type="text" class="ad_formstyle_s wd_100 bold" value="두껍게얍">
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-file-excel-o"></i>엑셀샘플다운로드</button>
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-download mg_r0"></i>엑셀다운로드</button>
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-upload mg_r0"></i>엑셀업로드</button>
+							<button type="button" class="btn btn_sm btn_blue">메뉴111</button>
+							<button type="button" class="btn btn_sm btn_default">메뉴222</button>
+						</div>
+						<div class="ad_list_table_wrap">
+							<table class="ad_list_tbl ad_hover_tbl tbl_fixed">
+								<caption>최고관리자 리스트</caption>
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:20%">
+									<col style="width:35%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tbl_bgno">번호</th>
+										<th scope="col">아이디
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">성명
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">부서</th>
+										<th scope="col">가입일자
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="row">
+										<td>1</td>
+										<td>줄바꿈 비허용, 말줄임표시</td>
+										<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+										<td><a href="javascript:void(0);" class="ad_link ellipsis">testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>테스트</td>
+										<td>2014-02-07</td>
+									</tr>
+									<tr class="row">
+										<td>2</td>
+										<td>줄바꿈 허용</td>
+										<td><a href="javascript:void(0);" class="ad_link">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>하위부서2</td>
+										<td>
+											<p class="ad_btn_count">
+												<button type="button" class="btn" title="빼기">-</button>
+												<input type="text" value="000">
+												<button type="button" class="btn" title="더하기">+</button>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="ad_section_wrap">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>세로 리스트형 테이블 - 가로 스크롤 생성</h5>
+						<div class="ad_btn_area">
+							<p class="ad_listcount_row"><span>Total :</span> 515건</p>
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-file-excel-o"></i>엑셀샘플다운로드</button>
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-download mg_r0"></i>엑셀다운로드</button>
+							<button type="button" class="btn_border btn_bo_sm btn_excel"><i class="fa fa-upload mg_r0"></i>엑셀업로드</button>
+							<button type="button" class="btn btn_sm btn_blue">메뉴111</button>
+							<button type="button" class="btn btn_sm btn_default">메뉴222</button>
+						</div>
+						<div class="ad_list_table_wrap ad_scroll_table">
+							<table class="ad_list_tbl ad_hover_tbl tbl_fixed">
+								<caption>최고관리자 리스트</caption>
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:20%">
+									<col style="width:35%">
+									<col style="width:20%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tbl_bgno">번호</th>
+										<th scope="col">아이디
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">성명
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col">부서</th>
+										<th scope="col">가입일자
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="row">
+										<td>1</td>
+										<td>줄바꿈 비허용, 말줄임표시</td>
+										<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+										<td><a href="javascript:void(0);" class="ad_link ellipsis">testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>테스트</td>
+										<td>2014-02-07</td>
+									</tr>
+									<tr class="row">
+										<td>2</td>
+										<td>줄바꿈 허용</td>
+										<td><a href="javascript:void(0);" class="ad_link">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>하위부서2</td>
+										<td>2016-05-12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="ad_section_wrap">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>세로 리스트형 테이블 -  thead row가 2줄 이상일때</h5>
+						<div class="ad_list_table_wrap ad_scroll_table">
+							<table class="ad_multirow_list_tbl ad_hover_tbl tbl_fixed">
+								<caption>최고관리자 리스트</caption>
+								<colgroup>
+									<col style="width:5%">
+									<col style="width:20%">
+									<col style="width:35%">
+									<col style="width:10%">
+									<col style="width:10%">
+									<col style="width:20%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" rowspan="2" class="tbl_bgno">번호</th>
+										<th scope="col" rowspan="2">아이디
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="col" rowspan="2">성명
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+										<th scope="colgroup"  colspan="2">부서</th>
+										<th scope="col" rowspan="2">가입일자
+											<span class="arrow_ascending"><a href="javascript:void(0);"></a></span>
+											<span class="arrow_descending"><a href="javascript:void(0);"></a></span>
+										</th>
+									</tr>
+									<tr>
+										<th>부서1</th>
+										<th>부서2</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="row">
+										<td>1</td>
+										<td>줄바꿈 비허용, 말줄임표시</td>
+										<!-- [pp] 줄바꿈 비허용, 말줌임 표시 -->
+										<td><a href="javascript:void(0);" class="ad_link ellipsis">testdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>테스트</td>
+										<td>테스트</td>
+										<td>2014-02-07</td>
+									</tr>
+									<tr class="row">
+										<td>2</td>
+										<td>줄바꿈 허용</td>
+										<td><a href="javascript:void(0);" class="ad_link">ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</a></td>
+										<td>하위부서2</td>
+										<td>하위부서2</td>
+										<td>2016-05-12</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="ad_section_wrap">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>가로 테이블 - 2 col</h5>
+						<div class="ad_list_table_wrap">
+							<table class="ad_vlist_tbl">
+								<caption>2col 가로테이블 예시</caption>
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="bullet_orange">이름-필수<img src="../../images/admin/bullet_orange.png" alt="필수입력"><button type="button" class="btn_border btn_sm bo_default"><i class="fa fa-check"></i>등록</button>
+										</th>
+										<td>다인리더스</td>
+									</tr>
+									<tr>
+										<th scope="row">text</th>
+										<td class="td_input">
+											<p class="ad_inputtxt_reset">
+												<input type="text" class="ad_formstyle" placeholder="td에 input,select,textarera, button등이 들어갈 경우 텍스트만 있는 cell과 높이값을 같게 하기 위해 td에 td_input 클래스 넣어주세요.">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">달력</th>
+										<td class="td_input">
+											<p class="ad_calendar_sel">
+												<input type="text" class="ad_formstyle" placeholder="부모P태그 wd_p00 클래스로 넓이 조절 가능">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+												<a href="javascript:void(0);" class="ad_calendar_img">달력열기</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">select</th>
+										<td class="td_input">
+											<select name="select" class="ad_formstyle wd_p100">
+												<option>선택하세요</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">검색1</th>
+										<td class="td_input">
+											<p class="ad_search_box">
+												<input type="text" class="ad_formstyle" placeholder="검색어를 입력하세요">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+												<button type="button" class="btn_search"><i class="fa fa-search"></i>검색</button>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">검색2</th>
+										<td class="td_input">
+											<input type="text" class="ad_formstyle wd_p60" placeholder="검색어를 입력하세요">
+											<button type="button" class="btn btn_md btn_deepgreen"><i class="fa fa-search"></i>검색</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">textarea</th>
+										<td class="td_input">
+											<textarea rows="10" class="ad_formstyle wd_p100"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ad_btn_area mg_t5">
+							<button type="button" class="btn btn_md btn_deepgreen"><i class="fa fa-search"></i>검색</button>
+							<button type="button" class="btn_border btn_md bo_default"><i class="fa fa-check"></i>등록</button>
+						</div>
+					</section>
+
+					<section class="ad_section_wrap">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>가로 테이블 - 4 col</h5>
+						<div class="ad_list_table_wrap">
+							<table class="ad_vlist_tbl">
+								<caption>4col 가로테이블 예시</caption>
+								<colgroup>
+									<col style="width:15%">
+									<col style="width:35%">
+									<col style="width:15%">
+									<col style="width:35%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="bullet_orange">이름-필수<img src="../../images/admin/bullet_orange.png" alt="필수입력"></th>
+										<td>다인리더스</td>
+										<th scope="row">영문이름(여권표기명)</th>
+										<td>DAIN LEADERS</td>
+									</tr>
+									<tr>
+										<th scope="row">text</th>
+										<td colspan="3" class="td_input">
+											<p class="ad_inputtxt_reset">
+												<input type="text" class="ad_formstyle wd_p100" placeholder="td에 input,select,textarera, button등이 들어갈 경우 텍스트만 있는 cell과 높이값을 같게 하기 위해 td에 td_input 클래스 넣어주세요.">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">달력</th>
+										<td class="td_input">
+											<p class="ad_calendar_sel">
+												<input type="text" class="ad_formstyle" placeholder="부모P태그 wd_p00 클래스로 넓이 조절 가능">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+												<a href="javascript:void(0);" class="ad_calendar_img">달력열기</a>
+											</p>
+										</td>
+										<th scope="row">select</th>
+										<td class="td_input">
+											<select name="select" class="ad_formstyle wd_p60">
+												<option>선택하세요</option>
+											</select>
+											<p class="ad_survey_list">
+												<input name="radio2" class="radio" id="radio_black" type="radio">
+												<label class="radio_label radio_black" for="radio_black">radio_black</label>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">검색1</th>
+										<td class="td_input">
+											<p class="ad_search_box">
+												<input type="text" class="ad_formstyle" placeholder="검색어를 입력하세요">
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+												<button type="button" class="btn_search"><i class="fa fa-search"></i>검색</button>
+											</p>
+										</td>
+										<th scope="row">검색2</th>
+										<td class="td_input">
+											<input type="text" class="ad_formstyle wd_p60" placeholder="검색어를 입력하세요">
+											<button type="button" class="btn btn_md btn_deepgreen"><i class="fa fa-search"></i>검색</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">파일첨부1</th>
+										<td class="td_input">
+											<p class="ad_search_box">
+												<input type="text" class="ad_formstyle" value="img.jpg" readonly>
+												<button type="button" class="btn_reset" title="입력초기화"><i class="fa fa-times-circle"></i></button>
+												<label class="btn_search">파일첨부<input type="file" class="hidden"/></label>
+											</p>
+										</td>
+										<th scope="row">파일첨부2</th>
+										<td class="td_input">
+											<input type="text" class="ad_formstyle wd_p60">
+											<input type="text" class="hidden">
+											<label class="btn btn_md btn_deepgreen"><i class="fa fa-folder-open"></i>파일첨부<input type="file" class="hidden"/></label>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">다운로드1</th>
+										<td>
+											<a href="javascript:void(0);" class="ad_filelink"><i class="fa fa-file-o"></i>연차신청.hwp</a>
+										</td>
+										<th scope="row">
+											input
+										</th>
+										<td class="td_input">
+											<p class="ad_survey_list">
+												<input name="check2" class="check" id="check_black1" type="checkbox">
+												<label class="check_label check_black" for="check_black1">check_black</label>
+											</p>
+											<p class="ad_survey_list">
+												<input type="checkbox" name="check2" id="check_black2" class="check">
+												<label for="check_black2" class="check_label check_black">check_black</label>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">textarea</th>
+										<td colspan="3" class="td_input">
+											<div class="ad_editorbox" style="min-height: 200px;">
+												에디터 내용을 불러들어오는 영역
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ad_btn_area mg_t5">
+							<button type="button" class="btn_border btn_bo_md bo_red"><i class="fa fa-undo"></i>취소</button>
+							<button type="button" class="btn btn_border btn_bo_md bo_default"><i class="fa fa-check"></i>등록</button>
+						</div>
+					</section>
+					<section class="ad_section_wrap">
+						<div class="ad_btn_textbox">
+							<h5 class="ad_section_stit"><span class="stit_bullet"></span>가로 테이블 - 6 col &amp; 테이블상단 버튼</h5>
+							<div class="ad_btn_area">
+								<button type="button" class="btn_border btn_bo_sm bo_default"><i class="fa fa-check"></i>등록</button>
+							</div>
+						</div>
+						<div class="ad_list_table_wrap">
+							<table class="ad_vlist_tbl">
+								<caption>6col 가로테이블 예시</caption>
+								<colgroup>
+									<col style="width:13%">
+									<col style="width:19.33%">
+									<col style="width:13%">
+									<col style="width:19.33%">
+									<col style="width:13%">
+									<col style="width:19.33%">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">제목</th>
+										<td>내용</td>
+										<th scope="row">제목</th>
+										<td>내용</td>
+										<th scope="row">제목</th>
+										<td>내용</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					
+				</section>
+				<!-- [pp] //table -->
+				<!-- [pp] sum table -->
+				<section class="ad_section_wrap">
+					<div class="ad_btn_textbox">
+						<h5 class="ad_section_stit"><span class="stit_bullet"></span>가로 테이블 - 합계</h5>
+						<div class="ad_btn_area">
+							<button type="button" class="btn_border btn_bo_sm bo_default"><i class="fa fa-check"></i>등록</button>
+						</div>
+					</div>
+					<div class="ad_list_table_wrap">
+						<table class="ad_vlist_tbl">
+							<caption>합계 가로테이블 예시</caption>
+							<colgroup>
+								<col style="width:13%">
+								<col style="width:19.33%">
+								<col style="width:13%">
+								<col style="width:19.33%">
+								<col style="width:13%">
+								<col style="width:19.33%">
+							</colgroup>
+							<tbody>
+								<tr class="ad_tbl_sum">
+									<th scope="row">합계</th>
+									<td>10</td>
+									<td>5</td>
+									<td>0</td>
+									<td>23</td>
+									<td>38</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- [pp] //sum table -->
+				<!-- [pp] no text box -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">No Text Box</h4>
+					<div class="ad_notxt_box">
+						<p class="ad_notxt">내용이 없습니다.</p>
+					</div>
+				</section>
+				<!-- [pp] //no text box -->
+				<!-- [pp] pagenavi -->
+				<section class="ad_section_wrap">
+					<h4 class="ad_section_tit">Page navi</h4>
+					<div class="paging_place">
+						<div class="paging_wrap">
+							<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+							<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+							<a href="javascript:void(0);" class="active">1</a>
+							<a href="javascript:void(0);">2</a>
+							<a href="javascript:void(0);">3</a>
+							<a href="javascript:void(0);">4</a>
+							<a href="javascript:void(0);">5</a>
+							<a href="javascript:void(0);">6</a>
+							<a href="javascript:void(0);">7</a>
+							<a href="javascript:void(0);">8</a>
+							<a href="javascript:void(0);">9</a>
+							<a href="javascript:void(0);">10</a>
+							<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+							<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+						</div>
+					</div>
+				</section>
+				<!-- [pp] // pagenavi -->
+			</section>
+			<!-- [pp] // content 영역 -->
+		</div>
+		<!-- [pp] // container -->
+	</div>
+	<!-- [pp] footer를 제외한 전체 페이지 영역 -->
+	<!-- [pp] footer -->
+	<footer class="ad_footer_wrap">
+		<div class="ad_footer">
+			<address>
+				37673 경상북도 포항시 남구 청암로 77&#40;효자동 산31&#41; TEL.054-279-0114 / E-Mail.webmaster@postech.ac.kr<br/>
+				COPYRIGHT 2018 Pohang University of Science and Technology.ALL RIGHTS RESERVED.	
+			</address>
+		</div>
+		<button type="button" class="ad_gotop" title="페이지 상단으로 이동"><i class="fa fa-caret-up"></i>TOP</button>
+	</footer>
+	<!-- [pp] // footer -->
+</body>
+
+</html>

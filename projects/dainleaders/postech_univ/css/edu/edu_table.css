@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/* 테이블 공통 */
+.tbl table{
+	width: 100%;
+	background: #fff;
+	font-size: 14px; letter-spacing: 0.5px;
+	/*border-top: 1px solid #d8c9b4;*/
+	border-top: 1px solid #d5cfcf;
+}
+.tbl table th{
+	padding: 14px 20px; 
+	line-height: 1.5em; word-break: keep-all;
+	font-family: notokrM; font-weight: normal;
+	background: #f9f7f5;
+	/*border-bottom: 1px solid #d8c9b4;
+	border-left: 1px solid #d8c9b4;
+	border-right: 1px solid #d8c9b4;*/
+	border-bottom: 1px solid #d5cfcf;
+	border-left: 1px solid #d5cfcf;
+	border-right: 1px solid #d5cfcf;
+	cursor: default;
+}
+.tbl table th:first-child{
+	border-left: none;
+}
+.tbl table thead th:last-child{
+	border-right: none;
+}
+.tbl table td{
+	padding: 12px 20px; text-align: center; line-height: 1.4em;
+	/*border-bottom: 1px solid #d8c9b4;
+	border-left: 1px solid #d8c9b4;*/
+	border-bottom: 1px solid #d5cfcf;
+	border-left: 1px solid #d5cfcf;
+	cursor: default;
+}
+
+/* 검색폼 테이블 색상 */
+.pp_searchbox_wrapper .pp_row_tbl table th {
+	background: #f9f4f6;
+}
+
+/* 기본 테이블 - th,td 가운데 정렬, 세로 리스트형 */
+.pp_basic_tbl{
+	width: 100%;
+}
+.pp_basic_tbl table th{
+	padding: 14px 10px;
+	text-align: center;
+}
+.pp_basic_tbl table tbody th{
+	background: none; 
+}
+.pp_basic_tbl table tbody td:first-child{
+	border-left: none;
+	border-right: 1px solid #d5cfcf;
+}
+
+/* 기본 테이블 - th 가운데 정렬, td왼쪽정렬 세로 리스트형 */
+.pp_basic_tbl_l{
+	width: 100%;
+}
+.pp_basic_tbl_l table th{
+	text-align: center;
+}
+.pp_basic_tbl_l table tbody th{
+	font-weight: normal;
+	background: none; 
+}
+.pp_basic_tbl_l table tbody td{
+	text-align: left;
+}
+.pp_basic_tbl_l table tbody td:first-child {
+	border-left: none;
+}
+
+/* 가로형 - th, td 왼쪽 정렬, tbody에 th bg 적용 */
+.pp_row_tbl{
+	width: 100%;
+}
+.pp_row_tbl table th{
+	text-align: left;
+}
+.pp_row_tbl table td{
+	text-align: left;
+}
+
+/* 가로세로형 - th, td 가운데 정렬, thead,tbody에 th bg 적용 */
+.pp_rowcol_tbl{
+	width: 100%;
+}
+.pp_rowcol_tbl table th{
+	padding: 14px 10px;
+	text-align: center;
+}
+.pp_rowcol_tbl table thead th, .pp_rowcol_tbl table tbody th{
+	background: #f9f7f5;
+}
+/*.pp_rowcol_tbl table tbody td:first-child{
+	border-left: none;
+}*/
+
+/* 기본 테이블 - th,td 가운데 정렬, 세로 리스트형 */
+.pp_notice_tbl{
+	width: 100%;
+}
+.pp_notice_tbl table {
+	border-top: 2px solid #c61065;
+}
+.pp_notice_tbl table th{
+	padding: 14px 10px;
+	text-align: center;
+}
+.pp_notice_tbl table thead tr {
+	border-bottom: 1px solid #c61065;
+}
+.pp_notice_tbl table thead th{
+	background: #fff;
+	border: 0;
+}
+.pp_notice_tbl table tbody {
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.pp_notice_tbl table tbody:hover {
+	background: #f2f2f2;
+}
+.pp_notice_tbl table tbody th{
+	background: none; 
+}
+.pp_notice_tbl table tbody td:first-child{
+	border-left: none;
+	border-right: 1px solid #d5cfcf;
+}
+
+/* 가로 스크롤 테이블 */
+.pp_scrollx_tbl{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl table{
+	min-width: 800px;
+}
+.pp_scrollx_tbl_xs{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl_xs table{
+	min-width: 450px;
+}
+.pp_scrollx_tbl_sm{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl_sm table{
+	min-width: 600px;
+}
+.pp_scrollx_tbl_md{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl_md table{
+	min-width: 1000px;
+}
+.pp_scrollx_tbl_lg{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl_lg table{
+	/*min-width: 1200px;*/
+	min-width: 1600px;
+}
+.pp_scrollx_tbl_xl{
+	width: 100%;
+	overflow-x: auto;
+}
+.pp_scrollx_tbl_xl table{
+	min-width: 1500px;
+}
+
+
+table .pp_td_pd{
+	padding: 4px !important;
+}
+.pp_tbl_hover tr:hover{
+	background: #f4f4f4;
+}
+.pp_tbl_hover tr.pp_showtab_dd:hover{
+	background: #fff;
+	cursor: default;
+}
+.pp_insert_editor{
+	width: 100%;
+	min-height: 100px;
+	word-break: keep-all;
+}
+.pp_insert_editor *{
+	line-height: normal;
+}
+.pp_insert_editor img{
+	display: block;
+	width: 100%;
+	height: auto; margin: 5px 0;
+}
+.pp_insert_editor strong{
+	font-size: inherit;
+}
+
+.tbl_topbtn_area{
+	height: 40px;
+	margin-bottom: 5px;
+	position: relative;
+	text-align: right;
+}
+.tbl_topbtn_area p{
+	position: absolute; bottom: 0px;
+}
+
+/* 멀티 막대 그래프 - 왼쪽값과 오른쪽값이 나누어저 표시됨 */
+.pp_multigraph {
+	position: relative;	
+}
+.pp_multigraph .pp_tit_left {
+	font-weight: 600; color: #c5116c; 
+}
+.pp_multigraph .pp_tit_right {
+	font-weight: 600; color: #5fcae5;
+	border-left: 0;
+}
+.pp_multigraph .pp_bar_left {
+	position: relative;
+	border-left: 0;
+}
+.pp_multigraph .pp_bar_left p {
+	position: absolute; top: 12px; right: 0;
+	height: 24px;
+	background: #c5116c;
+}
+.pp_multigraph .pp_bar_right {
+	position: relative;
+}
+.pp_multigraph .pp_bar_right p {
+	position: absolute; top: 12px; left: 0;
+	height: 24px;
+	background: #5fcae5;
+}
+
+/* 가로 막대 그래프 */
+.pp_bargraph {
+	position: relative;	
+}
+.pp_bargraph .pp_graph_tit {
+	font-weight: 600; color: #c5116c; 
+}
+.pp_bargraph .pp_graph_bar {
+	position: relative;
+}
+.pp_bargraph .pp_graph_bar p {
+	position: absolute; top: 10px; left: 0;
+	height: 24px;
+	background: #c5116c;
+}
+/* 핵심역량진단 - 진단결과 table */
+.key_tbl_row {
+	
+}
+.key_tbl_row table{
+	border: 1px solid #d7c9b4;
+}
+.key_tbl_row table th{
+	text-align: center;
+	padding: 8px;
+}
+.key_tbl_row table td {
+	padding:8px;
+}
+.key_tbl_pink table{
+	border: 1px solid #d7c9b4;
+	border-top:2px solid #c51168;
+}
+.key_tbl_pink table th {
+	text-align: center;
+	padding: 8px;
+}
+.key_tbl_pink table td {
+	padding: 8px;
+}
+.key_tbl_pink tbody th {
+	background: #fff; font-weight: 550;
+}
+.key_tbl_pink tr.last th {
+	color:#77314c; background: #f2f2f2;
+}
+.key_tbl_pink tr.last {
+	background: #f2f2f2;
+}
+/* 태블릿, 모바일 공통 */
+@media only screen and (max-width:1024px){
+	
+	/* 테이블 공통 */
+	.tbl table{
+		font-size: 14px;
+	}
+	.tbl table th{
+		padding: 10px 10px;
+	}
+	.tbl table td{
+		padding: 10px 10px;
+	}
+
+	/* 기본 테이블 - th,td 가운데 정렬, 세로 리스트형 */
+	.pp_basic_tbl{
+		width: 100%;
+	}
+	.pp_basic_tbl table th{
+		padding: 10px 10px;
+	}
+	
+	/* 멀티 막대 그래프 - 왼쪽값과 오른쪽값이 나누어저 표시됨 */
+	.pp_multigraph .pp_bar_left p, .pp_multigraph .pp_bar_right p {
+		top: 8px;
+	}
+	
+	/* 가로 막대 그래프 */
+	.pp_bargraph .pp_graph_bar p {
+		top: 8px; 
+	}
+	
+}
+
+
+/* 모바일 사이즈 */
+@media only screen and (max-width:767px) {
+	/* 테이블 공통 */
+	.tbl table th{ padding: 8px 5px; font-size: 13px; }
+	.tbl table td{ padding: 8px 5px; font-size: 13px; }
+	
+	.tbl_topbtn_area{
+		height: 30px;
+	}
+	
+	/* 멀티 막대 그래프 - 왼쪽값과 오른쪽값이 나누어저 표시됨 */
+	.pp_multigraph .pp_bar_left p, .pp_multigraph .pp_bar_right p {
+		top: 6px;
+	}
+	
+	/* 가로 막대 그래프 */
+	.pp_bargraph .pp_graph_bar p {
+		top: 5px; 
+	}
+	/* 767 이하시 스크롤 생성*/
+	.scroll_tbl_md {
+		width: 100%;
+		overflow-x: scroll;
+	}
+}
+
+/* 모바일 작은 사이즈 */
+@media only screen and (max-width:480px) {
+	
+}

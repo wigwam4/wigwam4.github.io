@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="title" content="포항공과대학교 포스테키안 관리자">
+	<meta name="description" content="포항공과대학교 포스테키안 관리자화면입니다.">
+	<meta name="copyrigt" content="Pohang University of Science and Technology">
+	<meta name="keywords" content="포항공과대학교, 포스테키안, 포스테키안 활동">
+	<title>포항공과대학교 포스테키안 관리자</title>
+	<link rel="stylesheet" type="text/css" href="../../../css/dl_reset.css">
+	<!-- [pp] 아이콘글꼴/font-awesome -->
+	<link rel="stylesheet" href="../../../font/font-awesome/css/font-awesome.min.css">
+	<!-- [pp] 아이콘글꼴/font-awesome/파이어폭스 미출력 에러 대비용 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/dl_layout.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_custom.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_common.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_ui.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/admin/ad_popup.css">
+	<script type="text/javascript" src="../../../js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="../../../js/admin/pp_admin_common.js"></script>
+</head>
+<body>
+	<!-- [pp] 팝업 전체 영역/ 팝업창 가로사이즈: ad_pop_lg:1000px, ad_pop_md:800px, ad_pop_sm:650px, ad_pop_xs:500px -->
+	<div class="ad_pop_wrapper ad_pop_lg">
+		<section class="ad_pop_header">
+			<h1>권한설정</h1>
+			<button type="button" class="ad_pop_close">팝업창 닫기</button>
+		</section>
+		<section class="ad_pop_container">
+			<!-- [pp] 컨텐츠영역/ 최대높이사이즈: ad_pop_content_lg: 500px, ad_pop_content_md: 400px, ad_pop_content_sm: 300px, ad_pop_content_xs: 200px -->
+			<div class="ad_pop_content ad_pop_content_lg">
+				<section class="dp_inlinefix">
+					<div class="ad_add_user">             
+						<h4 class="ad_section_tit">권한목록</h4>
+						<div class="ad_list_table_wrap ad_txt_borderbox">
+							<table class="ad_list_tbl">
+								<caption>권한목록</caption>
+								<colgroup>
+									<col style="width:10%">
+									<col style="width:30%">
+									<col style="width:*">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tbl_bgno td_input">
+											<p class="ad_survey_list">
+												<input name="check2" class="check" id="check2_all" type="checkbox">
+												<label for="check2_all" class="check_label check_black ta_i">전체선택</label>
+											</p>                        
+										</th>
+										<th scope="col">사용자 ID</th>
+										<th scope="col">사용자명</th>
+									</tr>
+									
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="bg_white td_input ta_c">
+											<p class="ad_survey_list">
+												<input name="check2" class="check" id="check2_1" type="checkbox">
+												<label for="check2_1" class="check_label check_black ta_i">선택</label>
+											</p> 
+										</th>
+										<td>hhhhhh</td>
+										<td>최다인</td>
+									</tr>             
+								</tbody>
+							</table>
+						</div>                         	               	
+					</div>
+					<div class="ad_add_minus">
+						<ul>
+							<li><a href="javascript:void(0);" title="추가하기">추가등록</a></li>
+							<li><a href="javascript:void(0);" title="목록에서 제거하기">사용자삭제</a></li>
+						</ul>	
+					</div>
+					<div class="ad_add_user">
+						<h4 class="ad_section_tit">메뉴 맵핑 목록</h4>
+						<div class="ad_list_table_wrap ad_txt_borderbox">
+							<table class="ad_list_tbl">
+								<caption>메뉴 맵핑 목록</caption>
+								<colgroup>
+									<col style="width:10%">
+									<col style="width:*">
+									<col style="width:15%">
+									<col style="width:15%">
+									<col style="width:15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" class="tbl_bgno td_input">
+											<p class="ad_survey_list">
+												<input name="check" class="check" id="check1" type="checkbox">
+												<label class="check_label check_black ta_i" for="check1">전체선택</label>
+											</p>
+										</th>
+										<th scope="col">권한그룹</th>
+										<th scope="col">조회</th>
+										<th scope="col">등록</th>
+										<th scope="col">관리</th>
+									</tr>
+
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="bg_white td_input ta_c">
+											<p class="ad_survey_list">
+												<input type="checkbox" name="check" class="check" id="check2">
+												<label for="check2" class="check_label check_black ta_i">선택</label>
+											</p>
+										</th>
+										<td>슈퍼관리자</td>
+										<td>
+											<p class="ad_survey_list">
+												<input type="checkbox" name="check" class="check" id="check_green1" checked>
+												<label for="check_green1" class="check_label check_green ta_i">check_green</label>
+											</p>
+										</td>
+										<td>
+											<p class="ad_survey_list">
+												<input type="checkbox" name="check" class="check" id="check_green2">
+												<label for="check_green2" class="check_label check_green ta_i">check_green</label>
+											</p>
+										</td>
+										<td>
+											<p class="ad_survey_list">
+												<input type="checkbox" name="check" class="check" id="check_green3">
+												<label for="check_green3" class="check_label check_green ta_i">check_green</label>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>               	
+				</section>
+			</div>
+		</section>
+		<!-- [pp] 컨텐츠영역 -->
+		<!-- [pp] 팝업창하단 버튼영역 -->
+		<section class="ad_pop_footer">
+			<div class="ad_btn_area1">
+				<button type="button" class="btn btn_lg btn_deepblue wd_80"><i class="fa fa-check"></i>저장</button>
+			</div>
+		</section>
+		<!-- [pp] //팝업창하단 버튼영역 -->
+	</div>
+	<!-- [pp] // 팝업 전체 영역 -->
+</body>
+</html>

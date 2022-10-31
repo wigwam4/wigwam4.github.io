@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 팝업 공통 */
+.ad_pop_wrapper{
+	overflow: hidden;
+	margin: 0 auto;
+	background: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+.ad_pop_xl{
+	width: 1100px;
+}
+.ad_pop_lg{
+	width: 1000px;
+}
+.ad_pop_md{
+	width: 800px;
+}
+.ad_pop_sm{
+	width: 650px;
+}
+.ad_pop_xs{
+	width: 500px;
+}
+.ad_pop_header{
+	width: 100%;
+	padding: 20px 20px 0 20px;
+	position: relative;
+}
+.ad_pop_header h1{
+	padding: 0 40px 15px 0;
+	line-height: 1em; font-size: 20px; color: #515151;
+	border-bottom: 2px solid #ddd;
+}
+.ad_pop_header .ad_pop_close{
+	width: 27px; height: 27px;
+	position: absolute; top: 15px; right: 20px;
+	font-size: 0px; text-indent: -9999px; line-height: 0;
+	background: url(../../images/admin/btn_close.gif)0 0 no-repeat;
+}
+.ad_pop_container{
+	width: 100%;
+	padding:10px 20px 15px;
+}
+.ad_pop_content{
+	width: 100%;
+	overflow-x: hidden;
+}
+.ad_pop_content_lg{
+	max-height: 500px;
+	overflow-y: auto;
+}
+.ad_pop_content_md{
+	max-height: 400px;
+	overflow-y: auto;
+}
+.ad_pop_content_sm{
+	max-height: 300px;
+	overflow-y: auto;
+}
+.ad_pop_content_xs{
+	max-height: 200px;
+	overflow-y: auto;
+}
+.ad_pop_footer{
+	padding: 0 20px 20px 20px;
+	text-align: center;
+}
+.ad_pop_footer .ad_btn_area1{
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+}
+
+/* 권한 사용자 등록 */
+.ad_add_user{
+	display: inline-block;
+	width: 47.5%;
+	vertical-align: top;
+}
+.ad_add_minus {
+	display: inline-block;
+	width: 5%;
+	vertical-align: middle;
+}
+.ad_add_minus ul{
+	height: 92px;
+	margin-top: 200px;
+}
+.ad_add_minus li a{
+	display: block;
+	width: 37px; height: 37px;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+.ad_add_minus li:nth-child(1) a {
+	background: url(../../images/admin/btn_addname.png) no-repeat;
+}
+
+.ad_add_minus li:nth-child(1) a:hover {
+	background: url(../../images/admin/btn_addname_on.png) no-repeat;
+}
+.ad_add_minus li:nth-child(2) {
+	margin-top: 18px;
+}
+.ad_add_minus li:nth-child(2) a {
+	background: url(../../images/admin/btn_minusname.png) no-repeat;
+}
+.ad_add_minus li:nth-child(2) a:hover {
+	background: url(../../images/admin/btn_minusname_on.png) no-repeat;
+}
+
+.ad_plus_minus{
+	display: inline-block;
+	width: 5%;
+	vertical-align: middle;
+}
+.ad_plus_minus ul{
+	height: 92px;
+	margin-top: 200px;
+}
+.ad_plus_minus li a{
+	display: block;
+	width: 37px; height: 37px;
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+.ad_plus_minus li:nth-child(1) a {
+	background: url(../../images/admin/btn_addplus.png) no-repeat;
+}
+.ad_plus_minus li:nth-child(2) {
+	margin-top: 18px;
+}
+.ad_plus_minus li:nth-child(2) a {
+	background: url(../../images/admin/btn_delete.png) no-repeat;
+}
+
+
+.ad_addlist_box{
+	width: 100%; min-height: 460px;
+	border: 1px solid #ddd;
+}
+.ad_user_name{
+	display: inline-block;
+	width: 100%;
+	padding: 6px 0 0 12px;
+	font-size: 12px; line-height: 1.5em;
+	font-family: "NanumGothic", NanumGothic, Dotum, "돋움", Arial, sans-serif;
+}
+
+/* 권한 설정 */
+.ad_add_user .ad_txt_borderbox{
+	min-height: 450px;
+}
+
+.ad_add_user .autoscroll{
+	min-height: 400px; max-height: 400px;
+	overflow-y: auto;
+}

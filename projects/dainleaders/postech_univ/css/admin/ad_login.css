@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 관리자 로그인 전용 */
+.ad_login_wrap {
+	width: 100%; height: 100%; min-width: 1000px; min-height: 800px;
+	padding-bottom: 80px;
+	position: relative;
+	background: url(../../images/admin/bg_loginwrap.jpg)0 center repeat-x;
+	background-size: 100% 100%;
+}
+.ad_login{
+	width: 1000px; height: 640px;
+	margin-top: -320px; margin-left: -500px;
+	position: absolute; top: 50%; left: 50%;
+}
+.ad_login_wrap h1{
+	margin: 20px auto; 
+	width: 200px;
+	text-align: center; font-family: NanumSquareB, 'Nanum Square', '나눔스퀘어';
+	font-size: 42px;
+}
+.ad_login_wrap h1 img{
+	display: block;
+	margin: 0 auto; margin-bottom: 35px;
+}
+.ad_login_wrap h1 .ad_logotxt1{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 19px; color: #939393; line-height: 1em;
+}
+.ad_loginbox_wrap{
+	width: 1000px; height: 450px;
+	margin: 10px auto;
+	position: relative;
+	background: url(../../images/admin/bg_admin_form.png)25px top no-repeat;
+}
+.ad_login_box {
+	width: 400px;
+	margin: 0 auto; padding-top: 60px;
+}
+.ad_login_box label{
+	display: block;
+	font-size: 0; line-height: 0;
+}
+.ad_login_box label input{
+	width: 100%; margin-bottom: 20px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+input.ad_input_login{
+	padding: 15px 40px;
+	font-size: 15px; text-align: center;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	border: 2px solid #fff;
+}
+input.ad_input_id{
+	background-image: url(../../images/admin/icon_id.gif);
+}
+input.ad_input_pw{
+	background-image: url(../../images/admin/icon_pw.gif);
+}
+input.ad_input_login:focus{
+	border: 2px solid #ac8e63;
+	outline: 0;
+}
+.ad_login_btn{
+	display: block;
+	padding: 15px;
+	font-size: 20px; color: #fff !important; text-align: center;
+	background: #c61065;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+.ad_login_btn:hover{
+	background: #ac8e63;
+}
+.ad_login_btn:focus{
+	background: #ac8e63;
+	outline: 0;
+}
+.pp_ad_loginfooter{
+	width: 100%; height: 80px;
+	margin-top: -80px;
+	position: relative;
+	text-align: center;
+}
+.pp_ad_loginfooter address{
+	font-size: 12px; color: #fff; letter-spacing: 1px; line-height: 1.5em;
+	font-family: NanumGothic,'나눔고딕', 'Apple SD Gothic Neo', Arial, sans-serif;
+}

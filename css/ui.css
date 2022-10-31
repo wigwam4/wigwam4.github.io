@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/* 색상데이터
+그린 : #5ad925, rgba(90,217,37,0.1)
+그레이화이트 : #f8f7f4
+
+딥블루 : #0050ff, rgba(0,80,255,0.1)
+라이트블루 : #007bff, rgba(0,123,255,0.1)
+블루화이트 : #f9fafb
+*/
+
 /* =================== 공통 컴포넌트 =================== */
 .hidden {
     display: none;
@@ -11,16 +20,16 @@
 }
 .btn {
 	display: inline-block;
-	margin-right: 8px; padding: 12px 30px;
-	font-size: 1.7rem; text-align: center;
+	margin-right: 12px; padding: 12px 30px;
+	font-size: 1.7rem; font-weight: 200; text-align: center;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	transition: 0.2s;
 }
 .btn_white {
-	color: #f8f7f4; 
-	border: 1px solid #f8f7f4;
+	color: #f9fafb;
+	border: 1px solid #f9fafb;
 }
 .btn_link {
 	display: inline-block;
@@ -54,15 +63,15 @@
 .round_tab a {
     display: block;
     padding: 12px 30px;
-	color: #5ad925; font-size: 1.7rem; line-height: 1.5em;
-    border: 1px solid #5ad925;
+	color: #007bff; font-size: 1.7rem; line-height: 1.5em;
+    border: 1px solid #007bff;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	transition: 0.2s;
 }
 .round_tab li.on a {
-    background: rgba(90,217,37,0.1);
+    background: rgba(0,123,255,0.1);
 }
 .tabcnt_js > div {
     display: none;
@@ -77,14 +86,14 @@ html {
 	display: none;
 }
 .wrapper {
-    color: #f8f7f4; font-family: Pretendard, sans-serif; font-size: 1.8rem; font-weight: 200;
+    color: #f9fafb; font-family: Pretendard, sans-serif; font-size: 1.8rem; 
     background: #1a1a1a;
 }
 .pf_title {
     width: 100vw; height: 200vh;
 }
 .canvas_area {
-	position: fixed; top: 0; left: 0; 
+	position: fixed; top: 0; left: 0;
 	display: flex;
 	width: 100%; height: 100vh;
 	align-items: center; justify-content: center;
@@ -93,6 +102,7 @@ html {
 	position: absolute; top: 50%; left: 50%;
 	border-radius: 50%;
 	transform: translate(-50%,-50%);
+	box-shadow: 0 10px 100px rgba(0,123,255,0.2);
 	overflow: hidden;
 }
 #canvas {
@@ -110,27 +120,28 @@ html {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+	box-shadow: inset 0 10px 50px rgba(0,123,255,0.2);
 }
 .canvas_area h2 {
 	position: absolute; top: 50%; left: 50%;
-    font-family: 'Karla', sans-serif; font-size: 8.6rem; line-height: 1.2em; letter-spacing: -0.02em; text-align: center; white-space: nowrap;
-	text-shadow: 0 1px 10px rgba(26,26,26,0.6);
+    font-family: Karla, sans-serif; font-size: 8.6rem; font-weight: 600; line-height: 1.1em; letter-spacing: -0.03em; text-align: center; white-space: nowrap;
+	text-shadow: 0 0 30px rgba(0,0,0,0.8);
 	transform: translate(-50%,-50%);
 }
 .canvas_area h2 br:first-child {
 	display: none;
 }
 .canvas_area h2 strong {
-    color: #5ad925; line-height: inherit; vertical-align: top;
+    color: #007bff; font-weight: 700; line-height: inherit; vertical-align: top;
 }
 .canvas_area h2 span {
     display: block;
     margin-top: 30px;
-    font-family: Pretendard, sans-serif; font-size: 2rem; font-weight: 200;
+    font-family: Pretendard, sans-serif; font-size: 2rem;
 }
 .canvas_area h2 span i {
     margin: 0 10px;
-    color: #5ad925; vertical-align: top;
+    color: #007bff; vertical-align: top;
 }
 
 .pf_about {
@@ -141,27 +152,28 @@ html {
 .pf_about > strong {
 	display: block;
 	flex-shrink: 0;
-	color: #5ad925; font-size: 10rem; font-weight: 500; line-height: 1;
+	color: #007bff; font-size: 10rem; font-weight: 500; line-height: 1;
 }
 .pf_about p {
 	margin-top: 10px;
-	font-size: 1.8rem; line-height: 2em;
+	font-size: 1.8rem; font-weight: 200; line-height: 2em;
 }
 .pf_about p .br {
 	display: none;
 }
 .pf_about p strong {
 	display: block;
-	margin: 12px 0 16px;
+	margin: 12px 0 20px;
 	font-weight: 500; 
-	font-family: Karla, sans-serif; line-height: inherit; line-height: inherit; letter-spacing: 2px; white-space: nowrap;
+	font-family: Karla, sans-serif; font-weight: 600; line-height: inherit; line-height: inherit; letter-spacing: 2px; white-space: nowrap;
 }
 .pf_about p strong small {
 	display: block;
-	font-family: Pretendard, sans-serif; letter-spacing: 3px;
+	margin-top: 4px;
+	font-family: Pretendard, sans-serif; font-weight: 400; letter-spacing: 3px;
 }
 .pf_about .btn_white {
-    margin-top: 30px;
+    margin-top: 32px;
 	min-width: 140px;
 }
 
@@ -171,19 +183,19 @@ html {
 h3 {
     position: relative;
     margin-bottom: 10px;
-    color: #5ad925; font-size: 6rem; font-weight: 500;
+    color: #007bff; font-size: 6rem; font-weight: 500;
 }
 .pf_skills dl {
     display: flex;
 	padding: 0 10%;
-	color: #f8f7f4;
+	color: #f9fafb;
 	align-items: stretch;
 }
 .pf_skills dl > div {
 	margin-right: -60px; padding: 50px 60px;
 	width: calc(33.333% + 60px); 
 	font-size: 1.8rem; text-align: center;
-	border: 1px solid #5ad925;
+	border: 1px solid #007bff;
 	border-radius: 50%;
 }
 .pf_skills dl > div:last-child {
@@ -191,23 +203,19 @@ h3 {
 }
 .pf_skills dt {
 	display: block;
-	margin-bottom: 40px;
-	color: #5ad925; letter-spacing: 1px;
+	margin-bottom: 36px;
+	color: #007bff; font-weight: 500; letter-spacing: 1px;
 }
 .pf_skills dd {
 	margin-bottom: 10px;
+	font-weight: 200;
 }
 .pf_skills dd:last-child {
 	margin-bottom: 0;
 }
 .talented {
-	background: rgba(90,217,37,0.1);
+	background: rgba(0,123,255,0.1);
 }
-.talented dd {
-    margin-bottom: 12px;
-    font-size: 1.7rem;
-}
-
 .pf_projects .btn_link {
 	margin-top: 34px; margin-left: 20px;
 }
@@ -228,7 +236,7 @@ h3 {
 }
 .preview_box {
 	position: relative;
-	margin: 0 auto 20px; 
+	margin: 0 auto; 
 	width: 100%; height: 360px;
 	border: 14px solid #eeede8; 
 	-webkit-border-radius: 8px;
@@ -239,6 +247,12 @@ h3 {
 	-o-transition: 0.3s;
 	transition: 0.3s;
 	overflow: hidden; overflow-y: auto;
+}
+.preview_box::before {
+	content: "";
+	position: absolute; top: 0; left: 0;
+	display: block;
+	width: 100%; height: 100%;
 }
 .preview_box.pc {
 	width: 100%; 
@@ -252,6 +266,9 @@ h3 {
 .preview_box img {
 	display: none;
 	width: 100%; height: auto;
+}
+.tab_except img {
+	display: block;
 }
 .preview_box.pc img.pc, .preview_box.tablet img.tablet, .preview_box.mobile img.mobile {
 	display: block;
@@ -304,6 +321,8 @@ h3 {
 	width: 20px; height: 28px;
 }
 .pf_projects .period {
+	display: inline-block;
+	margin-top: 32px;
 	vertical-align: bottom;
 	opacity: 0.5;
 }
@@ -316,19 +335,39 @@ h3 {
 }
 .pf_projects dt {
 	margin-bottom: 25px;
-	font-size: 2.6rem; font-weight: 300;
+	font-size: 2.6rem; font-weight: 500;
 }
 .pf_projects dt a {
-	font-size: inherit; font-weight: 500; vertical-align: top;
+	font-size: inherit; font-weight: inherit; vertical-align: top;
 }
 .pf_projects dd {
 	display: inline-block;
 	margin-right: 20px; margin-bottom: 10px; 
-	color: #54c924; font-size: 1.6rem; line-height: 1.5em;
+	color: #007bff; font-size: 1.6rem; line-height: 1.5em;
 }
 .pf_projects dd::before {
 	content: "#";
 	margin-right: 3px;
+}
+.img_wrap {
+	display: flex;
+	margin: 0 auto; 
+	width: 100%; height: 360px;
+	justify-content: center; align-items: center;
+	background: url(../img/grid.gif);
+	border: 14px solid #eeede8; 
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	overflow: hidden; 
+}
+#canvas_smile {
+	max-width: 100%;
+}
+#canvas_dots {
+	position: relative;
+	width: 100%; height: 100%;
+	background: radial-gradient(farthest-corner at 40px 40px, #2C5364, #0F2027 70%);
 }
 .project_overflow {
 	padding: 20px;
@@ -380,9 +419,6 @@ h3 {
 	.pf_skills dd {
 		margin-bottom: 8px;
 	}
-	.talented dd {
-		margin-bottom: 10px;
-	}
 	.project_list > li {
 		padding-right: 3%;
 	}
@@ -390,6 +426,9 @@ h3 {
 		padding-left: 3%;
 	}
 	.preview_box {
+		height: 300px;
+	}
+	.img_wrap {
 		height: 300px;
 	}
 	.responsive_type li {
@@ -407,13 +446,13 @@ h3 {
 		background: rgba(255,255,255,0.1);
 	}
 	.btn_link:hover {
-		border-color: #5ad925;
+		border-color: #007bff;
 	}
 	.btn_link:hover::before {
-		background: #5ad925;
+		background: #007bff;
 	}
 	.round_tab a:hover {
-		background: rgba(90,217,37,0.1);
+		background: rgba(0,123,255,0.1);
 	}
 	.pf_projects dt a:hover {
 		text-decoration: underline;
@@ -436,10 +475,10 @@ h3 {
 		position: fixed; bottom: 0; left: 0; z-index: 10;
 		display: flex;	
 		padding: 12px 0;
-		width: 100%; min-height: 50px;
+		width: 100%; min-height: 60px;
 		justify-content: center; align-items: center;
 		font-size: 1.8rem; color: #1a1a1a;
-		background: #5ad925;
+		background: #007bff;
 		transition: 0.4s;
 	}
 	.zodiac_banner div {
@@ -465,6 +504,9 @@ h3 {
 		margin-bottom: 20px;
 	}
 	.preview_box {
+		height: 260px;
+	}
+	.img_wrap {
 		height: 260px;
 	}
 }
@@ -494,9 +536,6 @@ h3 {
 	.pf_skills dd {
 		margin-bottom: 6px;
 	}
-	.talented dd {
-		margin-bottom: 8px;
-	}
 	.project_list > li {
 		margin-bottom: 60px; padding-right: 0;
 		width: auto; max-width: 420px;
@@ -505,6 +544,9 @@ h3 {
 		padding-left: 0;
 	}
 	.preview_box {
+		border-width: 8px;
+	}
+	.canvas_smile {
 		border-width: 8px;
 	}
 	.pf_projects dl {
@@ -552,7 +594,7 @@ h3 {
 	}
 	/* =================== //공통 컴포넌트 480 =================== */
 	.canvas_area h2 {
-		margin-top: 20px;
+		/* margin-top: 20px; */
 		font-size: 3.4rem; 
 	}
 	.canvas_area h2 br:first-child {
@@ -577,11 +619,14 @@ h3 {
 	.preview_box {
 		height: 220px;
 	}
+	.canvas_smile {
+		height: 220px;
+	}
 
 }
 @media screen and (max-width:320px){
 	.canvas_area h2 {
-		margin-top: 30px;
+		/* margin-top: 30px; */
 		font-size: 3rem;
 	}
 	.canvas_area h2 span {
