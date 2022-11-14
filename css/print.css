@@ -40,7 +40,7 @@
 	.section_divided h3 {
 		font-size: 1.5rem !important;
 	}
-	.circle_box > div, .skill_talented {
+	.circle_box > div, .highlighted {
 		font-size: 1.2rem !important;
 	}
 	.section_divided h4, .section_divided h4 .date {
@@ -311,7 +311,7 @@ ul li {
 	margin-bottom: 14px;
 	color: #333; font-weight: 600; letter-spacing: 1px;
 }
-.skill_talented {
+.highlighted {
 	z-index: 1 !important;
 	width: calc(40% + 20px) !important; 
 	background: #f2f2f2;
