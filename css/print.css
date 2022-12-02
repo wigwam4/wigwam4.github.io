@@ -58,7 +58,9 @@
 	th, td {
 		padding: 8px 12px !important;
 	}
-
+	.break {
+		page-break-after: auto; page-break-inside: avoid;
+	}
 }
 /* reset */
 * {
@@ -170,9 +172,6 @@ ul li {
 	background: #007bff;
 	border-radius: 50%;
 }
-.break {
-	page-break-after: auto; page-break-inside: avoid;
-}
 .hidden {
     display: none;
 }
@@ -274,7 +273,7 @@ ul li {
     position: absolute; top: 0; left: 0;
 }
 .section_divided.experience .list_line {
-    margin-top: 12px;
+    margin-top: 12px; margin-bottom: 6px;
 }
 .section_divided.experience .list_rect {
     margin-top: 12px;
