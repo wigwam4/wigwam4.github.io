@@ -192,6 +192,25 @@ html {
 	margin-top: 4px;
 	font-family: Pretendard, sans-serif; font-weight: 400; letter-spacing: 3px;
 }
+.pf_about ul {
+	margin-top: 10px;
+}
+.pf_about li {
+	position: relative;
+	margin-bottom: 4px; padding-left: 16px;
+	font-size: 1.8rem; font-weight: 200; line-height: 2em;
+}
+.pf_about li:last-child {
+	margin-bottom: 0;
+}
+.pf_about li::before {
+	content: "";
+	position: absolute; top: 16px; left: 0;
+	display: block;
+	width: 4px; height: 4px;
+	background: #f9fafb;
+	border-radius: 50%;
+}
 .pf_about .btn_white {
     margin-top: 32px;
 	min-width: 140px;
@@ -549,13 +568,15 @@ h2 {
 	}
 	.pf_about {
 		display: block;
-		text-align: center;
 	}
 	.pf_about > strong {
 		margin-bottom: 30px;
 		font-size: 7rem;
 	}
 	.pf_about p {
+		margin-top: 0;
+	}
+	.pf_about ul {
 		margin-top: 0;
 	}
 	.pf_skills dd {
@@ -634,6 +655,9 @@ h2 {
 	.pf_about p br {
 		display: none;
 	}
+	.pf_about li {
+		line-height: 1.8em;
+	}
 	.pf_about .btn_white {
 		margin-top: 40px;
 		min-width: 120px;
@@ -665,6 +689,9 @@ h2 {
 		font-size: 5.4rem;
 	}
 	.pf_about p {
+		font-size: 1.7rem;
+	}
+	.pf_about ul {
 		font-size: 1.7rem;
 	}
 }
