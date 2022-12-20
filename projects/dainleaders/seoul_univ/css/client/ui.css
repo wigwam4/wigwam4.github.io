@@ -3164,8 +3164,10 @@ img.mfp-img {
 }
 .bk21join_label {
 	position: absolute; top: 30px; right: 30px;
+	display: inline-block;
 	padding-right: 30px;
-	color: #20406c; font-size: 1.5rem; font-weight: 500;
+	height: 22px;
+	color: #20406c; font-size: 1.5rem; font-weight: 500; line-height: 22px;
 	background: url(../../images/client/sub/icon_bk21join_label.png) no-repeat right center;
 }
 .studentinfo_box dl {
@@ -5754,7 +5756,6 @@ img.mfp-img {
     }
 	.bk21join_label {
 		top: 20px; right: 20px;
-		padding-top: 2px; padding-bottom: 2px;
 	}
 	.studentinfo_box dl dd strong {
 		width: 94px;
