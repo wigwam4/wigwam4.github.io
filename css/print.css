@@ -34,19 +34,19 @@
 	.page_inner > section {
 		padding: 20px 0 !important;
 	}
-	.personal_data h1 {
+	.personal_data .title {
 		font-size: 1.8rem !important;
 	}
-	.section_divided h3 {
+	.section_divided h2 {
 		font-size: 1.5rem !important;
 	}
 	.circle_box > div, .highlighted {
 		font-size: 1.2rem !important;
 	}
-	.section_divided h4, .section_divided h4 .date {
+	.section_divided h3, .section_divided h3 .date {
 		font-size: 1.5rem !important;
 	}
-	.section_divided h4 .date small, .section_divided h4 span {
+	.section_divided h3 .date small, .section_divided h3 span {
 		font-size: 1.2rem !important;
 	}
 	.label {
@@ -220,16 +220,19 @@ ul li {
 .page_inner > section:first-child {
     border-top: 1px solid #ccc;
 }
-.personal_data h1 {
+.personal_data .title {
     font-size: 2.4rem; font-weight: 800; line-height: 1.2;
 }
 .personal_data ul {
-    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.personal_data .data_yet {
+	opacity: 0.5;
 }
 .section_divided {
     display: flex;
 }
-.section_divided h3 {
+.section_divided h2 {
     width: 25%;
     flex-shrink: 0;
     font-size: 1.8rem; font-weight: 800;
@@ -237,22 +240,22 @@ ul li {
 .section_divided > div {
     flex: 1;
 }
-.section_divided h4 {
+.section_divided h3 {
     position: relative;
     padding-top: 1px;
     font-size: 1.7rem; font-weight: 600;
 }
-.section_divided h4 span {
+.section_divided h3 span {
     display: block;
     margin-top: 10px;
     font-size: 1.4rem; font-weight: 400;
 }
-.section_divided h4 .date {
+.section_divided h3 .date {
     position: absolute; top: 0; right: 0;
     margin-top: 0;
     font-size: inherit; font-weight: 600;
 }
-.section_divided h4 .date small {
+.section_divided h3 .date small {
 	margin-right: 8px;
 	font-size: 1.4rem; font-weight: 400; line-height: inherit; vertical-align: top;
 }
@@ -321,6 +324,15 @@ ul li {
 .circle_box li:last-child {
 	margin-bottom: 0;
 }
+.list_company > li {
+	padding: 22px 0 18px; border-bottom: 1px solid #ccc;
+}
+.list_company > li:first-child {
+	padding-top: 0;
+}
+.list_company > li:last-child {
+	padding-bottom: 0; border-bottom: none;
+}
 .list_data li {
     margin-bottom: 14px;
 	line-height: 1.6em;
@@ -346,11 +358,11 @@ ul li {
 .page_cd .section_divided {
 	display: block;
 }
-.page_cd .section_divided h3 {
+.page_cd .section_divided h2 {
 	margin-bottom: 40px;
 	width: 100%;
 }
-.page_cd .section_divided h4 .date {
+.page_cd .section_divided h3 .date {
 	margin-top: 0;
 }
 .page_cd .tbl + .mark {
