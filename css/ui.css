@@ -426,6 +426,12 @@ h2 {
 	opacity: 0.4;
 }
 
+/* VSC Extension */
+.vsc_extension .preview_box {
+	display: flex; align-items: center; justify-content: center;
+	background: #101010;
+}
+
 @media screen and (max-width:1279px){
 	/* =================== 공통 컴포넌트 1279 =================== */
 	/* =================== //공통 컴포넌트 1279 =================== */
